@@ -1,0 +1,16 @@
+{
+	"BuildId": "37670630",
+	"Modules": 
+	{
+		"NarrativeArsenal": "UnrealEditor-NarrativeArsenal.dll",
+		"NarrativeArsenalEditor": "UnrealEditor-NarrativeArsenalEditor.dll",
+		"NarrativeCommonUI": "UnrealEditor-NarrativeCommonUI.dll",
+		"NarrativeDialogueEditor": "UnrealEditor-NarrativeDialogueEditor.dll",
+		"NarrativeInventory": "UnrealEditor-NarrativeInventory.dll",
+		"NarrativeInventoryEditor": "UnrealEditor-NarrativeInventoryEditor.dll",
+		"NarrativeNavigator": "UnrealEditor-NarrativeNavigator.dll",
+		"NarrativePro": "UnrealEditor-NarrativePro.dll",
+		"NarrativeQuestEditor": "UnrealEditor-NarrativeQuestEditor.dll",
+		"NarrativeSaveSystem": "UnrealEditor-NarrativeSaveSystem.dll"
+	}
+}
