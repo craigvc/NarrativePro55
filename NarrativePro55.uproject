@@ -35,11 +35,6 @@
 			"MarketplaceURL": "com.epicgames.launcher//ue/marketplace/product/aa40d0e693b24d92bcfa1553463cf542"
 		},
 		{
-			"Name": "AnimationToolsBundle",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/ba24bb844a244b7e95a9e9f905a1ffd9"
-		},
-		{
 			"Name": "AutoSizeComments",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/ae89a2c4ab384de0a3f213b23de324f3"
@@ -63,11 +58,6 @@
 			"Name": "Rocket",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/dc179ca63d3a49af89be1172585e2f7b"
-		},
-		{
-			"Name": "DarkerNodes",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/4b3441f0228a40ec9ca986489a5bd682"
 		},
 		{
 			"Name": "Black_Eye",
