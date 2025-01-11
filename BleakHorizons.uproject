@@ -120,6 +120,11 @@
 		{
 			"Name": "ErrantLandscape",
 			"Enabled": true
+		},
+		{
+			"Name": "DuplicateCleaner",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content7943efb613eb432db5b1f1c37e365e7a"
 		}
 	]
 }
