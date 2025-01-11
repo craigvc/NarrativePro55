@@ -30,17 +30,23 @@ struct Z_Construct_UClass_UItemTooltip_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "ItemTooltip.h" },
 		{ "ModuleRelativePath", "Public/ItemTooltip.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[] = {
 		{ "Category", "Tooltip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The item this tooltip is displaying*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/ItemTooltip.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The item this tooltip is displaying" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Item;
@@ -94,14 +100,14 @@ UItemTooltip::~UItemTooltip() {}
 // End Class UItemTooltip
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_ItemTooltip_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_ItemTooltip_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UItemTooltip, UItemTooltip::StaticClass, TEXT("UItemTooltip"), &Z_Registration_Info_UClass_UItemTooltip, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemTooltip), 4252086093U) },
+		{ Z_Construct_UClass_UItemTooltip, UItemTooltip::StaticClass, TEXT("UItemTooltip"), &Z_Registration_Info_UClass_UItemTooltip, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemTooltip), 971271348U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_ItemTooltip_h_145340708(TEXT("/Script/NarrativeInventory"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_ItemTooltip_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_ItemTooltip_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_ItemTooltip_h_2308361231(TEXT("/Script/NarrativeInventory"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_ItemTooltip_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_ItemTooltip_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

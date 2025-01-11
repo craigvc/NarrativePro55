@@ -48,9 +48,13 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_OnFactionAttitudeChanged__
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Delegate signature\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegate signature" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Faction;
@@ -174,9 +178,13 @@ struct Z_Construct_UFunction_UAsyncAction_WaitTimeOfDay_OnHitTimeOfDay_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We need to check when the NPC was spawned in by the subsystem, we bind this to sub\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We need to check when the NPC was spawned in by the subsystem, we bind this to sub" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_EventTime;
@@ -299,10 +307,14 @@ struct Z_Construct_UClass_UAsyncAction_WaitTimeOfDay_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//This handy node will wait until  a given time of day is reached and tell you when the time is reached. \n" },
+#endif
 		{ "IncludePath", "UnrealFramework/NarrativeGameState.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This handy node will wait until  a given time of day is reached and tell you when the time is reached." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnTimeReached_MetaData[] = {
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
@@ -312,7 +324,7 @@ struct Z_Construct_UClass_UAsyncAction_WaitTimeOfDay_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAsyncAction_WaitTimeOfDay_OnHitTimeOfDay, "OnHitTimeOfDay" }, // 303640663
+		{ &Z_Construct_UFunction_UAsyncAction_WaitTimeOfDay_OnHitTimeOfDay, "OnHitTimeOfDay" }, // 991234315
 		{ &Z_Construct_UFunction_UAsyncAction_WaitTimeOfDay_WaitTimeOfDay, "WaitTimeOfDay" }, // 2493788202
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -437,9 +449,13 @@ struct Z_Construct_UFunction_UAsyncAction_WaitTimeRange_OnHitTimeStart_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We need to check when the NPC was spawned in by the subsystem, we bind this to sub\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We need to check when the NPC was spawned in by the subsystem, we bind this to sub" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_EventTime;
@@ -568,10 +584,14 @@ struct Z_Construct_UClass_UAsyncAction_WaitTimeRange_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//This handy node will tell you when a given time range begins and ends. \n" },
+#endif
 		{ "IncludePath", "UnrealFramework/NarrativeGameState.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This handy node will tell you when a given time range begins and ends." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnTimeRangeStart_MetaData[] = {
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
@@ -586,7 +606,7 @@ struct Z_Construct_UClass_UAsyncAction_WaitTimeRange_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UAsyncAction_WaitTimeRange_OnHitTimeEnd, "OnHitTimeEnd" }, // 372423334
-		{ &Z_Construct_UFunction_UAsyncAction_WaitTimeRange_OnHitTimeStart, "OnHitTimeStart" }, // 4058989930
+		{ &Z_Construct_UFunction_UAsyncAction_WaitTimeRange_OnHitTimeStart, "OnHitTimeStart" }, // 1093952844
 		{ &Z_Construct_UFunction_UAsyncAction_WaitTimeRange_WaitTimeRange, "WaitTimeRange" }, // 4276321085
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -651,9 +671,13 @@ struct Z_Construct_UFunction_UAsyncAction_WaitSunsetAndSunrise_Sunrise_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We need to check when the NPC was spawned in by the subsystem, we bind this to sub\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We need to check when the NPC was spawned in by the subsystem, we bind this to sub" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_EventTime;
@@ -834,10 +858,14 @@ struct Z_Construct_UClass_UAsyncAction_WaitSunsetAndSunrise_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//This handy node will tell you when the sun sets and rises - useful for things like streetlamps. \n" },
+#endif
 		{ "IncludePath", "UnrealFramework/NarrativeGameState.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This handy node will tell you when the sun sets and rises - useful for things like streetlamps." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnSunrise_MetaData[] = {
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
@@ -851,7 +879,7 @@ struct Z_Construct_UClass_UAsyncAction_WaitSunsetAndSunrise_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAsyncAction_WaitSunsetAndSunrise_Sunrise, "Sunrise" }, // 1786146446
+		{ &Z_Construct_UFunction_UAsyncAction_WaitSunsetAndSunrise_Sunrise, "Sunrise" }, // 26844027
 		{ &Z_Construct_UFunction_UAsyncAction_WaitSunsetAndSunrise_Sunset, "Sunset" }, // 1587438406
 		{ &Z_Construct_UFunction_UAsyncAction_WaitSunsetAndSunrise_WaitSunsetAndRise, "WaitSunsetAndRise" }, // 599547454
 	};
@@ -930,9 +958,13 @@ struct Z_Construct_UFunction_UScheduledBehavior_DescribeBehavior_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Scheduled Behavior" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Debugging tools use this to grab a description of the behavior\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Debugging tools use this to grab a description of the behavior" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
@@ -1274,11 +1306,15 @@ struct Z_Construct_UClass_UScheduledBehavior_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Generic object that binds to specified time and then lets you do whatever behavior you need when the time is reached \n */" },
+#endif
 		{ "IncludePath", "UnrealFramework/NarrativeGameState.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Generic object that binds to specified time and then lets you do whatever behavior you need when the time is reached" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StartTime_MetaData[] = {
 		{ "Category", "Scheduled Behavior" },
@@ -1294,7 +1330,7 @@ struct Z_Construct_UClass_UScheduledBehavior_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UScheduledBehavior_DescribeBehavior, "DescribeBehavior" }, // 1671401052
+		{ &Z_Construct_UFunction_UScheduledBehavior_DescribeBehavior, "DescribeBehavior" }, // 3317891824
 		{ &Z_Construct_UFunction_UScheduledBehavior_DispatchHandleEnded, "DispatchHandleEnded" }, // 2770062149
 		{ &Z_Construct_UFunction_UScheduledBehavior_DispatchHandleStarted, "DispatchHandleStarted" }, // 3539651367
 		{ &Z_Construct_UFunction_UScheduledBehavior_HandleEnded, "HandleEnded" }, // 3916134160
@@ -1368,16 +1404,24 @@ struct Z_Construct_UScriptStruct_FFactionAttitudeData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Contains information about which factions we're enemies of, neutral with, etc. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Contains information about which factions we're enemies of, neutral with, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttitudeMap_MetaData[] = {
 		{ "Categories", "Narrative.Factions" },
 		{ "Category", "Faction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A map of a faction -> our attiude towards that faction\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A map of a faction -> our attiude towards that faction" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_AttitudeMap_ValueProp;
@@ -1441,25 +1485,41 @@ struct Z_Construct_UScriptStruct_FActiveTimeOfDayEvent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Represents an active time of day event \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents an active time of day event" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandleID_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The handle ID\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The handle ID" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTime_MetaData[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The time of day the event should fire\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The time of day the event should fire" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventDelegate_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The delegate that actually fires when the event goes off \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The delegate that actually fires when the event goes off" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_HandleID;
@@ -1514,9 +1574,13 @@ struct Z_Construct_UFunction_ANarrativeGameState_AdvanceTimeOfDay_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Manually advance the time of day, where 100 = 1 hour of time, ie 500 = advance time by 5 hours, 4800 = advance time by 2 days, etc.\n\x09Note that the time of day won't actually change until the next frame. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Manually advance the time of day, where 100 = 1 hour of time, ie 500 = advance time by 5 hours, 4800 = advance time by 2 days, etc.\n       Note that the time of day won't actually change until the next frame." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimeToAdvance_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1562,9 +1626,13 @@ struct Z_Construct_UFunction_ANarrativeGameState_GetAccumulatedTime_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the total accumulated time. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the total accumulated time." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -1608,9 +1676,13 @@ struct Z_Construct_UFunction_ANarrativeGameState_GetFactionAttitudeTowardsFactio
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Factions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check a factions attitude towards another faction \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check a factions attitude towards another faction" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SourceFaction_MetaData[] = {
 		{ "Categories", "Narrative.Factions" },
@@ -1670,9 +1742,13 @@ struct Z_Construct_UFunction_ANarrativeGameState_GetFactionsAttitudeTowardsFacti
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Factions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Get a container of factions attitudes towards another container of factions. In any are hostile, we'll return hostile. If none were hostile\n\x09""and at least one were friendly, we'll return friendly. Otherwise we'll return neutral. You can override this if you need to change that behaviour. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get a container of factions attitudes towards another container of factions. In any are hostile, we'll return hostile. If none were hostile\n       and at least one were friendly, we'll return friendly. Otherwise we'll return neutral. You can override this if you need to change that behaviour." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SourceFactions_MetaData[] = {
 		{ "Categories", "Narrative.Factions" },
@@ -1730,9 +1806,13 @@ struct Z_Construct_UFunction_ANarrativeGameState_GetTimeOfDay_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the time of day from 0-2400. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the time of day from 0-2400." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -1774,9 +1854,13 @@ struct Z_Construct_UFunction_ANarrativeGameState_GetTimeOfDayAdvanceSpeed_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check whether the sun is up or if its nighttime \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether the sun is up or if its nighttime" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -1818,9 +1902,13 @@ struct Z_Construct_UFunction_ANarrativeGameState_IsDayTime_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check whether the sun is up or if its nighttime \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether the sun is up or if its nighttime" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -1869,9 +1957,13 @@ struct Z_Construct_UFunction_ANarrativeGameState_SetFactionAttitude_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Factions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set a factions attitude towards another given faction\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set a factions attitude towards another given faction" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SourceFaction_MetaData[] = {
 		{ "Categories", "Narrative.Factions" },
@@ -1948,61 +2040,97 @@ struct Z_Construct_UClass_ANarrativeGameState_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Default Game State class for Narrative pro. Subclass this if you want your own game state in a Narrative Pro project. \n */" },
+#endif
 		{ "HideCategories", "Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
 		{ "IncludePath", "UnrealFramework/NarrativeGameState.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default Game State class for Narrative pro. Subclass this if you want your own game state in a Narrative Pro project." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimeOfDayEvents_MetaData[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//All of time of day events are stored in here. We sort them by time so when AdvanceTime is called it calls them in order \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All of time of day events are stored in here. We sort them by time so when AdvanceTime is called it calls them in order" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FactionAllianceMap_MetaData[] = {
 		{ "Categories", "Narrative.Factions" },
 		{ "Category", "Factions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Allows for nice efficient lookups for which alliance is friendly, netutral, enemies of others.Also marked savegame so alliances will be preserved through play sessions.\n\x09Since this is marked savegame, narrative will remember which factions are friendly, neutral, hostile towards others! */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows for nice efficient lookups for which alliance is friendly, netutral, enemies of others.Also marked savegame so alliances will be preserved through play sessions.\n       Since this is marked savegame, narrative will remember which factions are friendly, neutral, hostile towards others!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnFactionAttitudeChanged_MetaData[] = {
 		{ "Category", "Factions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when a factions attitude towards another faction changes - bots bind this to recheck if they are perceiving someone who has become a hostile \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a factions attitude towards another faction changes - bots bind this to recheck if they are perceiving someone who has become a hostile" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimeOfDayLastTick_MetaData[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The time of day last tick.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The time of day last tick." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AccumulatedTimeLastTick_MetaData[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The accumulated time last tick \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The accumulated time last tick" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimeOfDay_MetaData[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The current time of day, from 0-2400\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The current time of day, from 0-2400" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AccumulatedTime_MetaData[] = {
 		{ "Category", "Time of Day" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The total accumulated time, where 2400 is 1 day of time. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The total accumulated time, where 2400 is 1 day of time." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimeSettings_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We cache the time of day settings\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We cache the time of day settings" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_TimeOfDayEvents_ElementProp;
@@ -2019,14 +2147,14 @@ struct Z_Construct_UClass_ANarrativeGameState_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ANarrativeGameState_AdvanceTimeOfDay, "AdvanceTimeOfDay" }, // 3259337926
-		{ &Z_Construct_UFunction_ANarrativeGameState_GetAccumulatedTime, "GetAccumulatedTime" }, // 3710154263
-		{ &Z_Construct_UFunction_ANarrativeGameState_GetFactionAttitudeTowardsFaction, "GetFactionAttitudeTowardsFaction" }, // 516222206
-		{ &Z_Construct_UFunction_ANarrativeGameState_GetFactionsAttitudeTowardsFactions, "GetFactionsAttitudeTowardsFactions" }, // 4105799349
-		{ &Z_Construct_UFunction_ANarrativeGameState_GetTimeOfDay, "GetTimeOfDay" }, // 1909716503
-		{ &Z_Construct_UFunction_ANarrativeGameState_GetTimeOfDayAdvanceSpeed, "GetTimeOfDayAdvanceSpeed" }, // 3835741666
-		{ &Z_Construct_UFunction_ANarrativeGameState_IsDayTime, "IsDayTime" }, // 1010205249
-		{ &Z_Construct_UFunction_ANarrativeGameState_SetFactionAttitude, "SetFactionAttitude" }, // 2032237100
+		{ &Z_Construct_UFunction_ANarrativeGameState_AdvanceTimeOfDay, "AdvanceTimeOfDay" }, // 4103591034
+		{ &Z_Construct_UFunction_ANarrativeGameState_GetAccumulatedTime, "GetAccumulatedTime" }, // 1496972465
+		{ &Z_Construct_UFunction_ANarrativeGameState_GetFactionAttitudeTowardsFaction, "GetFactionAttitudeTowardsFaction" }, // 3740612048
+		{ &Z_Construct_UFunction_ANarrativeGameState_GetFactionsAttitudeTowardsFactions, "GetFactionsAttitudeTowardsFactions" }, // 344211793
+		{ &Z_Construct_UFunction_ANarrativeGameState_GetTimeOfDay, "GetTimeOfDay" }, // 427301679
+		{ &Z_Construct_UFunction_ANarrativeGameState_GetTimeOfDayAdvanceSpeed, "GetTimeOfDayAdvanceSpeed" }, // 1535982518
+		{ &Z_Construct_UFunction_ANarrativeGameState_IsDayTime, "IsDayTime" }, // 1316579133
+		{ &Z_Construct_UFunction_ANarrativeGameState_SetFactionAttitude, "SetFactionAttitude" }, // 446977750
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -2035,13 +2163,13 @@ struct Z_Construct_UClass_ANarrativeGameState_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_TimeOfDayEvents_ElementProp = { "TimeOfDayEvents", nullptr, (EPropertyFlags)0x0000008000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FActiveTimeOfDayEvent, METADATA_PARAMS(0, nullptr) }; // 3786490044
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_TimeOfDayEvents_ElementProp = { "TimeOfDayEvents", nullptr, (EPropertyFlags)0x0000008000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FActiveTimeOfDayEvent, METADATA_PARAMS(0, nullptr) }; // 2489790964
 static_assert(TModels_V<CGetTypeHashable, FActiveTimeOfDayEvent>, "The structure 'FActiveTimeOfDayEvent' is used in a TSet but does not have a GetValueTypeHash defined");
-const UECodeGen_Private::FSetPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_TimeOfDayEvents = { "TimeOfDayEvents", nullptr, (EPropertyFlags)0x0010008000020001, UECodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, TimeOfDayEvents), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeOfDayEvents_MetaData), NewProp_TimeOfDayEvents_MetaData) }; // 3786490044
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_FactionAllianceMap_ValueProp = { "FactionAllianceMap", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FFactionAttitudeData, METADATA_PARAMS(0, nullptr) }; // 2973308217
+const UECodeGen_Private::FSetPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_TimeOfDayEvents = { "TimeOfDayEvents", nullptr, (EPropertyFlags)0x0010008000020001, UECodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, TimeOfDayEvents), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeOfDayEvents_MetaData), NewProp_TimeOfDayEvents_MetaData) }; // 2489790964
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_FactionAllianceMap_ValueProp = { "FactionAllianceMap", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FFactionAttitudeData, METADATA_PARAMS(0, nullptr) }; // 4142965832
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_FactionAllianceMap_Key_KeyProp = { "FactionAllianceMap_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_FactionAllianceMap = { "FactionAllianceMap", nullptr, (EPropertyFlags)0x0010000001000015, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, FactionAllianceMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FactionAllianceMap_MetaData), NewProp_FactionAllianceMap_MetaData) }; // 1298103297 2973308217
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_OnFactionAttitudeChanged = { "OnFactionAttitudeChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, OnFactionAttitudeChanged), Z_Construct_UDelegateFunction_NarrativeArsenal_OnFactionAttitudeChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFactionAttitudeChanged_MetaData), NewProp_OnFactionAttitudeChanged_MetaData) }; // 954926968
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_FactionAllianceMap = { "FactionAllianceMap", nullptr, (EPropertyFlags)0x0010000001000015, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, FactionAllianceMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FactionAllianceMap_MetaData), NewProp_FactionAllianceMap_MetaData) }; // 1298103297 4142965832
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_OnFactionAttitudeChanged = { "OnFactionAttitudeChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, OnFactionAttitudeChanged), Z_Construct_UDelegateFunction_NarrativeArsenal_OnFactionAttitudeChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFactionAttitudeChanged_MetaData), NewProp_OnFactionAttitudeChanged_MetaData) }; // 1862651653
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_TimeOfDayLastTick = { "TimeOfDayLastTick", nullptr, (EPropertyFlags)0x0020080001020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, TimeOfDayLastTick), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeOfDayLastTick_MetaData), NewProp_TimeOfDayLastTick_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_AccumulatedTimeLastTick = { "AccumulatedTimeLastTick", nullptr, (EPropertyFlags)0x0020080001020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, AccumulatedTimeLastTick), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AccumulatedTimeLastTick_MetaData), NewProp_AccumulatedTimeLastTick_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ANarrativeGameState_Statics::NewProp_TimeOfDay = { "TimeOfDay", nullptr, (EPropertyFlags)0x0020080001020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeGameState, TimeOfDay), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeOfDay_MetaData), NewProp_TimeOfDay_MetaData) };
@@ -2067,7 +2195,7 @@ UObject* (*const Z_Construct_UClass_ANarrativeGameState_Statics::DependentSingle
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ANarrativeGameState_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ANarrativeGameState_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableActor_NoRegister, (int32)VTABLE_OFFSET(ANarrativeGameState, INarrativeSavableActor), false },  // 2545445142
+	{ Z_Construct_UClass_UNarrativeSavableActor_NoRegister, (int32)VTABLE_OFFSET(ANarrativeGameState, INarrativeSavableActor), false },  // 2378775156
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ANarrativeGameState_Statics::ClassParams = {
 	&ANarrativeGameState::StaticClass,
@@ -2101,23 +2229,23 @@ ANarrativeGameState::~ANarrativeGameState() {}
 // End Class ANarrativeGameState
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FFactionAttitudeData::StaticStruct, Z_Construct_UScriptStruct_FFactionAttitudeData_Statics::NewStructOps, TEXT("FactionAttitudeData"), &Z_Registration_Info_UScriptStruct_FactionAttitudeData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FFactionAttitudeData), 2973308217U) },
-		{ FActiveTimeOfDayEvent::StaticStruct, Z_Construct_UScriptStruct_FActiveTimeOfDayEvent_Statics::NewStructOps, TEXT("ActiveTimeOfDayEvent"), &Z_Registration_Info_UScriptStruct_ActiveTimeOfDayEvent, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FActiveTimeOfDayEvent), 3786490044U) },
+		{ FFactionAttitudeData::StaticStruct, Z_Construct_UScriptStruct_FFactionAttitudeData_Statics::NewStructOps, TEXT("FactionAttitudeData"), &Z_Registration_Info_UScriptStruct_FactionAttitudeData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FFactionAttitudeData), 4142965832U) },
+		{ FActiveTimeOfDayEvent::StaticStruct, Z_Construct_UScriptStruct_FActiveTimeOfDayEvent_Statics::NewStructOps, TEXT("ActiveTimeOfDayEvent"), &Z_Registration_Info_UScriptStruct_ActiveTimeOfDayEvent, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FActiveTimeOfDayEvent), 2489790964U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAsyncAction_WaitTimeOfDay, UAsyncAction_WaitTimeOfDay::StaticClass, TEXT("UAsyncAction_WaitTimeOfDay"), &Z_Registration_Info_UClass_UAsyncAction_WaitTimeOfDay, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAsyncAction_WaitTimeOfDay), 362863290U) },
-		{ Z_Construct_UClass_UAsyncAction_WaitTimeRange, UAsyncAction_WaitTimeRange::StaticClass, TEXT("UAsyncAction_WaitTimeRange"), &Z_Registration_Info_UClass_UAsyncAction_WaitTimeRange, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAsyncAction_WaitTimeRange), 3750504701U) },
-		{ Z_Construct_UClass_UAsyncAction_WaitSunsetAndSunrise, UAsyncAction_WaitSunsetAndSunrise::StaticClass, TEXT("UAsyncAction_WaitSunsetAndSunrise"), &Z_Registration_Info_UClass_UAsyncAction_WaitSunsetAndSunrise, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAsyncAction_WaitSunsetAndSunrise), 2304457214U) },
-		{ Z_Construct_UClass_UScheduledBehavior, UScheduledBehavior::StaticClass, TEXT("UScheduledBehavior"), &Z_Registration_Info_UClass_UScheduledBehavior, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UScheduledBehavior), 570053089U) },
-		{ Z_Construct_UClass_ANarrativeGameState, ANarrativeGameState::StaticClass, TEXT("ANarrativeGameState"), &Z_Registration_Info_UClass_ANarrativeGameState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeGameState), 3035918132U) },
+		{ Z_Construct_UClass_UAsyncAction_WaitTimeOfDay, UAsyncAction_WaitTimeOfDay::StaticClass, TEXT("UAsyncAction_WaitTimeOfDay"), &Z_Registration_Info_UClass_UAsyncAction_WaitTimeOfDay, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAsyncAction_WaitTimeOfDay), 2127893244U) },
+		{ Z_Construct_UClass_UAsyncAction_WaitTimeRange, UAsyncAction_WaitTimeRange::StaticClass, TEXT("UAsyncAction_WaitTimeRange"), &Z_Registration_Info_UClass_UAsyncAction_WaitTimeRange, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAsyncAction_WaitTimeRange), 3763433661U) },
+		{ Z_Construct_UClass_UAsyncAction_WaitSunsetAndSunrise, UAsyncAction_WaitSunsetAndSunrise::StaticClass, TEXT("UAsyncAction_WaitSunsetAndSunrise"), &Z_Registration_Info_UClass_UAsyncAction_WaitSunsetAndSunrise, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAsyncAction_WaitSunsetAndSunrise), 2999167726U) },
+		{ Z_Construct_UClass_UScheduledBehavior, UScheduledBehavior::StaticClass, TEXT("UScheduledBehavior"), &Z_Registration_Info_UClass_UScheduledBehavior, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UScheduledBehavior), 3339792270U) },
+		{ Z_Construct_UClass_ANarrativeGameState, ANarrativeGameState::StaticClass, TEXT("ANarrativeGameState"), &Z_Registration_Info_UClass_ANarrativeGameState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeGameState), 294063034U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_771904895(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_4019924244(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameState_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

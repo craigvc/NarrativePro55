@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-NarrativeQuestEditor.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"J:\NarrativePro55\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativeQuestEditor\Module.NarrativeQuestEditor.cpp.obj"
+"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativeQuestEditor\Default.rc2.res"
+/OUT:"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativeQuestEditor\UnrealEditor-NarrativeQuestEditor.lib"

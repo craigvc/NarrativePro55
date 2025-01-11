@@ -137,10 +137,14 @@ struct Z_Construct_UClass_ANarrativeASCActor_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n* Basic actor that comes with an Ability System Comp and some attributes. \n* \n* Added mostly for testing purposes, however would be useful for perhaps an attack dummy etc. \n*/" },
+#endif
 		{ "IncludePath", "GAS/NarrativeASCActor.h" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeASCActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Basic actor that comes with an Ability System Comp and some attributes.\n\nAdded mostly for testing purposes, however would be useful for perhaps an attack dummy etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilitySystemComponent_MetaData[] = {
 		{ "Category", "Narrative|Components|GAS" },
@@ -154,15 +158,23 @@ struct Z_Construct_UClass_ANarrativeASCActor_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultAttributes_MetaData[] = {
 		{ "Category", "Narrative|Abilities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Default attributes to apply to the actor - we can probably move this to the ASC itself. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeASCActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default attributes to apply to the actor - we can probably move this to the ASC itself." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Level_MetaData[] = {
 		{ "Category", "Narrative|Abilities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The level to assign to the ASC. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeASCActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The level to assign to the ASC." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AbilitySystemComponent;
@@ -229,14 +241,14 @@ ANarrativeASCActor::~ANarrativeASCActor() {}
 // End Class ANarrativeASCActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeASCActor_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeASCActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativeASCActor, ANarrativeASCActor::StaticClass, TEXT("ANarrativeASCActor"), &Z_Registration_Info_UClass_ANarrativeASCActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeASCActor), 718340821U) },
+		{ Z_Construct_UClass_ANarrativeASCActor, ANarrativeASCActor::StaticClass, TEXT("ANarrativeASCActor"), &Z_Registration_Info_UClass_ANarrativeASCActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeASCActor), 1742253468U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeASCActor_h_4221057176(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeASCActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeASCActor_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeASCActor_h_1916169908(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeASCActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeASCActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -86,44 +86,68 @@ struct Z_Construct_UClass_UNarrativeCombatDeveloperSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Combat related developer settings \n */" },
+#endif
 		{ "DisplayName", "Narrative - Combat Settings" },
 		{ "IncludePath", "Settings/NarrativeCombatDeveloperSettings.h" },
 		{ "ModuleRelativePath", "Public/Settings/NarrativeCombatDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Combat related developer settings" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bEnableDamageNumbers_MetaData[] = {
 		{ "Category", "Combat" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//**If true, damage dealt popups will appear above enemies you deal damage to. */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settings/NarrativeCombatDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "/If true, damage dealt popups will appear above enemies you deal damage to." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AvailableAttackTokens_MetaData[] = {
 		{ "Category", "Attack Tokens" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//** The amount of attack tokens to grant the player on each difficulty mode. */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settings/NarrativeCombatDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "/ The amount of attack tokens to grant the player on each difficulty mode." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StealTokenProximity_MetaData[] = {
 		{ "Category", "Attack Tokens" },
 		{ "ClampMax", "1.000000" },
 		{ "ClampMin", "0.010000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//** Token stealers must be this percent of the existing distance to steal a token. IE 0.2 = steal a token if we are 0.2x the distance from the target as an existing token. */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settings/NarrativeCombatDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "/ Token stealers must be this percent of the existing distance to steal a token. IE 0.2 = steal a token if we are 0.2x the distance from the target as an existing token." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TokenStealableAgeSeconds_MetaData[] = {
 		{ "Category", "Attack Tokens" },
 		{ "ClampMin", "0.010000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Tokens more than this many seconds old can be stolen  - nice way of giving others a chance to attack for a bit. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Settings/NarrativeCombatDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tokens more than this many seconds old can be stolen  - nice way of giving others a chance to attack for a bit." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCAttackFrequencies_MetaData[] = {
 		{ "Category", "NPC Attack Behaviour" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//** AI use this to decide how often they should fire at each difficulty. This is a multiplier of RateOfFire. IE 3.0 = attack at 3x the rate of fire */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settings/NarrativeCombatDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "/ AI use this to decide how often they should fire at each difficulty. This is a multiplier of RateOfFire. IE 3.0 = attack at 3x the rate of fire" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bEnableDamageNumbers_SetBit(void* Obj);
@@ -215,14 +239,14 @@ UNarrativeCombatDeveloperSettings::~UNarrativeCombatDeveloperSettings() {}
 // End Class UNarrativeCombatDeveloperSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeCombatDeveloperSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeCombatDeveloperSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCombatDeveloperSettings, UNarrativeCombatDeveloperSettings::StaticClass, TEXT("UNarrativeCombatDeveloperSettings"), &Z_Registration_Info_UClass_UNarrativeCombatDeveloperSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCombatDeveloperSettings), 2037434998U) },
+		{ Z_Construct_UClass_UNarrativeCombatDeveloperSettings, UNarrativeCombatDeveloperSettings::StaticClass, TEXT("UNarrativeCombatDeveloperSettings"), &Z_Registration_Info_UClass_UNarrativeCombatDeveloperSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCombatDeveloperSettings), 2436433703U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeCombatDeveloperSettings_h_2961007282(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeCombatDeveloperSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeCombatDeveloperSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeCombatDeveloperSettings_h_1624209984(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeCombatDeveloperSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeCombatDeveloperSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

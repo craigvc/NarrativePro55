@@ -30,9 +30,13 @@ struct Z_Construct_UFunction_USettlementSubsystem_GetSettlement_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settlement Subsystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Find a settlement using its tag\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/SettlementSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Find a settlement using its tag" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementTag_MetaData[] = {
 		{ "Categories", "Narrative.Settlements" },
@@ -89,15 +93,23 @@ struct Z_Construct_UClass_USettlementSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Subsystem for managing settlements. \n */" },
+#endif
 		{ "IncludePath", "Settlements/SettlementSubsystem.h" },
 		{ "ModuleRelativePath", "Public/Settlements/SettlementSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Subsystem for managing settlements." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementMap_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We cache POIs using tags for efficient lookups \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/SettlementSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We cache POIs using tags for efficient lookups" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SettlementMap_ValueProp;
@@ -106,7 +118,7 @@ struct Z_Construct_UClass_USettlementSubsystem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_USettlementSubsystem_GetSettlement, "GetSettlement" }, // 1484661308
+		{ &Z_Construct_UFunction_USettlementSubsystem_GetSettlement, "GetSettlement" }, // 2672920133
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -160,14 +172,14 @@ USettlementSubsystem::~USettlementSubsystem() {}
 // End Class USettlementSubsystem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementSubsystem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USettlementSubsystem, USettlementSubsystem::StaticClass, TEXT("USettlementSubsystem"), &Z_Registration_Info_UClass_USettlementSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USettlementSubsystem), 1279218725U) },
+		{ Z_Construct_UClass_USettlementSubsystem, USettlementSubsystem::StaticClass, TEXT("USettlementSubsystem"), &Z_Registration_Info_UClass_USettlementSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USettlementSubsystem), 6217337U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementSubsystem_h_3507399141(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementSubsystem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementSubsystem_h_181247846(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -37,16 +37,24 @@ struct Z_Construct_UClass_UScheduledBehavior_NPC_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A scheduled behavior owned by an NPCs activity component \n" },
+#endif
 		{ "IncludePath", "AI/Activities/NPCActivitySchedule.h" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A scheduled behavior owned by an NPCs activity component" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerActivityComponent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The component that owns this scheduled behavior \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The component that owns this scheduled behavior" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwnerActivityComponent;
@@ -129,9 +137,13 @@ struct Z_Construct_UFunction_UScheduledBehavior_AddNPCGoal_ProvideGoal_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Goals" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Construct and provide the goal \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Construct and provide the goal" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -183,29 +195,45 @@ struct Z_Construct_UClass_UScheduledBehavior_AddNPCGoal_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * UScheduledBehavior_AddNPCGoals create a goal and add it at the specified time. They then track it, and remove it at the EndTime. \n */" },
+#endif
 		{ "IncludePath", "AI/Activities/NPCActivitySchedule.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "UScheduledBehavior_AddNPCGoals create a goal and add it at the specified time. They then track it, and remove it at the EndTime." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActiveGoal_MetaData[] = {
 		{ "Category", "Scheduled Behavior - Add NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Pointer to the goal we created so we can remove when behavior ends \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Pointer to the goal we created so we can remove when behavior ends" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScoreOverride_MetaData[] = {
 		{ "Category", "Scheduled Behavior - Add NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If > 0, we'll assign this score to the created goal. Otherwise we'll use the created goals score. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If > 0, we'll assign this score to the created goal. Otherwise we'll use the created goals score." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bReselect_MetaData[] = {
 		{ "Category", "Scheduled Behavior - Add NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Do we want a reselect\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Do we want a reselect" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActiveGoal;
@@ -215,7 +243,7 @@ struct Z_Construct_UClass_UScheduledBehavior_AddNPCGoal_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UScheduledBehavior_AddNPCGoal_ProvideGoal, "ProvideGoal" }, // 2328941979
+		{ &Z_Construct_UFunction_UScheduledBehavior_AddNPCGoal_ProvideGoal, "ProvideGoal" }, // 1815953838
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -286,25 +314,37 @@ struct Z_Construct_UClass_UNPCActivitySchedule_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Contains a list of activites that an NPC should do throughout the day. \n */" },
+#endif
 		{ "IncludePath", "AI/Activities/NPCActivitySchedule.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Contains a list of activites that an NPC should do throughout the day." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Activities_Inner_MetaData[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The activities to perform should go in here. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The activities to perform should go in here." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Activities_MetaData[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The activities to perform should go in here. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivitySchedule.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The activities to perform should go in here." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Activities_Inner;
@@ -360,16 +400,16 @@ UNPCActivitySchedule::~UNPCActivitySchedule() {}
 // End Class UNPCActivitySchedule
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivitySchedule_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivitySchedule_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UScheduledBehavior_NPC, UScheduledBehavior_NPC::StaticClass, TEXT("UScheduledBehavior_NPC"), &Z_Registration_Info_UClass_UScheduledBehavior_NPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UScheduledBehavior_NPC), 1595569847U) },
-		{ Z_Construct_UClass_UScheduledBehavior_AddNPCGoal, UScheduledBehavior_AddNPCGoal::StaticClass, TEXT("UScheduledBehavior_AddNPCGoal"), &Z_Registration_Info_UClass_UScheduledBehavior_AddNPCGoal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UScheduledBehavior_AddNPCGoal), 2157052113U) },
-		{ Z_Construct_UClass_UNPCActivitySchedule, UNPCActivitySchedule::StaticClass, TEXT("UNPCActivitySchedule"), &Z_Registration_Info_UClass_UNPCActivitySchedule, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCActivitySchedule), 273467091U) },
+		{ Z_Construct_UClass_UScheduledBehavior_NPC, UScheduledBehavior_NPC::StaticClass, TEXT("UScheduledBehavior_NPC"), &Z_Registration_Info_UClass_UScheduledBehavior_NPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UScheduledBehavior_NPC), 1185541359U) },
+		{ Z_Construct_UClass_UScheduledBehavior_AddNPCGoal, UScheduledBehavior_AddNPCGoal::StaticClass, TEXT("UScheduledBehavior_AddNPCGoal"), &Z_Registration_Info_UClass_UScheduledBehavior_AddNPCGoal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UScheduledBehavior_AddNPCGoal), 1639421849U) },
+		{ Z_Construct_UClass_UNPCActivitySchedule, UNPCActivitySchedule::StaticClass, TEXT("UNPCActivitySchedule"), &Z_Registration_Info_UClass_UNPCActivitySchedule, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCActivitySchedule), 3587900156U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivitySchedule_h_1613359760(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivitySchedule_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivitySchedule_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivitySchedule_h_674884446(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivitySchedule_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivitySchedule_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

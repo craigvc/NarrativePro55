@@ -29,7 +29,9 @@ struct Z_Construct_UClass_ANarrativeDefaultCinecam_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "HideCategories", "Input Rendering AutoPlayerActivation Input Rendering" },
 		{ "IncludePath", "Tales/NarrativeDefaultCinecam.h" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDefaultCinecam.h" },
@@ -80,14 +82,14 @@ ANarrativeDefaultCinecam::~ANarrativeDefaultCinecam() {}
 // End Class ANarrativeDefaultCinecam
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDefaultCinecam_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDefaultCinecam_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativeDefaultCinecam, ANarrativeDefaultCinecam::StaticClass, TEXT("ANarrativeDefaultCinecam"), &Z_Registration_Info_UClass_ANarrativeDefaultCinecam, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeDefaultCinecam), 1847002947U) },
+		{ Z_Construct_UClass_ANarrativeDefaultCinecam, ANarrativeDefaultCinecam::StaticClass, TEXT("ANarrativeDefaultCinecam"), &Z_Registration_Info_UClass_ANarrativeDefaultCinecam, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeDefaultCinecam), 3994918236U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDefaultCinecam_h_2933801300(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDefaultCinecam_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDefaultCinecam_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDefaultCinecam_h_3455218102(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDefaultCinecam_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDefaultCinecam_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

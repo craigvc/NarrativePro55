@@ -32,155 +32,251 @@ struct Z_Construct_UClass_UArsenalSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Configurable settings for Narrative Pro. \n */" },
+#endif
 		{ "IncludePath", "ArsenalSettings.h" },
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Configurable settings for Narrative Pro." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultSaveName_MetaData[] = {
 		{ "Category", "Narrative Pro|Save System" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This is the default save game name */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This is the default save game name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultUsername_MetaData[] = {
 		{ "Category", "Narrative Pro|Gameplay" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//** If empty we'll keep Unreal assigned username, but if set to a valid string, game mode will override your player to use this.  */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "/ If empty we'll keep Unreal assigned username, but if set to a valid string, game mode will override your player to use this." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GameEntryMap_MetaData[] = {
 		{ "AllowedClasses", "/Script/Engine.World" },
 		{ "Category", "Narrative Pro|Maps" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The map that the default main menu will load. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The map that the default main menu will load." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterCreatorMap_MetaData[] = {
 		{ "AllowedClasses", "/Script/Engine.World" },
 		{ "Category", "Narrative Pro|Maps" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The map that we'll open when the player wants to open the character creator */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The map that we'll open when the player wants to open the character creator" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bLoadCharacterCreatorOnNewGame_MetaData[] = {
 		{ "Category", "Narrative Pro|Maps" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If true, starting a new game will load the character creator, instead of loading the entry map. (The default character creator will then throw you into the entry map when you finish creation.) */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, starting a new game will load the character creator, instead of loading the entry map. (The default character creator will then throw you into the entry map when you finish creation.)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumSaveSlots_MetaData[] = {
 		{ "Category", "Narrative Pro|Save System" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** How many save slots the default menu should support */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How many save slots the default menu should support" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MetadataSaveFileName_MetaData[] = {
 		{ "Category", "Narrative Pro|Save System" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The save file name we'll use to store metadata about our main saves. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The save file name we'll use to store metadata about our main saves." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BBKey_TargetLocation_MetaData[] = {
 		{ "Category", "Narrative Pro|Blackboard Keys" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** TargetLocation BB key name  */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "TargetLocation BB key name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BBKey_TargetRotation_MetaData[] = {
 		{ "Category", "Narrative Pro|Blackboard Keys" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** TargetRotation BB key name  */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "TargetRotation BB key name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BBKey_Delay_MetaData[] = {
 		{ "Category", "Narrative Pro|Blackboard Keys" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Delay BB key name  */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delay BB key name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BBKey_PlayerPawn_MetaData[] = {
 		{ "Category", "Narrative Pro|Blackboard Keys" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** PlayerPawn BB key name  */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "PlayerPawn BB key name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BBKey_FollowTarget_MetaData[] = {
 		{ "Category", "Narrative Pro|Blackboard Keys" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** FollowTarget BB key name  */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "FollowTarget BB key name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BBKey_AttackTarget_MetaData[] = {
 		{ "Category", "Narrative Pro|Blackboard Keys" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Attack target BB key name  */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attack target BB key name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MasterSoundClass_MetaData[] = {
 		{ "AllowedClasses", "/Script/Engine.SoundClass" },
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Overall sound class */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Overall sound class" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SFXSoundClass_MetaData[] = {
 		{ "AllowedClasses", "/Script/Engine.SoundClass" },
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** SFX sound class */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "SFX sound class" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UISoundClass_MetaData[] = {
 		{ "AllowedClasses", "/Script/Engine.SoundClass" },
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** UI sound class */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "UI sound class" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueSoundClass_MetaData[] = {
 		{ "AllowedClasses", "/Script/Engine.SoundClass" },
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Dialogue sound class */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue sound class" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MusicSoundClass_MetaData[] = {
 		{ "AllowedClasses", "/Script/Engine.SoundClass" },
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Music sound class */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Music sound class" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GameplayMusicSoundWave_MetaData[] = {
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Default ambient gameplay music. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default ambient gameplay music." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CombatMusicSoundWave_MetaData[] = {
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Default combat gameplay music. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default combat gameplay music." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MainMenuSoundWave_MetaData[] = {
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Default main menu gameplay music. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default main menu gameplay music." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PauseSoundWave_MetaData[] = {
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Default pause menu gameplay music. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default pause menu gameplay music." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterCreatorSoundWave_MetaData[] = {
 		{ "Category", "Narrative Pro|Sounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Default character menu gameplay music. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default character menu gameplay music." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_DefaultSaveName;
@@ -304,14 +400,14 @@ UArsenalSettings::~UArsenalSettings() {}
 // End Class UArsenalSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UArsenalSettings, UArsenalSettings::StaticClass, TEXT("UArsenalSettings"), &Z_Registration_Info_UClass_UArsenalSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UArsenalSettings), 4098957005U) },
+		{ Z_Construct_UClass_UArsenalSettings, UArsenalSettings::StaticClass, TEXT("UArsenalSettings"), &Z_Registration_Info_UClass_UArsenalSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UArsenalSettings), 3012884575U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalSettings_h_4141599094(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalSettings_h_676508155(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

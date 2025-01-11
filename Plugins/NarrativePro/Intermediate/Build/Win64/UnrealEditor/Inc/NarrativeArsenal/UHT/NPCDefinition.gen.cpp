@@ -39,103 +39,163 @@ struct Z_Construct_UClass_UNPCDefinition_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Data asset with information about an NPC, as well as its class. We don't store NPC information in the NPC actor itself, this is so we can access \n * NPC information like name, icon, etc without having to load the entire NPC class into memory. \n */" },
+#endif
 		{ "IncludePath", "AI/NPCDefinition.h" },
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Data asset with information about an NPC, as well as its class. We don't store NPC information in the NPC actor itself, this is so we can access\nNPC information like name, icon, etc without having to load the entire NPC class into memory." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCID_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** FName ID for this NPC - eventually I want to phase this out but dialogues require a SpeakerID so we populate that using this. (SpeakerID is difficult to remove atm as very coupled to other things.) */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "FName ID for this NPC - eventually I want to phase this out but dialogues require a SpeakerID so we populate that using this. (SpeakerID is difficult to remove atm as very coupled to other things.)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCName_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The name of this NPC. Will be used for the interaction and navigation markers. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name of this NPC. Will be used for the interaction and navigation markers." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LevelRange_MetaData[] = {
 		{ "Category", "NPC" },
 		{ "ClampMax", "5000" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The NPCs level will be randomized between these values. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPCs level will be randomized between these values." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAllowMultipleInstances_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Is this NPC unique, or can we spawn multiple of them? Main characters for example generally only\n\x09want a max of one spawned in a time, whilst a generic bandit might have as many instances as we want. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is this NPC unique, or can we spawn multiple of them? Main characters for example generally only\n      want a max of one spawned in a time, whilst a generic bandit might have as many instances as we want." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UniqueNPCGUID_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If this NPC is unique, we'll use this as the NPCs save system GUID. Since there is only one unique GUID\n\x09""defined here, this will nicely guarantee unique NPCs only ever have 1 save record created per NPC. */" },
+#endif
 		{ "EditCondition", "!bAllowMultipleInstances" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If this NPC is unique, we'll use this as the NPCs save system GUID. Since there is only one unique GUID\n      defined here, this will nicely guarantee unique NPCs only ever have 1 save record created per NPC." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCClassPath_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Class path */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Class path" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Dialogue_MetaData[] = {
 		{ "AssetBundles", "SpawnedData" },
 		{ "Category", "Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The dialogue that should play when we interact with this NPC - can be left empty.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The dialogue that should play when we interact with this NPC - can be left empty." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TaggedDialogues_MetaData[] = {
 		{ "Category", "Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The NPCs tagged dialogues these are essentially dialogue, usually free movement that can be kicked off via a tag \"TaggedDialogue.Taunt, TaggedDialogue.Greet, etc. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPCs tagged dialogues these are essentially dialogue, usually free movement that can be kicked off via a tag \"TaggedDialogue.Taunt, TaggedDialogue.Greet, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsVendor_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether this NPCs inventory should be a vendor inventory - that is to say they are a shop vendor  */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether this NPCs inventory should be a vendor inventory - that is to say they are a shop vendor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TradingCurrency_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Default currency this character should have in their inventory */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default currency this character should have in their inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TradingItemLoadout_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The items we should grant the character by default. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The items we should grant the character by default." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShopFriendlyName_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The name of the vendors shop, if this NPC is a vendor.  */" },
+#endif
 		{ "EditCondition", "bIsVendor" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name of the vendors shop, if this NPC is a vendor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivitySchedule_MetaData[] = {
 		{ "AssetBundles", "SpawnedData" },
 		{ "Category", "AI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The NPCs Activity schedule. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPCs Activity schedule." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivityConfiguration_MetaData[] = {
 		{ "AssetBundles", "SpawnedData" },
 		{ "Category", "AI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The NPCs activity config. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPCs activity config." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FNamePropertyParams NewProp_NPCID;
@@ -174,16 +234,16 @@ const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNPCDefinition_S
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_UniqueNPCGUID = { "UniqueNPCGUID", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, UniqueNPCGUID), Z_Construct_UScriptStruct_FGuid, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UniqueNPCGUID_MetaData), NewProp_UniqueNPCGUID_MetaData) };
 const UECodeGen_Private::FSoftClassPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_NPCClassPath = { "NPCClassPath", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, NPCClassPath), Z_Construct_UClass_ANarrativeNPCCharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NPCClassPath_MetaData), NewProp_NPCClassPath_MetaData) };
 const UECodeGen_Private::FSoftClassPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, Dialogue), Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Dialogue_MetaData), NewProp_Dialogue_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TaggedDialogues_Inner = { "TaggedDialogues", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTaggedDialogue, METADATA_PARAMS(0, nullptr) }; // 1666674158
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TaggedDialogues = { "TaggedDialogues", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, TaggedDialogues), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TaggedDialogues_MetaData), NewProp_TaggedDialogues_MetaData) }; // 1666674158
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TaggedDialogues_Inner = { "TaggedDialogues", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTaggedDialogue, METADATA_PARAMS(0, nullptr) }; // 360676729
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TaggedDialogues = { "TaggedDialogues", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, TaggedDialogues), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TaggedDialogues_MetaData), NewProp_TaggedDialogues_MetaData) }; // 360676729
 void Z_Construct_UClass_UNPCDefinition_Statics::NewProp_bIsVendor_SetBit(void* Obj)
 {
 	((UNPCDefinition*)Obj)->bIsVendor = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_bIsVendor = { "bIsVendor", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UNPCDefinition), &Z_Construct_UClass_UNPCDefinition_Statics::NewProp_bIsVendor_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsVendor_MetaData), NewProp_bIsVendor_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TradingCurrency = { "TradingCurrency", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, TradingCurrency), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TradingCurrency_MetaData), NewProp_TradingCurrency_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TradingItemLoadout_Inner = { "TradingItemLoadout", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 2828341262
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TradingItemLoadout = { "TradingItemLoadout", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, TradingItemLoadout), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TradingItemLoadout_MetaData), NewProp_TradingItemLoadout_MetaData) }; // 2828341262
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TradingItemLoadout_Inner = { "TradingItemLoadout", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 396159061
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_TradingItemLoadout = { "TradingItemLoadout", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, TradingItemLoadout), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TradingItemLoadout_MetaData), NewProp_TradingItemLoadout_MetaData) }; // 396159061
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_ShopFriendlyName = { "ShopFriendlyName", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, ShopFriendlyName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShopFriendlyName_MetaData), NewProp_ShopFriendlyName_MetaData) };
 const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_ActivitySchedule = { "ActivitySchedule", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, ActivitySchedule), Z_Construct_UClass_UNPCActivitySchedule_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActivitySchedule_MetaData), NewProp_ActivitySchedule_MetaData) };
 const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UNPCDefinition_Statics::NewProp_ActivityConfiguration = { "ActivityConfiguration", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCDefinition, ActivityConfiguration), Z_Construct_UClass_UNPCActivityConfiguration_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActivityConfiguration_MetaData), NewProp_ActivityConfiguration_MetaData) };
@@ -243,14 +303,14 @@ UNPCDefinition::~UNPCDefinition() {}
 // End Class UNPCDefinition
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCDefinition_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCDefinition_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNPCDefinition, UNPCDefinition::StaticClass, TEXT("UNPCDefinition"), &Z_Registration_Info_UClass_UNPCDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCDefinition), 2333747830U) },
+		{ Z_Construct_UClass_UNPCDefinition, UNPCDefinition::StaticClass, TEXT("UNPCDefinition"), &Z_Registration_Info_UClass_UNPCDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCDefinition), 21941418U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCDefinition_h_1998265240(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCDefinition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCDefinition_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCDefinition_h_108488604(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCDefinition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCDefinition_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

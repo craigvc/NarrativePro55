@@ -31,24 +31,36 @@ struct Z_Construct_UClass_ACustomWaypoint_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Custom userplaced waypoint, added to the map when double clicked */" },
+#endif
 		{ "IncludePath", "CustomWaypoint.h" },
 		{ "ModuleRelativePath", "Public/CustomWaypoint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Custom userplaced waypoint, added to the map when double clicked" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[] = {
 		{ "Category", "Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Scene root \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/CustomWaypoint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Scene root" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WaypointMarker_MetaData[] = {
 		{ "Category", "Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The map marker for the custom waypoint \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/CustomWaypoint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The map marker for the custom waypoint" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Root;
@@ -104,14 +116,14 @@ ACustomWaypoint::~ACustomWaypoint() {}
 // End Class ACustomWaypoint
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypoint_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypoint_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACustomWaypoint, ACustomWaypoint::StaticClass, TEXT("ACustomWaypoint"), &Z_Registration_Info_UClass_ACustomWaypoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACustomWaypoint), 1070307101U) },
+		{ Z_Construct_UClass_ACustomWaypoint, ACustomWaypoint::StaticClass, TEXT("ACustomWaypoint"), &Z_Registration_Info_UClass_ACustomWaypoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACustomWaypoint), 997759497U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypoint_h_1301234021(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypoint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypoint_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypoint_h_299902489(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypoint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypoint_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -28,9 +28,13 @@ struct Z_Construct_UFunction_UNarrativeCameraComponent_SetCameraMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set the camera mode to the specified mode. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the camera mode to the specified mode." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_NewMode;
@@ -69,9 +73,13 @@ struct Z_Construct_UFunction_UNarrativeCameraComponent_SetCameraModeToDefault_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set the camera mode back to the default mode. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the camera mode back to the default mode." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -114,29 +122,45 @@ struct Z_Construct_UClass_UNarrativeCameraComponent_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Narrative pro comes with a custom camera component to support handling different camera modes, and blending between them. \n */" },
+#endif
 		{ "HideCategories", "Mobility Rendering LOD Trigger PhysicsVolume" },
 		{ "IncludePath", "Camera/NarrativeCameraComponent.h" },
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Narrative pro comes with a custom camera component to support handling different camera modes, and blending between them." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultCameraMode_MetaData[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The default camera mode to use. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The default camera mode to use." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentCameraMode_MetaData[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The camera mode currently being used. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The camera mode currently being used." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraModeInstances_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Store all the camera modes in here and reuse them as we go. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Store all the camera modes in here and reuse them as we go." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_DefaultCameraMode;
@@ -146,8 +170,8 @@ struct Z_Construct_UClass_UNarrativeCameraComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeCameraComponent_SetCameraMode, "SetCameraMode" }, // 70402480
-		{ &Z_Construct_UFunction_UNarrativeCameraComponent_SetCameraModeToDefault, "SetCameraModeToDefault" }, // 3764976448
+		{ &Z_Construct_UFunction_UNarrativeCameraComponent_SetCameraMode, "SetCameraMode" }, // 1542296290
+		{ &Z_Construct_UFunction_UNarrativeCameraComponent_SetCameraModeToDefault, "SetCameraModeToDefault" }, // 465491399
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -203,14 +227,14 @@ UNarrativeCameraComponent::~UNarrativeCameraComponent() {}
 // End Class UNarrativeCameraComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCameraComponent, UNarrativeCameraComponent::StaticClass, TEXT("UNarrativeCameraComponent"), &Z_Registration_Info_UClass_UNarrativeCameraComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCameraComponent), 3786498751U) },
+		{ Z_Construct_UClass_UNarrativeCameraComponent, UNarrativeCameraComponent::StaticClass, TEXT("UNarrativeCameraComponent"), &Z_Registration_Info_UClass_UNarrativeCameraComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCameraComponent), 3579892880U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraComponent_h_3130939366(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraComponent_h_3888928285(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

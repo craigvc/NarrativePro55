@@ -30,10 +30,14 @@ struct Z_Construct_UClass_UNarrativeSpinBox_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "Category", "Narrative Common Widgets" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for the narrative spin box. Will pull its style from the UIPrimary and UIInvert colors set in the plugin settings. \n */" },
+#endif
 		{ "IncludePath", "Widgets/NarrativeSpinBox.h" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeSpinBox.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for the narrative spin box. Will pull its style from the UIPrimary and UIInvert colors set in the plugin settings." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -80,14 +84,14 @@ UNarrativeSpinBox::~UNarrativeSpinBox() {}
 // End Class UNarrativeSpinBox
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeSpinBox_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeSpinBox_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeSpinBox, UNarrativeSpinBox::StaticClass, TEXT("UNarrativeSpinBox"), &Z_Registration_Info_UClass_UNarrativeSpinBox, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSpinBox), 2246457453U) },
+		{ Z_Construct_UClass_UNarrativeSpinBox, UNarrativeSpinBox::StaticClass, TEXT("UNarrativeSpinBox"), &Z_Registration_Info_UClass_UNarrativeSpinBox, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSpinBox), 3941959452U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeSpinBox_h_1463296723(TEXT("/Script/NarrativeCommonUI"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeSpinBox_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeSpinBox_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeSpinBox_h_2884963403(TEXT("/Script/NarrativeCommonUI"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeSpinBox_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeSpinBox_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

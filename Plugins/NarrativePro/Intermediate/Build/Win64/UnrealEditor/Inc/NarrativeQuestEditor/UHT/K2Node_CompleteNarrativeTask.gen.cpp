@@ -30,7 +30,9 @@ struct Z_Construct_UClass_UK2Node_CompleteNarrativeTask_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "K2Node_CompleteNarrativeTask.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Private/K2Node_CompleteNarrativeTask.h" },
@@ -80,14 +82,14 @@ UK2Node_CompleteNarrativeTask::~UK2Node_CompleteNarrativeTask() {}
 // End Class UK2Node_CompleteNarrativeTask
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_K2Node_CompleteNarrativeTask_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_K2Node_CompleteNarrativeTask_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UK2Node_CompleteNarrativeTask, UK2Node_CompleteNarrativeTask::StaticClass, TEXT("UK2Node_CompleteNarrativeTask"), &Z_Registration_Info_UClass_UK2Node_CompleteNarrativeTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UK2Node_CompleteNarrativeTask), 4035167704U) },
+		{ Z_Construct_UClass_UK2Node_CompleteNarrativeTask, UK2Node_CompleteNarrativeTask::StaticClass, TEXT("UK2Node_CompleteNarrativeTask"), &Z_Registration_Info_UClass_UK2Node_CompleteNarrativeTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UK2Node_CompleteNarrativeTask), 3493030094U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_K2Node_CompleteNarrativeTask_h_599185403(TEXT("/Script/NarrativeQuestEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_K2Node_CompleteNarrativeTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_K2Node_CompleteNarrativeTask_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_K2Node_CompleteNarrativeTask_h_184192712(TEXT("/Script/NarrativeQuestEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_K2Node_CompleteNarrativeTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_K2Node_CompleteNarrativeTask_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -46,33 +46,53 @@ struct Z_Construct_UScriptStruct_FPointOfInterestLocation_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POITag_MetaData[] = {
 		{ "Categories", "Navigator.PointOfInterest" },
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The POI Tag ID \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The POI Tag ID" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POIActor_MetaData[] = {
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Optional actor that the POI refers to - if the actor moves around, the location will match the actors position. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional actor that the POI refers to - if the actor moves around, the location will match the actors position." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POIMarker_MetaData[] = {
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Optional POI marker that the POI was generated from - we cache this here so we can refresh the marker when discovered\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional POI marker that the POI was generated from - we cache this here so we can refresh the marker when discovered" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POILocation_MetaData[] = {
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Fixed location the POI can refer to - useful for POIs that don't move around. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fixed location the POI can refer to - useful for POIs that don't move around." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POIDisplayName_MetaData[] = {
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display name the POI should show, for example if we discover a POI. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name the POI should show, for example if we discover a POI." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_POITag;
@@ -136,9 +156,13 @@ struct Z_Construct_UFunction_UNavigationSubsystem_AddPointOfInterest_Actor_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Add an actor POI. POI will return actors location as actor moves\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add an actor POI. POI will return actors location as actor moves" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POITag_MetaData[] = {
 		{ "Categories", "Navigator.PointOfInterest" },
@@ -203,9 +227,13 @@ struct Z_Construct_UFunction_UNavigationSubsystem_AddPointOfInterest_Vector_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Add an POI using a fixed location that doesn't change position \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add an POI using a fixed location that doesn't change position" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POITag_MetaData[] = {
 		{ "Categories", "Navigator.PointOfInterest" },
@@ -272,9 +300,13 @@ struct Z_Construct_UFunction_UNavigationSubsystem_GetNearestPOIToPoint_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Find POI that is nearest to the given location\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Find POI that is nearest to the given location" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TestLocation_MetaData[] = {
 		{ "Categories", "Navigator.PointOfInterest" },
@@ -288,7 +320,7 @@ struct Z_Construct_UFunction_UNavigationSubsystem_GetNearestPOIToPoint_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationSubsystem_GetNearestPOIToPoint_Statics::NewProp_OutPointOfInterest = { "OutPointOfInterest", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationSubsystem_eventGetNearestPOIToPoint_Parms, OutPointOfInterest), Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(0, nullptr) }; // 3732342648
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationSubsystem_GetNearestPOIToPoint_Statics::NewProp_OutPointOfInterest = { "OutPointOfInterest", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationSubsystem_eventGetNearestPOIToPoint_Parms, OutPointOfInterest), Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(0, nullptr) }; // 2126533229
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationSubsystem_GetNearestPOIToPoint_Statics::NewProp_TestLocation = { "TestLocation", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationSubsystem_eventGetNearestPOIToPoint_Parms, TestLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TestLocation_MetaData), NewProp_TestLocation_MetaData) };
 void Z_Construct_UFunction_UNavigationSubsystem_GetNearestPOIToPoint_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -335,9 +367,13 @@ struct Z_Construct_UFunction_UNavigationSubsystem_GetPointOfInterest_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return a POI that has previously been cached. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return a POI that has previously been cached." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POITag_MetaData[] = {
 		{ "Categories", "Navigator.PointOfInterest" },
@@ -351,7 +387,7 @@ struct Z_Construct_UFunction_UNavigationSubsystem_GetPointOfInterest_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationSubsystem_GetPointOfInterest_Statics::NewProp_OutPointOfInterest = { "OutPointOfInterest", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationSubsystem_eventGetPointOfInterest_Parms, OutPointOfInterest), Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(0, nullptr) }; // 3732342648
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationSubsystem_GetPointOfInterest_Statics::NewProp_OutPointOfInterest = { "OutPointOfInterest", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationSubsystem_eventGetPointOfInterest_Parms, OutPointOfInterest), Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(0, nullptr) }; // 2126533229
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationSubsystem_GetPointOfInterest_Statics::NewProp_POITag = { "POITag", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationSubsystem_eventGetPointOfInterest_Parms, POITag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_POITag_MetaData), NewProp_POITag_MetaData) }; // 1298103297
 void Z_Construct_UFunction_UNavigationSubsystem_GetPointOfInterest_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -407,15 +443,23 @@ struct Z_Construct_UClass_UNavigationSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Subsystem for navigator, at the moment just used for caching POIs. \n */" },
+#endif
 		{ "IncludePath", "NavigationSubsystem.h" },
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Subsystem for navigator, at the moment just used for caching POIs." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointsOfInterest_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We cache POIs using tags for efficient lookups \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We cache POIs using tags for efficient lookups" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PointsOfInterest_ValueProp;
@@ -424,10 +468,10 @@ struct Z_Construct_UClass_UNavigationSubsystem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNavigationSubsystem_AddPointOfInterest_Actor, "AddPointOfInterest_Actor" }, // 379669742
-		{ &Z_Construct_UFunction_UNavigationSubsystem_AddPointOfInterest_Vector, "AddPointOfInterest_Vector" }, // 3288619174
-		{ &Z_Construct_UFunction_UNavigationSubsystem_GetNearestPOIToPoint, "GetNearestPOIToPoint" }, // 2095158995
-		{ &Z_Construct_UFunction_UNavigationSubsystem_GetPointOfInterest, "GetPointOfInterest" }, // 1397496716
+		{ &Z_Construct_UFunction_UNavigationSubsystem_AddPointOfInterest_Actor, "AddPointOfInterest_Actor" }, // 758473933
+		{ &Z_Construct_UFunction_UNavigationSubsystem_AddPointOfInterest_Vector, "AddPointOfInterest_Vector" }, // 875047962
+		{ &Z_Construct_UFunction_UNavigationSubsystem_GetNearestPOIToPoint, "GetNearestPOIToPoint" }, // 81435500
+		{ &Z_Construct_UFunction_UNavigationSubsystem_GetPointOfInterest, "GetPointOfInterest" }, // 1395501725
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -435,9 +479,9 @@ struct Z_Construct_UClass_UNavigationSubsystem_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationSubsystem_Statics::NewProp_PointsOfInterest_ValueProp = { "PointsOfInterest", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(0, nullptr) }; // 3732342648
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationSubsystem_Statics::NewProp_PointsOfInterest_ValueProp = { "PointsOfInterest", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(0, nullptr) }; // 2126533229
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationSubsystem_Statics::NewProp_PointsOfInterest_Key_KeyProp = { "PointsOfInterest_Key", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UNavigationSubsystem_Statics::NewProp_PointsOfInterest = { "PointsOfInterest", nullptr, (EPropertyFlags)0x0010008000000000, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationSubsystem, PointsOfInterest), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointsOfInterest_MetaData), NewProp_PointsOfInterest_MetaData) }; // 1298103297 3732342648
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UNavigationSubsystem_Statics::NewProp_PointsOfInterest = { "PointsOfInterest", nullptr, (EPropertyFlags)0x0010008000000000, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationSubsystem, PointsOfInterest), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointsOfInterest_MetaData), NewProp_PointsOfInterest_MetaData) }; // 1298103297 2126533229
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UNavigationSubsystem_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNavigationSubsystem_Statics::NewProp_PointsOfInterest_ValueProp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNavigationSubsystem_Statics::NewProp_PointsOfInterest_Key_KeyProp,
@@ -481,18 +525,18 @@ UNavigationSubsystem::~UNavigationSubsystem() {}
 // End Class UNavigationSubsystem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FPointOfInterestLocation::StaticStruct, Z_Construct_UScriptStruct_FPointOfInterestLocation_Statics::NewStructOps, TEXT("PointOfInterestLocation"), &Z_Registration_Info_UScriptStruct_PointOfInterestLocation, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FPointOfInterestLocation), 3732342648U) },
+		{ FPointOfInterestLocation::StaticStruct, Z_Construct_UScriptStruct_FPointOfInterestLocation_Statics::NewStructOps, TEXT("PointOfInterestLocation"), &Z_Registration_Info_UScriptStruct_PointOfInterestLocation, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FPointOfInterestLocation), 2126533229U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNavigationSubsystem, UNavigationSubsystem::StaticClass, TEXT("UNavigationSubsystem"), &Z_Registration_Info_UClass_UNavigationSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigationSubsystem), 2760389908U) },
+		{ Z_Construct_UClass_UNavigationSubsystem, UNavigationSubsystem::StaticClass, TEXT("UNavigationSubsystem"), &Z_Registration_Info_UClass_UNavigationSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigationSubsystem), 829085330U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_1003642416(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_4039355460(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationSubsystem_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

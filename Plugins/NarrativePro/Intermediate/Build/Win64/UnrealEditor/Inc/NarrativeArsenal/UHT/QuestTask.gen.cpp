@@ -53,40 +53,64 @@ struct Z_Construct_UScriptStruct_FTaskNavigationMarker_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAddNavigationMarker_MetaData[] = {
 		{ "Category", "Task - Navigation Markers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Should we add a navigation marker to the world for the duration of this task */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should we add a navigation marker to the world for the duration of this task" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NavigationMarkerIcon_MetaData[] = {
 		{ "Category", "Task - Navigation Markers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Icon to use for navigation marker. If empty will just use default \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Icon to use for navigation marker. If empty will just use default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerColor_MetaData[] = {
 		{ "Category", "Task - Navigation Markers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Marker color\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Marker color" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerDomains_MetaData[] = {
 		{ "Categories", "Navigator.NavigatorTypes" },
 		{ "Category", "Task - Navigation Markers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//What navigators to add this marker to \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What navigators to add this marker to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerDisplayText_MetaData[] = {
 		{ "Category", "Task - Navigation Markers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Text to use for the marker - if empty we'll just use the tasks description \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Text to use for the marker - if empty we'll just use the tasks description" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerLocation_MetaData[] = {
 		{ "Category", "Task - Navigation Markers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The world location the marker will be placed at. If GetMarkerAttachActor returns a valid actor this will be treated as a relative location instead of a world one. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The world location the marker will be placed at. If GetMarkerAttachActor returns a valid actor this will be treated as a relative location instead of a world one." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bAddNavigationMarker_SetBit(void* Obj);
@@ -155,10 +179,14 @@ struct Z_Construct_UFunction_UNarrativeTask_AddProgress_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Allows you to add some progress to the quantity - negative values can also be used to subtract progress! \n" },
+#endif
 		{ "CPP_Default_ProgressToAdd", "1" },
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to add some progress to the quantity - negative values can also be used to subtract progress!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ProgressToAdd_MetaData[] = {
 		{ "NativeConst", "" },
@@ -200,9 +228,13 @@ struct Z_Construct_UFunction_UNarrativeTask_CompleteTask_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[server only] completes the task, by setting the current progress to required amount\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[server only] completes the task, by setting the current progress to required amount" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -257,9 +289,13 @@ struct Z_Construct_UFunction_UNarrativeTask_GetNavigationMarkerAttachActor_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Use this if you want to return an actor the navigation marker should attach to  */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use this if you want to return an actor the navigation marker should attach to" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -322,9 +358,13 @@ struct Z_Construct_UFunction_UNarrativeTask_GetNavigationMarkerLocation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Don't want to use the hardcoded navigation marker cooords? Override this and your task can return a dynamic value the location marker should go to! */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Don't want to use the hardcoded navigation marker cooords? Override this and your task can return a dynamic value the location marker should go to!" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -423,9 +463,13 @@ struct Z_Construct_UFunction_UNarrativeTask_GetTaskDescription_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Implement this if you want to autogenerate task descriptions that the editor UI and narrative UI will use,\n\x09meaning you don't have to write a description for every task in your game.\"*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Implement this if you want to autogenerate task descriptions that the editor UI and narrative UI will use,\n      meaning you don't have to write a description for every task in your game.\"" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -482,9 +526,13 @@ struct Z_Construct_UFunction_UNarrativeTask_GetTaskNodeDescription_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Optional special version of GetTaskDescription that is used for displaying info the editor nodes,\n\x09""but won't be used for ingame descriptions. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional special version of GetTaskDescription that is used for displaying info the editor nodes,\n      but won't be used for ingame descriptions." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -541,9 +589,13 @@ struct Z_Construct_UFunction_UNarrativeTask_GetTaskProgressText_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**By default quest tasks display the task, followed by progress text ie: Find 10 Logs (6/10)\n\x09If you want to change the (6/10) to display something else, you can override this function. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "By default quest tasks display the task, followed by progress text ie: Find 10 Logs (6/10)\n       If you want to change the (6/10) to display something else, you can override this function." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -585,9 +637,13 @@ struct Z_Construct_UFunction_UNarrativeTask_IsComplete_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Checks whether this task is currently complete or not\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks whether this task is currently complete or not" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -636,10 +692,14 @@ struct Z_Construct_UFunction_UNarrativeTask_K2_BeginTask_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when the task is began - use this to check your task right away, bind any delegates, do anything you need \n" },
+#endif
 		{ "DisplayName", "Begin Task" },
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the task is began - use this to check your task right away, bind any delegates, do anything you need" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -668,10 +728,14 @@ struct Z_Construct_UFunction_UNarrativeTask_K2_EndTask_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when the task get deactivated (when all of the tasks on its branch are completed and the player has moved on in the quest)\n\x09\n\x09If you're looking for a function that is called when the task is completed use OnTaskCompleted*/" },
+#endif
 		{ "DisplayName", "End Task" },
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the task get deactivated (when all of the tasks on its branch are completed and the player has moved on in the quest)\n\n       If you're looking for a function that is called when the task is completed use OnTaskCompleted" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -700,10 +764,14 @@ struct Z_Construct_UFunction_UNarrativeTask_K2_OnTaskCompleted_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when the task is completed. Keep in mind this function can be called multiple times as narrative supports uncompleting tasks \n\x09""as well as completing*/" },
+#endif
 		{ "DisplayName", "On Task Completed" },
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the task is completed. Keep in mind this function can be called multiple times as narrative supports uncompleting tasks\n       as well as completing" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -730,9 +798,13 @@ struct Z_Construct_UFunction_UNarrativeTask_SetProgress_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[server only] Set the progress of this task, which may complete it when task reaches required progress. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[server only] Set the progress of this task, which may complete it when task reaches required progress." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewProgress_MetaData[] = {
 		{ "NativeConst", "" },
@@ -839,10 +911,14 @@ struct Z_Construct_UFunction_UNarrativeTask_TickTask_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**A function that repeatedly gets called in order to track progress. Generally try making tasks event based if you can, however\n\x09sometimes tasks need to tick. Note that this function doesn't get called on the client, only the server, as tasks are server auth \n\x09so client doesn't really have any need to check the progress of a task */" },
+#endif
 		{ "DisplayName", "Tick Task" },
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A function that repeatedly gets called in order to track progress. Generally try making tasks event based if you can, however\n       sometimes tasks need to tick. Note that this function doesn't get called on the client, only the server, as tasks are server auth\n       so client doesn't really have any need to check the progress of a task" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -897,65 +973,105 @@ struct Z_Construct_UClass_UNarrativeTask_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tasks are blueprints that manage a task for the player to complete. This is mostly used by the quest editor. \n * This is different from Data Tasks which are just data assets: a TaskName and Argument, ie \"FindItem:Sword\", \n * \n * A good example is the GoToLocation task that comes with narrative, which checks if the player has reached a goal location. This type\n * of task wouldn't be possible with a data task, which doesn't have any logic or variables.\n */" },
+#endif
 		{ "IncludePath", "Tales/QuestTask.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tasks are blueprints that manage a task for the player to complete. This is mostly used by the quest editor.\nThis is different from Data Tasks which are just data assets: a TaskName and Argument, ie \"FindItem:Sword\",\n\nA good example is the GoToLocation task that comes with narrative, which checks if the player has reached a goal location. This type\nof task wouldn't be possible with a data task, which doesn't have any logic or variables." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RequiredQuantity_MetaData[] = {
 		{ "Category", "Task" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The amount of times the task needs to be completed before the quest updates */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of times the task needs to be completed before the quest updates" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DescriptionOverride_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** \n\x09In Narrative 3, tasks now autogenerate their descriptions to save designers needing to input it! For example the GoToLocation task\n\x09that comes with Narrative takes the location name as input and then returns \"Go to {LocationName}.\"\n\n\x09However if you want to override the description you can do so entering one here. \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "In Narrative 3, tasks now autogenerate their descriptions to save designers needing to input it! For example the GoToLocation task\nthat comes with Narrative takes the location name as input and then returns \"Go to {LocationName}.\"\n\nHowever if you want to override the description you can do so entering one here." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bOptional_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether or not this task is optional */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not this task is optional" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bHidden_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check this box to hide this task in the narrative UI! */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check this box to hide this task in the narrative UI!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TickInterval_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Defines how often the task should tick. Set to 0 if you want to disable ticking. \n\x09\n\x09To optimize performance you should try avoid having tasks that tick at all, for example if your Task was is \"ObtainItem\", \n\x09you'd bind to an OnInventoryModified delegate in BeginTask and check the progress there! That way, you're only checking \n\x09the task when the players inventory updates, instead of just blindly checking over and over again. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines how often the task should tick. Set to 0 if you want to disable ticking.\n\n      To optimize performance you should try avoid having tasks that tick at all, for example if your Task was is \"ObtainItem\",\n      you'd bind to an OnInventoryModified delegate in BeginTask and check the progress there! That way, you're only checking\n      the task when the players inventory updates, instead of just blindly checking over and over again." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerSettings_MetaData[] = {
 		{ "Category", "Task - Navigation Markers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Should we add a navigation marker to the world for the duration of this task */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should we add a navigation marker to the world for the duration of this task" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnedMarker_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Should we add a navigation marker to the world for the duration of this task */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should we add a navigation marker to the world for the duration of this task" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OldMarker_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If we had to turn off a marker when we added the quest one we cache it here so we can re-activate it later. */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If we had to turn off a marker when we added the quest one we cache it here so we can re-activate it later." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentProgress_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The current progress this task has made\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The current progress this task has made" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningComp_MetaData[] = {
 		{ "Category", "Task" },
@@ -993,21 +1109,21 @@ struct Z_Construct_UClass_UNarrativeTask_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeTask_AddProgress, "AddProgress" }, // 2240964708
-		{ &Z_Construct_UFunction_UNarrativeTask_CompleteTask, "CompleteTask" }, // 3977412170
-		{ &Z_Construct_UFunction_UNarrativeTask_GetNavigationMarkerAttachActor, "GetNavigationMarkerAttachActor" }, // 2689464462
-		{ &Z_Construct_UFunction_UNarrativeTask_GetNavigationMarkerLocation, "GetNavigationMarkerLocation" }, // 1549608085
+		{ &Z_Construct_UFunction_UNarrativeTask_AddProgress, "AddProgress" }, // 62613167
+		{ &Z_Construct_UFunction_UNarrativeTask_CompleteTask, "CompleteTask" }, // 2023255369
+		{ &Z_Construct_UFunction_UNarrativeTask_GetNavigationMarkerAttachActor, "GetNavigationMarkerAttachActor" }, // 2653697155
+		{ &Z_Construct_UFunction_UNarrativeTask_GetNavigationMarkerLocation, "GetNavigationMarkerLocation" }, // 2076612751
 		{ &Z_Construct_UFunction_UNarrativeTask_GetOwningBranch, "GetOwningBranch" }, // 2328387268
-		{ &Z_Construct_UFunction_UNarrativeTask_GetTaskDescription, "GetTaskDescription" }, // 3163311738
-		{ &Z_Construct_UFunction_UNarrativeTask_GetTaskNodeDescription, "GetTaskNodeDescription" }, // 198930476
-		{ &Z_Construct_UFunction_UNarrativeTask_GetTaskProgressText, "GetTaskProgressText" }, // 3622369625
-		{ &Z_Construct_UFunction_UNarrativeTask_IsComplete, "IsComplete" }, // 2046313372
-		{ &Z_Construct_UFunction_UNarrativeTask_K2_BeginTask, "K2_BeginTask" }, // 1319110162
-		{ &Z_Construct_UFunction_UNarrativeTask_K2_EndTask, "K2_EndTask" }, // 3321259211
-		{ &Z_Construct_UFunction_UNarrativeTask_K2_OnTaskCompleted, "K2_OnTaskCompleted" }, // 506360516
-		{ &Z_Construct_UFunction_UNarrativeTask_SetProgress, "SetProgress" }, // 4076845146
+		{ &Z_Construct_UFunction_UNarrativeTask_GetTaskDescription, "GetTaskDescription" }, // 65514076
+		{ &Z_Construct_UFunction_UNarrativeTask_GetTaskNodeDescription, "GetTaskNodeDescription" }, // 213108148
+		{ &Z_Construct_UFunction_UNarrativeTask_GetTaskProgressText, "GetTaskProgressText" }, // 1552811696
+		{ &Z_Construct_UFunction_UNarrativeTask_IsComplete, "IsComplete" }, // 1627048698
+		{ &Z_Construct_UFunction_UNarrativeTask_K2_BeginTask, "K2_BeginTask" }, // 3468069419
+		{ &Z_Construct_UFunction_UNarrativeTask_K2_EndTask, "K2_EndTask" }, // 2719300653
+		{ &Z_Construct_UFunction_UNarrativeTask_K2_OnTaskCompleted, "K2_OnTaskCompleted" }, // 669692391
+		{ &Z_Construct_UFunction_UNarrativeTask_SetProgress, "SetProgress" }, // 4285158094
 		{ &Z_Construct_UFunction_UNarrativeTask_SpawnNavigationMarker, "SpawnNavigationMarker" }, // 1104449265
-		{ &Z_Construct_UFunction_UNarrativeTask_TickTask, "TickTask" }, // 2959815266
+		{ &Z_Construct_UFunction_UNarrativeTask_TickTask, "TickTask" }, // 3388997055
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1028,7 +1144,7 @@ void Z_Construct_UClass_UNarrativeTask_Statics::NewProp_bHidden_SetBit(void* Obj
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNarrativeTask_Statics::NewProp_bHidden = { "bHidden", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UNarrativeTask), &Z_Construct_UClass_UNarrativeTask_Statics::NewProp_bHidden_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bHidden_MetaData), NewProp_bHidden_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UNarrativeTask_Statics::NewProp_TickInterval = { "TickInterval", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeTask, TickInterval), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TickInterval_MetaData), NewProp_TickInterval_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeTask_Statics::NewProp_MarkerSettings = { "MarkerSettings", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeTask, MarkerSettings), Z_Construct_UScriptStruct_FTaskNavigationMarker, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MarkerSettings_MetaData), NewProp_MarkerSettings_MetaData) }; // 1085137441
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeTask_Statics::NewProp_MarkerSettings = { "MarkerSettings", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeTask, MarkerSettings), Z_Construct_UScriptStruct_FTaskNavigationMarker, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MarkerSettings_MetaData), NewProp_MarkerSettings_MetaData) }; // 3454909663
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeTask_Statics::NewProp_SpawnedMarker = { "SpawnedMarker", nullptr, (EPropertyFlags)0x0114000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeTask, SpawnedMarker), Z_Construct_UClass_ANavigationMarkerActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnedMarker_MetaData), NewProp_SpawnedMarker_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeTask_Statics::NewProp_OldMarker = { "OldMarker", nullptr, (EPropertyFlags)0x0114000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeTask, OldMarker), Z_Construct_UClass_UNavigationMarkerComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OldMarker_MetaData), NewProp_OldMarker_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeTask_Statics::NewProp_CurrentProgress = { "CurrentProgress", nullptr, (EPropertyFlags)0x0020080000020815, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeTask, CurrentProgress), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentProgress_MetaData), NewProp_CurrentProgress_MetaData) };
@@ -1089,18 +1205,18 @@ UNarrativeTask::~UNarrativeTask() {}
 // End Class UNarrativeTask
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FTaskNavigationMarker::StaticStruct, Z_Construct_UScriptStruct_FTaskNavigationMarker_Statics::NewStructOps, TEXT("TaskNavigationMarker"), &Z_Registration_Info_UScriptStruct_TaskNavigationMarker, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTaskNavigationMarker), 1085137441U) },
+		{ FTaskNavigationMarker::StaticStruct, Z_Construct_UScriptStruct_FTaskNavigationMarker_Statics::NewStructOps, TEXT("TaskNavigationMarker"), &Z_Registration_Info_UScriptStruct_TaskNavigationMarker, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTaskNavigationMarker), 3454909663U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeTask, UNarrativeTask::StaticClass, TEXT("UNarrativeTask"), &Z_Registration_Info_UClass_UNarrativeTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeTask), 2606329986U) },
+		{ Z_Construct_UClass_UNarrativeTask, UNarrativeTask::StaticClass, TEXT("UNarrativeTask"), &Z_Registration_Info_UClass_UNarrativeTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeTask), 1697546391U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_3129602830(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_4105322576(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestTask_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

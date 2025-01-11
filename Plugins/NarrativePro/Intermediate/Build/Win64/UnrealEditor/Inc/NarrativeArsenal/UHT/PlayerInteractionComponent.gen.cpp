@@ -175,82 +175,134 @@ struct Z_Construct_UClass_UPlayerInteractionComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Interaction component that exists on the player controller, and contains all the interaction tracing stuff NPCs dont need\n */" },
+#endif
 		{ "DisplayName", "Narrative Player Interaction" },
 		{ "IncludePath", "Interaction/PlayerInteractionComponent.h" },
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Interaction component that exists on the player controller, and contains all the interaction tracing stuff NPCs dont need" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnFoundInteractable_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when we find a new interactable object \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when we find a new interactable object" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnLostInteractable_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when we've lost our interactable\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when we've lost our interactable" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnInteractPressed_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when we start holding the interact key \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when we start holding the interact key" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnInteractReleased_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when we release the interact key \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when we release the interact key" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ViewedInteractable_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The current interactable component we're viewing, if there is one\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The current interactable component we're viewing, if there is one" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LastInteractionCheckTime_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The time when we last checked for an interactable\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The time when we last checked for an interactable" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bInteractHeld_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether the local player is holding the interact key\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the local player is holding the interact key" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionInputs_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**All of the input actions that should instigate an interaction. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All of the input actions that should instigate an interaction." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RemainingInteractTime_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The amount of time before interaction completes on our current interactable.This is stored per interactor and not per interactable\n\x09""because in a networked game we may want to support multiple players interacting with something and each will have their own time*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of time before interaction completes on our current interactable.This is stored per interactor and not per interactable\n       because in a networked game we may want to support multiple players interacting with something and each will have their own time" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionCheckFrequency_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//How often in seconds to check for an interactable object. Set this to zero if you want to check every tick.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How often in seconds to check for an interactable object. Set this to zero if you want to check every tick." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionCheckDistance_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//How far we'll trace when we check if the player is looking at an interactable object\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How far we'll trace when we check if the player is looking at an interactable object" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionCheckSphereRadius_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If greater than zero we'll use a sphere trace over an interaction trace \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/PlayerInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If greater than zero we'll use a sphere trace over an interaction trace" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnFoundInteractable;
@@ -351,14 +403,14 @@ UPlayerInteractionComponent::~UPlayerInteractionComponent() {}
 // End Class UPlayerInteractionComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_PlayerInteractionComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_PlayerInteractionComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerInteractionComponent, UPlayerInteractionComponent::StaticClass, TEXT("UPlayerInteractionComponent"), &Z_Registration_Info_UClass_UPlayerInteractionComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerInteractionComponent), 186783738U) },
+		{ Z_Construct_UClass_UPlayerInteractionComponent, UPlayerInteractionComponent::StaticClass, TEXT("UPlayerInteractionComponent"), &Z_Registration_Info_UClass_UPlayerInteractionComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerInteractionComponent), 3914222082U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_PlayerInteractionComponent_h_2647031098(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_PlayerInteractionComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_PlayerInteractionComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_PlayerInteractionComponent_h_3594271637(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_PlayerInteractionComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_PlayerInteractionComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

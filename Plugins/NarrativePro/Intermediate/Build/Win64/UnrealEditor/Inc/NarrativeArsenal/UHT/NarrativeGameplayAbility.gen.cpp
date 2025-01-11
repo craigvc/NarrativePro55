@@ -161,9 +161,13 @@ struct Z_Construct_UFunction_UNarrativeGameplayAbility_IsBot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//True if this ability is being ran by a bot \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeGameplayAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "True if this ability is being ran by a bot" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -210,9 +214,13 @@ struct Z_Construct_UFunction_UNarrativeGameplayAbility_SetCameraMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Nice function for setting camera mode instead of having to grab camera and doing it manually\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeGameplayAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Nice function for setting camera mode instead of having to grab camera and doing it manually" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_CameraMode;
@@ -267,22 +275,34 @@ struct Z_Construct_UClass_UNarrativeGameplayAbility_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The base class for all abilities in the Narrative pro toolkit. \n */" },
+#endif
 		{ "IncludePath", "GAS/NarrativeGameplayAbility.h" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeGameplayAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The base class for all abilities in the Narrative pro toolkit." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputID_MetaData[] = {
 		{ "Category", "Narrative Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//When we grant a set of abilities to the player, this is the input this ability will map to. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeGameplayAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When we grant a set of abilities to the player, this is the input this ability will map to." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bActivateAbilityOnGranted_MetaData[] = {
 		{ "Category", "Narrative Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Tells an ability to activate immediately when its granted\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeGameplayAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tells an ability to activate immediately when its granted" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterOwner_MetaData[] = {
 		{ "Category", "Narrative Ability" },
@@ -300,8 +320,8 @@ struct Z_Construct_UClass_UNarrativeGameplayAbility_Statics
 		{ &Z_Construct_UFunction_UNarrativeGameplayAbility_GetOwnerEquippedWeapon, "GetOwnerEquippedWeapon" }, // 890809742
 		{ &Z_Construct_UFunction_UNarrativeGameplayAbility_GetOwningController, "GetOwningController" }, // 1551994393
 		{ &Z_Construct_UFunction_UNarrativeGameplayAbility_GetOwningNarrativeCharacter, "GetOwningNarrativeCharacter" }, // 258048555
-		{ &Z_Construct_UFunction_UNarrativeGameplayAbility_IsBot, "IsBot" }, // 1985120451
-		{ &Z_Construct_UFunction_UNarrativeGameplayAbility_SetCameraMode, "SetCameraMode" }, // 103253294
+		{ &Z_Construct_UFunction_UNarrativeGameplayAbility_IsBot, "IsBot" }, // 3252951195
+		{ &Z_Construct_UFunction_UNarrativeGameplayAbility_SetCameraMode, "SetCameraMode" }, // 3716178559
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -361,14 +381,14 @@ UNarrativeGameplayAbility::~UNarrativeGameplayAbility() {}
 // End Class UNarrativeGameplayAbility
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeGameplayAbility_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeGameplayAbility_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeGameplayAbility, UNarrativeGameplayAbility::StaticClass, TEXT("UNarrativeGameplayAbility"), &Z_Registration_Info_UClass_UNarrativeGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeGameplayAbility), 3104542454U) },
+		{ Z_Construct_UClass_UNarrativeGameplayAbility, UNarrativeGameplayAbility::StaticClass, TEXT("UNarrativeGameplayAbility"), &Z_Registration_Info_UClass_UNarrativeGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeGameplayAbility), 2477698697U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeGameplayAbility_h_3144673698(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeGameplayAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeGameplayAbility_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeGameplayAbility_h_1228737015(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeGameplayAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeGameplayAbility_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

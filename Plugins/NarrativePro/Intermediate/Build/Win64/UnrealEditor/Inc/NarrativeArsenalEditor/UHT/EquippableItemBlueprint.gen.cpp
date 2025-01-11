@@ -31,10 +31,14 @@ struct Z_Construct_UClass_UEquippableItemBlueprint_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The base class for an equippable item the player can put on. Networking is built right in - just override HandleEquip/HandleUnequip to define what your equippable should do! Requires EquipmentComponent to be added to your pawn. \n * \n * For equippable clothing items see the already implemented ClothingItem that comes with Narrative Inventory. \n */" },
+#endif
 		{ "IncludePath", "EquippableItemBlueprint.h" },
 		{ "ModuleRelativePath", "Private/EquippableItemBlueprint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The base class for an equippable item the player can put on. Networking is built right in - just override HandleEquip/HandleUnequip to define what your equippable should do! Requires EquipmentComponent to be added to your pawn.\n\nFor equippable clothing items see the already implemented ClothingItem that comes with Narrative Inventory." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -93,10 +97,14 @@ struct Z_Construct_UClass_UClothingItemBlueprint_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An Equippable item already set up with some logic - will change the players clothing to the set mesh. \n */" },
+#endif
 		{ "IncludePath", "EquippableItemBlueprint.h" },
 		{ "ModuleRelativePath", "Private/EquippableItemBlueprint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An Equippable item already set up with some logic - will change the players clothing to the set mesh." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -143,15 +151,15 @@ UClothingItemBlueprint::~UClothingItemBlueprint() {}
 // End Class UClothingItemBlueprint
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Private_EquippableItemBlueprint_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Private_EquippableItemBlueprint_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEquippableItemBlueprint, UEquippableItemBlueprint::StaticClass, TEXT("UEquippableItemBlueprint"), &Z_Registration_Info_UClass_UEquippableItemBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEquippableItemBlueprint), 901545185U) },
-		{ Z_Construct_UClass_UClothingItemBlueprint, UClothingItemBlueprint::StaticClass, TEXT("UClothingItemBlueprint"), &Z_Registration_Info_UClass_UClothingItemBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UClothingItemBlueprint), 963132182U) },
+		{ Z_Construct_UClass_UEquippableItemBlueprint, UEquippableItemBlueprint::StaticClass, TEXT("UEquippableItemBlueprint"), &Z_Registration_Info_UClass_UEquippableItemBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEquippableItemBlueprint), 2757717833U) },
+		{ Z_Construct_UClass_UClothingItemBlueprint, UClothingItemBlueprint::StaticClass, TEXT("UClothingItemBlueprint"), &Z_Registration_Info_UClass_UClothingItemBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UClothingItemBlueprint), 26335790U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Private_EquippableItemBlueprint_h_1950663953(TEXT("/Script/NarrativeArsenalEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Private_EquippableItemBlueprint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Private_EquippableItemBlueprint_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Private_EquippableItemBlueprint_h_2426202212(TEXT("/Script/NarrativeArsenalEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Private_EquippableItemBlueprint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Private_EquippableItemBlueprint_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

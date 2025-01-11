@@ -32,9 +32,13 @@ struct Z_Construct_UFunction_UNPCGoalItem_GetCatchupTime_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the amount of time that has passed since the goal was supposed to have been started if the goal started late, ie if we began play at 1500 and a scheduled goal for 1200-1700 added the goal late, our catchup time would be 300. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the amount of time that has passed since the goal was supposed to have been started if the goal started late, ie if we began play at 1500 and a scheduled goal for 1200-1700 added the goal late, our catchup time would be 300." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -91,9 +95,13 @@ struct Z_Construct_UFunction_UNPCGoalItem_GetDebugString_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Goal Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return a debug string explaining what the goal is \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return a debug string explaining what the goal is" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
@@ -156,9 +164,13 @@ struct Z_Construct_UFunction_UNPCGoalItem_GetGoalKey_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Goal Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Returning a valid object will act as a key - you can access the goal later via this object, and we'll prevent goals with the same key from being added in future \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returning a valid object will act as a key - you can access the goal later via this object, and we'll prevent goals with the same key from being added in future" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -221,9 +233,13 @@ struct Z_Construct_UFunction_UNPCGoalItem_GetGoalScore_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Goal Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return a score for the goal - this will be used to grab the best goal to act on for each activity\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return a score for the goal - this will be used to grab the best goal to act on for each activity" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -274,9 +290,13 @@ struct Z_Construct_UFunction_UNPCGoalItem_OnLoaded_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Goal Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Do something after our savegame vars have been loaded - this might mean grabbing an actor using a savegame var etc \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Do something after our savegame vars have been loaded - this might mean grabbing an actor using a savegame var etc" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -319,9 +339,13 @@ struct Z_Construct_UFunction_UNPCGoalItem_PrepareForSave_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Goal Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Prepare the goal for a save - this might for example mean storing an actors GUID so we can find it later when we load \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Prepare the goal for a save - this might for example mean storing an actors GUID so we can find it later when we load" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -376,9 +400,13 @@ struct Z_Construct_UFunction_UNPCGoalItem_ShouldCleanup_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Goal Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return whether the goal has become invalid and should be removed, ie if an AttackGoals target has died. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return whether the goal has become invalid and should be removed, ie if an AttackGoals target has died." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -441,65 +469,101 @@ struct Z_Construct_UClass_UNPCGoalItem_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * GoalItems are created inside goals to describe the available items in a goal. For example, an Attack Goal could \n * have a Attack GoalItem containing the target we need to attack, or an Interact goal could contain potential items\n * in the world we can interact with. \n * \n * For more information, please check out the docs: https://docs.narrativetools.io/\n */" },
+#endif
 		{ "IncludePath", "AI/Activities/NPCGoalItem.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "GoalItems are created inside goals to describe the available items in a goal. For example, an Attack Goal could\nhave a Attack GoalItem containing the target we need to attack, or an Interact goal could contain potential items\nin the world we can interact with.\n\nFor more information, please check out the docs: https://docs.narrativetools.io/" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerController_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The NPCController that owns this goal\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPCController that owns this goal" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalKey_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//This object acts as a key, and can be used to access the goal later - it will also prevent goals with the same GoalKey from being added. \n" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This object acts as a key, and can be used to access the goal later - it will also prevent goals with the same GoalKey from being added." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultScore_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The default score this goal will be given if its activity doesn't override the ScoreGoal function \n" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The default score this goal will be given if its activity doesn't override the ScoreGoal function" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSaveGoal_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Should the goal and any SaveGame variables on it be saved to disk? \n" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should the goal and any SaveGame variables on it be saved to disk?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IntendedTODStartTime_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The Time of day the goal was intended to start at - used for goals that need to \"Catch up\" ie if we enter game at 2200 and NPC is supposed to start sleeping at 2000 we can tele them right into bed rather than making the NPC run to bed. \n" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The Time of day the goal was intended to start at - used for goals that need to \"Catch up\" ie if we enter game at 2200 and NPC is supposed to start sleeping at 2000 we can tele them right into bed rather than making the NPC run to bed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalLifetime_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Goal Expiry time. If less than zero goal will never expire and needs to be removed either by scoring < 0 or manually removed via RemoveGoal()\n" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Goal Expiry time. If less than zero goal will never expire and needs to be removed either by scoring < 0 or manually removed via RemoveGoal()" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CreationTime_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Time the goal was created\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Time the goal was created" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TODCreationTime_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The ingame time of day when the goal was created. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ingame time of day when the goal was created." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwnerController;
@@ -514,13 +578,13 @@ struct Z_Construct_UClass_UNPCGoalItem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNPCGoalItem_GetCatchupTime, "GetCatchupTime" }, // 3056543012
-		{ &Z_Construct_UFunction_UNPCGoalItem_GetDebugString, "GetDebugString" }, // 4033015379
-		{ &Z_Construct_UFunction_UNPCGoalItem_GetGoalKey, "GetGoalKey" }, // 3711699080
-		{ &Z_Construct_UFunction_UNPCGoalItem_GetGoalScore, "GetGoalScore" }, // 2524977050
-		{ &Z_Construct_UFunction_UNPCGoalItem_OnLoaded, "OnLoaded" }, // 2517279234
-		{ &Z_Construct_UFunction_UNPCGoalItem_PrepareForSave, "PrepareForSave" }, // 3851710274
-		{ &Z_Construct_UFunction_UNPCGoalItem_ShouldCleanup, "ShouldCleanup" }, // 3345137015
+		{ &Z_Construct_UFunction_UNPCGoalItem_GetCatchupTime, "GetCatchupTime" }, // 689373496
+		{ &Z_Construct_UFunction_UNPCGoalItem_GetDebugString, "GetDebugString" }, // 1086313001
+		{ &Z_Construct_UFunction_UNPCGoalItem_GetGoalKey, "GetGoalKey" }, // 915347700
+		{ &Z_Construct_UFunction_UNPCGoalItem_GetGoalScore, "GetGoalScore" }, // 1589903249
+		{ &Z_Construct_UFunction_UNPCGoalItem_OnLoaded, "OnLoaded" }, // 3868849338
+		{ &Z_Construct_UFunction_UNPCGoalItem_PrepareForSave, "PrepareForSave" }, // 1000535218
+		{ &Z_Construct_UFunction_UNPCGoalItem_ShouldCleanup, "ShouldCleanup" }, // 3878664293
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -606,17 +670,25 @@ struct Z_Construct_UScriptStruct_FSavedGoalItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A saved NPC Activity - which consists of the class and the uint8 data to serialize\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A saved NPC Activity - which consists of the class and the uint8 data to serialize" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Class_MetaData[] = {
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Data_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Any savegame variables on the goal are stored in here \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Any savegame variables on the goal are stored in here" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_Class;
@@ -680,16 +752,24 @@ struct Z_Construct_UScriptStruct_FInstancedNPCGoalItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Allows blueprints to create instanced goal variables! \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows blueprints to create instanced goal variables!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Goal_MetaData[] = {
 		{ "Category", "Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The instanced goal\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The instanced goal" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Goal;
@@ -747,21 +827,33 @@ struct Z_Construct_UScriptStruct_FNPCGoalContainer_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Holds a set of goals\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Holds a set of goals" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Goals_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The goals in the set \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The goals in the set" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalUniqueObjectMap_MetaData[] = {
 		{ "Category", "NPC Goal" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The goals, but mapped via their unique object \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The goals, but mapped via their unique object" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Goals_Inner;
@@ -813,20 +905,20 @@ UScriptStruct* Z_Construct_UScriptStruct_FNPCGoalContainer()
 // End ScriptStruct FNPCGoalContainer
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSavedGoalItem::StaticStruct, Z_Construct_UScriptStruct_FSavedGoalItem_Statics::NewStructOps, TEXT("SavedGoalItem"), &Z_Registration_Info_UScriptStruct_SavedGoalItem, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedGoalItem), 1643136817U) },
-		{ FInstancedNPCGoalItem::StaticStruct, Z_Construct_UScriptStruct_FInstancedNPCGoalItem_Statics::NewStructOps, TEXT("InstancedNPCGoalItem"), &Z_Registration_Info_UScriptStruct_InstancedNPCGoalItem, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInstancedNPCGoalItem), 4083473098U) },
-		{ FNPCGoalContainer::StaticStruct, Z_Construct_UScriptStruct_FNPCGoalContainer_Statics::NewStructOps, TEXT("NPCGoalContainer"), &Z_Registration_Info_UScriptStruct_NPCGoalContainer, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNPCGoalContainer), 401033925U) },
+		{ FSavedGoalItem::StaticStruct, Z_Construct_UScriptStruct_FSavedGoalItem_Statics::NewStructOps, TEXT("SavedGoalItem"), &Z_Registration_Info_UScriptStruct_SavedGoalItem, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedGoalItem), 4003639944U) },
+		{ FInstancedNPCGoalItem::StaticStruct, Z_Construct_UScriptStruct_FInstancedNPCGoalItem_Statics::NewStructOps, TEXT("InstancedNPCGoalItem"), &Z_Registration_Info_UScriptStruct_InstancedNPCGoalItem, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInstancedNPCGoalItem), 1799254414U) },
+		{ FNPCGoalContainer::StaticStruct, Z_Construct_UScriptStruct_FNPCGoalContainer_Statics::NewStructOps, TEXT("NPCGoalContainer"), &Z_Registration_Info_UScriptStruct_NPCGoalContainer, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNPCGoalContainer), 2416995643U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNPCGoalItem, UNPCGoalItem::StaticClass, TEXT("UNPCGoalItem"), &Z_Registration_Info_UClass_UNPCGoalItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCGoalItem), 2268916848U) },
+		{ Z_Construct_UClass_UNPCGoalItem, UNPCGoalItem::StaticClass, TEXT("UNPCGoalItem"), &Z_Registration_Info_UClass_UNPCGoalItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCGoalItem), 1899024552U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_3286203225(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_2617792944(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalItem_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

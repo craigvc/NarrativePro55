@@ -81,10 +81,14 @@ struct Z_Construct_UClass_ANavigationMarkerActor_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Just an empty actor with a navigation marker on it. */" },
+#endif
 		{ "IncludePath", "NavigationMarkerActor.h" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Just an empty actor with a navigation marker on it." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SceneRoot_MetaData[] = {
 		{ "Category", "Narrative|Components" },
@@ -154,14 +158,14 @@ ANavigationMarkerActor::~ANavigationMarkerActor() {}
 // End Class ANavigationMarkerActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerActor_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANavigationMarkerActor, ANavigationMarkerActor::StaticClass, TEXT("ANavigationMarkerActor"), &Z_Registration_Info_UClass_ANavigationMarkerActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANavigationMarkerActor), 2532675756U) },
+		{ Z_Construct_UClass_ANavigationMarkerActor, ANavigationMarkerActor::StaticClass, TEXT("ANavigationMarkerActor"), &Z_Registration_Info_UClass_ANavigationMarkerActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANavigationMarkerActor), 1952799970U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerActor_h_1078903925(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerActor_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerActor_h_1724367921(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

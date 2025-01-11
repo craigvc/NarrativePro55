@@ -69,7 +69,9 @@ struct Z_Construct_UClass_ANarrativePlayerCharacter_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "UnrealFramework/NarrativePlayerCharacter.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerCharacter.h" },
@@ -88,51 +90,79 @@ struct Z_Construct_UClass_ANarrativePlayerCharacter_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MoveAction_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Move Input Action */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Move Input Action" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Look Input Action */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Look Input Action" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilityConfirmAction_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Confirm Action */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Confirm Action" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilityCancelAction_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Cancel Action */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Cancel Action" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilityInputMappings_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "AbilitySystem" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The default abilities we grant the player! We also store their input mappings so player subclass can bind these \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The default abilities we grant the player! We also store their input mappings so player subclass can bind these" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMappingContext_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** MappingContext */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MappingContext" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerDefinition_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The player definition for this character */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The player definition for this character" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
@@ -220,14 +250,14 @@ ANarrativePlayerCharacter::~ANarrativePlayerCharacter() {}
 // End Class ANarrativePlayerCharacter
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerCharacter_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativePlayerCharacter, ANarrativePlayerCharacter::StaticClass, TEXT("ANarrativePlayerCharacter"), &Z_Registration_Info_UClass_ANarrativePlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativePlayerCharacter), 1653516821U) },
+		{ Z_Construct_UClass_ANarrativePlayerCharacter, ANarrativePlayerCharacter::StaticClass, TEXT("ANarrativePlayerCharacter"), &Z_Registration_Info_UClass_ANarrativePlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativePlayerCharacter), 4270979580U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerCharacter_h_2876483544(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerCharacter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerCharacter_h_190543692(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

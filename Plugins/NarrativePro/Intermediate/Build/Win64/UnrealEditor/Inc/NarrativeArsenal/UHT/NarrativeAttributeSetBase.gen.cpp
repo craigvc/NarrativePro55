@@ -387,9 +387,13 @@ struct Z_Construct_UFunction_UNarrativeAttributeSetBase_OnRep_XP_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* These OnRep functions exist to make sure that the ability system internal representations are synchronized properly during replication\n\x09**/" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "These OnRep functions exist to make sure that the ability system internal representations are synchronized properly during replication" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OldXP_MetaData[] = {
 		{ "NativeConst", "" },
@@ -451,76 +455,120 @@ struct Z_Construct_UClass_UNarrativeAttributeSetBase_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base attribute set for Narrative pro. We haven't seperated out attack and health values, however this may be nice if your game requires it. \n */" },
+#endif
 		{ "IncludePath", "GAS/NarrativeAttributeSetBase.h" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base attribute set for Narrative pro. We haven't seperated out attack and health values, however this may be nice if your game requires it." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_XP_MetaData[] = {
 		{ "Category", "Health" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our XP points - we implement this as an attribute which may be overkill \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
 		{ "NarrativeSaveAttribute", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our XP points - we implement this as an attribute which may be overkill" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[] = {
 		{ "Category", "Health" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Current Health, when 0 we expect owner to die unless prevented by an ability. Capped by MaxHealth.\n// Positive changes can directly use this.\n// Negative changes to Health should go through Damage meta attribute.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
 		{ "NarrativeSaveAttribute", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Current Health, when 0 we expect owner to die unless prevented by an ability. Capped by MaxHealth.\nPositive changes can directly use this.\nNegative changes to Health should go through Damage meta attribute." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealth_MetaData[] = {
 		{ "Category", "Health" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// MaxHealth is its own attribute since GameplayEffects may modify it\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
 		{ "NarrativeSaveAttribute", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MaxHealth is its own attribute since GameplayEffects may modify it" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Stamina_MetaData[] = {
 		{ "Category", "Stamina" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Current stamina, used to execute special abilities. Capped by MaxStamina.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
 		{ "NarrativeSaveAttribute", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Current stamina, used to execute special abilities. Capped by MaxStamina." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxStamina_MetaData[] = {
 		{ "Category", "Stamina" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// MaxStamina is its own attribute since GameplayEffects may modify it\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
 		{ "NarrativeSaveAttribute", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MaxStamina is its own attribute since GameplayEffects may modify it" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StaminaRegenRate_MetaData[] = {
 		{ "Category", "Stamina" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Stamina regen rate will passively increase Stamina every second\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
 		{ "NarrativeSaveAttribute", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stamina regen rate will passively increase Stamina every second" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackRating_MetaData[] = {
 		{ "Category", "Armor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Attack rating acts as a multiplier for attack damage. Attack multiplier = AttackRating / 100.  Used by the damage calculation \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attack rating acts as a multiplier for attack damage. Attack multiplier = AttackRating / 100.  Used by the damage calculation" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Armor_MetaData[] = {
 		{ "Category", "Armor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Armor reduces the amount of damage done by attackers\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Armor reduces the amount of damage done by attackers" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackDamage_MetaData[] = {
 		{ "Category", "MeleeAttackDamage" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// MeleeAttackDamage is the amount of damage our melee attacks do. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MeleeAttackDamage is the amount of damage our melee attacks do." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[] = {
 		{ "Category", "Health" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Doesn't need to be replicated, is just a meta attribute server uses to apply damage to players. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAttributeSetBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Doesn't need to be replicated, is just a meta attribute server uses to apply damage to players." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_XP;
@@ -544,7 +592,7 @@ struct Z_Construct_UClass_UNarrativeAttributeSetBase_Statics
 		{ &Z_Construct_UFunction_UNarrativeAttributeSetBase_OnRep_MaxStamina, "OnRep_MaxStamina" }, // 1579594034
 		{ &Z_Construct_UFunction_UNarrativeAttributeSetBase_OnRep_Stamina, "OnRep_Stamina" }, // 794026972
 		{ &Z_Construct_UFunction_UNarrativeAttributeSetBase_OnRep_StaminaRegenRate, "OnRep_StaminaRegenRate" }, // 52684722
-		{ &Z_Construct_UFunction_UNarrativeAttributeSetBase_OnRep_XP, "OnRep_XP" }, // 3801265829
+		{ &Z_Construct_UFunction_UNarrativeAttributeSetBase_OnRep_XP, "OnRep_XP" }, // 601731255
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -635,14 +683,14 @@ UNarrativeAttributeSetBase::~UNarrativeAttributeSetBase() {}
 // End Class UNarrativeAttributeSetBase
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAttributeSetBase_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAttributeSetBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeAttributeSetBase, UNarrativeAttributeSetBase::StaticClass, TEXT("UNarrativeAttributeSetBase"), &Z_Registration_Info_UClass_UNarrativeAttributeSetBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAttributeSetBase), 37865446U) },
+		{ Z_Construct_UClass_UNarrativeAttributeSetBase, UNarrativeAttributeSetBase::StaticClass, TEXT("UNarrativeAttributeSetBase"), &Z_Registration_Info_UClass_UNarrativeAttributeSetBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAttributeSetBase), 562395196U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAttributeSetBase_h_1489781332(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAttributeSetBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAttributeSetBase_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAttributeSetBase_h_3170696091(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAttributeSetBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAttributeSetBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -34,10 +34,14 @@ struct Z_Construct_UClass_UDialogueAsset_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Legacy dialogue asset, still included so users of previous versions can right click and convert these into DialogueBlueprints \n */" },
+#endif
 		{ "IncludePath", "Tales/DialogueAsset.h" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueAsset.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Legacy dialogue asset, still included so users of previous versions can right click and convert these into DialogueBlueprints" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Dialogue_MetaData[] = {
 		{ "Category", "Dialogue" },
@@ -46,14 +50,22 @@ struct Z_Construct_UClass_UDialogueAsset_Statics
 	};
 #if WITH_EDITORONLY_DATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueGraph_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Graph for quest asset */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueAsset.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Graph for quest asset" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LastEditedDocuments_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Info about the graphs we last edited */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueAsset.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Info about the graphs we last edited" },
+#endif
 	};
 #endif // WITH_EDITORONLY_DATA
 #endif // WITH_METADATA
@@ -122,14 +134,14 @@ UDialogueAsset::~UDialogueAsset() {}
 // End Class UDialogueAsset
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueAsset_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueAsset_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueAsset, UDialogueAsset::StaticClass, TEXT("UDialogueAsset"), &Z_Registration_Info_UClass_UDialogueAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueAsset), 3681448571U) },
+		{ Z_Construct_UClass_UDialogueAsset, UDialogueAsset::StaticClass, TEXT("UDialogueAsset"), &Z_Registration_Info_UClass_UDialogueAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueAsset), 1699949463U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueAsset_h_2387891253(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueAsset_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueAsset_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueAsset_h_286551959(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueAsset_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueAsset_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -67,21 +67,33 @@ struct Z_Construct_UScriptStruct_FMeleeComboAnimSet_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Holds an animation combo set - make sure your montages have attack notifies and warps - see docs for more info. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Holds an animation combo set - make sure your montages have attack notifies and warps - see docs for more info." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackMontages_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Attack montages for the melee attack\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attack montages for the melee attack" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HeavyAttackMontages_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Heavy attack montages for the melee attack \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Heavy attack montages for the melee attack" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackMontages_Inner;
@@ -148,27 +160,43 @@ struct Z_Construct_UScriptStruct_FMeleeCombatData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Melee abilities use this to operate, both with unarmed attacks and melee weapons. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Melee abilities use this to operate, both with unarmed attacks and melee weapons." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TraceData_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Attacking without a weapon will use this trace data \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attacking without a weapon will use this trace data" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackCombos_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Combo montages for our melee attacks \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Combo montages for our melee attacks" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HeavyAttackCombos_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Combo montages for our heavy melee attacks \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Combo montages for our heavy melee attacks" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_TraceData;
@@ -183,7 +211,7 @@ struct Z_Construct_UScriptStruct_FMeleeCombatData_Statics
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMeleeCombatData_Statics::NewProp_TraceData = { "TraceData", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMeleeCombatData, TraceData), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TraceData_MetaData), NewProp_TraceData_MetaData) }; // 179883577
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMeleeCombatData_Statics::NewProp_TraceData = { "TraceData", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMeleeCombatData, TraceData), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TraceData_MetaData), NewProp_TraceData_MetaData) }; // 845487567
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FMeleeCombatData_Statics::NewProp_AttackCombos_Inner = { "AttackCombos", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UNarrativeAnimSet_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMeleeCombatData_Statics::NewProp_AttackCombos = { "AttackCombos", nullptr, (EPropertyFlags)0x0114000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMeleeCombatData, AttackCombos), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackCombos_MetaData), NewProp_AttackCombos_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FMeleeCombatData_Statics::NewProp_HeavyAttackCombos_Inner = { "HeavyAttackCombos", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UNarrativeAnimSet_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -309,9 +337,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetAttackRange_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|Getters/Setters" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the range we can attack someone from\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the range we can attack someone from" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -353,16 +385,20 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetAttackTraceData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|Getters/Setters" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the trace data for an attack\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the trace data for an attack" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANarrativeCharacter_GetAttackTraceData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeCharacter_eventGetAttackTraceData_Parms, ReturnValue), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(0, nullptr) }; // 179883577
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANarrativeCharacter_GetAttackTraceData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeCharacter_eventGetAttackTraceData_Parms, ReturnValue), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(0, nullptr) }; // 845487567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ANarrativeCharacter_GetAttackTraceData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANarrativeCharacter_GetAttackTraceData_Statics::NewProp_ReturnValue,
 };
@@ -442,9 +478,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetCharacterDefinition_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the character definition from the character\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the character definition from the character" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -573,9 +613,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetEquippedWeaponVisual_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|Getters/Setters" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Returns the visual of the equipped weapon \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the visual of the equipped weapon" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -708,10 +752,14 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetFloorLocation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter|Movement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the location of the floor, optionally offset by a z\n" },
+#endif
 		{ "CPP_Default_ZOffset", "0.000000" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the location of the floor, optionally offset by a z" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ZOffset_MetaData[] = {
 		{ "NativeConst", "" },
@@ -774,9 +822,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetHeadLookAtLocation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Used by AnimBP to ask where the head bone should look at - players and bots can then implement their own seperate functionalities \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by AnimBP to ask where the head bone should look at - players and bots can then implement their own seperate functionalities" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -853,9 +905,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetInteractionComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the interactioncomponent from the character\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the interactioncomponent from the character" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1074,9 +1130,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetNarrativeCharacterMovement_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|Getters/Setters" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the Narrative character movement component. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the Narrative character movement component." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1250,9 +1310,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetWeapon_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|Getters/Setters" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Returns our equipped weapon item. This is the item in our inventory driving our weapon, it holds data like the weapons abilities, spread, damage etc.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns our equipped weapon item. This is the item in our inventory driving our weapon, it holds data like the weapons abilities, spread, damage etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1298,9 +1362,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_GetWeaponVisual_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|Getters/Setters" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Returns our weapon visual. This just a generic actor that each weapon item defines, and holds the weapons static mesh and FX assets. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns our weapon visual. This just a generic actor that each weapon item defines, and holds the weapons static mesh and FX assets." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponSlot_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot.Weapon" },
@@ -1642,9 +1710,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_LoadNewCharacter_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when OnDefinitionSet sees we dont have any save data and new initialized for first time. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when OnDefinitionSet sees we dont have any save data and new initialized for first time." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -1693,9 +1765,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_OnDefinitionSet_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//This is called when the NarrativeCharacters definition is updated. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This is called when the NarrativeCharacters definition is updated." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_NewDefinition;
@@ -1746,9 +1822,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_OnEndDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when this character finishes being a dialogue avatar. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when this character finishes being a dialogue avatar." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Dialogue;
@@ -1791,9 +1871,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_OnEnterDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when this character becomes a dialogue avatar. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when this character becomes a dialogue avatar." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Dialogue;
@@ -1931,9 +2015,13 @@ struct Z_Construct_UFunction_ANarrativeCharacter_SetAppearanceFromCreatorData_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**By default narrative ships with a Character appearance set up that works great for metahumans and other UE5 skeleton types.\n\x09You can subclass UCharacterAppearanceBase and override this function to apply your custom appereance if required. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "By default narrative ships with a Character appearance set up that works great for metahumans and other UE5 skeleton types.\n       You can subclass UCharacterAppearanceBase and override this function to apply your custom appereance if required." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CreatorAttributes_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1943,7 +2031,7 @@ struct Z_Construct_UFunction_ANarrativeCharacter_SetAppearanceFromCreatorData_St
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANarrativeCharacter_SetAppearanceFromCreatorData_Statics::NewProp_CreatorAttributes = { "CreatorAttributes", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeCharacter_eventSetAppearanceFromCreatorData_Parms, CreatorAttributes), Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CreatorAttributes_MetaData), NewProp_CreatorAttributes_MetaData) }; // 420917075
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANarrativeCharacter_SetAppearanceFromCreatorData_Statics::NewProp_CreatorAttributes = { "CreatorAttributes", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeCharacter_eventSetAppearanceFromCreatorData_Parms, CreatorAttributes), Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CreatorAttributes_MetaData), NewProp_CreatorAttributes_MetaData) }; // 3953964664
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ANarrativeCharacter_SetAppearanceFromCreatorData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANarrativeCharacter_SetAppearanceFromCreatorData_Statics::NewProp_CreatorAttributes,
 };
@@ -2170,31 +2258,47 @@ struct Z_Construct_UClass_ANarrativeCharacter_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Base class for characters built on Narrative Pro framework. Sets up some core stuff you probably want - a navigation marker, interactions, inventories, etc. */" },
+#endif
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "UnrealFramework/NarrativeCharacter.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for characters built on Narrative Pro framework. Sets up some core stuff you probably want - a navigation marker, interactions, inventories, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Appearance_MetaData[] = {
 		{ "Category", "Narrative|Appearance" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our characters current appearance asset\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our characters current appearance asset" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AppearanceAttributeSet_MetaData[] = {
 		{ "Category", "Narrative|Appearance" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our characters current customization asset\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our characters current customization asset" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BodyMesh_MetaData[] = {
 		{ "Category", "Narrative|Components|Body Meshes" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Base body mesh - use this for metahumans */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base body mesh - use this for metahumans" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TorsoMesh_MetaData[] = {
 		{ "Category", "Narrative|Components|Body Meshes" },
@@ -2268,76 +2372,124 @@ struct Z_Construct_UClass_ANarrativeCharacter_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultAttributes_MetaData[] = {
 		{ "Category", "Narrative|Abilities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Default attributes for a character for initializing on spawn/respawn.\n// This is an instant GE that overrides the values for attributes that get reset on spawn/respawn.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default attributes for a character for initializing on spawn/respawn.\nThis is an instant GE that overrides the values for attributes that get reset on spawn/respawn." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StartupEffects_MetaData[] = {
 		{ "Category", "Narrative|Abilities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// These effects are only applied one time on startup\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "These effects are only applied one time on startup" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultAbilities_MetaData[] = {
 		{ "Category", "Narrative|Abilities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Default abilities to grant the player  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default abilities to grant the player" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LevelExponentX_MetaData[] = {
 		{ "Category", "Narrative|Abilities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Lowering this number means the base XP required per level is higher \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Lowering this number means the base XP required per level is higher" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LevelExponentY_MetaData[] = {
 		{ "Category", "Narrative|Abilities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Upping this value means higher jumps between levels, ie levels will grow exponentially \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Upping this value means higher jumps between levels, ie levels will grow exponentially" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnedWeaponVisuals_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Weaponed weapon visuals, can be accessed via map */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Weaponed weapon visuals, can be accessed via map" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bWeaponHolstered_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** True if the weapon is currently holstered, false otherwise.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "True if the weapon is currently holstered, false otherwise." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EquippedWeapon_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Our currently equipped weapon */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our currently equipped weapon" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UnarmedAnimBP_MetaData[] = {
 		{ "Category", "Narrative|Animation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Default unarmed anim layer\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default unarmed anim layer" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverrideAnimBP_MetaData[] = {
 		{ "Category", "Narrative|Animation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Current override anim layer \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Current override anim layer" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UnarmedCombatData_MetaData[] = {
 		{ "Category", "Narrative|Trace" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Data specifically related to unarmed combat */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Data specifically related to unarmed combat" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UnarmedAttackDamage_MetaData[] = {
 		{ "Category", "Unarmed Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Attacking without a weapon will deal this amount of base damage \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attacking without a weapon will deal this amount of base damage" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Appearance;
@@ -2379,42 +2531,42 @@ struct Z_Construct_UClass_ANarrativeCharacter_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ANarrativeCharacter_BPDamagedBy, "BPDamagedBy" }, // 1874096347
 		{ &Z_Construct_UFunction_ANarrativeCharacter_ClearAnimBPOverride, "ClearAnimBPOverride" }, // 284587041
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetAttackRange, "GetAttackRange" }, // 3873907353
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetAttackTraceData, "GetAttackTraceData" }, // 2407998264
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetAttackRange, "GetAttackRange" }, // 3014530567
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetAttackTraceData, "GetAttackTraceData" }, // 2885450113
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetAttributeSetBase, "GetAttributeSetBase" }, // 43159813
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetCharacterDefinition, "GetCharacterDefinition" }, // 2803539779
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetCharacterDefinition, "GetCharacterDefinition" }, // 483389412
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetCharacterLevel, "GetCharacterLevel" }, // 2289865584
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetEquipmentComponent, "GetEquipmentComponent" }, // 704330751
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetEquippedWeaponVisual, "GetEquippedWeaponVisual" }, // 2444104801
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetEquippedWeaponVisual, "GetEquippedWeaponVisual" }, // 3432162636
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetFaceMesh, "GetFaceMesh" }, // 1752419721
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetFeetMesh, "GetFeetMesh" }, // 1329521373
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetFloorLocation, "GetFloorLocation" }, // 3000141261
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetHeadLookAtLocation, "GetHeadLookAtLocation" }, // 3055907105
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetFloorLocation, "GetFloorLocation" }, // 3932941469
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetHeadLookAtLocation, "GetHeadLookAtLocation" }, // 3088518690
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetHealth, "GetHealth" }, // 4188271426
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetInteractionComponent, "GetInteractionComponent" }, // 4003862967
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetInteractionComponent, "GetInteractionComponent" }, // 2258670836
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetLegsMesh, "GetLegsMesh" }, // 1790239564
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetMarkerComponent, "GetMarkerComponent" }, // 3710431724
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetMaxHealth, "GetMaxHealth" }, // 3790152558
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetMaxStamina, "GetMaxStamina" }, // 2513410169
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetNarrativeCharacterMovement, "GetNarrativeCharacterMovement" }, // 2158447807
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetNarrativeCharacterMovement, "GetNarrativeCharacterMovement" }, // 2054686994
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetPercentToNextLevel, "GetPercentToNextLevel" }, // 3467727690
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetStamina, "GetStamina" }, // 621067486
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetTorsoMesh, "GetTorsoMesh" }, // 7269130
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetWeapon, "GetWeapon" }, // 2496643385
-		{ &Z_Construct_UFunction_ANarrativeCharacter_GetWeaponVisual, "GetWeaponVisual" }, // 398205774
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetWeapon, "GetWeapon" }, // 2445145640
+		{ &Z_Construct_UFunction_ANarrativeCharacter_GetWeaponVisual, "GetWeaponVisual" }, // 3518003114
 		{ &Z_Construct_UFunction_ANarrativeCharacter_GetXP, "GetXP" }, // 1230823503
 		{ &Z_Construct_UFunction_ANarrativeCharacter_HandleDeath, "HandleDeath" }, // 3104774893
 		{ &Z_Construct_UFunction_ANarrativeCharacter_InitializeEquipmentComponent, "InitializeEquipmentComponent" }, // 3780357952
 		{ &Z_Construct_UFunction_ANarrativeCharacter_IsAlive, "IsAlive" }, // 3668497127
 		{ &Z_Construct_UFunction_ANarrativeCharacter_IsWeaponHolstered, "IsWeaponHolstered" }, // 754076340
 		{ &Z_Construct_UFunction_ANarrativeCharacter_LevelToXP, "LevelToXP" }, // 2634821544
-		{ &Z_Construct_UFunction_ANarrativeCharacter_LoadNewCharacter, "LoadNewCharacter" }, // 2385589692
-		{ &Z_Construct_UFunction_ANarrativeCharacter_OnDefinitionSet, "OnDefinitionSet" }, // 331450645
-		{ &Z_Construct_UFunction_ANarrativeCharacter_OnEndDialogue, "OnEndDialogue" }, // 1253597395
-		{ &Z_Construct_UFunction_ANarrativeCharacter_OnEnterDialogue, "OnEnterDialogue" }, // 3876024803
+		{ &Z_Construct_UFunction_ANarrativeCharacter_LoadNewCharacter, "LoadNewCharacter" }, // 315205316
+		{ &Z_Construct_UFunction_ANarrativeCharacter_OnDefinitionSet, "OnDefinitionSet" }, // 758747642
+		{ &Z_Construct_UFunction_ANarrativeCharacter_OnEndDialogue, "OnEndDialogue" }, // 3148584404
+		{ &Z_Construct_UFunction_ANarrativeCharacter_OnEnterDialogue, "OnEnterDialogue" }, // 1539592732
 		{ &Z_Construct_UFunction_ANarrativeCharacter_OnRep_EquippedWeapon, "OnRep_EquippedWeapon" }, // 3962589627
 		{ &Z_Construct_UFunction_ANarrativeCharacter_SetAnimBPOverride, "SetAnimBPOverride" }, // 931001157
-		{ &Z_Construct_UFunction_ANarrativeCharacter_SetAppearanceFromCreatorData, "SetAppearanceFromCreatorData" }, // 1630186988
+		{ &Z_Construct_UFunction_ANarrativeCharacter_SetAppearanceFromCreatorData, "SetAppearanceFromCreatorData" }, // 919231485
 		{ &Z_Construct_UFunction_ANarrativeCharacter_SetEquippedWeapon, "SetEquippedWeapon" }, // 1294686080
 		{ &Z_Construct_UFunction_ANarrativeCharacter_SetWeaponHolstered, "SetWeaponHolstered" }, // 2581977157
 		{ &Z_Construct_UFunction_ANarrativeCharacter_XPToLevel, "XPToLevel" }, // 3551883128
@@ -2427,7 +2579,7 @@ struct Z_Construct_UClass_ANarrativeCharacter_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_Appearance = { "Appearance", nullptr, (EPropertyFlags)0x0124080000020015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, Appearance), Z_Construct_UClass_UCharacterAppearanceBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Appearance_MetaData), NewProp_Appearance_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_AppearanceAttributeSet = { "AppearanceAttributeSet", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, AppearanceAttributeSet), Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AppearanceAttributeSet_MetaData), NewProp_AppearanceAttributeSet_MetaData) }; // 420917075
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_AppearanceAttributeSet = { "AppearanceAttributeSet", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, AppearanceAttributeSet), Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AppearanceAttributeSet_MetaData), NewProp_AppearanceAttributeSet_MetaData) }; // 3953964664
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_BodyMesh = { "BodyMesh", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, BodyMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BodyMesh_MetaData), NewProp_BodyMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_TorsoMesh = { "TorsoMesh", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, TorsoMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TorsoMesh_MetaData), NewProp_TorsoMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_LegsMesh = { "LegsMesh", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, LegsMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LegsMesh_MetaData), NewProp_LegsMesh_MetaData) };
@@ -2461,7 +2613,7 @@ const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ANarrativeCharac
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_EquippedWeapon = { "EquippedWeapon", "OnRep_EquippedWeapon", (EPropertyFlags)0x01240801000a003d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, EquippedWeapon), Z_Construct_UClass_UWeaponItem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EquippedWeapon_MetaData), NewProp_EquippedWeapon_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_UnarmedAnimBP = { "UnarmedAnimBP", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, UnarmedAnimBP), Z_Construct_UClass_UClass, Z_Construct_UClass_UAnimInstance_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UnarmedAnimBP_MetaData), NewProp_UnarmedAnimBP_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_OverrideAnimBP = { "OverrideAnimBP", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, OverrideAnimBP), Z_Construct_UClass_UClass, Z_Construct_UClass_UAnimInstance_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverrideAnimBP_MetaData), NewProp_OverrideAnimBP_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_UnarmedCombatData = { "UnarmedCombatData", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, UnarmedCombatData), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UnarmedCombatData_MetaData), NewProp_UnarmedCombatData_MetaData) }; // 179883577
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_UnarmedCombatData = { "UnarmedCombatData", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, UnarmedCombatData), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UnarmedCombatData_MetaData), NewProp_UnarmedCombatData_MetaData) }; // 845487567
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_UnarmedAttackDamage = { "UnarmedAttackDamage", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeCharacter, UnarmedAttackDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UnarmedAttackDamage_MetaData), NewProp_UnarmedAttackDamage_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANarrativeCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANarrativeCharacter_Statics::NewProp_Appearance,
@@ -2548,19 +2700,19 @@ ANarrativeCharacter::~ANarrativeCharacter() {}
 // End Class ANarrativeCharacter
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FMeleeComboAnimSet::StaticStruct, Z_Construct_UScriptStruct_FMeleeComboAnimSet_Statics::NewStructOps, TEXT("MeleeComboAnimSet"), &Z_Registration_Info_UScriptStruct_MeleeComboAnimSet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMeleeComboAnimSet), 3233360722U) },
-		{ FMeleeCombatData::StaticStruct, Z_Construct_UScriptStruct_FMeleeCombatData_Statics::NewStructOps, TEXT("MeleeCombatData"), &Z_Registration_Info_UScriptStruct_MeleeCombatData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMeleeCombatData), 2534374841U) },
+		{ FMeleeComboAnimSet::StaticStruct, Z_Construct_UScriptStruct_FMeleeComboAnimSet_Statics::NewStructOps, TEXT("MeleeComboAnimSet"), &Z_Registration_Info_UScriptStruct_MeleeComboAnimSet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMeleeComboAnimSet), 1357738994U) },
+		{ FMeleeCombatData::StaticStruct, Z_Construct_UScriptStruct_FMeleeCombatData_Statics::NewStructOps, TEXT("MeleeCombatData"), &Z_Registration_Info_UScriptStruct_MeleeCombatData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMeleeCombatData), 930366397U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativeCharacter, ANarrativeCharacter::StaticClass, TEXT("ANarrativeCharacter"), &Z_Registration_Info_UClass_ANarrativeCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeCharacter), 3423868897U) },
+		{ Z_Construct_UClass_ANarrativeCharacter, ANarrativeCharacter::StaticClass, TEXT("ANarrativeCharacter"), &Z_Registration_Info_UClass_ANarrativeCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeCharacter), 3455898462U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_3375886998(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_3996077378(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCharacter_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

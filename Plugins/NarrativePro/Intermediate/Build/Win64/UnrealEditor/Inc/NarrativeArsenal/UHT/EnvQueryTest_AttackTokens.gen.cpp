@@ -29,17 +29,25 @@ struct Z_Construct_UClass_UEnvQueryTest_AttackTokens_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An EQS test that scores actors based on how many free attack tokens they have \n */" },
+#endif
 		{ "IncludePath", "AI/EnvQueryTest_AttackTokens.h" },
 		{ "ModuleRelativePath", "Public/AI/EnvQueryTest_AttackTokens.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An EQS test that scores actors based on how many free attack tokens they have" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCheckGrantedTokens_MetaData[] = {
 		{ "Category", "Tokens" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If true we'll check how many tokens we've granted have rather than how many are available\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/EnvQueryTest_AttackTokens.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true we'll check how many tokens we've granted have rather than how many are available" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bCheckGrantedTokens_SetBit(void* Obj);
@@ -97,14 +105,14 @@ UEnvQueryTest_AttackTokens::~UEnvQueryTest_AttackTokens() {}
 // End Class UEnvQueryTest_AttackTokens
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_EnvQueryTest_AttackTokens_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_EnvQueryTest_AttackTokens_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEnvQueryTest_AttackTokens, UEnvQueryTest_AttackTokens::StaticClass, TEXT("UEnvQueryTest_AttackTokens"), &Z_Registration_Info_UClass_UEnvQueryTest_AttackTokens, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnvQueryTest_AttackTokens), 3865437148U) },
+		{ Z_Construct_UClass_UEnvQueryTest_AttackTokens, UEnvQueryTest_AttackTokens::StaticClass, TEXT("UEnvQueryTest_AttackTokens"), &Z_Registration_Info_UClass_UEnvQueryTest_AttackTokens, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnvQueryTest_AttackTokens), 462361284U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_EnvQueryTest_AttackTokens_h_3963546760(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_EnvQueryTest_AttackTokens_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_EnvQueryTest_AttackTokens_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_EnvQueryTest_AttackTokens_h_1752585934(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_EnvQueryTest_AttackTokens_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_EnvQueryTest_AttackTokens_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

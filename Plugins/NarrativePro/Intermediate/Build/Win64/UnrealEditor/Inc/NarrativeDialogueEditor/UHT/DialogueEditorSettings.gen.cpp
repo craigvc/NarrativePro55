@@ -33,7 +33,9 @@ struct Z_Construct_UClass_UDialogueEditorSettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "DialogueEditorSettings.h" },
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
 	};
@@ -87,51 +89,83 @@ struct Z_Construct_UClass_UDialogueEditorSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ForwardSplineHorizontalDeltaRange_MetaData[] = {
 		{ "Category", "Splines" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The maximum value to clamp the absolute value of the horizontal distance between endpoints when calculating tangents (when the wire is moving forward) */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum value to clamp the absolute value of the horizontal distance between endpoints when calculating tangents (when the wire is moving forward)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ForwardSplineVerticalDeltaRange_MetaData[] = {
 		{ "Category", "Splines" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The maximum value to clamp the absolute value of the vertical distance between endpoints when calculating tangents (when the wire is moving forward) */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum value to clamp the absolute value of the vertical distance between endpoints when calculating tangents (when the wire is moving forward)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ForwardSplineTangentFromHorizontalDelta_MetaData[] = {
 		{ "Category", "Splines" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The amount that the horizontal delta affects the generated tangent handle of splines (when the wire is moving forward) */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount that the horizontal delta affects the generated tangent handle of splines (when the wire is moving forward)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ForwardSplineTangentFromVerticalDelta_MetaData[] = {
 		{ "Category", "Splines" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The amount that the vertical delta affects the generated tangent handle of splines (when the wire is moving forward) */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount that the vertical delta affects the generated tangent handle of splines (when the wire is moving forward)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BackwardSplineHorizontalDeltaRange_MetaData[] = {
 		{ "Category", "Splines" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The maximum value to clamp the absolute value of the horizontal distance between endpoints when calculating tangents (when the wire is moving backwards) */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum value to clamp the absolute value of the horizontal distance between endpoints when calculating tangents (when the wire is moving backwards)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BackwardSplineVerticalDeltaRange_MetaData[] = {
 		{ "Category", "Splines" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The maximum value to clamp the absolute value of the vertical distance between endpoints when calculating tangents (when the wire is moving backwards) */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum value to clamp the absolute value of the vertical distance between endpoints when calculating tangents (when the wire is moving backwards)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BackwardSplineTangentFromHorizontalDelta_MetaData[] = {
 		{ "Category", "Splines" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The amount that the horizontal delta affects the generated tangent handle of splines (when the wire is moving backwards) */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount that the horizontal delta affects the generated tangent handle of splines (when the wire is moving backwards)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BackwardSplineTangentFromVerticalDelta_MetaData[] = {
 		{ "Category", "Splines" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The amount that the vertical delta affects the generated tangent handle of splines (when the wire is moving backwards) */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueEditorSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount that the vertical delta affects the generated tangent handle of splines (when the wire is moving backwards)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RootNodeColor;
@@ -253,14 +287,14 @@ UDialogueEditorSettings::~UDialogueEditorSettings() {}
 // End Class UDialogueEditorSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueEditorSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueEditorSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueEditorSettings, UDialogueEditorSettings::StaticClass, TEXT("UDialogueEditorSettings"), &Z_Registration_Info_UClass_UDialogueEditorSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueEditorSettings), 2100094630U) },
+		{ Z_Construct_UClass_UDialogueEditorSettings, UDialogueEditorSettings::StaticClass, TEXT("UDialogueEditorSettings"), &Z_Registration_Info_UClass_UDialogueEditorSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueEditorSettings), 1244471695U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueEditorSettings_h_2341132738(TEXT("/Script/NarrativeDialogueEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueEditorSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueEditorSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueEditorSettings_h_399954929(TEXT("/Script/NarrativeDialogueEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueEditorSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueEditorSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

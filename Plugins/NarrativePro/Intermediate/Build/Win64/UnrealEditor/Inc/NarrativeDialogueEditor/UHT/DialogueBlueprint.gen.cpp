@@ -33,24 +33,36 @@ struct Z_Construct_UClass_UDialogueBlueprint_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A special type of blueprint that includes a node based dialogue editor.\n */" },
+#endif
 		{ "IncludePath", "DialogueBlueprint.h" },
 		{ "ModuleRelativePath", "Public/DialogueBlueprint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A special type of blueprint that includes a node based dialogue editor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueGraph_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Graph for dialogue asset */" },
+#endif
 		{ "ModuleRelativePath", "Public/DialogueBlueprint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Graph for dialogue asset" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueTemplate_MetaData[] = {
 		{ "Category", "Dialogue" },
 		{ "ModuleRelativePath", "Public/DialogueBlueprint.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LegacyAsset_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If set, the factory will use this legacy asset as a template for the new asset\n" },
+#endif
 		{ "ModuleRelativePath", "Public/DialogueBlueprint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If set, the factory will use this legacy asset as a template for the new asset" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DialogueGraph;
@@ -109,14 +121,14 @@ UDialogueBlueprint::~UDialogueBlueprint() {}
 // End Class UDialogueBlueprint
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Public_DialogueBlueprint_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Public_DialogueBlueprint_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueBlueprint, UDialogueBlueprint::StaticClass, TEXT("UDialogueBlueprint"), &Z_Registration_Info_UClass_UDialogueBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueBlueprint), 4008376030U) },
+		{ Z_Construct_UClass_UDialogueBlueprint, UDialogueBlueprint::StaticClass, TEXT("UDialogueBlueprint"), &Z_Registration_Info_UClass_UDialogueBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueBlueprint), 1784769759U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Public_DialogueBlueprint_h_4160497405(TEXT("/Script/NarrativeDialogueEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Public_DialogueBlueprint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Public_DialogueBlueprint_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Public_DialogueBlueprint_h_3982278761(TEXT("/Script/NarrativeDialogueEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Public_DialogueBlueprint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Public_DialogueBlueprint_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

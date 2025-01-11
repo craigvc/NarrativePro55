@@ -33,26 +33,38 @@ struct Z_Construct_UClass_UPOINavigationMarker_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Special Navigation marker component intended for points of interest. This marker will also cache its owners location with the POI system, so \n * you can quickly access points of interest via their tag. \n */" },
+#endif
 		{ "DisplayName", "POI Navigation Marker" },
 		{ "IncludePath", "POINavigationMarker.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/POINavigationMarker.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Special Navigation marker component intended for points of interest. This marker will also cache its owners location with the POI system, so\nyou can quickly access points of interest via their tag." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POITag_MetaData[] = {
 		{ "Categories", "Navigator.PointOfInterest" },
 		{ "Category", "Point Of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The tag for this location*/" },
+#endif
 		{ "ModuleRelativePath", "Public/POINavigationMarker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The tag for this location" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POIDisplayName_MetaData[] = {
 		{ "Category", "Point Of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The display name for this poi when we display it in the UI */" },
+#endif
 		{ "ModuleRelativePath", "Public/POINavigationMarker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name for this poi when we display it in the UI" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_POITag;
@@ -108,14 +120,14 @@ UPOINavigationMarker::~UPOINavigationMarker() {}
 // End Class UPOINavigationMarker
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_POINavigationMarker_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_POINavigationMarker_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPOINavigationMarker, UPOINavigationMarker::StaticClass, TEXT("UPOINavigationMarker"), &Z_Registration_Info_UClass_UPOINavigationMarker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPOINavigationMarker), 1817490776U) },
+		{ Z_Construct_UClass_UPOINavigationMarker, UPOINavigationMarker::StaticClass, TEXT("UPOINavigationMarker"), &Z_Registration_Info_UClass_UPOINavigationMarker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPOINavigationMarker), 609068141U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_POINavigationMarker_h_2525600950(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_POINavigationMarker_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_POINavigationMarker_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_POINavigationMarker_h_1539677828(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_POINavigationMarker_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_POINavigationMarker_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

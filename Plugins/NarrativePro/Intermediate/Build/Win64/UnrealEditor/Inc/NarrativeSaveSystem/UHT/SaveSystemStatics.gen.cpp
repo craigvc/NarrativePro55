@@ -28,9 +28,13 @@ struct Z_Construct_UFunction_USaveSystemStatics_CreateSaveGuid_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Save System" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Sets the in guid to a valid guid, but only if it hasn't already been generated before, useful for in constructors where this may get called multiple times \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SaveSystemStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the in guid to a valid guid, but only if it hasn't already been generated before, useful for in constructors where this may get called multiple times" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutGuid;
@@ -74,9 +78,13 @@ struct Z_Construct_UFunction_USaveSystemStatics_LoadSingleActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Update a single actor so its state matches that of the saved record for that actor. */" },
+#endif
 		{ "ModuleRelativePath", "Public/SaveSystemStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Update a single actor so its state matches that of the saved record for that actor." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
@@ -128,9 +136,13 @@ struct Z_Construct_UFunction_USaveSystemStatics_RemoveSingleActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Remove a single actor from the save file */" },
+#endif
 		{ "ModuleRelativePath", "Public/SaveSystemStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Remove a single actor from the save file" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
@@ -182,9 +194,13 @@ struct Z_Construct_UFunction_USaveSystemStatics_SaveSingleActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Update a single actor so its state matches that of the saved record for that actor. \n\x09\n\x09@param bDontRespawn tells the save system that this actor should not automatically be respawned by the save system, we need to do it manually.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/SaveSystemStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Update a single actor so its state matches that of the saved record for that actor.\n\n      @param bDontRespawn tells the save system that this actor should not automatically be respawned by the save system, we need to do it manually." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
@@ -246,17 +262,19 @@ struct Z_Construct_UClass_USaveSystemStatics_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "SaveSystemStatics.h" },
 		{ "ModuleRelativePath", "Public/SaveSystemStatics.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_USaveSystemStatics_CreateSaveGuid, "CreateSaveGuid" }, // 3215104655
-		{ &Z_Construct_UFunction_USaveSystemStatics_LoadSingleActor, "LoadSingleActor" }, // 3456326494
-		{ &Z_Construct_UFunction_USaveSystemStatics_RemoveSingleActor, "RemoveSingleActor" }, // 4184463189
-		{ &Z_Construct_UFunction_USaveSystemStatics_SaveSingleActor, "SaveSingleActor" }, // 1442422881
+		{ &Z_Construct_UFunction_USaveSystemStatics_CreateSaveGuid, "CreateSaveGuid" }, // 4070240466
+		{ &Z_Construct_UFunction_USaveSystemStatics_LoadSingleActor, "LoadSingleActor" }, // 2647267400
+		{ &Z_Construct_UFunction_USaveSystemStatics_RemoveSingleActor, "RemoveSingleActor" }, // 2294636030
+		{ &Z_Construct_UFunction_USaveSystemStatics_SaveSingleActor, "SaveSingleActor" }, // 824777692
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -302,14 +320,14 @@ USaveSystemStatics::~USaveSystemStatics() {}
 // End Class USaveSystemStatics
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemStatics_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemStatics_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USaveSystemStatics, USaveSystemStatics::StaticClass, TEXT("USaveSystemStatics"), &Z_Registration_Info_UClass_USaveSystemStatics, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveSystemStatics), 1101009864U) },
+		{ Z_Construct_UClass_USaveSystemStatics, USaveSystemStatics::StaticClass, TEXT("USaveSystemStatics"), &Z_Registration_Info_UClass_USaveSystemStatics, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveSystemStatics), 617895855U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemStatics_h_1279337219(TEXT("/Script/NarrativeSaveSystem"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemStatics_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemStatics_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemStatics_h_3454218197(TEXT("/Script/NarrativeSaveSystem"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemStatics_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemStatics_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

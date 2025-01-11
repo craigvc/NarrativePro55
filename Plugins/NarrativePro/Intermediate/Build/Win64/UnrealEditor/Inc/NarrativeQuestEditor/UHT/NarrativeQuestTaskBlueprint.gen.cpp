@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UNarrativeTaskBlueprint_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tasks are blueprints that manage a task for the player to complete. This is mostly used by the quest editor.\n * This is different from Data Tasks which are just data assets: a TaskName and Argument, ie \"FindItem:Sword\",\n *\n * A good example is the GoToLocation task that comes with narrative, which checks if the player has reached a goal location. This type\n * of task wouldn't be possible with a data task, which doesn't have any logic or variables.\n */" },
+#endif
 		{ "IncludePath", "NarrativeQuestTaskBlueprint.h" },
 		{ "ModuleRelativePath", "Private/NarrativeQuestTaskBlueprint.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tasks are blueprints that manage a task for the player to complete. This is mostly used by the quest editor.\nThis is different from Data Tasks which are just data assets: a TaskName and Argument, ie \"FindItem:Sword\",\n\nA good example is the GoToLocation task that comes with narrative, which checks if the player has reached a goal location. This type\nof task wouldn't be possible with a data task, which doesn't have any logic or variables." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UNarrativeTaskBlueprint::~UNarrativeTaskBlueprint() {}
 // End Class UNarrativeTaskBlueprint
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_NarrativeQuestTaskBlueprint_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_NarrativeQuestTaskBlueprint_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeTaskBlueprint, UNarrativeTaskBlueprint::StaticClass, TEXT("UNarrativeTaskBlueprint"), &Z_Registration_Info_UClass_UNarrativeTaskBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeTaskBlueprint), 3146332953U) },
+		{ Z_Construct_UClass_UNarrativeTaskBlueprint, UNarrativeTaskBlueprint::StaticClass, TEXT("UNarrativeTaskBlueprint"), &Z_Registration_Info_UClass_UNarrativeTaskBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeTaskBlueprint), 4065962201U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_NarrativeQuestTaskBlueprint_h_2858040460(TEXT("/Script/NarrativeQuestEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_NarrativeQuestTaskBlueprint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_NarrativeQuestTaskBlueprint_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_NarrativeQuestTaskBlueprint_h_123988651(TEXT("/Script/NarrativeQuestEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_NarrativeQuestTaskBlueprint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_NarrativeQuestTaskBlueprint_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -31,29 +31,45 @@ struct Z_Construct_UClass_UNarrativeUIDeveloperSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for Narrative UI settings, like global styling, etc. \n */" },
+#endif
 		{ "DisplayName", "Narrative - CommonUI Settings" },
 		{ "IncludePath", "NarrativeUIDeveloperSettings.h" },
 		{ "ModuleRelativePath", "Public/NarrativeUIDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for Narrative UI settings, like global styling, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UIPrimaryColor_MetaData[] = {
 		{ "Category", "Narrative Pro|User Interface" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Primary color UI elements will set themselves to.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeUIDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Primary color UI elements will set themselves to." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UIInvertColor_MetaData[] = {
 		{ "Category", "Narrative Pro|User Interface" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Invert color UI elements will set themselves to.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeUIDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Invert color UI elements will set themselves to." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UIInvertAccentColor_MetaData[] = {
 		{ "Category", "Narrative Pro|User Interface" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Invert Accent color UI elements will set themselves to.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeUIDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Invert Accent color UI elements will set themselves to." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UIPrimaryColor;
@@ -112,14 +128,14 @@ UNarrativeUIDeveloperSettings::~UNarrativeUIDeveloperSettings() {}
 // End Class UNarrativeUIDeveloperSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeUIDeveloperSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeUIDeveloperSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeUIDeveloperSettings, UNarrativeUIDeveloperSettings::StaticClass, TEXT("UNarrativeUIDeveloperSettings"), &Z_Registration_Info_UClass_UNarrativeUIDeveloperSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeUIDeveloperSettings), 1428534150U) },
+		{ Z_Construct_UClass_UNarrativeUIDeveloperSettings, UNarrativeUIDeveloperSettings::StaticClass, TEXT("UNarrativeUIDeveloperSettings"), &Z_Registration_Info_UClass_UNarrativeUIDeveloperSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeUIDeveloperSettings), 223698126U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeUIDeveloperSettings_h_3655269090(TEXT("/Script/NarrativeCommonUI"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeUIDeveloperSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeUIDeveloperSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeUIDeveloperSettings_h_610434999(TEXT("/Script/NarrativeCommonUI"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeUIDeveloperSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeUIDeveloperSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

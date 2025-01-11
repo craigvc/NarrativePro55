@@ -42,10 +42,14 @@ struct Z_Construct_UFunction_UNPCActivityComponent_AddGoal_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Goals" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*Add the given goal to the goal map using its goaltag.Return a handle to the created goal\n\x09\n\x09@param bTriggerReselect whether you want to ask the activity component to reselect its behavior after adding this goal. \n\x09*/" },
+#endif
 		{ "CPP_Default_bTriggerReselect", "false" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add the given goal to the goal map using its goaltag.Return a handle to the created goal\n\n       @param bTriggerReselect whether you want to ask the activity component to reselect its behavior after adding this goal." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bTriggerReselect_MetaData[] = {
 		{ "NativeConst", "" },
@@ -103,9 +107,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_GetCurrentActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//get our current activity\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "get our current activity" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -147,9 +155,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_GetCurrentActivityGoal_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//get our current activities goal \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "get our current activities goal" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -193,9 +205,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_GetGoalByKey_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Goals" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab a goal via its key \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab a goal via its key" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalType_MetaData[] = {
 		{ "NativeConst", "" },
@@ -252,9 +268,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_GetGoals_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Goals" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab all created goals of the given type\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab all created goals of the given type" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalType_MetaData[] = {
 		{ "NativeConst", "" },
@@ -266,7 +286,7 @@ struct Z_Construct_UFunction_UNPCActivityComponent_GetGoals_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UNPCActivityComponent_GetGoals_Statics::NewProp_GoalType = { "GoalType", nullptr, (EPropertyFlags)0x0014000008000182, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NPCActivityComponent_eventGetGoals_Parms, GoalType), Z_Construct_UClass_UClass, Z_Construct_UClass_UNPCGoalItem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GoalType_MetaData), NewProp_GoalType_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNPCActivityComponent_GetGoals_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NPCActivityComponent_eventGetGoals_Parms, ReturnValue), Z_Construct_UScriptStruct_FNPCGoalContainer, METADATA_PARAMS(0, nullptr) }; // 401033925
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNPCActivityComponent_GetGoals_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NPCActivityComponent_eventGetGoals_Parms, ReturnValue), Z_Construct_UScriptStruct_FNPCGoalContainer, METADATA_PARAMS(0, nullptr) }; // 2416995643
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNPCActivityComponent_GetGoals_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNPCActivityComponent_GetGoals_Statics::NewProp_GoalType,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNPCActivityComponent_GetGoals_Statics::NewProp_ReturnValue,
@@ -304,10 +324,14 @@ struct Z_Construct_UFunction_UNPCActivityComponent_PerformActivitySelection_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*Scores our activities, and selects the best one, along with the best goal for that activity. \n\x09@param bCheckNew will potentially end CurrentActivity if a better one is found, otherwise if a valid current activity is running\n\x09that will be kept instead.\n\x09\n\x09@return whether a new activity was selected or not \n\x09*/" },
+#endif
 		{ "CPP_Default_bCheckNew", "false" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Scores our activities, and selects the best one, along with the best goal for that activity.\n       @param bCheckNew will potentially end CurrentActivity if a better one is found, otherwise if a valid current activity is running\n       that will be kept instead.\n\n       @return whether a new activity was selected or not" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bCheckNew_SetBit(void* Obj);
@@ -363,9 +387,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_RemoveGoal_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Goals" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Remove the goal with the given handle \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Remove the goal with the given handle" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_GoalToRemove;
@@ -411,9 +439,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_RunActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Start the given activity, and pass the goal to it. Goal can be nullptr  */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start the given activity, and pass the goal to it. Goal can be nullptr" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActivityTemplate;
@@ -472,9 +504,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_SetActivityConfiguration_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set our activity config\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set our activity config" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Config;
@@ -517,9 +553,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_SetActivitySchedule_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set our activity schedule\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set our activity schedule" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Schedule;
@@ -558,9 +598,13 @@ struct Z_Construct_UFunction_UNPCActivityComponent_StopCurrentActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Stop the currently running activity\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stop the currently running activity" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -614,83 +658,131 @@ struct Z_Construct_UClass_UNPCActivityComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Lives on the NPCCharacter and allows us to run NPC activities. For more info on NPC Actitites see the comment above UNPCActivity.  */" },
+#endif
 		{ "IncludePath", "AI/Activities/NPCActivityComponent.h" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Lives on the NPCCharacter and allows us to run NPC activities. For more info on NPC Actitites see the comment above UNPCActivity." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerController_MetaData[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our controller, cached\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our controller, cached" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FallbackActivity_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The fallback activity to use if we cant find one to run based on our goals. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The fallback activity to use if we cant find one to run based on our goals." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivitySchedule_MetaData[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our scheduled activities go in here. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our scheduled activities go in here." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivityConfiguration_MetaData[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our activity configuration goes in here\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our activity configuration goes in here" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivityGroups_Inner_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The activities the NPC can run. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The activities the NPC can run." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivityGroups_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The activities the NPC can run. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The activities the NPC can run." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalGenerators_Inner_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our goal generators we'll use to create goals - goals can also be explicitly added \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our goal generators we'll use to create goals - goals can also be explicitly added" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalGenerators_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our goal generators we'll use to create goals - goals can also be explicitly added \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our goal generators we'll use to create goals - goals can also be explicitly added" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Goals_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our goals we currently have - we use a map to allow quick access to goals by their class \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our goals we currently have - we use a map to allow quick access to goals by their class" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActiveScheduledActivites_MetaData[] = {
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedGoals_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We now store these on NPCCharacter as a workaround as this component lives on AIC which isn't a savable actor - NPCChar is however\n///**Some goals need to be serialized to disk, for example if our player asks an NPC to follow them, the NPC needs to\n//remember that the player told them that when our game loads back in. */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We now store these on NPCCharacter as a workaround as this component lives on AIC which isn't a savable actor - NPCChar is however\nSome goals need to be serialized to disk, for example if our player asks an NPC to follow them, the NPC needs to\nremember that the player told them that when our game loads back in." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentActivity_MetaData[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The activity we're currently running\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The activity we're currently running" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwnerController;
@@ -712,17 +804,17 @@ struct Z_Construct_UClass_UNPCActivityComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNPCActivityComponent_AddGoal, "AddGoal" }, // 1719722992
-		{ &Z_Construct_UFunction_UNPCActivityComponent_GetCurrentActivity, "GetCurrentActivity" }, // 2392667343
-		{ &Z_Construct_UFunction_UNPCActivityComponent_GetCurrentActivityGoal, "GetCurrentActivityGoal" }, // 3111960551
-		{ &Z_Construct_UFunction_UNPCActivityComponent_GetGoalByKey, "GetGoalByKey" }, // 4179464027
-		{ &Z_Construct_UFunction_UNPCActivityComponent_GetGoals, "GetGoals" }, // 709859675
-		{ &Z_Construct_UFunction_UNPCActivityComponent_PerformActivitySelection, "PerformActivitySelection" }, // 2957101492
-		{ &Z_Construct_UFunction_UNPCActivityComponent_RemoveGoal, "RemoveGoal" }, // 460230327
-		{ &Z_Construct_UFunction_UNPCActivityComponent_RunActivity, "RunActivity" }, // 4148311554
-		{ &Z_Construct_UFunction_UNPCActivityComponent_SetActivityConfiguration, "SetActivityConfiguration" }, // 2821689118
-		{ &Z_Construct_UFunction_UNPCActivityComponent_SetActivitySchedule, "SetActivitySchedule" }, // 2086535211
-		{ &Z_Construct_UFunction_UNPCActivityComponent_StopCurrentActivity, "StopCurrentActivity" }, // 3329542873
+		{ &Z_Construct_UFunction_UNPCActivityComponent_AddGoal, "AddGoal" }, // 3752714181
+		{ &Z_Construct_UFunction_UNPCActivityComponent_GetCurrentActivity, "GetCurrentActivity" }, // 3555552390
+		{ &Z_Construct_UFunction_UNPCActivityComponent_GetCurrentActivityGoal, "GetCurrentActivityGoal" }, // 3028322196
+		{ &Z_Construct_UFunction_UNPCActivityComponent_GetGoalByKey, "GetGoalByKey" }, // 1906766537
+		{ &Z_Construct_UFunction_UNPCActivityComponent_GetGoals, "GetGoals" }, // 3492034921
+		{ &Z_Construct_UFunction_UNPCActivityComponent_PerformActivitySelection, "PerformActivitySelection" }, // 24008773
+		{ &Z_Construct_UFunction_UNPCActivityComponent_RemoveGoal, "RemoveGoal" }, // 2748844014
+		{ &Z_Construct_UFunction_UNPCActivityComponent_RunActivity, "RunActivity" }, // 3973974807
+		{ &Z_Construct_UFunction_UNPCActivityComponent_SetActivityConfiguration, "SetActivityConfiguration" }, // 3122220162
+		{ &Z_Construct_UFunction_UNPCActivityComponent_SetActivitySchedule, "SetActivitySchedule" }, // 1593103193
+		{ &Z_Construct_UFunction_UNPCActivityComponent_StopCurrentActivity, "StopCurrentActivity" }, // 1585957614
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -739,13 +831,13 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNPCActivityCo
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_ActivityGroups = { "ActivityGroups", nullptr, (EPropertyFlags)0x012408800001001d, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCActivityComponent, ActivityGroups), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActivityGroups_MetaData), NewProp_ActivityGroups_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_GoalGenerators_Inner = { "GoalGenerators", nullptr, (EPropertyFlags)0x0106000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UNPCGoalGenerator_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GoalGenerators_Inner_MetaData), NewProp_GoalGenerators_Inner_MetaData) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_GoalGenerators = { "GoalGenerators", nullptr, (EPropertyFlags)0x012408800001001d, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCActivityComponent, GoalGenerators), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GoalGenerators_MetaData), NewProp_GoalGenerators_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_Goals_ValueProp = { "Goals", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FNPCGoalContainer, METADATA_PARAMS(0, nullptr) }; // 401033925
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_Goals_ValueProp = { "Goals", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FNPCGoalContainer, METADATA_PARAMS(0, nullptr) }; // 2416995643
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_Goals_Key_KeyProp = { "Goals_Key", nullptr, (EPropertyFlags)0x0004000000020001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_UNPCGoalItem_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_Goals = { "Goals", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCActivityComponent, Goals), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Goals_MetaData), NewProp_Goals_MetaData) }; // 401033925
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_Goals = { "Goals", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCActivityComponent, Goals), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Goals_MetaData), NewProp_Goals_MetaData) }; // 2416995643
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_ActiveScheduledActivites_Inner = { "ActiveScheduledActivites", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UScheduledBehavior_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_ActiveScheduledActivites = { "ActiveScheduledActivites", nullptr, (EPropertyFlags)0x0124080000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCActivityComponent, ActiveScheduledActivites), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActiveScheduledActivites_MetaData), NewProp_ActiveScheduledActivites_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_SavedGoals_Inner = { "SavedGoals", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSavedGoalItem, METADATA_PARAMS(0, nullptr) }; // 1643136817
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_SavedGoals = { "SavedGoals", nullptr, (EPropertyFlags)0x0020080001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCActivityComponent, SavedGoals), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedGoals_MetaData), NewProp_SavedGoals_MetaData) }; // 1643136817
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_SavedGoals_Inner = { "SavedGoals", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSavedGoalItem, METADATA_PARAMS(0, nullptr) }; // 4003639944
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_SavedGoals = { "SavedGoals", nullptr, (EPropertyFlags)0x0020080001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCActivityComponent, SavedGoals), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedGoals_MetaData), NewProp_SavedGoals_MetaData) }; // 4003639944
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_CurrentActivity = { "CurrentActivity", nullptr, (EPropertyFlags)0x0124080000020015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNPCActivityComponent, CurrentActivity), Z_Construct_UClass_UNPCActivity_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentActivity_MetaData), NewProp_CurrentActivity_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UNPCActivityComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNPCActivityComponent_Statics::NewProp_OwnerController,
@@ -772,7 +864,7 @@ UObject* (*const Z_Construct_UClass_UNPCActivityComponent_Statics::DependentSing
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UNPCActivityComponent_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UNPCActivityComponent_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UNPCActivityComponent, INarrativeSavableComponent), false },  // 1573843113
+	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UNPCActivityComponent, INarrativeSavableComponent), false },  // 586272322
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UNPCActivityComponent_Statics::ClassParams = {
 	&UNPCActivityComponent::StaticClass,
@@ -806,14 +898,14 @@ UNPCActivityComponent::~UNPCActivityComponent() {}
 // End Class UNPCActivityComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNPCActivityComponent, UNPCActivityComponent::StaticClass, TEXT("UNPCActivityComponent"), &Z_Registration_Info_UClass_UNPCActivityComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCActivityComponent), 2075811836U) },
+		{ Z_Construct_UClass_UNPCActivityComponent, UNPCActivityComponent::StaticClass, TEXT("UNPCActivityComponent"), &Z_Registration_Info_UClass_UNPCActivityComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCActivityComponent), 2716887865U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityComponent_h_3506132102(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityComponent_h_448810245(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

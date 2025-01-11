@@ -75,9 +75,13 @@ struct Z_Construct_UScriptStruct_FSpeakerSelector_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Convinience struct with a details customization that allows the speaker ID to be selected from a combobox\nrather than inputted as an FName */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Convinience struct with a details customization that allows the speaker ID to be selected from a combobox\nrather than inputted as an FName" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpeakerID_MetaData[] = {
 		{ "Category", "Speakers" },
@@ -139,7 +143,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_ELineDuration_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines when the line is finished and we should play the next one \n" },
+#endif
 		{ "LD_AfterDuration.Comment", "//The line finishes when the duration is up\n" },
 		{ "LD_AfterDuration.DisplayName", "After X Seconds" },
 		{ "LD_AfterDuration.Name", "ELineDuration::LD_AfterDuration" },
@@ -165,7 +171,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_ELineDuration_Statics
 		{ "LD_WhenSequenceEnds.Name", "ELineDuration::LD_WhenSequenceEnds" },
 		{ "LD_WhenSequenceEnds.ToolTip", "The line finishes when the sequence ends" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines when the line is finished and we should play the next one" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -223,64 +231,100 @@ struct Z_Construct_UScriptStruct_FDialogueLine_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Text_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09The text for this dialogue node. Narrative will automatically display this on the NarrativeDefaultUI if you're using that, otherwise you can simply grab this\n\x09yourself if you're making your own dialogue UI - it is readable from Blueprints.\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
 		{ "MultiLine", "TRUE" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The text for this dialogue node. Narrative will automatically display this on the NarrativeDefaultUI if you're using that, otherwise you can simply grab this\nyourself if you're making your own dialogue UI - it is readable from Blueprints." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Duration_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09The duration the line should play for \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The duration the line should play for" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DurationSecondsOverride_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09The overridden seconds the line should play for \n\x09*/" },
+#endif
 		{ "EditCondition", "Duration == ELineDuration::LD_AfterDuration" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The overridden seconds the line should play for" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueSound_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* If a dialogue sound is selected, narrative will automatically play the sound for you in 3D space, at the location of the speaker.  \n\x09* If narrative can't find a speaker actor (for example if you were getting a phone call where there isn't an physical speaker) it will be played in 2D. \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If a dialogue sound is selected, narrative will automatically play the sound for you in 3D space, at the location of the speaker.\nIf narrative can't find a speaker actor (for example if you were getting a phone call where there isn't an physical speaker) it will be played in 2D." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueMontage_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Narrative will play this montage on the first skeletalmeshcomponent found on your speaker with the tag \"Body\" added to it.\n\x09*/" },
+#endif
 		{ "DisplayName", "Body Animation" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Narrative will play this montage on the first skeletalmeshcomponent found on your speaker with the tag \"Body\" added to it." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FacialAnimation_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Narrative will play this montage on the first skeletalmeshcomponent found on your speaker with the tag \"Face\" added to it. \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Narrative will play this montage on the first skeletalmeshcomponent found on your speaker with the tag \"Face\" added to it." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Shot_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Shot to play for this line. Overrides speaker shot if one is set \n\x09*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Shot to play for this line. Overrides speaker shot if one is set" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Conditions_Inner_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Optional conditions the line must pass for it to be selected \n\x09*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional conditions the line must pass for it to be selected" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Conditions_MetaData[] = {
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Optional conditions the line must pass for it to be selected \n\x09*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional conditions the line must pass for it to be selected" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_Text;
@@ -302,7 +346,7 @@ struct Z_Construct_UScriptStruct_FDialogueLine_Statics
 };
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FDialogueLine_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueLine, Text), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Text_MetaData), NewProp_Text_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FDialogueLine_Statics::NewProp_Duration_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FDialogueLine_Statics::NewProp_Duration = { "Duration", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueLine, Duration), Z_Construct_UEnum_NarrativeArsenal_ELineDuration, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Duration_MetaData), NewProp_Duration_MetaData) }; // 2897282488
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FDialogueLine_Statics::NewProp_Duration = { "Duration", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueLine, Duration), Z_Construct_UEnum_NarrativeArsenal_ELineDuration, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Duration_MetaData), NewProp_Duration_MetaData) }; // 800924203
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDialogueLine_Statics::NewProp_DurationSecondsOverride = { "DurationSecondsOverride", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueLine, DurationSecondsOverride), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DurationSecondsOverride_MetaData), NewProp_DurationSecondsOverride_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FDialogueLine_Statics::NewProp_DialogueSound = { "DialogueSound", nullptr, (EPropertyFlags)0x0114000000000005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueLine, DialogueSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueSound_MetaData), NewProp_DialogueSound_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FDialogueLine_Statics::NewProp_DialogueMontage = { "DialogueMontage", nullptr, (EPropertyFlags)0x0114000000000005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueLine, DialogueMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueMontage_MetaData), NewProp_DialogueMontage_MetaData) };
@@ -360,25 +404,37 @@ struct Z_Construct_UClass_UDialogueNode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Base class for states and branches in the Dialogues state machine*/" },
+#endif
 		{ "IncludePath", "Tales/DialogueSM.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for states and branches in the Dialogues state machine" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Line_MetaData[] = {
 		{ "Category", "Details - Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The dialogue line associated with this node\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
 		{ "ShowOnlyInnerProperties", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The dialogue line associated with this node" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AlternativeLines_MetaData[] = {
 		{ "AdvancedDisplay", "" },
 		{ "Category", "Dialogue Line" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If alternative lines are added in here, narrative will randomly select either the main line or one of the alternatives.\n\x09 \n\x09 This can make dialogues more random and believable. \n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If alternative lines are added in here, narrative will randomly select either the main line or one of the alternatives.\n\n       This can make dialogues more random and believable." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDialogueFinished_MetaData[] = {
 		{ "Category", "Dialogue" },
@@ -386,9 +442,13 @@ struct Z_Construct_UClass_UDialogueNode_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayedLine_MetaData[] = {
 		{ "Category", "Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The last line the dialogue node played.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The last line the dialogue node played." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCReplies_MetaData[] = {
 		{ "AdvancedDisplay", "" },
@@ -410,28 +470,44 @@ struct Z_Construct_UClass_UDialogueNode_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPlayNodeFuncName_MetaData[] = {
 		{ "AdvancedDisplay", "" },
 		{ "Category", "Details - Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Name of custom event to call when this is reached \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Name of custom event to call when this is reached" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DirectedAtSpeakerID_MetaData[] = {
 		{ "Category", "Details - Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The ID of the speaker we are saying this line to. Can be left empty. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ID of the speaker we are saying this line to. Can be left empty." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsSkippable_MetaData[] = {
 		{ "Category", "Details - Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Should pressing the enter key allow this line to be skipped?*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should pressing the enter key allow this line to be skipped?" },
+#endif
 	};
 #if WITH_EDITORONLY_DATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCompactView_MetaData[] = {
 		{ "Category", "Details - Dialogue Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**If true, the dialogue editor will style this node in a compact form*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, the dialogue editor will style this node in a compact form" },
+#endif
 	};
 #endif // WITH_EDITORONLY_DATA
 #endif // WITH_METADATA
@@ -461,11 +537,11 @@ struct Z_Construct_UClass_UDialogueNode_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_Line = { "Line", nullptr, (EPropertyFlags)0x0010008000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueNode, Line), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Line_MetaData), NewProp_Line_MetaData) }; // 337249143
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_AlternativeLines_Inner = { "AlternativeLines", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(0, nullptr) }; // 337249143
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_AlternativeLines = { "AlternativeLines", nullptr, (EPropertyFlags)0x0010008000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueNode, AlternativeLines), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AlternativeLines_MetaData), NewProp_AlternativeLines_MetaData) }; // 337249143
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_Line = { "Line", nullptr, (EPropertyFlags)0x0010008000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueNode, Line), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Line_MetaData), NewProp_Line_MetaData) }; // 1755161311
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_AlternativeLines_Inner = { "AlternativeLines", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(0, nullptr) }; // 1755161311
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_AlternativeLines = { "AlternativeLines", nullptr, (EPropertyFlags)0x0010008000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueNode, AlternativeLines), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AlternativeLines_MetaData), NewProp_AlternativeLines_MetaData) }; // 1755161311
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_OnDialogueFinished = { "OnDialogueFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueNode, OnDialogueFinished), Z_Construct_UDelegateFunction_NarrativeArsenal_OnDialogueNodeFinishedPlaying__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueFinished_MetaData), NewProp_OnDialogueFinished_MetaData) }; // 4064577739
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_PlayedLine = { "PlayedLine", nullptr, (EPropertyFlags)0x0010008000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueNode, PlayedLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayedLine_MetaData), NewProp_PlayedLine_MetaData) }; // 337249143
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_PlayedLine = { "PlayedLine", nullptr, (EPropertyFlags)0x0010008000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueNode, PlayedLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayedLine_MetaData), NewProp_PlayedLine_MetaData) }; // 1755161311
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_NPCReplies_Inner = { "NPCReplies", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UDialogueNode_NPC_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_NPCReplies = { "NPCReplies", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueNode, NPCReplies), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NPCReplies_MetaData), NewProp_NPCReplies_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDialogueNode_Statics::NewProp_PlayerReplies_Inner = { "PlayerReplies", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UDialogueNode_Player_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -608,16 +684,24 @@ struct Z_Construct_UClass_UDialogueNode_NPC_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SelectingReplyShot_MetaData[] = {
 		{ "Category", "Details - NPC Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Sequence to play when player is selecting their reply after this shot has played \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sequence to play when player is selecting their reply after this shot has played" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpeakerID_MetaData[] = {
 		{ "Category", "Details - NPC Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The ID of the speaker for this node */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ID of the speaker for this node" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SelectingReplyShot;
@@ -688,9 +772,13 @@ struct Z_Construct_UFunction_UDialogueNode_Player_GetHintText_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get any hint text that should be added to a reply ( ie (Lie, Start Quest, etc))\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get any hint text that should be added to a reply ( ie (Lie, Start Quest, etc))" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InDialogue;
@@ -737,9 +825,13 @@ struct Z_Construct_UFunction_UDialogueNode_Player_GetOptionText_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Runs a wildcard replace on a player reply \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Runs a wildcard replace on a player reply" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InDialogue;
@@ -800,21 +892,33 @@ struct Z_Construct_UClass_UDialogueNode_Player_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OptionText_MetaData[] = {
 		{ "Category", "Details - Player Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The shortened text to display for dialogue option when it shows up in the list of available responses. If left empty narrative will just use the main text. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The shortened text to display for dialogue option when it shows up in the list of available responses. If left empty narrative will just use the main text." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HintText_MetaData[] = {
 		{ "Category", "Details - Player Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Optional hint text after the option text, ie (Lie, Persauade, Begin Quest) If left empty narrative will see if events have hint text. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional hint text after the option text, ie (Lie, Persauade, Begin Quest) If left empty narrative will see if events have hint text." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAutoSelect_MetaData[] = {
 		{ "Category", "Details - Player Dialogue Node" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**If true, this dialogue option will be automatically selected instead of the player having to select it from the UI*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, this dialogue option will be automatically selected instead of the player having to select it from the UI" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_OptionText;
@@ -824,8 +928,8 @@ struct Z_Construct_UClass_UDialogueNode_Player_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UDialogueNode_Player_GetHintText, "GetHintText" }, // 1342030161
-		{ &Z_Construct_UFunction_UDialogueNode_Player_GetOptionText, "GetOptionText" }, // 3244118563
+		{ &Z_Construct_UFunction_UDialogueNode_Player_GetHintText, "GetHintText" }, // 1912771482
+		{ &Z_Construct_UFunction_UDialogueNode_Player_GetOptionText, "GetOptionText" }, // 2527282592
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -884,24 +988,24 @@ UDialogueNode_Player::~UDialogueNode_Player() {}
 // End Class UDialogueNode_Player
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ ELineDuration_StaticEnum, TEXT("ELineDuration"), &Z_Registration_Info_UEnum_ELineDuration, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2897282488U) },
+		{ ELineDuration_StaticEnum, TEXT("ELineDuration"), &Z_Registration_Info_UEnum_ELineDuration, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 800924203U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSpeakerSelector::StaticStruct, Z_Construct_UScriptStruct_FSpeakerSelector_Statics::NewStructOps, TEXT("SpeakerSelector"), &Z_Registration_Info_UScriptStruct_SpeakerSelector, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSpeakerSelector), 3994799876U) },
-		{ FDialogueLine::StaticStruct, Z_Construct_UScriptStruct_FDialogueLine_Statics::NewStructOps, TEXT("DialogueLine"), &Z_Registration_Info_UScriptStruct_DialogueLine, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDialogueLine), 337249143U) },
+		{ FSpeakerSelector::StaticStruct, Z_Construct_UScriptStruct_FSpeakerSelector_Statics::NewStructOps, TEXT("SpeakerSelector"), &Z_Registration_Info_UScriptStruct_SpeakerSelector, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSpeakerSelector), 3552545428U) },
+		{ FDialogueLine::StaticStruct, Z_Construct_UScriptStruct_FDialogueLine_Statics::NewStructOps, TEXT("DialogueLine"), &Z_Registration_Info_UScriptStruct_DialogueLine, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDialogueLine), 1755161311U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueNode, UDialogueNode::StaticClass, TEXT("UDialogueNode"), &Z_Registration_Info_UClass_UDialogueNode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueNode), 3088531597U) },
-		{ Z_Construct_UClass_UDialogueNode_NPC, UDialogueNode_NPC::StaticClass, TEXT("UDialogueNode_NPC"), &Z_Registration_Info_UClass_UDialogueNode_NPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueNode_NPC), 2863471030U) },
-		{ Z_Construct_UClass_UDialogueNode_Player, UDialogueNode_Player::StaticClass, TEXT("UDialogueNode_Player"), &Z_Registration_Info_UClass_UDialogueNode_Player, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueNode_Player), 122265205U) },
+		{ Z_Construct_UClass_UDialogueNode, UDialogueNode::StaticClass, TEXT("UDialogueNode"), &Z_Registration_Info_UClass_UDialogueNode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueNode), 270078729U) },
+		{ Z_Construct_UClass_UDialogueNode_NPC, UDialogueNode_NPC::StaticClass, TEXT("UDialogueNode_NPC"), &Z_Registration_Info_UClass_UDialogueNode_NPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueNode_NPC), 2010908221U) },
+		{ Z_Construct_UClass_UDialogueNode_Player, UDialogueNode_Player::StaticClass, TEXT("UDialogueNode_Player"), &Z_Registration_Info_UClass_UDialogueNode_Player, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueNode_Player), 3175359839U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_3805328401(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_2498426661(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueSM_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

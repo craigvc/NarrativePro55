@@ -42,13 +42,17 @@ struct Z_Construct_UEnum_NarrativeArsenal_EPartyDialogueControlPolicy_Statics
 		{ "AllPlayers.Name", "EPartyDialogueControlPolicy::AllPlayers" },
 		{ "AllPlayers.ToolTip", "Anyone in the party can select dialogue options. Everyones camera will cut to whoever selected the line" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Defines how a party goes about selecting replies*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
 		{ "PartyLeaderControlled.Comment", "/**Only the party leader can select dialogue options, the rest of the players will be essentially spectating the conversation*/" },
 		{ "PartyLeaderControlled.DisplayName", "Party Leader Controlled" },
 		{ "PartyLeaderControlled.Name", "EPartyDialogueControlPolicy::PartyLeaderControlled" },
 		{ "PartyLeaderControlled.ToolTip", "Only the party leader can select dialogue options, the rest of the players will be essentially spectating the conversation" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines how a party goes about selecting replies" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -90,9 +94,13 @@ struct Z_Construct_UFunction_UNarrativePartyComponent_AddPartyMember_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[server] Add a member to the party.  Return true if successful.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[server] Add a member to the party.  Return true if successful." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Member_MetaData[] = {
 		{ "EditInline", "true" },
@@ -146,9 +154,13 @@ struct Z_Construct_UFunction_UNarrativePartyComponent_GetPartyLeader_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the party leader (only works on server) \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the party leader (only works on server)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -193,9 +205,13 @@ struct Z_Construct_UFunction_UNarrativePartyComponent_GetPartyMembers_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the members in the party \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the members in the party" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -243,9 +259,13 @@ struct Z_Construct_UFunction_UNarrativePartyComponent_GetPartyMemberStates_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the members PlayerStates in the party \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the members PlayerStates in the party" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
@@ -291,9 +311,13 @@ struct Z_Construct_UFunction_UNarrativePartyComponent_IsPartyLeader_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return whether or not we're the leader of our party. Return true if we're not in a party as we're essentially the leader in that case*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return whether or not we're the leader of our party. Return true if we're not in a party as we're essentially the leader in that case" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Member;
@@ -345,9 +369,13 @@ struct Z_Construct_UFunction_UNarrativePartyComponent_RemovePartyMember_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[server] Remove a member from the party. Return true if successful, false if player wasn't in party etc\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[server] Remove a member from the party. Return true if successful, false if player wasn't in party etc" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Member_MetaData[] = {
 		{ "EditInline", "true" },
@@ -416,30 +444,46 @@ struct Z_Construct_UClass_UNarrativePartyComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A Narrative component intended to be shared by multiple clients. This allows for some very cool functionality, teammates\n * can play quests and dialogues together with each other. Use AddPartyMember and RemovePartyMember to setup your party. \n * \n * QUESTS: Quests began on the party component will be shown on all party members UI, and any player in the party can complete quest tasks.\n * \n * DIALOGUE: Dialogues began on the party component will begin for all players, and all players will see the dialogue in sync - if a player selects\n * a dialogue option all party members will see that player say the line - this behaviour can be modified in the components settings. \n * \n * You should put this component on an actor that replicates to all of your team members. The Game State is a great place for this,\n * however if your game requires multiple different parties you'll want to make a ASquad etc that derives AInfo to hold all your team members\n * and manage them, and put a party component there instead of the game state. \n */" },
+#endif
 		{ "DisplayName", "Narrative Party Component" },
 		{ "IncludePath", "Tales/NarrativePartyComponent.h" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A Narrative component intended to be shared by multiple clients. This allows for some very cool functionality, teammates\ncan play quests and dialogues together with each other. Use AddPartyMember and RemovePartyMember to setup your party.\n\nQUESTS: Quests began on the party component will be shown on all party members UI, and any player in the party can complete quest tasks.\n\nDIALOGUE: Dialogues began on the party component will begin for all players, and all players will see the dialogue in sync - if a player selects\na dialogue option all party members will see that player say the line - this behaviour can be modified in the components settings.\n\nYou should put this component on an actor that replicates to all of your team members. The Game State is a great place for this,\nhowever if your game requires multiple different parties you'll want to make a ASquad etc that derives AInfo to hold all your team members\nand manage them, and put a party component there instead of the game state." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PartyDialogueControlPolicy_MetaData[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Defines how a party goes about selecting replies - currently just enforced by the UI, isn't actually authed by server */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines how a party goes about selecting replies - currently just enforced by the UI, isn't actually authed by server" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PartyMembers_MetaData[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** All of the players in the party */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All of the players in the party" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PartyMemberStates_MetaData[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Narrative Components exist on peoples player controllers, and so there isn't a nice way for people in the party to access\n\x09""each others pawns/playerstates via PartyMembers array, and so this array exists to solve that. We store PStates because pawns can change\n\x09possession but PState->GetPawn() will always give us the current valid pawn */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativePartyComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Narrative Components exist on peoples player controllers, and so there isn't a nice way for people in the party to access\n      each others pawns/playerstates via PartyMembers array, and so this array exists to solve that. We store PStates because pawns can change\n      possession but PState->GetPawn() will always give us the current valid pawn" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_PartyDialogueControlPolicy_Underlying;
@@ -451,12 +495,12 @@ struct Z_Construct_UClass_UNarrativePartyComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativePartyComponent_AddPartyMember, "AddPartyMember" }, // 3690964483
-		{ &Z_Construct_UFunction_UNarrativePartyComponent_GetPartyLeader, "GetPartyLeader" }, // 2800217562
-		{ &Z_Construct_UFunction_UNarrativePartyComponent_GetPartyMembers, "GetPartyMembers" }, // 376648044
-		{ &Z_Construct_UFunction_UNarrativePartyComponent_GetPartyMemberStates, "GetPartyMemberStates" }, // 3472915792
-		{ &Z_Construct_UFunction_UNarrativePartyComponent_IsPartyLeader, "IsPartyLeader" }, // 2998107846
-		{ &Z_Construct_UFunction_UNarrativePartyComponent_RemovePartyMember, "RemovePartyMember" }, // 1006734404
+		{ &Z_Construct_UFunction_UNarrativePartyComponent_AddPartyMember, "AddPartyMember" }, // 972157763
+		{ &Z_Construct_UFunction_UNarrativePartyComponent_GetPartyLeader, "GetPartyLeader" }, // 196939749
+		{ &Z_Construct_UFunction_UNarrativePartyComponent_GetPartyMembers, "GetPartyMembers" }, // 950680247
+		{ &Z_Construct_UFunction_UNarrativePartyComponent_GetPartyMemberStates, "GetPartyMemberStates" }, // 1986889805
+		{ &Z_Construct_UFunction_UNarrativePartyComponent_IsPartyLeader, "IsPartyLeader" }, // 1602289627
+		{ &Z_Construct_UFunction_UNarrativePartyComponent_RemovePartyMember, "RemovePartyMember" }, // 3259753408
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -465,7 +509,7 @@ struct Z_Construct_UClass_UNarrativePartyComponent_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UNarrativePartyComponent_Statics::NewProp_PartyDialogueControlPolicy_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativePartyComponent_Statics::NewProp_PartyDialogueControlPolicy = { "PartyDialogueControlPolicy", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativePartyComponent, PartyDialogueControlPolicy), Z_Construct_UEnum_NarrativeArsenal_EPartyDialogueControlPolicy, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PartyDialogueControlPolicy_MetaData), NewProp_PartyDialogueControlPolicy_MetaData) }; // 2613721260
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativePartyComponent_Statics::NewProp_PartyDialogueControlPolicy = { "PartyDialogueControlPolicy", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativePartyComponent, PartyDialogueControlPolicy), Z_Construct_UEnum_NarrativeArsenal_EPartyDialogueControlPolicy, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PartyDialogueControlPolicy_MetaData), NewProp_PartyDialogueControlPolicy_MetaData) }; // 1919597279
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativePartyComponent_Statics::NewProp_PartyMembers_Inner = { "PartyMembers", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UTalesComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativePartyComponent_Statics::NewProp_PartyMembers = { "PartyMembers", nullptr, (EPropertyFlags)0x002008800000001c, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativePartyComponent, PartyMembers), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PartyMembers_MetaData), NewProp_PartyMembers_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativePartyComponent_Statics::NewProp_PartyMemberStates_Inner = { "PartyMemberStates", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_APlayerState_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -523,18 +567,18 @@ UNarrativePartyComponent::~UNarrativePartyComponent() {}
 // End Class UNarrativePartyComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EPartyDialogueControlPolicy_StaticEnum, TEXT("EPartyDialogueControlPolicy"), &Z_Registration_Info_UEnum_EPartyDialogueControlPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2613721260U) },
+		{ EPartyDialogueControlPolicy_StaticEnum, TEXT("EPartyDialogueControlPolicy"), &Z_Registration_Info_UEnum_EPartyDialogueControlPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1919597279U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativePartyComponent, UNarrativePartyComponent::StaticClass, TEXT("UNarrativePartyComponent"), &Z_Registration_Info_UClass_UNarrativePartyComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativePartyComponent), 1805068570U) },
+		{ Z_Construct_UClass_UNarrativePartyComponent, UNarrativePartyComponent::StaticClass, TEXT("UNarrativePartyComponent"), &Z_Registration_Info_UClass_UNarrativePartyComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativePartyComponent), 41373839U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_1129214326(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_1078847068(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativePartyComponent_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

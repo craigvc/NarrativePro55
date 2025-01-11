@@ -31,17 +31,25 @@ struct Z_Construct_UClass_UNPCInteractable_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Special interactable component made for NPCCharacters. Handles talking to NPCs if they are alive and have valid dialogue, \n * or looting from them if they have been killed. \n */" },
+#endif
 		{ "IncludePath", "AI/NPCInteractable.h" },
 		{ "ModuleRelativePath", "Public/AI/NPCInteractable.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Special interactable component made for NPCCharacters. Handles talking to NPCs if they are alive and have valid dialogue,\nor looting from them if they have been killed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Dialogue_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The dialogue this NPC currently has available, pulled from the NPCs data asset. Note these are hard reffed to avoid hitches\n\x09when attempting to start a dialogue. For games with large settlements with huge amounts of dialogue, you may want to make these\n\x09soft reffed instead, and add some async loading logic. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NPCInteractable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The dialogue this NPC currently has available, pulled from the NPCs data asset. Note these are hard reffed to avoid hitches\n      when attempting to start a dialogue. For games with large settlements with huge amounts of dialogue, you may want to make these\n      soft reffed instead, and add some async loading logic." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_Dialogue;
@@ -94,14 +102,14 @@ UNPCInteractable::~UNPCInteractable() {}
 // End Class UNPCInteractable
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCInteractable_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCInteractable_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNPCInteractable, UNPCInteractable::StaticClass, TEXT("UNPCInteractable"), &Z_Registration_Info_UClass_UNPCInteractable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCInteractable), 65869089U) },
+		{ Z_Construct_UClass_UNPCInteractable, UNPCInteractable::StaticClass, TEXT("UNPCInteractable"), &Z_Registration_Info_UClass_UNPCInteractable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCInteractable), 421242633U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCInteractable_h_228105435(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCInteractable_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCInteractable_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCInteractable_h_1506057585(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCInteractable_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NPCInteractable_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

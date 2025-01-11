@@ -45,9 +45,13 @@ struct Z_Construct_UFunction_ANarrativePlayerController_FastTravelToPOI_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|Fast Travel" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//POI marker calls this to perform fast travelling, which we implement in BP \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "POI marker calls this to perform fast travelling, which we implement in BP" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POI_MetaData[] = {
 		{ "NativeConst", "" },
@@ -57,7 +61,7 @@ struct Z_Construct_UFunction_ANarrativePlayerController_FastTravelToPOI_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANarrativePlayerController_FastTravelToPOI_Statics::NewProp_POI = { "POI", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativePlayerController_eventFastTravelToPOI_Parms, POI), Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_POI_MetaData), NewProp_POI_MetaData) }; // 3732342648
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANarrativePlayerController_FastTravelToPOI_Statics::NewProp_POI = { "POI", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativePlayerController_eventFastTravelToPOI_Parms, POI), Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_POI_MetaData), NewProp_POI_MetaData) }; // 2126533229
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ANarrativePlayerController_FastTravelToPOI_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANarrativePlayerController_FastTravelToPOI_Statics::NewProp_POI,
 };
@@ -85,9 +89,13 @@ struct Z_Construct_UFunction_ANarrativePlayerController_GetControlledCharacter_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the controlled narrative char\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the controlled narrative char" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -174,9 +182,13 @@ struct Z_Construct_UFunction_ANarrativePlayerController_GetNarrativeInputDeviceN
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Basically just return the input device name in a way the narrative input icon data table understands. Keyboard, Xbox, PS5, etc. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Basically just return the input device name in a way the narrative input icon data table understands. Keyboard, Xbox, PS5, etc." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
@@ -273,9 +285,13 @@ struct Z_Construct_UFunction_ANarrativePlayerController_HandleDamageActor_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|FX" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Do whatever we like when we damage an actor, by default we put damage text up. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Do whatever we like when we damage an actor, by default we put damage text up." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DamageAmount_MetaData[] = {
 		{ "NativeConst", "" },
@@ -333,9 +349,13 @@ struct Z_Construct_UFunction_ANarrativePlayerController_HandleDeath_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Gives our playercontroller a chance to react to death.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gives our playercontroller a chance to react to death." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_KilledActorASC_MetaData[] = {
 		{ "EditInline", "true" },
@@ -505,12 +525,16 @@ struct Z_Construct_UClass_ANarrativePlayerController_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for Player Controllers in Narrative Pro. Typically possesses an ANarrativePlayerCharacter. \n */" },
+#endif
 		{ "HideCategories", "Collision Rendering Transformation" },
 		{ "IncludePath", "UnrealFramework/NarrativePlayerController.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerController.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for Player Controllers in Narrative Pro. Typically possesses an ANarrativePlayerCharacter." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionComponent_MetaData[] = {
 		{ "Category", "Narrative|Interaction" },
@@ -534,13 +558,13 @@ struct Z_Construct_UClass_ANarrativePlayerController_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ANarrativePlayerController_FastTravelToPOI, "FastTravelToPOI" }, // 2283633645
-		{ &Z_Construct_UFunction_ANarrativePlayerController_GetControlledCharacter, "GetControlledCharacter" }, // 3042072637
+		{ &Z_Construct_UFunction_ANarrativePlayerController_FastTravelToPOI, "FastTravelToPOI" }, // 3799142437
+		{ &Z_Construct_UFunction_ANarrativePlayerController_GetControlledCharacter, "GetControlledCharacter" }, // 1008747111
 		{ &Z_Construct_UFunction_ANarrativePlayerController_GetInteractionComponent, "GetInteractionComponent" }, // 3196819243
-		{ &Z_Construct_UFunction_ANarrativePlayerController_GetNarrativeInputDeviceName, "GetNarrativeInputDeviceName" }, // 3070293221
+		{ &Z_Construct_UFunction_ANarrativePlayerController_GetNarrativeInputDeviceName, "GetNarrativeInputDeviceName" }, // 343767284
 		{ &Z_Construct_UFunction_ANarrativePlayerController_GetTalesComponent, "GetTalesComponent" }, // 3978111508
-		{ &Z_Construct_UFunction_ANarrativePlayerController_HandleDamageActor, "HandleDamageActor" }, // 1317687572
-		{ &Z_Construct_UFunction_ANarrativePlayerController_HandleDeath, "HandleDeath" }, // 1371155628
+		{ &Z_Construct_UFunction_ANarrativePlayerController_HandleDamageActor, "HandleDamageActor" }, // 1061562657
+		{ &Z_Construct_UFunction_ANarrativePlayerController_HandleDeath, "HandleDeath" }, // 427301001
 		{ &Z_Construct_UFunction_ANarrativePlayerController_IsUsingGamepad, "IsUsingGamepad" }, // 923549832
 		{ &Z_Construct_UFunction_ANarrativePlayerController_NotifyDealtDamage, "NotifyDealtDamage" }, // 2571440435
 	};
@@ -602,14 +626,14 @@ ANarrativePlayerController::~ANarrativePlayerController() {}
 // End Class ANarrativePlayerController
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerController_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativePlayerController, ANarrativePlayerController::StaticClass, TEXT("ANarrativePlayerController"), &Z_Registration_Info_UClass_ANarrativePlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativePlayerController), 2395181992U) },
+		{ Z_Construct_UClass_ANarrativePlayerController, ANarrativePlayerController::StaticClass, TEXT("ANarrativePlayerController"), &Z_Registration_Info_UClass_ANarrativePlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativePlayerController), 936270395U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerController_h_3087025999(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerController_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerController_h_1245309859(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

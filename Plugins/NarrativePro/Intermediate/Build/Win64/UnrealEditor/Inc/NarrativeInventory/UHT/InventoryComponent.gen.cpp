@@ -57,40 +57,64 @@ struct Z_Construct_UScriptStruct_FItemAddResult_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Represents the result of adding an item to the inventory.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents the result of adding an item to the inventory." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemClass_MetaData[] = {
 		{ "Category", "Item Add Result" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The item class we were attempting to add \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The item class we were attempting to add" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Stacks_MetaData[] = {
 		{ "Category", "Item Add Result" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Any new stacks that were created\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Any new stacks that were created" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AmountToGive_MetaData[] = {
 		{ "Category", "Item Add Result" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The amount of the item that we tried to add\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of the item that we tried to add" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AmountGiven_MetaData[] = {
 		{ "Category", "Item Add Result" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The amount of the item that was actually added in the end. Maybe we tried adding 10 items, but only 8 could be added because of capacity/weight\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of the item that was actually added in the end. Maybe we tried adding 10 items, but only 8 could be added because of capacity/weight" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ErrorText_MetaData[] = {
 		{ "Category", "Item Add Result" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If something went wrong, like we didnt have enough capacity or carrying too much weight this contains the reason why\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If something went wrong, like we didnt have enough capacity or carrying too much weight this contains the reason why" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_ItemClass;
@@ -149,9 +173,13 @@ struct Z_Construct_UDelegateFunction_NarrativeInventory_OnInventoryUpdated__Dele
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when the inventory is changed and the UI needs an update. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the inventory is changed and the UI needs an update." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -181,9 +209,13 @@ struct Z_Construct_UDelegateFunction_NarrativeInventory_OnItemAdded__DelegateSig
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called on server when an item is added to this inventory*/" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called on server when an item is added to this inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AddResult_MetaData[] = {
 		{ "NativeConst", "" },
@@ -193,7 +225,7 @@ struct Z_Construct_UDelegateFunction_NarrativeInventory_OnItemAdded__DelegateSig
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeInventory_OnItemAdded__DelegateSignature_Statics::NewProp_AddResult = { "AddResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeInventory_eventOnItemAdded_Parms, AddResult), Z_Construct_UScriptStruct_FItemAddResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AddResult_MetaData), NewProp_AddResult_MetaData) }; // 1390342961
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeInventory_OnItemAdded__DelegateSignature_Statics::NewProp_AddResult = { "AddResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeInventory_eventOnItemAdded_Parms, AddResult), Z_Construct_UScriptStruct_FItemAddResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AddResult_MetaData), NewProp_AddResult_MetaData) }; // 2239856553
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_NarrativeInventory_OnItemAdded__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeInventory_OnItemAdded__DelegateSignature_Statics::NewProp_AddResult,
 };
@@ -472,9 +504,13 @@ struct Z_Construct_UScriptStruct_FItemWithQuantity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Just a nice way of defining an item along with some amount of the item \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Just a nice way of defining an item along with some amount of the item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[] = {
 		{ "Category", "Item" },
@@ -537,17 +573,25 @@ struct Z_Construct_UClass_UItemCollection_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Data asset with a collection of items. Useful for grouping things together like armor sets, weapon sets, etc. \n */" },
+#endif
 		{ "IncludePath", "InventoryComponent.h" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Data asset with a collection of items. Useful for grouping things together like armor sets, weapon sets, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Items_MetaData[] = {
 		{ "Category", "Loot Table Row" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The items to grant if this row is given to the inventory\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The items to grant if this row is given to the inventory" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Items_Inner;
@@ -559,8 +603,8 @@ struct Z_Construct_UClass_UItemCollection_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UItemCollection_Statics::NewProp_Items_Inner = { "Items", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemWithQuantity, METADATA_PARAMS(0, nullptr) }; // 68793355
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UItemCollection_Statics::NewProp_Items = { "Items", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemCollection, Items), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Items_MetaData), NewProp_Items_MetaData) }; // 68793355
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UItemCollection_Statics::NewProp_Items_Inner = { "Items", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemWithQuantity, METADATA_PARAMS(0, nullptr) }; // 3018046121
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UItemCollection_Statics::NewProp_Items = { "Items", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemCollection, Items), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Items_MetaData), NewProp_Items_MetaData) }; // 3018046121
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UItemCollection_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemCollection_Statics::NewProp_Items_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemCollection_Statics::NewProp_Items,
@@ -621,32 +665,48 @@ struct Z_Construct_UScriptStruct_FLootTableRoll_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines a roll of a loot table \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a roll of a loot table" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TableToRoll_MetaData[] = {
 		{ "Category", "Loot Table Row" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The items to grant if this row is given to the inventory \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
 		{ "RequiredAssetDataTags", "RowStructure=/Script/NarrativeInventory.LootTableRow" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The items to grant if this row is given to the inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumRolls_MetaData[] = {
 		{ "Category", "Loot Table Row" },
 		{ "ClampMax", "100" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The number of times we should roll the table \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The number of times we should roll the table" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Chance_MetaData[] = {
 		{ "Category", "Loot Table Row" },
 		{ "ClampMax", "1.000000" },
 		{ "ClampMin", "0.000000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The chance of each roll succeeding \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The chance of each roll succeeding" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TableToRoll;
@@ -711,35 +771,55 @@ struct Z_Construct_UScriptStruct_FLootTableRow_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines a row in a loot table\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a row in a loot table" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemsToGrant_MetaData[] = {
 		{ "Category", "Loot Table Row" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The items to grant if this row is given to the inventory\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The items to grant if this row is given to the inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemCollectionsToGrant_MetaData[] = {
 		{ "Category", "Loot Table Row" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Item collections to grant\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Item collections to grant" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SubTablesToRoll_MetaData[] = {
 		{ "Category", "Loot Table Row" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Subloot tables that this loot table will roll \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Subloot tables that this loot table will roll" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Chance_MetaData[] = {
 		{ "Category", "Loot Table Row" },
 		{ "ClampMax", "1.000000" },
 		{ "ClampMin", "0.000000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The chance this row will actually be given if selected \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The chance this row will actually be given if selected" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ItemsToGrant_Inner;
@@ -756,12 +836,12 @@ struct Z_Construct_UScriptStruct_FLootTableRow_Statics
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_ItemsToGrant_Inner = { "ItemsToGrant", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemWithQuantity, METADATA_PARAMS(0, nullptr) }; // 68793355
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_ItemsToGrant = { "ItemsToGrant", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLootTableRow, ItemsToGrant), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemsToGrant_MetaData), NewProp_ItemsToGrant_MetaData) }; // 68793355
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_ItemsToGrant_Inner = { "ItemsToGrant", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemWithQuantity, METADATA_PARAMS(0, nullptr) }; // 3018046121
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_ItemsToGrant = { "ItemsToGrant", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLootTableRow, ItemsToGrant), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemsToGrant_MetaData), NewProp_ItemsToGrant_MetaData) }; // 3018046121
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_ItemCollectionsToGrant_Inner = { "ItemCollectionsToGrant", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UItemCollection_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_ItemCollectionsToGrant = { "ItemCollectionsToGrant", nullptr, (EPropertyFlags)0x0114000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLootTableRow, ItemCollectionsToGrant), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemCollectionsToGrant_MetaData), NewProp_ItemCollectionsToGrant_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_SubTablesToRoll_Inner = { "SubTablesToRoll", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 2828341262
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_SubTablesToRoll = { "SubTablesToRoll", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLootTableRow, SubTablesToRoll), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SubTablesToRoll_MetaData), NewProp_SubTablesToRoll_MetaData) }; // 2828341262
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_SubTablesToRoll_Inner = { "SubTablesToRoll", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 396159061
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_SubTablesToRoll = { "SubTablesToRoll", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLootTableRow, SubTablesToRoll), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SubTablesToRoll_MetaData), NewProp_SubTablesToRoll_MetaData) }; // 396159061
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_Chance = { "Chance", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLootTableRow, Chance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Chance_MetaData), NewProp_Chance_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FLootTableRow_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FLootTableRow_Statics::NewProp_ItemsToGrant_Inner,
@@ -814,17 +894,25 @@ struct Z_Construct_UScriptStruct_FNarrativeSavedItem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Used by the save interface to save our data \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by the save interface to save our data" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemClass_MetaData[] = {
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ByteData_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Any savegame variables on the item get serialized and stored in here \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Any savegame variables on the item get serialized and stored in here" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Quantity_MetaData[] = {
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
@@ -896,9 +984,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_AddCurrency_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Currency" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Add some currency to the players inventory. Can accept negative values. */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add some currency to the players inventory. Can accept negative values." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Amount_MetaData[] = {
 		{ "NativeConst", "" },
@@ -948,9 +1040,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_AllowLootItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return true if the taker can loot the item from this inventory */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if the taker can loot the item from this inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Taker_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1023,9 +1119,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_AllowStoreItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return true if the storer can store the given item in this inventory */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if the storer can store the given item in this inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Storer_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1131,10 +1231,14 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_ConsumeItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Take some quantity away from the item, and remove it from the inventory when quantity reaches zero.\n\x09Useful for things like eating food, using ammo, etc.*/" },
+#endif
 		{ "CPP_Default_Quantity", "1" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Take some quantity away from the item, and remove it from the inventory when quantity reaches zero.\n      Useful for things like eating food, using ammo, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1192,10 +1296,14 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_FindItemByClass_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return the first item with the same class as ItemClass.*/" },
+#endif
 		{ "CPP_Default_bCheckVisibility", "false" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the first item with the same class as ItemClass." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCheckVisibility_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1258,10 +1366,14 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_FindItemsOfClass_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Get all inventory items that are children of the supplied ItemClass. */" },
+#endif
 		{ "CPP_Default_bCheckVisibility", "false" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get all inventory items that are children of the supplied ItemClass." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCheckVisibility_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1350,10 +1462,14 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_GetBuyPrice_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Return the price we'll buy the given item for\n\x09*/" },
+#endif
 		{ "CPP_Default_Quantity", "1" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the price we'll buy the given item for" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_Item;
@@ -1445,9 +1561,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_GetCurrency_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Currency" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Return the amount of currency we have */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the amount of currency we have" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
@@ -1489,9 +1609,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_GetCurrentWeight_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the current weight of the inventory. To get the amount of items in the inventory, just do GetItems().Num()\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the current weight of the inventory. To get the amount of items in the inventory, just do GetItems().Num()" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -1690,10 +1814,14 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_GetSellPrice_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Return the price we'll sell the given item for\n\x09*/" },
+#endif
 		{ "CPP_Default_Quantity", "1" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the price we'll sell the given item for" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_Item;
@@ -1745,9 +1873,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_GetSpaceForItem_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return the amount of a given item that we have space for based on its weight, max stack size, etc.\n\x09@param NoSpaceReason If we have no space for the item, this is the reason why */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the amount of a given item that we have space for based on its weight, max stack size, etc.\n       @param NoSpaceReason If we have no space for the item, this is the reason why" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_ItemClass;
@@ -1835,9 +1967,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_GiveDefaultItems_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Instead of calling this automatically on beginplay we let designers call this when they like.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Instead of calling this automatically on beginplay we let designers call this when they like." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -1874,11 +2010,15 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_HasItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return true if we have a given amount of an item. bCheckVisibility will only look for items that are visible in the inventory*/" },
+#endif
 		{ "CPP_Default_bCheckVisibility", "false" },
 		{ "CPP_Default_Quantity", "1" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if we have a given amount of an item. bCheckVisibility will only look for items that are visible in the inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Quantity_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2088,9 +2228,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_RemoveItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Remove the item from the inventory. We do actually allow clients to call this unlike AddItem, however the server\n\x09will still validate that the item is allowed to be removed before removing the item, so still cheat safe */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Remove the item from the inventory. We do actually allow clients to call this unlike AddItem, however the server\n      will still validate that the item is allowed to be removed before removing the item, so still cheat safe" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[] = {
 		{ "EditInline", "true" },
@@ -2147,10 +2291,14 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_RequestLootItem_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Loot an item. Clients RPC to tell server they want to do this; server will validate to prevent cheating\n\x09\x09If we're client return true/false if we notified server to loot. Server returns true if loot actually happened. */" },
+#endif
 		{ "CPP_Default_Quantity", "1" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Loot an item. Clients RPC to tell server they want to do this; server will validate to prevent cheating\n              If we're client return true/false if we notified server to loot. Server returns true if loot actually happened." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemToLoot_MetaData[] = {
 		{ "EditInline", "true" },
@@ -2218,10 +2366,14 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_RequestStoreItem_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Store an item. Clients RPC to tell server they want to do this; server will validate to prevent cheating\n\x09If we're client return true/false if we notified server to store. Server returns true if store actually happened. \n\x09*/" },
+#endif
 		{ "CPP_Default_Quantity", "1" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Store an item. Clients RPC to tell server they want to do this; server will validate to prevent cheating\n      If we're client return true/false if we notified server to store. Server returns true if store actually happened." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemToStore_MetaData[] = {
 		{ "EditInline", "true" },
@@ -2659,9 +2811,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_SetCurrency_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Currency" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** set the amount of currency the player has . */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "set the amount of currency the player has ." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Amount_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2804,9 +2960,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_SetLootSource_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Sets our loot source. Only the server can call this for obvious reasons! */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets our loot source. Only the server can call this for obvious reasons!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewLootSource_MetaData[] = {
 		{ "EditInline", "true" },
@@ -2894,9 +3054,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_StopLooting_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Stop looting. Clients will RPC to the server to end looting. */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stop looting. Clients will RPC to the server to end looting." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -2931,9 +3095,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Add an item to our inventory using a loot table instead of an item class. Current loads the granted items syncrounously and may cause hitching depending on how heavy the item is. */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add an item to our inventory using a loot table instead of an item class. Current loads the granted items syncrounously and may cause hitching depending on how heavy the item is." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_LootTable;
@@ -2942,9 +3110,9 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_St
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::NewProp_LootTable = { "LootTable", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInventoryComponent_eventTryAddFromLootTable_Parms, LootTable), Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 2828341262
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::NewProp_OutItemAddResults_Inner = { "OutItemAddResults", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemAddResult, METADATA_PARAMS(0, nullptr) }; // 1390342961
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::NewProp_OutItemAddResults = { "OutItemAddResults", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInventoryComponent_eventTryAddFromLootTable_Parms, OutItemAddResults), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 1390342961
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::NewProp_LootTable = { "LootTable", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInventoryComponent_eventTryAddFromLootTable_Parms, LootTable), Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 396159061
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::NewProp_OutItemAddResults_Inner = { "OutItemAddResults", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemAddResult, METADATA_PARAMS(0, nullptr) }; // 2239856553
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::NewProp_OutItemAddResults = { "OutItemAddResults", nullptr, (EPropertyFlags)0x0010008000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInventoryComponent_eventTryAddFromLootTable_Parms, OutItemAddResults), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 2239856553
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::NewProp_LootTable,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable_Statics::NewProp_OutItemAddResults_Inner,
@@ -2986,11 +3154,15 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Add an item to the inventory using the item class\n\x09@param ItemClass the item to add\n\x09@param Quantity the amount of the item to add\n\x09@param bCheckAutoUse if true, we'll check if the item wants to be auto-used on add. Clothing items do this for example to auto-equip. \n\x09@return the amount of the item that was added to the inventory */" },
+#endif
 		{ "CPP_Default_bCheckAutoUse", "true" },
 		{ "CPP_Default_Quantity", "1" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add an item to the inventory using the item class\n       @param ItemClass the item to add\n       @param Quantity the amount of the item to add\n       @param bCheckAutoUse if true, we'll check if the item wants to be auto-used on add. Clothing items do this for example to auto-equip.\n       @return the amount of the item that was added to the inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Quantity_MetaData[] = {
 		{ "NativeConst", "" },
@@ -3014,7 +3186,7 @@ void Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_Stat
 	((NarrativeInventoryComponent_eventTryAddItemFromClass_Parms*)Obj)->bCheckAutoUse = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_Statics::NewProp_bCheckAutoUse = { "bCheckAutoUse", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(NarrativeInventoryComponent_eventTryAddItemFromClass_Parms), &Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_Statics::NewProp_bCheckAutoUse_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bCheckAutoUse_MetaData), NewProp_bCheckAutoUse_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInventoryComponent_eventTryAddItemFromClass_Parms, ReturnValue), Z_Construct_UScriptStruct_FItemAddResult, METADATA_PARAMS(0, nullptr) }; // 1390342961
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInventoryComponent_eventTryAddItemFromClass_Parms, ReturnValue), Z_Construct_UScriptStruct_FItemAddResult, METADATA_PARAMS(0, nullptr) }; // 2239856553
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_Statics::NewProp_ItemClass,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass_Statics::NewProp_Quantity,
@@ -3056,9 +3228,13 @@ struct Z_Construct_UFunction_UNarrativeInventoryComponent_UseItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Use the given item. Return true if the item was successfully used. Please note Using is currently predicted by clients. */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use the given item. Return true if the item was successfully used. Please note Using is currently predicted by clients." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[] = {
 		{ "EditInline", "true" },
@@ -3162,12 +3338,16 @@ struct Z_Construct_UClass_UNarrativeInventoryComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**An inventory component manages a collection of Narrative Items. For players, this should be added to the player state.\nFor lootable items like chests, simply add the inventory component to the chest actor. */" },
+#endif
 		{ "DisplayName", "Narrative Inventory" },
 		{ "IncludePath", "InventoryComponent.h" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An inventory component manages a collection of Narrative Items. For players, this should be added to the player state.\nFor lootable items like chests, simply add the inventory component to the chest actor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedItems_MetaData[] = {
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
@@ -3181,21 +3361,33 @@ struct Z_Construct_UClass_UNarrativeInventoryComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnItemAdded_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Delegate for an item being added. Currently only called server side.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegate for an item being added. Currently only called server side." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnItemRemoved_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Delegate for an item being removed. Called on server and client \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegate for an item being removed. Called on server and client" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnItemUsed_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Delegate for an item being Used. Currently only called server side.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegate for an item being Used. Currently only called server side." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnBeginLooting_MetaData[] = {
 		{ "Category", "Inventory" },
@@ -3207,91 +3399,147 @@ struct Z_Construct_UClass_UNarrativeInventoryComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCurrencyChanged_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Notify when our currency balance changes \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Notify when our currency balance changes" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InventoryFriendlyName_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The name of this inventory - used by the UI that ships with Narrative Inventory. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name of this inventory - used by the UI that ships with Narrative Inventory." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeightCapacity_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The maximum weight the inventory can hold. For players, backpacks and other items increase this limit\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum weight the inventory can hold. For players, backpacks and other items increase this limit" },
+#endif
 		{ "Units", "Kilograms" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Capacity_MetaData[] = {
 		{ "Category", "Inventory" },
 		{ "ClampMax", "1000" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The maximum number of items the inventory can hold. For players, backpacks and other items increase this limit\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum number of items the inventory can hold. For players, backpacks and other items increase this limit" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LootSource_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The inventory we're currently looting from*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The inventory we're currently looting from" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Items_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The items currently in our inventory*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The items currently in our inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Currency_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The amount of currency our player has*/" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of currency our player has" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultItems_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Items that should be put in our inventory on BeginPlay. We savegame this as to only add the items once.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Items that should be put in our inventory on BeginPlay. We savegame this as to only add the items once." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultItemTables_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Loot table we'll use to generate this inventories items. */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Loot table we'll use to generate this inventories items." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bGaveDefaultItems_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Nice way to ensure we don't give default items multiple times.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Nice way to ensure we don't give default items multiple times." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsVendor_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If true, this inventory will be treated as a vendor, meaning taking/giving items will check you/the vendor has enough currency, and will \n\x09give you/the vendor the currency when the taking/giving occurs also. */" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, this inventory will be treated as a vendor, meaning taking/giving items will check you/the vendor has enough currency, and will\n      give you/the vendor the currency when the taking/giving occurs also." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BuyItemPct_MetaData[] = {
 		{ "Category", "Vendor Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The percentage of the items value we'll buy items for if we're a vendor. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The percentage of the items value we'll buy items for if we're a vendor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SellItemPct_MetaData[] = {
 		{ "Category", "Vendor Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The percentage of the items value we'll sell items for \n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The percentage of the items value we'll sell items for" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerPC_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We cache the OwningController, we won't cache pawn as this might change\n" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We cache the OwningController, we won't cache pawn as this might change" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReplicatedItemsKey_MetaData[] = {
 		{ "ModuleRelativePath", "Public/InventoryComponent.h" },
@@ -3329,31 +3577,31 @@ struct Z_Construct_UClass_UNarrativeInventoryComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_AddCurrency, "AddCurrency" }, // 1719238456
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_AllowLootItem, "AllowLootItem" }, // 949278324
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_AllowStoreItem, "AllowStoreItem" }, // 2559224425
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_AddCurrency, "AddCurrency" }, // 3628220608
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_AllowLootItem, "AllowLootItem" }, // 812925677
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_AllowStoreItem, "AllowStoreItem" }, // 341173453
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_ClientRefreshInventory, "ClientRefreshInventory" }, // 4235575751
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_ConsumeItem, "ConsumeItem" }, // 2786540670
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_FindItemByClass, "FindItemByClass" }, // 2552626280
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_FindItemsOfClass, "FindItemsOfClass" }, // 332548351
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetBuyPrice, "GetBuyPrice" }, // 1555414314
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_ConsumeItem, "ConsumeItem" }, // 1600741559
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_FindItemByClass, "FindItemByClass" }, // 786308725
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_FindItemsOfClass, "FindItemsOfClass" }, // 3273191713
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetBuyPrice, "GetBuyPrice" }, // 1359850399
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetCapacity, "GetCapacity" }, // 2464406880
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetCurrency, "GetCurrency" }, // 3499765932
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetCurrentWeight, "GetCurrentWeight" }, // 1936059473
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetCurrency, "GetCurrency" }, // 3378207443
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetCurrentWeight, "GetCurrentWeight" }, // 1241575080
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetItems, "GetItems" }, // 2296839571
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetOwningController, "GetOwningController" }, // 930373308
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetOwningPawn, "GetOwningPawn" }, // 601610141
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetSellPrice, "GetSellPrice" }, // 3982810760
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetSpaceForItem, "GetSpaceForItem" }, // 2563657104
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetSellPrice, "GetSellPrice" }, // 2322911144
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetSpaceForItem, "GetSpaceForItem" }, // 466593259
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GetWeightCapacity, "GetWeightCapacity" }, // 1236157572
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GiveDefaultItems, "GiveDefaultItems" }, // 1595448062
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_HasItem, "HasItem" }, // 951550355
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_GiveDefaultItems, "GiveDefaultItems" }, // 3666165273
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_HasItem, "HasItem" }, // 491410585
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_OnRep_Currency, "OnRep_Currency" }, // 2403783930
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_OnRep_Items, "OnRep_Items" }, // 1282740100
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_OnRep_LootSource, "OnRep_LootSource" }, // 3109327346
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_RemoveItem, "RemoveItem" }, // 1673373807
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_RequestLootItem, "RequestLootItem" }, // 1793947782
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_RequestStoreItem, "RequestStoreItem" }, // 60437678
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_RemoveItem, "RemoveItem" }, // 536027651
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_RequestLootItem, "RequestLootItem" }, // 742670914
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_RequestStoreItem, "RequestStoreItem" }, // 3392568536
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_ServerConsumeItem, "ServerConsumeItem" }, // 2816886687
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_ServerRemoveItem, "ServerRemoveItem" }, // 1232076687
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_ServerRequestLootItem, "ServerRequestLootItem" }, // 1206260556
@@ -3361,15 +3609,15 @@ struct Z_Construct_UClass_UNarrativeInventoryComponent_Statics
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_ServerStopLooting, "ServerStopLooting" }, // 627376709
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_ServerUseItem, "ServerUseItem" }, // 2169778967
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_SetCapacity, "SetCapacity" }, // 3371141202
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_SetCurrency, "SetCurrency" }, // 3203652743
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_SetCurrency, "SetCurrency" }, // 2057924338
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_SetInventoryFriendlyName, "SetInventoryFriendlyName" }, // 985970831
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_SetIsVendor, "SetIsVendor" }, // 3303635595
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_SetLootSource, "SetLootSource" }, // 2803702470
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_SetLootSource, "SetLootSource" }, // 3114686783
 		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_SetWeightCapacity, "SetWeightCapacity" }, // 2694205692
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_StopLooting, "StopLooting" }, // 1181817595
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable, "TryAddFromLootTable" }, // 2461403421
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass, "TryAddItemFromClass" }, // 3529498062
-		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_UseItem, "UseItem" }, // 3877807601
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_StopLooting, "StopLooting" }, // 2446318898
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddFromLootTable, "TryAddFromLootTable" }, // 356631578
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_TryAddItemFromClass, "TryAddItemFromClass" }, // 2634770247
+		{ &Z_Construct_UFunction_UNarrativeInventoryComponent_UseItem, "UseItem" }, // 471872635
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -3378,11 +3626,11 @@ struct Z_Construct_UClass_UNarrativeInventoryComponent_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_SavedItems_Inner = { "SavedItems", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeSavedItem, METADATA_PARAMS(0, nullptr) }; // 260295843
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_SavedItems = { "SavedItems", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, SavedItems), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedItems_MetaData), NewProp_SavedItems_MetaData) }; // 260295843
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_SavedItems_Inner = { "SavedItems", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeSavedItem, METADATA_PARAMS(0, nullptr) }; // 4284324577
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_SavedItems = { "SavedItems", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, SavedItems), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedItems_MetaData), NewProp_SavedItems_MetaData) }; // 4284324577
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_SavedCurrency = { "SavedCurrency", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, SavedCurrency), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedCurrency_MetaData), NewProp_SavedCurrency_MetaData) };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_OnInventoryUpdated = { "OnInventoryUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, OnInventoryUpdated), Z_Construct_UDelegateFunction_NarrativeInventory_OnInventoryUpdated__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnInventoryUpdated_MetaData), NewProp_OnInventoryUpdated_MetaData) }; // 1917469912
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_OnItemAdded = { "OnItemAdded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, OnItemAdded), Z_Construct_UDelegateFunction_NarrativeInventory_OnItemAdded__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemAdded_MetaData), NewProp_OnItemAdded_MetaData) }; // 1624445653
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_OnInventoryUpdated = { "OnInventoryUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, OnInventoryUpdated), Z_Construct_UDelegateFunction_NarrativeInventory_OnInventoryUpdated__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnInventoryUpdated_MetaData), NewProp_OnInventoryUpdated_MetaData) }; // 4233112517
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_OnItemAdded = { "OnItemAdded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, OnItemAdded), Z_Construct_UDelegateFunction_NarrativeInventory_OnItemAdded__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemAdded_MetaData), NewProp_OnItemAdded_MetaData) }; // 3223684498
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_OnItemRemoved = { "OnItemRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, OnItemRemoved), Z_Construct_UDelegateFunction_NarrativeInventory_OnItemRemoved__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemRemoved_MetaData), NewProp_OnItemRemoved_MetaData) }; // 2958804279
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_OnItemUsed = { "OnItemUsed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, OnItemUsed), Z_Construct_UDelegateFunction_NarrativeInventory_OnItemUsed__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemUsed_MetaData), NewProp_OnItemUsed_MetaData) }; // 2198670191
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_OnBeginLooting = { "OnBeginLooting", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, OnBeginLooting), Z_Construct_UDelegateFunction_NarrativeInventory_OnBeginLooting__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnBeginLooting_MetaData), NewProp_OnBeginLooting_MetaData) }; // 1573753604
@@ -3395,10 +3643,10 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeInve
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_Items_Inner = { "Items", nullptr, (EPropertyFlags)0x00000000000a0008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UNarrativeItem_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_Items = { "Items", "OnRep_Items", (EPropertyFlags)0x0020088100020829, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, Items), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Items_MetaData), NewProp_Items_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_Currency = { "Currency", "OnRep_Currency", (EPropertyFlags)0x0020080100010021, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, Currency), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Currency_MetaData), NewProp_Currency_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_DefaultItems_Inner = { "DefaultItems", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemWithQuantity, METADATA_PARAMS(0, nullptr) }; // 68793355
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_DefaultItems = { "DefaultItems", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, DefaultItems), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultItems_MetaData), NewProp_DefaultItems_MetaData) }; // 68793355
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_DefaultItemTables_Inner = { "DefaultItemTables", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 2828341262
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_DefaultItemTables = { "DefaultItemTables", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, DefaultItemTables), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultItemTables_MetaData), NewProp_DefaultItemTables_MetaData) }; // 2828341262
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_DefaultItems_Inner = { "DefaultItems", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemWithQuantity, METADATA_PARAMS(0, nullptr) }; // 3018046121
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_DefaultItems = { "DefaultItems", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, DefaultItems), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultItems_MetaData), NewProp_DefaultItems_MetaData) }; // 3018046121
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_DefaultItemTables_Inner = { "DefaultItemTables", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 396159061
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_DefaultItemTables = { "DefaultItemTables", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInventoryComponent, DefaultItemTables), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultItemTables_MetaData), NewProp_DefaultItemTables_MetaData) }; // 396159061
 void Z_Construct_UClass_UNarrativeInventoryComponent_Statics::NewProp_bGaveDefaultItems_SetBit(void* Obj)
 {
 	((UNarrativeInventoryComponent*)Obj)->bGaveDefaultItems = 1;
@@ -3449,7 +3697,7 @@ UObject* (*const Z_Construct_UClass_UNarrativeInventoryComponent_Statics::Depend
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UNarrativeInventoryComponent_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UNarrativeInventoryComponent, INarrativeSavableComponent), false },  // 1573843113
+	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UNarrativeInventoryComponent, INarrativeSavableComponent), false },  // 586272322
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UNarrativeInventoryComponent_Statics::ClassParams = {
 	&UNarrativeInventoryComponent::StaticClass,
@@ -3494,23 +3742,23 @@ UNarrativeInventoryComponent::~UNarrativeInventoryComponent() {}
 // End Class UNarrativeInventoryComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FItemAddResult::StaticStruct, Z_Construct_UScriptStruct_FItemAddResult_Statics::NewStructOps, TEXT("ItemAddResult"), &Z_Registration_Info_UScriptStruct_ItemAddResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemAddResult), 1390342961U) },
-		{ FItemWithQuantity::StaticStruct, Z_Construct_UScriptStruct_FItemWithQuantity_Statics::NewStructOps, TEXT("ItemWithQuantity"), &Z_Registration_Info_UScriptStruct_ItemWithQuantity, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemWithQuantity), 68793355U) },
-		{ FLootTableRoll::StaticStruct, Z_Construct_UScriptStruct_FLootTableRoll_Statics::NewStructOps, TEXT("LootTableRoll"), &Z_Registration_Info_UScriptStruct_LootTableRoll, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLootTableRoll), 2828341262U) },
-		{ FLootTableRow::StaticStruct, Z_Construct_UScriptStruct_FLootTableRow_Statics::NewStructOps, TEXT("LootTableRow"), &Z_Registration_Info_UScriptStruct_LootTableRow, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLootTableRow), 2716489465U) },
-		{ FNarrativeSavedItem::StaticStruct, Z_Construct_UScriptStruct_FNarrativeSavedItem_Statics::NewStructOps, TEXT("NarrativeSavedItem"), &Z_Registration_Info_UScriptStruct_NarrativeSavedItem, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNarrativeSavedItem), 260295843U) },
+		{ FItemAddResult::StaticStruct, Z_Construct_UScriptStruct_FItemAddResult_Statics::NewStructOps, TEXT("ItemAddResult"), &Z_Registration_Info_UScriptStruct_ItemAddResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemAddResult), 2239856553U) },
+		{ FItemWithQuantity::StaticStruct, Z_Construct_UScriptStruct_FItemWithQuantity_Statics::NewStructOps, TEXT("ItemWithQuantity"), &Z_Registration_Info_UScriptStruct_ItemWithQuantity, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemWithQuantity), 3018046121U) },
+		{ FLootTableRoll::StaticStruct, Z_Construct_UScriptStruct_FLootTableRoll_Statics::NewStructOps, TEXT("LootTableRoll"), &Z_Registration_Info_UScriptStruct_LootTableRoll, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLootTableRoll), 396159061U) },
+		{ FLootTableRow::StaticStruct, Z_Construct_UScriptStruct_FLootTableRow_Statics::NewStructOps, TEXT("LootTableRow"), &Z_Registration_Info_UScriptStruct_LootTableRow, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLootTableRow), 1226826410U) },
+		{ FNarrativeSavedItem::StaticStruct, Z_Construct_UScriptStruct_FNarrativeSavedItem_Statics::NewStructOps, TEXT("NarrativeSavedItem"), &Z_Registration_Info_UScriptStruct_NarrativeSavedItem, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNarrativeSavedItem), 4284324577U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UItemCollection, UItemCollection::StaticClass, TEXT("UItemCollection"), &Z_Registration_Info_UClass_UItemCollection, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemCollection), 2831253816U) },
-		{ Z_Construct_UClass_UNarrativeInventoryComponent, UNarrativeInventoryComponent::StaticClass, TEXT("UNarrativeInventoryComponent"), &Z_Registration_Info_UClass_UNarrativeInventoryComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInventoryComponent), 3257672715U) },
+		{ Z_Construct_UClass_UItemCollection, UItemCollection::StaticClass, TEXT("UItemCollection"), &Z_Registration_Info_UClass_UItemCollection, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemCollection), 2245482897U) },
+		{ Z_Construct_UClass_UNarrativeInventoryComponent, UNarrativeInventoryComponent::StaticClass, TEXT("UNarrativeInventoryComponent"), &Z_Registration_Info_UClass_UNarrativeInventoryComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInventoryComponent), 1680099750U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_2535254160(TEXT("/Script/NarrativeInventory"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_263238623(TEXT("/Script/NarrativeInventory"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryComponent_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

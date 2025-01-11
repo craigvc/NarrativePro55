@@ -31,10 +31,14 @@ struct Z_Construct_UClass_UQuestAssetFactory_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Factory for creating new quest assets \n */" },
+#endif
 		{ "IncludePath", "QuestAssetFactory.h" },
 		{ "ModuleRelativePath", "Private/QuestAssetFactory.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Factory for creating new quest assets" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ParentClass_MetaData[] = {
 		{ "Category", "Quest Asset" },
@@ -91,14 +95,14 @@ UQuestAssetFactory::~UQuestAssetFactory() {}
 // End Class UQuestAssetFactory
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestAssetFactory_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestAssetFactory_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestAssetFactory, UQuestAssetFactory::StaticClass, TEXT("UQuestAssetFactory"), &Z_Registration_Info_UClass_UQuestAssetFactory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestAssetFactory), 2517411804U) },
+		{ Z_Construct_UClass_UQuestAssetFactory, UQuestAssetFactory::StaticClass, TEXT("UQuestAssetFactory"), &Z_Registration_Info_UClass_UQuestAssetFactory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestAssetFactory), 1032564836U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestAssetFactory_h_1246007743(TEXT("/Script/NarrativeQuestEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestAssetFactory_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestAssetFactory_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestAssetFactory_h_1262053356(TEXT("/Script/NarrativeQuestEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestAssetFactory_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestAssetFactory_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

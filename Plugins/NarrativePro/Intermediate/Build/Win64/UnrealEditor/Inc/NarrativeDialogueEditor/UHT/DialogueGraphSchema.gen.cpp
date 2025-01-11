@@ -41,19 +41,31 @@ struct Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Action to add a node to the graph */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueGraphSchema.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Action to add a node to the graph" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NodeTemplate_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Template of node we want to create */" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueGraphSchema.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Template of node we want to create" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpeakerInfo_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**For NPC replies we also pass speaker info along*/" },
+#endif
 		{ "ModuleRelativePath", "Private/DialogueGraphSchema.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "For NPC replies we also pass speaker info along" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_NodeTemplate;
@@ -66,7 +78,7 @@ struct Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics
 	static const UECodeGen_Private::FStructParams StructParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics::NewProp_NodeTemplate = { "NodeTemplate", nullptr, (EPropertyFlags)0x0114000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueSchemaAction_NewNode, NodeTemplate), Z_Construct_UClass_UDialogueGraphNode_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NodeTemplate_MetaData), NewProp_NodeTemplate_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics::NewProp_SpeakerInfo = { "SpeakerInfo", nullptr, (EPropertyFlags)0x0010008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueSchemaAction_NewNode, SpeakerInfo), Z_Construct_UScriptStruct_FSpeakerInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpeakerInfo_MetaData), NewProp_SpeakerInfo_MetaData) }; // 1719779596
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics::NewProp_SpeakerInfo = { "SpeakerInfo", nullptr, (EPropertyFlags)0x0010008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FDialogueSchemaAction_NewNode, SpeakerInfo), Z_Construct_UScriptStruct_FSpeakerInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpeakerInfo_MetaData), NewProp_SpeakerInfo_MetaData) }; // 307691787
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics::NewProp_NodeTemplate,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics::NewProp_SpeakerInfo,
@@ -159,7 +171,9 @@ struct Z_Construct_UClass_UDialogueGraphSchema_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "DialogueGraphSchema.h" },
 		{ "ModuleRelativePath", "Private/DialogueGraphSchema.h" },
 	};
@@ -208,19 +222,19 @@ UDialogueGraphSchema::~UDialogueGraphSchema() {}
 // End Class UDialogueGraphSchema
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FDialogueSchemaAction_NewNode::StaticStruct, Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics::NewStructOps, TEXT("DialogueSchemaAction_NewNode"), &Z_Registration_Info_UScriptStruct_DialogueSchemaAction_NewNode, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDialogueSchemaAction_NewNode), 3201880965U) },
+		{ FDialogueSchemaAction_NewNode::StaticStruct, Z_Construct_UScriptStruct_FDialogueSchemaAction_NewNode_Statics::NewStructOps, TEXT("DialogueSchemaAction_NewNode"), &Z_Registration_Info_UScriptStruct_DialogueSchemaAction_NewNode, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDialogueSchemaAction_NewNode), 4050126321U) },
 		{ FDialogueSchemaAction_AddComment::StaticStruct, Z_Construct_UScriptStruct_FDialogueSchemaAction_AddComment_Statics::NewStructOps, TEXT("DialogueSchemaAction_AddComment"), &Z_Registration_Info_UScriptStruct_DialogueSchemaAction_AddComment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDialogueSchemaAction_AddComment), 3819871257U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueGraphSchema, UDialogueGraphSchema::StaticClass, TEXT("UDialogueGraphSchema"), &Z_Registration_Info_UClass_UDialogueGraphSchema, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueGraphSchema), 4235055828U) },
+		{ Z_Construct_UClass_UDialogueGraphSchema, UDialogueGraphSchema::StaticClass, TEXT("UDialogueGraphSchema"), &Z_Registration_Info_UClass_UDialogueGraphSchema, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueGraphSchema), 1528959612U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_201831712(TEXT("/Script/NarrativeDialogueEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_513678245(TEXT("/Script/NarrativeDialogueEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphSchema_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

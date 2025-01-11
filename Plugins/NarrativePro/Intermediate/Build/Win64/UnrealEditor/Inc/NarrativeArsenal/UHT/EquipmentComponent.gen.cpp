@@ -35,9 +35,13 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_OnItemEquipped__DelegateSi
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called on server when an item is added to this inventory*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called on server when an item is added to this inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Slot_MetaData[] = {
 		{ "NativeConst", "" },
@@ -150,9 +154,13 @@ struct Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemAtSlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the item equipped at the given slot\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the item equipped at the given slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Slot_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot" },
@@ -206,11 +214,15 @@ struct Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemsOfClass_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the items that match the given equippable class\n" },
+#endif
 		{ "DeterminesOutputType", "EquippableClass" },
 		{ "DynamicOutputParam", "OutEquippables" },
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the items that match the given equippable class" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OutEquippables_MetaData[] = {
 		{ "EditInline", "true" },
@@ -263,9 +275,13 @@ struct Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemsWeight_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return how much all of our equipped items weigh\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return how much all of our equipped items weigh" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -308,9 +324,13 @@ struct Z_Construct_UFunction_UEquipmentComponent_GetEquippedWeaponAtSlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the weapon equipped at the given slot\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the weapon equipped at the given slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Slot_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot.Weapon" },
@@ -364,9 +384,13 @@ struct Z_Construct_UFunction_UEquipmentComponent_GetGroomComponentAtSlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the groom for the given slot\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the groom for the given slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Slot_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot.Groom" },
@@ -420,9 +444,13 @@ struct Z_Construct_UFunction_UEquipmentComponent_GetItemsWithSlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the items equipped that match the slot subtag\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the items equipped that match the slot subtag" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Slot_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot" },
@@ -479,9 +507,13 @@ struct Z_Construct_UFunction_UEquipmentComponent_GetMeshComponentAtSlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the mesh for the given slot\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the mesh for the given slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Slot_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot.Mesh" },
@@ -535,9 +567,13 @@ struct Z_Construct_UFunction_UEquipmentComponent_Initialize_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Initialize the equipment component, by telling it which meshes link to which slot.\n\x09\n\x09@param ClothingMeshes The map which maps each clothing slot to the skeletal mesh component the clothing will equip to \n\x09@param LeaderPoseComponent the component all of the equipped items will be told to follow upon equipping. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Initialize the equipment component, by telling it which meshes link to which slot.\n\n       @param ClothingMeshes The map which maps each clothing slot to the skeletal mesh component the clothing will equip to\n       @param LeaderPoseComponent the component all of the equipped items will be told to follow upon equipping." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClothingMeshes_MetaData[] = {
 		{ "EditInline", "true" },
@@ -666,11 +702,15 @@ struct Z_Construct_UClass_UEquipmentComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\nAdd this to your pawn class, call Initialize on beginplay, and your player will be able to equip items - its that easy! \n\nTracks what items are equipped, remembers what default clothing items the player should wear if an item isn't equipped, \nand generally just manages the players equipped items.\n*/" },
+#endif
 		{ "DisplayName", "Narrative Equipment" },
 		{ "IncludePath", "Components/EquipmentComponent.h" },
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add this to your pawn class, call Initialize on beginplay, and your player will be able to equip items - its that easy!\n\nTracks what items are equipped, remembers what default clothing items the player should wear if an item isn't equipped,\nand generally just manages the players equipped items." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnItemEquipped_MetaData[] = {
 		{ "Category", "Equipment" },
@@ -681,29 +721,45 @@ struct Z_Construct_UClass_UEquipmentComponent_Statics
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeaderPoseComponent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**When we put a new item on, we need to tell it to follow the leader pose component, so we store that here. */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When we put a new item on, we need to tell it to follow the leader pose component, so we store that here." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EquippableComponents_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The skeletal meshes we'll be changing if a player equips an item*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The skeletal meshes we'll be changing if a player equips an item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GroomComponents_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The grooms we'll be changing if a player equips an item*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The grooms we'll be changing if a player equips an item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EquippedItems_MetaData[] = {
 		{ "Category", "Equipment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**All of the items that are currently equipped are stored in here*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Components/EquipmentComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All of the items that are currently equipped are stored in here" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnItemEquipped;
@@ -721,14 +777,14 @@ struct Z_Construct_UClass_UEquipmentComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemAtSlot, "GetEquippedItemAtSlot" }, // 1258782678
-		{ &Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemsOfClass, "GetEquippedItemsOfClass" }, // 2879121648
-		{ &Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemsWeight, "GetEquippedItemsWeight" }, // 198588487
-		{ &Z_Construct_UFunction_UEquipmentComponent_GetEquippedWeaponAtSlot, "GetEquippedWeaponAtSlot" }, // 931194343
-		{ &Z_Construct_UFunction_UEquipmentComponent_GetGroomComponentAtSlot, "GetGroomComponentAtSlot" }, // 2916237485
-		{ &Z_Construct_UFunction_UEquipmentComponent_GetItemsWithSlot, "GetItemsWithSlot" }, // 1315341016
-		{ &Z_Construct_UFunction_UEquipmentComponent_GetMeshComponentAtSlot, "GetMeshComponentAtSlot" }, // 2596994289
-		{ &Z_Construct_UFunction_UEquipmentComponent_Initialize, "Initialize" }, // 4110681049
+		{ &Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemAtSlot, "GetEquippedItemAtSlot" }, // 1908938419
+		{ &Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemsOfClass, "GetEquippedItemsOfClass" }, // 3847837305
+		{ &Z_Construct_UFunction_UEquipmentComponent_GetEquippedItemsWeight, "GetEquippedItemsWeight" }, // 287746466
+		{ &Z_Construct_UFunction_UEquipmentComponent_GetEquippedWeaponAtSlot, "GetEquippedWeaponAtSlot" }, // 3579527015
+		{ &Z_Construct_UFunction_UEquipmentComponent_GetGroomComponentAtSlot, "GetGroomComponentAtSlot" }, // 2026200945
+		{ &Z_Construct_UFunction_UEquipmentComponent_GetItemsWithSlot, "GetItemsWithSlot" }, // 2516755923
+		{ &Z_Construct_UFunction_UEquipmentComponent_GetMeshComponentAtSlot, "GetMeshComponentAtSlot" }, // 4126079163
+		{ &Z_Construct_UFunction_UEquipmentComponent_Initialize, "Initialize" }, // 757341121
 		{ &Z_Construct_UFunction_UEquipmentComponent_SetGroomMap, "SetGroomMap" }, // 2822062138
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -737,7 +793,7 @@ struct Z_Construct_UClass_UEquipmentComponent_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UEquipmentComponent_Statics::NewProp_OnItemEquipped = { "OnItemEquipped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEquipmentComponent, OnItemEquipped), Z_Construct_UDelegateFunction_NarrativeArsenal_OnItemEquipped__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemEquipped_MetaData), NewProp_OnItemEquipped_MetaData) }; // 1590604791
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UEquipmentComponent_Statics::NewProp_OnItemEquipped = { "OnItemEquipped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEquipmentComponent, OnItemEquipped), Z_Construct_UDelegateFunction_NarrativeArsenal_OnItemEquipped__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemEquipped_MetaData), NewProp_OnItemEquipped_MetaData) }; // 4075692995
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UEquipmentComponent_Statics::NewProp_OnItemUnequipped = { "OnItemUnequipped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEquipmentComponent, OnItemUnequipped), Z_Construct_UDelegateFunction_NarrativeArsenal_OnItemUnequipped__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemUnequipped_MetaData), NewProp_OnItemUnequipped_MetaData) }; // 195772084
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEquipmentComponent_Statics::NewProp_LeaderPoseComponent = { "LeaderPoseComponent", nullptr, (EPropertyFlags)0x0020080000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEquipmentComponent, LeaderPoseComponent), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LeaderPoseComponent_MetaData), NewProp_LeaderPoseComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEquipmentComponent_Statics::NewProp_EquippableComponents_ValueProp = { "EquippableComponents", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -801,14 +857,14 @@ UEquipmentComponent::~UEquipmentComponent() {}
 // End Class UEquipmentComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_EquipmentComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_EquipmentComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEquipmentComponent, UEquipmentComponent::StaticClass, TEXT("UEquipmentComponent"), &Z_Registration_Info_UClass_UEquipmentComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEquipmentComponent), 2405987565U) },
+		{ Z_Construct_UClass_UEquipmentComponent, UEquipmentComponent::StaticClass, TEXT("UEquipmentComponent"), &Z_Registration_Info_UClass_UEquipmentComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEquipmentComponent), 1966045726U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_EquipmentComponent_h_1948436125(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_EquipmentComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_EquipmentComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_EquipmentComponent_h_3058888681(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_EquipmentComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_EquipmentComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

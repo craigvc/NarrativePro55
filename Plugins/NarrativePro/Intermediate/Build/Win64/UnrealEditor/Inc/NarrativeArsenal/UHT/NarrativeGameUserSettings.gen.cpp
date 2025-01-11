@@ -519,9 +519,13 @@ struct Z_Construct_UFunction_UNarrativeGameUserSettings_SetGameplayDifficulty_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set the current gameplay difficulty\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the current gameplay difficulty" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewDifficulty_MetaData[] = {
 		{ "NativeConst", "" },
@@ -570,9 +574,13 @@ struct Z_Construct_UFunction_UNarrativeGameUserSettings_SetInventoryWantsTile_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set whether or not inventory menu is set to tile. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set whether or not inventory menu is set to tile." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bNewInventoryWantsTile_MetaData[] = {
 		{ "NativeConst", "" },
@@ -761,9 +769,13 @@ struct Z_Construct_UFunction_UNarrativeGameUserSettings_SetShouldCrouchToggle_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set whether or not crouching is a toggle or whether crouch key requires held. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set whether or not crouching is a toggle or whether crouch key requires held." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bNewCrouchToggles_MetaData[] = {
 		{ "NativeConst", "" },
@@ -933,10 +945,14 @@ struct Z_Construct_UClass_UNarrativeGameUserSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Since GameUserSettings doesnt support sound class overrides, in Narrative pro we've extended it to do so.\n */" },
+#endif
 		{ "IncludePath", "UnrealFramework/NarrativeGameUserSettings.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Since GameUserSettings doesnt support sound class overrides, in Narrative pro we've extended it to do so." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverallAudioVolume_MetaData[] = {
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
@@ -954,24 +970,40 @@ struct Z_Construct_UClass_UNarrativeGameUserSettings_Statics
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCrouchToggles_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "///**If true, crouch button toggles crouch, otherwise it needs to be held for as long as you require the crouch. */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, crouch button toggles crouch, otherwise it needs to be held for as long as you require the crouch." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bInventoryWantsTile_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "///** Whether the inventory menu wants to display using grid or tile mode */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the inventory menu wants to display using grid or tile mode" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GameplayDifficulty_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The gameplay difficulty, can be read from the user settings by any gameplay elements that need it. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The gameplay difficulty, can be read from the user settings by any gameplay elements that need it." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FieldOfView_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "///** The FOV the default camera mode will use. */\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameUserSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The FOV the default camera mode will use." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_OverallAudioVolume;
@@ -999,12 +1031,12 @@ struct Z_Construct_UClass_UNarrativeGameUserSettings_Statics
 		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_InventoryWantsTile, "InventoryWantsTile" }, // 3375182192
 		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetDialogueAudioVolume, "SetDialogueAudioVolume" }, // 2791284053
 		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetFieldOfView, "SetFieldOfView" }, // 1200646881
-		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetGameplayDifficulty, "SetGameplayDifficulty" }, // 3259126872
-		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetInventoryWantsTile, "SetInventoryWantsTile" }, // 3133748740
+		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetGameplayDifficulty, "SetGameplayDifficulty" }, // 3169237003
+		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetInventoryWantsTile, "SetInventoryWantsTile" }, // 2895602564
 		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetMusicAudioVolume, "SetMusicAudioVolume" }, // 272028704
 		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetOverallAudioVolume, "SetOverallAudioVolume" }, // 492860267
 		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetSFXAudioVolume, "SetSFXAudioVolume" }, // 171716484
-		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetShouldCrouchToggle, "SetShouldCrouchToggle" }, // 3094144207
+		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetShouldCrouchToggle, "SetShouldCrouchToggle" }, // 3083675510
 		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_SetUIAudioVolume, "SetUIAudioVolume" }, // 2516184706
 		{ &Z_Construct_UFunction_UNarrativeGameUserSettings_ShouldCrouchToggle, "ShouldCrouchToggle" }, // 787099536
 	};
@@ -1082,18 +1114,18 @@ UNarrativeGameUserSettings::~UNarrativeGameUserSettings() {}
 // End Class UNarrativeGameUserSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ ENarrativeGameplayDifficulty_StaticEnum, TEXT("ENarrativeGameplayDifficulty"), &Z_Registration_Info_UEnum_ENarrativeGameplayDifficulty, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4013433520U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeGameUserSettings, UNarrativeGameUserSettings::StaticClass, TEXT("UNarrativeGameUserSettings"), &Z_Registration_Info_UClass_UNarrativeGameUserSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeGameUserSettings), 3751405750U) },
+		{ Z_Construct_UClass_UNarrativeGameUserSettings, UNarrativeGameUserSettings::StaticClass, TEXT("UNarrativeGameUserSettings"), &Z_Registration_Info_UClass_UNarrativeGameUserSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeGameUserSettings), 3278658647U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_3696258210(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_637597193(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameUserSettings_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

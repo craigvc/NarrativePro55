@@ -31,10 +31,14 @@ struct Z_Construct_UFunction_UNPCGoalGenerator_AddGoalItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "////Use this to tell the NPC activity component to add the goal. \n" },
+#endif
 		{ "CPP_Default_bTriggerReselect", "false" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "/Use this to tell the NPC activity component to add the goal." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bTriggerReselect_MetaData[] = {
 		{ "NativeConst", "" },
@@ -101,9 +105,13 @@ struct Z_Construct_UFunction_UNPCGoalGenerator_InitializeGoalGenerator_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Goal Generator" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Use this event to set your generator up, bind it to an event, etc.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use this event to set your generator up, bind it to an event, etc." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -137,9 +145,13 @@ struct Z_Construct_UFunction_UNPCGoalGenerator_RemoveGoalItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "////Use this to tell the NPC activity component to remove a goal we've made \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "/Use this to tell the NPC activity component to remove a goal we've made" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Goal;
@@ -194,18 +206,26 @@ struct Z_Construct_UClass_UNPCGoalGenerator_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Goal generators generate goals for your NPCs to do. They provide a bit of optimization in that you can only add the generators your \n * NPC requires so this will remove lots of unnesseccary processing time. They also allow for configuration, ie your legendary enemy could \n * have further distance for its GoalGenerator_FindAttackTarget, whereas your novice enemy might have a shorter distance. \n * \n * Goal generators should be added to your NPCs definition. They will then be registered with the NPCs Activity Component. \n * For more information, please check out the docs: https://docs.narrativetools.io/\n */" },
+#endif
 		{ "IncludePath", "AI/Activities/NPCGoalGenerator.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalGenerator.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Goal generators generate goals for your NPCs to do. They provide a bit of optimization in that you can only add the generators your\nNPC requires so this will remove lots of unnesseccary processing time. They also allow for configuration, ie your legendary enemy could\nhave further distance for its GoalGenerator_FindAttackTarget, whereas your novice enemy might have a shorter distance.\n\nGoal generators should be added to your NPCs definition. They will then be registered with the NPCs Activity Component.\nFor more information, please check out the docs: https://docs.narrativetools.io/" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerController_MetaData[] = {
 		{ "Category", "Goal Generator" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We cache the AI controller \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCGoalGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We cache the AI controller" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerActivityComponent_MetaData[] = {
 		{ "Category", "Goal Generator" },
@@ -218,9 +238,9 @@ struct Z_Construct_UClass_UNPCGoalGenerator_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNPCGoalGenerator_AddGoalItem, "AddGoalItem" }, // 3075396703
-		{ &Z_Construct_UFunction_UNPCGoalGenerator_InitializeGoalGenerator, "InitializeGoalGenerator" }, // 3691840349
-		{ &Z_Construct_UFunction_UNPCGoalGenerator_RemoveGoalItem, "RemoveGoalItem" }, // 1003254889
+		{ &Z_Construct_UFunction_UNPCGoalGenerator_AddGoalItem, "AddGoalItem" }, // 4288092911
+		{ &Z_Construct_UFunction_UNPCGoalGenerator_InitializeGoalGenerator, "InitializeGoalGenerator" }, // 2226254151
+		{ &Z_Construct_UFunction_UNPCGoalGenerator_RemoveGoalItem, "RemoveGoalItem" }, // 3125354611
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -272,14 +292,14 @@ UNPCGoalGenerator::~UNPCGoalGenerator() {}
 // End Class UNPCGoalGenerator
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalGenerator_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalGenerator_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNPCGoalGenerator, UNPCGoalGenerator::StaticClass, TEXT("UNPCGoalGenerator"), &Z_Registration_Info_UClass_UNPCGoalGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCGoalGenerator), 1494161622U) },
+		{ Z_Construct_UClass_UNPCGoalGenerator, UNPCGoalGenerator::StaticClass, TEXT("UNPCGoalGenerator"), &Z_Registration_Info_UClass_UNPCGoalGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCGoalGenerator), 966948160U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalGenerator_h_1665375492(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalGenerator_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalGenerator_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalGenerator_h_4107714080(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalGenerator_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCGoalGenerator_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

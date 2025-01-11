@@ -31,9 +31,13 @@ struct Z_Construct_UFunction_USettlementActivityComponent_RunActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Run an activity from the specified template. Also contains a context struct to see why the activity was ran. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Activities/SettlementActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Run an activity from the specified template. Also contains a context struct to see why the activity was ran." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SettlementActivity;
@@ -79,9 +83,13 @@ struct Z_Construct_UFunction_USettlementActivityComponent_SetActivitySchedule_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set our settlements activity schedule \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Activities/SettlementActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set our settlements activity schedule" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Schedule;
@@ -124,9 +132,13 @@ struct Z_Construct_UFunction_USettlementActivityComponent_StopActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Stop one of our currently running activities\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Activities/SettlementActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stop one of our currently running activities" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActivityToStop;
@@ -186,20 +198,32 @@ struct Z_Construct_UClass_USettlementActivityComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerSettlement_MetaData[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our settlement, cached. We may want to store this on the settlementloader instead which would make this component even more lightweight. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Activities/SettlementActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our settlement, cached. We may want to store this on the settlementloader instead which would make this component even more lightweight." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentActivities_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Activities the settlement is currently running\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Activities/SettlementActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activities the settlement is currently running" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivitySchedule_MetaData[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our scheduled activities go in here. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Activities/SettlementActivityComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our scheduled activities go in here." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActiveScheduledActivites_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Settlements/Activities/SettlementActivityComponent.h" },
@@ -214,9 +238,9 @@ struct Z_Construct_UClass_USettlementActivityComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_USettlementActivityComponent_RunActivity, "RunActivity" }, // 3207439771
-		{ &Z_Construct_UFunction_USettlementActivityComponent_SetActivitySchedule, "SetActivitySchedule" }, // 3013735760
-		{ &Z_Construct_UFunction_USettlementActivityComponent_StopActivity, "StopActivity" }, // 1573151336
+		{ &Z_Construct_UFunction_USettlementActivityComponent_RunActivity, "RunActivity" }, // 3963962903
+		{ &Z_Construct_UFunction_USettlementActivityComponent_SetActivitySchedule, "SetActivitySchedule" }, // 4000910214
+		{ &Z_Construct_UFunction_USettlementActivityComponent_StopActivity, "StopActivity" }, // 3209810898
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -276,14 +300,14 @@ USettlementActivityComponent::~USettlementActivityComponent() {}
 // End Class USettlementActivityComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Activities_SettlementActivityComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Activities_SettlementActivityComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USettlementActivityComponent, USettlementActivityComponent::StaticClass, TEXT("USettlementActivityComponent"), &Z_Registration_Info_UClass_USettlementActivityComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USettlementActivityComponent), 3703973578U) },
+		{ Z_Construct_UClass_USettlementActivityComponent, USettlementActivityComponent::StaticClass, TEXT("USettlementActivityComponent"), &Z_Registration_Info_UClass_USettlementActivityComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USettlementActivityComponent), 472747753U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Activities_SettlementActivityComponent_h_3686638893(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Activities_SettlementActivityComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Activities_SettlementActivityComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Activities_SettlementActivityComponent_h_2322889016(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Activities_SettlementActivityComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Activities_SettlementActivityComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

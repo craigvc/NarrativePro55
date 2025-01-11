@@ -39,27 +39,43 @@ struct Z_Construct_UScriptStruct_FPerkConfig_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Represents a perk in our skill. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents a perk in our skill." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Perk_MetaData[] = {
 		{ "Category", "Perk Config" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The perk \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The perk" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerkCords_MetaData[] = {
 		{ "Category", "Perk Config" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The location the perk should display at inside the skill tree UI. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The location the perk should display at inside the skill tree UI." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LinkedTo_MetaData[] = {
 		{ "Category", "Perk Config" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Child perks this skill should link to go in here. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Child perks this skill should link to go in here." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_Perk;
@@ -121,36 +137,56 @@ struct Z_Construct_UClass_UTreeSkill_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Represents a skill in the skill tree. For example Combat, Sneak, etc. Each game will implement their own skills by subclassing this! \n */" },
+#endif
 		{ "IncludePath", "SkillTrees/TreeSkill.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents a skill in the skill tree. For example Combat, Sneak, etc. Each game will implement their own skills by subclassing this!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Perks_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//All of the perks this skill should have go in here. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All of the perks this skill should have go in here." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillDisplayName_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display name of this skill. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name of this skill." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillDescription_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The description of this skill. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The description of this skill." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillLevel_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The level this skill is at\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreeSkill.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The level this skill is at" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Perks_Inner;
@@ -165,8 +201,8 @@ struct Z_Construct_UClass_UTreeSkill_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTreeSkill_Statics::NewProp_Perks_Inner = { "Perks", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FPerkConfig, METADATA_PARAMS(0, nullptr) }; // 651204576
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTreeSkill_Statics::NewProp_Perks = { "Perks", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTreeSkill, Perks), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Perks_MetaData), NewProp_Perks_MetaData) }; // 651204576
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTreeSkill_Statics::NewProp_Perks_Inner = { "Perks", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FPerkConfig, METADATA_PARAMS(0, nullptr) }; // 2260444019
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTreeSkill_Statics::NewProp_Perks = { "Perks", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTreeSkill, Perks), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Perks_MetaData), NewProp_Perks_MetaData) }; // 2260444019
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UTreeSkill_Statics::NewProp_SkillDisplayName = { "SkillDisplayName", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTreeSkill, SkillDisplayName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkillDisplayName_MetaData), NewProp_SkillDisplayName_MetaData) };
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UTreeSkill_Statics::NewProp_SkillDescription = { "SkillDescription", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTreeSkill, SkillDescription), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkillDescription_MetaData), NewProp_SkillDescription_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UTreeSkill_Statics::NewProp_SkillLevel = { "SkillLevel", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTreeSkill, SkillLevel), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkillLevel_MetaData), NewProp_SkillLevel_MetaData) };
@@ -215,18 +251,18 @@ UTreeSkill::~UTreeSkill() {}
 // End Class UTreeSkill
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FPerkConfig::StaticStruct, Z_Construct_UScriptStruct_FPerkConfig_Statics::NewStructOps, TEXT("PerkConfig"), &Z_Registration_Info_UScriptStruct_PerkConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FPerkConfig), 651204576U) },
+		{ FPerkConfig::StaticStruct, Z_Construct_UScriptStruct_FPerkConfig_Statics::NewStructOps, TEXT("PerkConfig"), &Z_Registration_Info_UScriptStruct_PerkConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FPerkConfig), 2260444019U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTreeSkill, UTreeSkill::StaticClass, TEXT("UTreeSkill"), &Z_Registration_Info_UClass_UTreeSkill, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTreeSkill), 3469208572U) },
+		{ Z_Construct_UClass_UTreeSkill, UTreeSkill::StaticClass, TEXT("UTreeSkill"), &Z_Registration_Info_UClass_UTreeSkill, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTreeSkill), 1088632107U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_4197964990(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_3756350521(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreeSkill_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

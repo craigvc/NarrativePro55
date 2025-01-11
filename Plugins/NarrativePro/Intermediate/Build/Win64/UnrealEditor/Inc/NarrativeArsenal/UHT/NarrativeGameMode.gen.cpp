@@ -51,9 +51,13 @@ struct Z_Construct_UFunction_ANarrativeGameMode_GetPlayerDefinitionForController
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Classes" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Returns default player definition class for a controller joining the game. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns default player definition class for a controller joining the game." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InController;
@@ -107,18 +111,26 @@ struct Z_Construct_UClass_ANarrativeGameMode_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Default Game State class for Narrative pro. Subclass this if you want your own game state in a Narrative Pro project. \n */" },
+#endif
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
 		{ "IncludePath", "UnrealFramework/NarrativeGameMode.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameMode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default Game State class for Narrative pro. Subclass this if you want your own game state in a Narrative Pro project." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerDefinitions_MetaData[] = {
 		{ "Category", "Classes" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** By default, Narrative assigns each player a definition using this list for each joining player. If you need different functionality, simply override GetPlayerDefinitionForController */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeGameMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "By default, Narrative assigns each player a definition using this list for each joining player. If you need different functionality, simply override GetPlayerDefinitionForController" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerDefinitions_Inner;
@@ -126,7 +138,7 @@ struct Z_Construct_UClass_ANarrativeGameMode_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ANarrativeGameMode_GetPlayerDefinitionForController, "GetPlayerDefinitionForController" }, // 1790941110
+		{ &Z_Construct_UFunction_ANarrativeGameMode_GetPlayerDefinitionForController, "GetPlayerDefinitionForController" }, // 1278987879
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -178,14 +190,14 @@ ANarrativeGameMode::~ANarrativeGameMode() {}
 // End Class ANarrativeGameMode
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameMode_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameMode_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativeGameMode, ANarrativeGameMode::StaticClass, TEXT("ANarrativeGameMode"), &Z_Registration_Info_UClass_ANarrativeGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeGameMode), 3969329686U) },
+		{ Z_Construct_UClass_ANarrativeGameMode, ANarrativeGameMode::StaticClass, TEXT("ANarrativeGameMode"), &Z_Registration_Info_UClass_ANarrativeGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeGameMode), 3979513474U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameMode_h_2462180574(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameMode_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameMode_h_1484189585(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeGameMode_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

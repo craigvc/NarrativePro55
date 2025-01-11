@@ -34,11 +34,15 @@ struct Z_Construct_UClass_UCharacterAppearanceBase_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines what a character should look like without any items on - ie their default skin. \n */" },
+#endif
 		{ "IncludePath", "Character/CharacterAppearance.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Character/CharacterAppearance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines what a character should look like without any items on - ie their default skin." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -98,17 +102,25 @@ struct Z_Construct_UClass_UCharacterAppearance_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines what a character should look like without any items on - ie their default skin.\n * This is the standard appearance asset, useful for metahumans. For more custom character types, simply subclass UCharacterAppearanceBase. \n * You can do this in blueprint if required. \n */" },
+#endif
 		{ "IncludePath", "Character/CharacterAppearance.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Character/CharacterAppearance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines what a character should look like without any items on - ie their default skin.\nThis is the standard appearance asset, useful for metahumans. For more custom character types, simply subclass UCharacterAppearanceBase.\nYou can do this in blueprint if required." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterAttributes_MetaData[] = {
 		{ "Category", "Appearance|Attributes" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The attribute set for the character */" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/CharacterAppearance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The attribute set for the character" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CharacterAttributes;
@@ -119,7 +131,7 @@ struct Z_Construct_UClass_UCharacterAppearance_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UCharacterAppearance_Statics::NewProp_CharacterAttributes = { "CharacterAttributes", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterAppearance, CharacterAttributes), Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterAttributes_MetaData), NewProp_CharacterAttributes_MetaData) }; // 420917075
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UCharacterAppearance_Statics::NewProp_CharacterAttributes = { "CharacterAttributes", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterAppearance, CharacterAttributes), Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterAttributes_MetaData), NewProp_CharacterAttributes_MetaData) }; // 3953964664
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCharacterAppearance_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterAppearance_Statics::NewProp_CharacterAttributes,
 };
@@ -161,15 +173,15 @@ UCharacterAppearance::~UCharacterAppearance() {}
 // End Class UCharacterAppearance
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterAppearance_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterAppearance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterAppearanceBase, UCharacterAppearanceBase::StaticClass, TEXT("UCharacterAppearanceBase"), &Z_Registration_Info_UClass_UCharacterAppearanceBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterAppearanceBase), 2854902520U) },
-		{ Z_Construct_UClass_UCharacterAppearance, UCharacterAppearance::StaticClass, TEXT("UCharacterAppearance"), &Z_Registration_Info_UClass_UCharacterAppearance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterAppearance), 1044123197U) },
+		{ Z_Construct_UClass_UCharacterAppearanceBase, UCharacterAppearanceBase::StaticClass, TEXT("UCharacterAppearanceBase"), &Z_Registration_Info_UClass_UCharacterAppearanceBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterAppearanceBase), 1882022797U) },
+		{ Z_Construct_UClass_UCharacterAppearance, UCharacterAppearance::StaticClass, TEXT("UCharacterAppearance"), &Z_Registration_Info_UClass_UCharacterAppearance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterAppearance), 4249281764U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterAppearance_h_818395243(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterAppearance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterAppearance_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterAppearance_h_3741237631(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterAppearance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterAppearance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

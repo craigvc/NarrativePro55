@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define NARRATIVEARSENAL_StableActor_generated_h
 
-#define FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_17_GENERATED_BODY \
+#define FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_17_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FStableActor_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> NARRATIVEARSENAL_API UScriptStruct* StaticStruct<struct FStableActor>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h
+#define CURRENT_FILE_ID FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

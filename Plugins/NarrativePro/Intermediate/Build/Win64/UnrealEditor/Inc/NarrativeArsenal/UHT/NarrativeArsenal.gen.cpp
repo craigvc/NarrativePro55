@@ -148,7 +148,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID_Statics
 		{ "Civilians.Comment", "//Example Faction - edit Factions in NarrativeArsenal.h if you want to add custom ones - see documentation for more. \n" },
 		{ "Civilians.Name", "ENarrativeFactionID::Civilians" },
 		{ "Civilians.ToolTip", "Example Faction - edit Factions in NarrativeArsenal.h if you want to add custom ones - see documentation for more." },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**A list of all affiliations in the game. Feel free to add more to this array as you require them. */" },
+#endif
 		{ "Heroes.Comment", "//Example Faction - edit Factions in NarrativeArsenal.h if you want to add custom ones - see documentation for more. \n" },
 		{ "Heroes.Name", "ENarrativeFactionID::Heroes" },
 		{ "Heroes.ToolTip", "Example Faction - edit Factions in NarrativeArsenal.h if you want to add custom ones - see documentation for more." },
@@ -159,7 +161,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID_Statics
 		{ "Soldiers.Comment", "//Example Faction - edit Factions in NarrativeArsenal.h if you want to add custom ones - see documentation for more. \n" },
 		{ "Soldiers.Name", "ENarrativeFactionID::Soldiers" },
 		{ "Soldiers.ToolTip", "Example Faction - edit Factions in NarrativeArsenal.h if you want to add custom ones - see documentation for more." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A list of all affiliations in the game. Feel free to add more to this array as you require them." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -194,16 +198,16 @@ UEnum* Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID()
 // End Enum ENarrativeFactionID
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_NarrativeArsenal_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_NarrativeArsenal_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ ENarrativeAbilityInputID_StaticEnum, TEXT("ENarrativeAbilityInputID"), &Z_Registration_Info_UEnum_ENarrativeAbilityInputID, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 818456468U) },
-		{ ENarrativeFactionID_StaticEnum, TEXT("ENarrativeFactionID"), &Z_Registration_Info_UEnum_ENarrativeFactionID, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 696033230U) },
+		{ ENarrativeFactionID_StaticEnum, TEXT("ENarrativeFactionID"), &Z_Registration_Info_UEnum_ENarrativeFactionID, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 57303180U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_NarrativeArsenal_h_71269387(TEXT("/Script/NarrativeArsenal"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_NarrativeArsenal_h_270530661(TEXT("/Script/NarrativeArsenal"),
 	nullptr, 0,
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_NarrativeArsenal_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_NarrativeArsenal_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_NarrativeArsenal_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_NarrativeArsenal_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

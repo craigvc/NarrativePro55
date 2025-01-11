@@ -32,16 +32,22 @@ struct Z_Construct_UClass_UQuestEditorSettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "QuestEditorSettings.h" },
 		{ "ModuleRelativePath", "Private/QuestEditorSettings.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestTaskSearchPaths_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//All the folders the quest editor searches in to find your quest tasks. \n" },
+#endif
 		{ "ModuleRelativePath", "Private/QuestEditorSettings.h" },
 		{ "RelativeToGameContentDir", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All the folders the quest editor searches in to find your quest tasks." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FailedNodeColor_MetaData[] = {
 		{ "Category", "Graph Style" },
@@ -171,14 +177,14 @@ UQuestEditorSettings::~UQuestEditorSettings() {}
 // End Class UQuestEditorSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestEditorSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestEditorSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestEditorSettings, UQuestEditorSettings::StaticClass, TEXT("UQuestEditorSettings"), &Z_Registration_Info_UClass_UQuestEditorSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestEditorSettings), 4073452712U) },
+		{ Z_Construct_UClass_UQuestEditorSettings, UQuestEditorSettings::StaticClass, TEXT("UQuestEditorSettings"), &Z_Registration_Info_UClass_UQuestEditorSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestEditorSettings), 2299558003U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestEditorSettings_h_3073108377(TEXT("/Script/NarrativeQuestEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestEditorSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestEditorSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestEditorSettings_h_3149624192(TEXT("/Script/NarrativeQuestEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestEditorSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestEditorSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

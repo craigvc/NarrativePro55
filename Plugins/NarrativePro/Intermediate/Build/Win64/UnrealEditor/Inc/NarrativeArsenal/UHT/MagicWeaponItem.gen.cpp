@@ -30,22 +30,34 @@ struct Z_Construct_UClass_UMagicWeaponItem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for a magic based weapon. \n */" },
+#endif
 		{ "IncludePath", "Items/MagicWeaponItem.h" },
 		{ "ModuleRelativePath", "Public/Items/MagicWeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for a magic based weapon." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackCombos_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Combo montages for our magic attacks \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/MagicWeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Combo montages for our magic attacks" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HeavyAttackCombos_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Combo montages for our heavy magic attacks \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/MagicWeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Combo montages for our heavy magic attacks" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackCombos_Inner;
@@ -108,14 +120,14 @@ UMagicWeaponItem::~UMagicWeaponItem() {}
 // End Class UMagicWeaponItem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_MagicWeaponItem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_MagicWeaponItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMagicWeaponItem, UMagicWeaponItem::StaticClass, TEXT("UMagicWeaponItem"), &Z_Registration_Info_UClass_UMagicWeaponItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMagicWeaponItem), 3330960907U) },
+		{ Z_Construct_UClass_UMagicWeaponItem, UMagicWeaponItem::StaticClass, TEXT("UMagicWeaponItem"), &Z_Registration_Info_UClass_UMagicWeaponItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMagicWeaponItem), 3837391951U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_MagicWeaponItem_h_613877883(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_MagicWeaponItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_MagicWeaponItem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_MagicWeaponItem_h_1399834703(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_MagicWeaponItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_MagicWeaponItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

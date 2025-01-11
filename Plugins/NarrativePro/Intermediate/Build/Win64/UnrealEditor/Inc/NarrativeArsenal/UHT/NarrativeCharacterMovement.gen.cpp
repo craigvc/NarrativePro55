@@ -521,10 +521,14 @@ struct Z_Construct_UFunction_UNarrativeCharacterMovement_IsMovingForward_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Sprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return true if we are moving forward - used by sprint ability \n\x09@param ForwardAngleTolerance the angle degrees we can be off by and still be considered to be moving forwards */" },
+#endif
 		{ "CPP_Default_ForwardAngleTolerance", "10.000000" },
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if we are moving forward - used by sprint ability\n       @param ForwardAngleTolerance the angle degrees we can be off by and still be considered to be moving forwards" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ForwardAngleTolerance_MetaData[] = {
 		{ "NativeConst", "" },
@@ -578,9 +582,13 @@ struct Z_Construct_UFunction_UNarrativeCharacterMovement_IsSlowWalking_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Sprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return true if we are slow walking  */" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if we are slow walking" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -627,9 +635,13 @@ struct Z_Construct_UFunction_UNarrativeCharacterMovement_IsSprinting_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Sprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return true if we are sprinting  */" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if we are sprinting" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -719,9 +731,13 @@ struct Z_Construct_UFunction_UNarrativeCharacterMovement_StartSprinting_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Sprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Request to start sprinting*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Request to start sprinting" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -751,9 +767,13 @@ struct Z_Construct_UFunction_UNarrativeCharacterMovement_StopSprinting_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Sprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Request to stop sprinting*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Request to stop sprinting" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -808,22 +828,34 @@ struct Z_Construct_UClass_UNarrativeCharacterMovement_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Custom movement component for Narrative Pro. \n */" },
+#endif
 		{ "IncludePath", "Character/NarrativeCharacterMovement.h" },
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Custom movement component for Narrative Pro." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SprintSpeed_MetaData[] = {
 		{ "Category", "Sprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Units per second we should travel at when sprinting\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Units per second we should travel at when sprinting" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlowWalkSpeed_MetaData[] = {
 		{ "Category", "Walking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Units per second we should travel at when walking \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Units per second we should travel at when walking" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbForwardSearchDistance_MetaData[] = {
 		{ "Category", "Climb" },
@@ -835,21 +867,33 @@ struct Z_Construct_UClass_UNarrativeCharacterMovement_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbHangOffset_MetaData[] = {
 		{ "Category", "Climb" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// horizontal offset distance\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "horizontal offset distance" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbSurfaceReattachDistance_MetaData[] = {
 		{ "Category", "Climb" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// vertical hang offset distance\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "vertical hang offset distance" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbStrafeSpeed_MetaData[] = {
 		{ "Category", "Climb" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// distance at which old climb surface resets (prevents instantly reclimbing on same surface)\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "distance at which old climb surface resets (prevents instantly reclimbing on same surface)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbRotationSpeedDegrees_MetaData[] = {
 		{ "Category", "Climb" },
@@ -873,15 +917,23 @@ struct Z_Construct_UClass_UNarrativeCharacterMovement_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbLocalDecendTransitionBoost_MetaData[] = {
 		{ "Category", "Climb" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// controls the climb surface ascent spring transition\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "controls the climb surface ascent spring transition" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbTurnReachDepth_MetaData[] = {
 		{ "Category", "Climb" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// controls the climb surface decent spring transition\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "controls the climb surface decent spring transition" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbJumpZVelocity_MetaData[] = {
 		{ "Category", "Climb" },
@@ -901,21 +953,33 @@ struct Z_Construct_UClass_UNarrativeCharacterMovement_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbSurface_MetaData[] = {
 		{ "Category", "Climb" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Wall point the capsule is \"attached\" to, with rotation corresponding to X-Axis = -WallNormal and Z-Axis = LedgeUpVector\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Wall point the capsule is \"attached\" to, with rotation corresponding to X-Axis = -WallNormal and Z-Axis = LedgeUpVector" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PreviousClimbSurface_MetaData[] = {
 		{ "Category", "Climb" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Previous climb surface, either a fractional step in behind strafe point or the previous climb point we are transitioning from\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Previous climb surface, either a fractional step in behind strafe point or the previous climb point we are transitioning from" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClimbMode_MetaData[] = {
 		{ "Category", "Climb" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// UPROPERTY(VisibleAnywhere)\n// bool bTransitioning;\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/NarrativeCharacterMovement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "UPROPERTY(VisibleAnywhere)\nbool bTransitioning;" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DesiredClimbMode_MetaData[] = {
 		{ "Category", "Climb" },
@@ -961,12 +1025,12 @@ struct Z_Construct_UClass_UNarrativeCharacterMovement_Statics
 		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsClimbing, "IsClimbing" }, // 927207504
 		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsCustomMovementMode, "IsCustomMovementMode" }, // 1489621093
 		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsMovementMode, "IsMovementMode" }, // 4157190507
-		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsMovingForward, "IsMovingForward" }, // 2436775043
-		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsSlowWalking, "IsSlowWalking" }, // 3607348209
-		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsSprinting, "IsSprinting" }, // 493330419
+		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsMovingForward, "IsMovingForward" }, // 2562928461
+		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsSlowWalking, "IsSlowWalking" }, // 3067995028
+		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsSprinting, "IsSprinting" }, // 1360055157
 		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_IsTransitionClimbMode, "IsTransitionClimbMode" }, // 727933227
-		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_StartSprinting, "StartSprinting" }, // 3248296309
-		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_StopSprinting, "StopSprinting" }, // 848863534
+		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_StartSprinting, "StartSprinting" }, // 3473410573
+		{ &Z_Construct_UFunction_UNarrativeCharacterMovement_StopSprinting, "StopSprinting" }, // 1722345449
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1064,19 +1128,19 @@ UNarrativeCharacterMovement::~UNarrativeCharacterMovement() {}
 // End Class UNarrativeCharacterMovement
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ ENarrativeCustomMovementMode_StaticEnum, TEXT("ENarrativeCustomMovementMode"), &Z_Registration_Info_UEnum_ENarrativeCustomMovementMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2954134896U) },
 		{ ENarrativeClimbMode_StaticEnum, TEXT("ENarrativeClimbMode"), &Z_Registration_Info_UEnum_ENarrativeClimbMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3124511179U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCharacterMovement, UNarrativeCharacterMovement::StaticClass, TEXT("UNarrativeCharacterMovement"), &Z_Registration_Info_UClass_UNarrativeCharacterMovement, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCharacterMovement), 562958715U) },
+		{ Z_Construct_UClass_UNarrativeCharacterMovement, UNarrativeCharacterMovement::StaticClass, TEXT("UNarrativeCharacterMovement"), &Z_Registration_Info_UClass_UNarrativeCharacterMovement, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCharacterMovement), 2542052687U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_313903049(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_2842215008(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_NarrativeCharacterMovement_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

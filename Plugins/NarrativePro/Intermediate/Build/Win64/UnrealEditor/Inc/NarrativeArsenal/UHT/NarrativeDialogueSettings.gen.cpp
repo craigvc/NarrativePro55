@@ -30,49 +30,77 @@ struct Z_Construct_UClass_UNarrativeDialogueSettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Runtime dialogue settings for narrative \n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeDialogueSettings.h" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Runtime dialogue settings for narrative" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueLineAudioSilence_MetaData[] = {
 		{ "Category", "Dialogue Settings" },
 		{ "ClampMin", "0.010000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Optional buffer of silence added to the end of dialogue lines\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional buffer of silence added to the end of dialogue lines" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinDialogueTextDisplayTime_MetaData[] = {
 		{ "Category", "Dialogue Settings" },
 		{ "ClampMin", "0.010000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//How long should the text be displayed for at a minimum? Since default letters per minute is 25 this prevents a reply like \"no\" from being played too quickly\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How long should the text be displayed for at a minimum? Since default letters per minute is 25 this prevents a reply like \"no\" from being played too quickly" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LettersPerSecondLineDuration_MetaData[] = {
 		{ "Category", "Dialogue Settings" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If a dialogue doesn't have audio supplied, how long should the text be displayed on the screen for? Lower letters per minute means player gets more time \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If a dialogue doesn't have audio supplied, how long should the text be displayed on the screen for? Lower letters per minute means player gets more time" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAutoSelectSingleResponse_MetaData[] = {
 		{ "Category", "Dialogue Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If there is only one player response available, should we autoselect it, regardless of whether bAutoSelect is checked?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If there is only one player response available, should we autoselect it, regardless of whether bAutoSelect is checked?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bEnableVerticalWiring_MetaData[] = {
 		{ "Category", "Graph Options" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Expiremental - won't autoarrange old dialogues, and you'll need to move your nodes into the correct position yourself. \n//Also makes dialogue nodes sort themselves from left to right instead of top to bottom\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Expiremental - won't autoarrange old dialogues, and you'll need to move your nodes into the correct position yourself.\nAlso makes dialogue nodes sort themselves from left to right instead of top to bottom" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpeakerColors_MetaData[] = {
 		{ "Category", "Graph Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Default speaker colors\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default speaker colors" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DialogueLineAudioSilence;
@@ -153,14 +181,14 @@ UNarrativeDialogueSettings::~UNarrativeDialogueSettings() {}
 // End Class UNarrativeDialogueSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeDialogueSettings, UNarrativeDialogueSettings::StaticClass, TEXT("UNarrativeDialogueSettings"), &Z_Registration_Info_UClass_UNarrativeDialogueSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeDialogueSettings), 535639367U) },
+		{ Z_Construct_UClass_UNarrativeDialogueSettings, UNarrativeDialogueSettings::StaticClass, TEXT("UNarrativeDialogueSettings"), &Z_Registration_Info_UClass_UNarrativeDialogueSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeDialogueSettings), 4045009395U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSettings_h_244733043(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSettings_h_757354417(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

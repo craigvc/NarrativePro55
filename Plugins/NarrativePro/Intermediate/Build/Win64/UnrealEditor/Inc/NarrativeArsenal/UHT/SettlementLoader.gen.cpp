@@ -33,24 +33,36 @@ struct Z_Construct_UClass_ASettlementLoader_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*SettlementLoader will activate/deactivate the selected settlement when World Partiton streams it\nin or out, essentially making World Parititon stream settlements in or out and keeping them efficient. \n\nIt also handles discovering its owner POI when it is walked into! This makes sense to do in the loader because the loaders overlap volumes will only be \nloaded in when you're nearby. If we put the volumes in the settlement we'd have hundreds of collision volumes loaded in at one time which would waste performance. */" },
+#endif
 		{ "IncludePath", "Settlements/SettlementLoader.h" },
 		{ "ModuleRelativePath", "Public/Settlements/SettlementLoader.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "SettlementLoader will activate/deactivate the selected settlement when World Partiton streams it\nin or out, essentially making World Parititon stream settlements in or out and keeping them efficient.\n\nIt also handles discovering its owner POI when it is walked into! This makes sense to do in the loader because the loaders overlap volumes will only be\nloaded in when you're nearby. If we put the volumes in the settlement we'd have hundreds of collision volumes loaded in at one time which would waste performance." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementToLoad_MetaData[] = {
 		{ "Categories", "Narrative.Settlements" },
 		{ "Category", "Settlement Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The settlement we want to activate/deactivate when settlement loader is streamed in or out \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/SettlementLoader.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The settlement we want to activate/deactivate when settlement loader is streamed in or out" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementLoaderRoot_MetaData[] = {
 		{ "Category", "Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Root component - we want the settlement to have a transform \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Settlements/SettlementLoader.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Root component - we want the settlement to have a transform" },
+#endif
 	};
 #if WITH_EDITORONLY_DATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpriteComponent_MetaData[] = {
@@ -123,14 +135,14 @@ ASettlementLoader::~ASettlementLoader() {}
 // End Class ASettlementLoader
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementLoader_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementLoader_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASettlementLoader, ASettlementLoader::StaticClass, TEXT("ASettlementLoader"), &Z_Registration_Info_UClass_ASettlementLoader, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASettlementLoader), 3631668378U) },
+		{ Z_Construct_UClass_ASettlementLoader, ASettlementLoader::StaticClass, TEXT("ASettlementLoader"), &Z_Registration_Info_UClass_ASettlementLoader, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASettlementLoader), 2984571849U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementLoader_h_2568201341(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementLoader_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementLoader_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementLoader_h_2225473118(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementLoader_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_SettlementLoader_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

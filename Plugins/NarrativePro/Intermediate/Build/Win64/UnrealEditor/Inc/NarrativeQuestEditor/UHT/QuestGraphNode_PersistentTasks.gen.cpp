@@ -29,7 +29,9 @@ struct Z_Construct_UClass_UQuestGraphNode_PersistentTasks_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "QuestGraphNode_PersistentTasks.h" },
 		{ "ModuleRelativePath", "Private/QuestGraphNode_PersistentTasks.h" },
 	};
@@ -78,14 +80,14 @@ UQuestGraphNode_PersistentTasks::~UQuestGraphNode_PersistentTasks() {}
 // End Class UQuestGraphNode_PersistentTasks
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphNode_PersistentTasks_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphNode_PersistentTasks_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestGraphNode_PersistentTasks, UQuestGraphNode_PersistentTasks::StaticClass, TEXT("UQuestGraphNode_PersistentTasks"), &Z_Registration_Info_UClass_UQuestGraphNode_PersistentTasks, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestGraphNode_PersistentTasks), 443370298U) },
+		{ Z_Construct_UClass_UQuestGraphNode_PersistentTasks, UQuestGraphNode_PersistentTasks::StaticClass, TEXT("UQuestGraphNode_PersistentTasks"), &Z_Registration_Info_UClass_UQuestGraphNode_PersistentTasks, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestGraphNode_PersistentTasks), 3040458341U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphNode_PersistentTasks_h_1181427889(TEXT("/Script/NarrativeQuestEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphNode_PersistentTasks_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphNode_PersistentTasks_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphNode_PersistentTasks_h_4174417897(TEXT("/Script/NarrativeQuestEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphNode_PersistentTasks_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphNode_PersistentTasks_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

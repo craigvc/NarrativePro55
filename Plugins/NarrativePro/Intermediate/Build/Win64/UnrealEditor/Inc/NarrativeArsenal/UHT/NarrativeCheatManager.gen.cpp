@@ -26,9 +26,13 @@ struct Z_Construct_UFunction_UNarrativeCheatManager_AdvanceTime_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Advance the ingame time by a certain amount, where 100 = 1 hour\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCheatManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Advance the ingame time by a certain amount, where 100 = 1 hour" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Amount_MetaData[] = {
 		{ "NativeConst", "" },
@@ -73,10 +77,14 @@ struct Z_Construct_UFunction_UNarrativeCheatManager_GiveCurrency_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Gives the specified amount of currency to the player\n" },
+#endif
 		{ "CPP_Default_Currency", "1" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCheatManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gives the specified amount of currency to the player" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Currency;
@@ -118,10 +126,14 @@ struct Z_Construct_UFunction_UNarrativeCheatManager_GiveSkillPoints_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Gives the specified amount of skill points to the player\n" },
+#endif
 		{ "CPP_Default_Points", "1" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCheatManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gives the specified amount of skill points to the player" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Points;
@@ -163,9 +175,13 @@ struct Z_Construct_UFunction_UNarrativeCheatManager_SetInvulnerable_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Make our character in/vulnerable\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCheatManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Make our character in/vulnerable" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsInvulnerable_MetaData[] = {
 		{ "NativeConst", "" },
@@ -227,18 +243,22 @@ struct Z_Construct_UClass_UNarrativeCheatManager_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Contains Narrative pro console commands that will be stripped from packaged game.\n */" },
+#endif
 		{ "IncludePath", "UnrealFramework/NarrativeCheatManager.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeCheatManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Contains Narrative pro console commands that will be stripped from packaged game." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeCheatManager_AdvanceTime, "AdvanceTime" }, // 4283789212
-		{ &Z_Construct_UFunction_UNarrativeCheatManager_GiveCurrency, "GiveCurrency" }, // 1955252922
-		{ &Z_Construct_UFunction_UNarrativeCheatManager_GiveSkillPoints, "GiveSkillPoints" }, // 3504875377
-		{ &Z_Construct_UFunction_UNarrativeCheatManager_SetInvulnerable, "SetInvulnerable" }, // 1773220864
+		{ &Z_Construct_UFunction_UNarrativeCheatManager_AdvanceTime, "AdvanceTime" }, // 722106858
+		{ &Z_Construct_UFunction_UNarrativeCheatManager_GiveCurrency, "GiveCurrency" }, // 2442620388
+		{ &Z_Construct_UFunction_UNarrativeCheatManager_GiveSkillPoints, "GiveSkillPoints" }, // 3205211339
+		{ &Z_Construct_UFunction_UNarrativeCheatManager_SetInvulnerable, "SetInvulnerable" }, // 332148336
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -284,14 +304,14 @@ UNarrativeCheatManager::~UNarrativeCheatManager() {}
 // End Class UNarrativeCheatManager
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCheatManager_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCheatManager_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCheatManager, UNarrativeCheatManager::StaticClass, TEXT("UNarrativeCheatManager"), &Z_Registration_Info_UClass_UNarrativeCheatManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCheatManager), 4190589627U) },
+		{ Z_Construct_UClass_UNarrativeCheatManager, UNarrativeCheatManager::StaticClass, TEXT("UNarrativeCheatManager"), &Z_Registration_Info_UClass_UNarrativeCheatManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCheatManager), 236791788U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCheatManager_h_2641589090(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCheatManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCheatManager_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCheatManager_h_3582445816(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCheatManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeCheatManager_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

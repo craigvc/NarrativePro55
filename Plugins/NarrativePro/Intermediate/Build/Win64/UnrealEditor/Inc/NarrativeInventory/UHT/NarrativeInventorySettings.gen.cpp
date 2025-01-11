@@ -29,16 +29,24 @@ struct Z_Construct_UClass_UNarrativeInventorySettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines configuration settings for the Narrative Inventory plugin. \n */" },
+#endif
 		{ "IncludePath", "NarrativeInventorySettings.h" },
 		{ "ModuleRelativePath", "Public/NarrativeInventorySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines configuration settings for the Narrative Inventory plugin." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAllowMultipleStacks_MetaData[] = {
 		{ "Category", "Inventory Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Are we allowed to carry multiple stacks of an item? \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeInventorySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Are we allowed to carry multiple stacks of an item?" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bAllowMultipleStacks_SetBit(void* Obj);
@@ -96,14 +104,14 @@ UNarrativeInventorySettings::~UNarrativeInventorySettings() {}
 // End Class UNarrativeInventorySettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeInventorySettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeInventorySettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeInventorySettings, UNarrativeInventorySettings::StaticClass, TEXT("UNarrativeInventorySettings"), &Z_Registration_Info_UClass_UNarrativeInventorySettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInventorySettings), 4129043746U) },
+		{ Z_Construct_UClass_UNarrativeInventorySettings, UNarrativeInventorySettings::StaticClass, TEXT("UNarrativeInventorySettings"), &Z_Registration_Info_UClass_UNarrativeInventorySettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInventorySettings), 4038699584U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeInventorySettings_h_2484511340(TEXT("/Script/NarrativeInventory"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeInventorySettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeInventorySettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeInventorySettings_h_1863224848(TEXT("/Script/NarrativeInventory"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeInventorySettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeInventorySettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

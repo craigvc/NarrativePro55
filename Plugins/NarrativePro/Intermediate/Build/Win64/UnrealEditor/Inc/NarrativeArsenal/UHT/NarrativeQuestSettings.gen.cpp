@@ -29,16 +29,24 @@ struct Z_Construct_UClass_UNarrativeQuestSettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Runtime quest settings for narrative\n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeQuestSettings.h" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeQuestSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Runtime quest settings for narrative" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bResetTasksWhenCompleted_MetaData[] = {
 		{ "Category", "Quest Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//When you complete a task, should its progress be reset after you complete it? This means you can design quests where you can come back to previously completed steps and re-complete them.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeQuestSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When you complete a task, should its progress be reset after you complete it? This means you can design quests where you can come back to previously completed steps and re-complete them." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bResetTasksWhenCompleted_SetBit(void* Obj);
@@ -96,14 +104,14 @@ UNarrativeQuestSettings::~UNarrativeQuestSettings() {}
 // End Class UNarrativeQuestSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeQuestSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeQuestSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeQuestSettings, UNarrativeQuestSettings::StaticClass, TEXT("UNarrativeQuestSettings"), &Z_Registration_Info_UClass_UNarrativeQuestSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeQuestSettings), 395670509U) },
+		{ Z_Construct_UClass_UNarrativeQuestSettings, UNarrativeQuestSettings::StaticClass, TEXT("UNarrativeQuestSettings"), &Z_Registration_Info_UClass_UNarrativeQuestSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeQuestSettings), 1166630374U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeQuestSettings_h_3434377073(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeQuestSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeQuestSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeQuestSettings_h_1094314197(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeQuestSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeQuestSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

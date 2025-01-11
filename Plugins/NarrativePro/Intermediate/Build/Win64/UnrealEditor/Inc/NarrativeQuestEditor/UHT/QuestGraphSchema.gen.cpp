@@ -39,14 +39,22 @@ struct Z_Construct_UScriptStruct_FQuestSchemaAction_NewNode_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Action to add a node to the graph */" },
+#endif
 		{ "ModuleRelativePath", "Private/QuestGraphSchema.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Action to add a node to the graph" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NodeTemplate_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Template of node we want to create */" },
+#endif
 		{ "ModuleRelativePath", "Private/QuestGraphSchema.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Template of node we want to create" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_NodeTemplate;
@@ -149,7 +157,9 @@ struct Z_Construct_UClass_UQuestGraphSchema_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "QuestGraphSchema.h" },
 		{ "ModuleRelativePath", "Private/QuestGraphSchema.h" },
 	};
@@ -198,19 +208,19 @@ UQuestGraphSchema::~UQuestGraphSchema() {}
 // End Class UQuestGraphSchema
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FQuestSchemaAction_NewNode::StaticStruct, Z_Construct_UScriptStruct_FQuestSchemaAction_NewNode_Statics::NewStructOps, TEXT("QuestSchemaAction_NewNode"), &Z_Registration_Info_UScriptStruct_QuestSchemaAction_NewNode, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FQuestSchemaAction_NewNode), 351303290U) },
+		{ FQuestSchemaAction_NewNode::StaticStruct, Z_Construct_UScriptStruct_FQuestSchemaAction_NewNode_Statics::NewStructOps, TEXT("QuestSchemaAction_NewNode"), &Z_Registration_Info_UScriptStruct_QuestSchemaAction_NewNode, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FQuestSchemaAction_NewNode), 3517503602U) },
 		{ FQuestSchemaAction_AddComment::StaticStruct, Z_Construct_UScriptStruct_FQuestSchemaAction_AddComment_Statics::NewStructOps, TEXT("QuestSchemaAction_AddComment"), &Z_Registration_Info_UScriptStruct_QuestSchemaAction_AddComment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FQuestSchemaAction_AddComment), 1898572367U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestGraphSchema, UQuestGraphSchema::StaticClass, TEXT("UQuestGraphSchema"), &Z_Registration_Info_UClass_UQuestGraphSchema, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestGraphSchema), 2360213385U) },
+		{ Z_Construct_UClass_UQuestGraphSchema, UQuestGraphSchema::StaticClass, TEXT("UQuestGraphSchema"), &Z_Registration_Info_UClass_UQuestGraphSchema, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestGraphSchema), 1908700442U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_3051475828(TEXT("/Script/NarrativeQuestEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_1669813129(TEXT("/Script/NarrativeQuestEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Private_QuestGraphSchema_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

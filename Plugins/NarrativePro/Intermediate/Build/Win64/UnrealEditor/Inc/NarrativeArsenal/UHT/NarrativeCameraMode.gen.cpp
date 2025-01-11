@@ -37,9 +37,13 @@ struct Z_Construct_UFunction_UNarrativeCameraMode_EnterMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Camera Mode" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Enter/exit mode handlers if your mode wants to do anything custom\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enter/exit mode handlers if your mode wants to do anything custom" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -137,9 +141,13 @@ struct Z_Construct_UFunction_UNarrativeCameraMode_GetCameraDesiredOffset_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Camera Mode" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//What the cameras target arm offset should be. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What the cameras target arm offset should be." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -202,9 +210,13 @@ struct Z_Construct_UFunction_UNarrativeCameraMode_GetCameraRootLocation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Camera Mode" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Where the cameras target arm should attach to the character.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Where the cameras target arm should attach to the character." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -265,9 +277,13 @@ struct Z_Construct_UFunction_UNarrativeCameraMode_GetDesiredFOV_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Camera Mode" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//What the cameras target FOV should be, and how fast we should be blending to it \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What the cameras target FOV should be, and how fast we should be blending to it" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_FOV;
@@ -373,48 +389,76 @@ struct Z_Construct_UClass_UNarrativeCameraMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Camera modes are managed by the UNarrativeCameraComponent and allow us to blend between different camera behaviours. \n * \n * Camera modes are extremely simple - a mode just specifies the cameras desired FOV and location, and the camera component blends towards it based on its blendspeed. \n */" },
+#endif
 		{ "IncludePath", "Camera/NarrativeCameraMode.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Camera modes are managed by the UNarrativeCameraComponent and allow us to blend between different camera behaviours.\n\nCamera modes are extremely simple - a mode just specifies the cameras desired FOV and location, and the camera component blends towards it based on its blendspeed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultFOV_MetaData[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Default FOV this camera mode wants - you can override GetDesiredFOV if you need to return a dynamic value \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default FOV this camera mode wants - you can override GetDesiredFOV if you need to return a dynamic value" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultFOVBlendSpeed_MetaData[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//TODO move these to time based instead of units/s\n//units/s Speed to interp FOV at \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "TODO move these to time based instead of units/s\nunits/s Speed to interp FOV at" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetArmLength_MetaData[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The length the target arm should aim for \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The length the target arm should aim for" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Offset_MetaData[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The offset from the character this mode wants. If you don't want an offset, or need something more complex, you can override GetCameraDesiredTransform()\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The offset from the character this mode wants. If you don't want an offset, or need something more complex, you can override GetCameraDesiredTransform()" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OffsetInterpSpeed_MetaData[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//units/s Speed to interp offset at \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "units/s Speed to interp offset at" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PivotInterpSpeed_MetaData[] = {
 		{ "Category", "Narrative Camera" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//units/s Speed to interp offset at \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Camera/NarrativeCameraMode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "units/s Speed to interp offset at" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DefaultFOV;
@@ -426,11 +470,11 @@ struct Z_Construct_UClass_UNarrativeCameraMode_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeCameraMode_EnterMode, "EnterMode" }, // 84794299
+		{ &Z_Construct_UFunction_UNarrativeCameraMode_EnterMode, "EnterMode" }, // 3167517796
 		{ &Z_Construct_UFunction_UNarrativeCameraMode_ExitMode, "ExitMode" }, // 3183329509
-		{ &Z_Construct_UFunction_UNarrativeCameraMode_GetCameraDesiredOffset, "GetCameraDesiredOffset" }, // 2078505944
-		{ &Z_Construct_UFunction_UNarrativeCameraMode_GetCameraRootLocation, "GetCameraRootLocation" }, // 3524580238
-		{ &Z_Construct_UFunction_UNarrativeCameraMode_GetDesiredFOV, "GetDesiredFOV" }, // 3544548638
+		{ &Z_Construct_UFunction_UNarrativeCameraMode_GetCameraDesiredOffset, "GetCameraDesiredOffset" }, // 863060547
+		{ &Z_Construct_UFunction_UNarrativeCameraMode_GetCameraRootLocation, "GetCameraRootLocation" }, // 1263950896
+		{ &Z_Construct_UFunction_UNarrativeCameraMode_GetDesiredFOV, "GetDesiredFOV" }, // 4055160634
 		{ &Z_Construct_UFunction_UNarrativeCameraMode_GetOwningCamera, "GetOwningCamera" }, // 3583950025
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -491,14 +535,14 @@ UNarrativeCameraMode::~UNarrativeCameraMode() {}
 // End Class UNarrativeCameraMode
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraMode_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraMode_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCameraMode, UNarrativeCameraMode::StaticClass, TEXT("UNarrativeCameraMode"), &Z_Registration_Info_UClass_UNarrativeCameraMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCameraMode), 3956735619U) },
+		{ Z_Construct_UClass_UNarrativeCameraMode, UNarrativeCameraMode::StaticClass, TEXT("UNarrativeCameraMode"), &Z_Registration_Info_UClass_UNarrativeCameraMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCameraMode), 3993511830U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraMode_h_3211888179(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraMode_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraMode_h_704000377(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Camera_NarrativeCameraMode_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

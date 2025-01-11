@@ -33,11 +33,15 @@ struct Z_Construct_UClass_ANavigatorPointOfInterest_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Represents a point of interest that can be placed in the level. When players enter the POI sphere, their navigation components will \"discover\" this POI,\n * by adding its POI tag to their list of discovered areas. This list will saved to disk, and when load is called all POIs in the level will automatically be updated. \n */" },
+#endif
 		{ "IncludePath", "PointOfInterest.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/PointOfInterest.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents a point of interest that can be placed in the level. When players enter the POI sphere, their navigation components will \"discover\" this POI,\nby adding its POI tag to their list of discovered areas. This list will saved to disk, and when load is called all POIs in the level will automatically be updated." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POISphere_MetaData[] = {
 		{ "Category", "Components" },
@@ -51,16 +55,24 @@ struct Z_Construct_UClass_ANavigatorPointOfInterest_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAllowFastTravel_MetaData[] = {
 		{ "Category", "Point Of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** True if we can fast travel to this point of interest. */" },
+#endif
 		{ "ModuleRelativePath", "Public/PointOfInterest.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "True if we can fast travel to this point of interest." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FastTravelLocation_MetaData[] = {
 		{ "Category", "Point Of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The location in the world we'll fast travel the player to when the POI is selected in the world map. */" },
+#endif
 		{ "MakeEditWidget", "" },
 		{ "ModuleRelativePath", "Public/PointOfInterest.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The location in the world we'll fast travel the player to when the POI is selected in the world map." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_POISphere;
@@ -127,14 +139,14 @@ ANavigatorPointOfInterest::~ANavigatorPointOfInterest() {}
 // End Class ANavigatorPointOfInterest
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_PointOfInterest_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_PointOfInterest_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANavigatorPointOfInterest, ANavigatorPointOfInterest::StaticClass, TEXT("ANavigatorPointOfInterest"), &Z_Registration_Info_UClass_ANavigatorPointOfInterest, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANavigatorPointOfInterest), 2738816451U) },
+		{ Z_Construct_UClass_ANavigatorPointOfInterest, ANavigatorPointOfInterest::StaticClass, TEXT("ANavigatorPointOfInterest"), &Z_Registration_Info_UClass_ANavigatorPointOfInterest, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANavigatorPointOfInterest), 4012453506U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_PointOfInterest_h_1929088059(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_PointOfInterest_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_PointOfInterest_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_PointOfInterest_h_3228587659(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_PointOfInterest_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_PointOfInterest_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -41,9 +41,13 @@ struct Z_Construct_UFunction_UNarrativeSavableActor_Load_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tell the actor it has been loaded in from a save. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeSavableActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tell the actor it has been loaded in from a save." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -91,9 +95,13 @@ struct Z_Construct_UFunction_UNarrativeSavableActor_PrepareForSave_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tell the actor it is about to be saved, and needs to populate all its save data \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeSavableActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tell the actor it is about to be saved, and needs to populate all its save data" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -147,9 +155,13 @@ struct Z_Construct_UFunction_UNarrativeSavableActor_SetActorGUID_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Used for dynamic actors to set the stable GUID to the one the save system got from the actors record - that way the save system will correctly save this actor again in future \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeSavableActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used for dynamic actors to set the stable GUID to the one the save system got from the actors record - that way the save system will correctly save this actor again in future" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedGUID_MetaData[] = {
 		{ "NativeConst", "" },
@@ -223,9 +235,13 @@ struct Z_Construct_UFunction_UNarrativeSavableActor_ShouldRespawn_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Allows us to define whether we want the save system to auto-respawn a dynamic actor, or whether we'll do it ourselves manually. \n//At the moment we just have this feature for NPCs - they should't auto-respawn if part of a settlement, as the settlement spawns them instead. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeSavableActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows us to define whether we want the save system to auto-respawn a dynamic actor, or whether we'll do it ourselves manually.\nAt the moment we just have this feature for NPCs - they should't auto-respawn if part of a settlement, as the settlement spawns them instead." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -289,10 +305,10 @@ struct Z_Construct_UClass_UNarrativeSavableActor_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeSavableActor_Load, "Load" }, // 3802203318
-		{ &Z_Construct_UFunction_UNarrativeSavableActor_PrepareForSave, "PrepareForSave" }, // 3915796830
-		{ &Z_Construct_UFunction_UNarrativeSavableActor_SetActorGUID, "SetActorGUID" }, // 930070989
-		{ &Z_Construct_UFunction_UNarrativeSavableActor_ShouldRespawn, "ShouldRespawn" }, // 3692203415
+		{ &Z_Construct_UFunction_UNarrativeSavableActor_Load, "Load" }, // 1219222734
+		{ &Z_Construct_UFunction_UNarrativeSavableActor_PrepareForSave, "PrepareForSave" }, // 1899361975
+		{ &Z_Construct_UFunction_UNarrativeSavableActor_SetActorGUID, "SetActorGUID" }, // 4145771740
+		{ &Z_Construct_UFunction_UNarrativeSavableActor_ShouldRespawn, "ShouldRespawn" }, // 3748479315
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -338,14 +354,14 @@ UNarrativeSavableActor::~UNarrativeSavableActor() {}
 // End Interface UNarrativeSavableActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableActor_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeSavableActor, UNarrativeSavableActor::StaticClass, TEXT("UNarrativeSavableActor"), &Z_Registration_Info_UClass_UNarrativeSavableActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSavableActor), 2545445142U) },
+		{ Z_Construct_UClass_UNarrativeSavableActor, UNarrativeSavableActor::StaticClass, TEXT("UNarrativeSavableActor"), &Z_Registration_Info_UClass_UNarrativeSavableActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSavableActor), 2378775156U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableActor_h_1218118542(TEXT("/Script/NarrativeSaveSystem"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableActor_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableActor_h_3325875602(TEXT("/Script/NarrativeSaveSystem"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

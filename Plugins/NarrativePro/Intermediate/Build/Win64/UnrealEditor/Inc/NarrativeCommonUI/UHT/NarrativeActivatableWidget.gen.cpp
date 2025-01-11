@@ -374,9 +374,13 @@ struct Z_Construct_UClass_UNarrativeActivatableWidget_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bFocusDesiredTargetOnActivate_MetaData[] = {
 		{ "Category", "Narrative Activatable Widget" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If true we'll automatically focus GetDesiredFocusTarget() when widget activates\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeActivatableWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true we'll automatically focus GetDesiredFocusTarget() when widget activates" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bUseGameInput_SetBit(void* Obj);
@@ -458,18 +462,18 @@ UNarrativeActivatableWidget::~UNarrativeActivatableWidget() {}
 // End Class UNarrativeActivatableWidget
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FInputActionBindingHandle::StaticStruct, Z_Construct_UScriptStruct_FInputActionBindingHandle_Statics::NewStructOps, TEXT("InputActionBindingHandle"), &Z_Registration_Info_UScriptStruct_InputActionBindingHandle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInputActionBindingHandle), 4144393550U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeActivatableWidget, UNarrativeActivatableWidget::StaticClass, TEXT("UNarrativeActivatableWidget"), &Z_Registration_Info_UClass_UNarrativeActivatableWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeActivatableWidget), 227274200U) },
+		{ Z_Construct_UClass_UNarrativeActivatableWidget, UNarrativeActivatableWidget::StaticClass, TEXT("UNarrativeActivatableWidget"), &Z_Registration_Info_UClass_UNarrativeActivatableWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeActivatableWidget), 2013189543U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_2219813094(TEXT("/Script/NarrativeCommonUI"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_3317823878(TEXT("/Script/NarrativeCommonUI"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeActivatableWidget_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

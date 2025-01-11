@@ -103,9 +103,13 @@ struct Z_Construct_UFunction_UNarrativeInteractAbility_FinishInteraction_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interact Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when interaction needs finished - override this and do any finishing up of the interaction, ie if sitting play your Get Up montage, etc - call EndAbility when done.  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeInteractAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when interaction needs finished - override this and do any finishing up of the interaction, ie if sitting play your Get Up montage, etc - call EndAbility when done." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -139,16 +143,20 @@ struct Z_Construct_UFunction_UNarrativeInteractAbility_HandleInteraction_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Interaction is simple - override this function, do whatever interaction stuff you need, then call EndInteraction when you're done! The slot will automatically be released for you. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeInteractAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Interaction is simple - override this function, do whatever interaction stuff you need, then call EndInteraction when you're done! The slot will automatically be released for you." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InteractionData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractAbility_HandleInteraction_Statics::NewProp_InteractionData = { "InteractionData", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractAbility_eventHandleInteraction_Parms, InteractionData), Z_Construct_UScriptStruct_FInteractionSlotConfig, METADATA_PARAMS(0, nullptr) }; // 345810728
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractAbility_HandleInteraction_Statics::NewProp_InteractionData = { "InteractionData", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractAbility_eventHandleInteraction_Parms, InteractionData), Z_Construct_UScriptStruct_FInteractionSlotConfig, METADATA_PARAMS(0, nullptr) }; // 3769733267
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeInteractAbility_HandleInteraction_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInteractAbility_HandleInteraction_Statics::NewProp_InteractionData,
 };
@@ -227,36 +235,56 @@ struct Z_Construct_UClass_UNarrativeInteractAbility_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines how we interact with an Interaction slot. Abilities are great for this - they work well on NPCs and players, and are latent, which interaction often requires - \n * ie wait for anim to finish, wait for input, etc. \n */" },
+#endif
 		{ "IncludePath", "GAS/NarrativeInteractAbility.h" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeInteractAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines how we interact with an Interaction slot. Abilities are great for this - they work well on NPCs and players, and are latent, which interaction often requires -\nie wait for anim to finish, wait for input, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractingWithComponent_MetaData[] = {
 		{ "Category", "Interact Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The interactable component this interact ability is acting on. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeInteractAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The interactable component this interact ability is acting on." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotConfiguration_MetaData[] = {
 		{ "Category", "Interact Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The configuration for the interaction slot we've tried to use\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeInteractAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The configuration for the interaction slot we've tried to use" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionComponent_MetaData[] = {
 		{ "Category", "Narrative Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The interaction component that owns the interaction \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeInteractAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The interaction component that owns the interaction" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WaitEndInteract_MetaData[] = {
 		{ "Category", "Narrative Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The wait gameplay event task \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeInteractAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The wait gameplay event task" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InteractingWithComponent;
@@ -267,8 +295,8 @@ struct Z_Construct_UClass_UNarrativeInteractAbility_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UNarrativeInteractAbility_CanExitInteraction, "CanExitInteraction" }, // 3456638823
-		{ &Z_Construct_UFunction_UNarrativeInteractAbility_FinishInteraction, "FinishInteraction" }, // 821907575
-		{ &Z_Construct_UFunction_UNarrativeInteractAbility_HandleInteraction, "HandleInteraction" }, // 706978931
+		{ &Z_Construct_UFunction_UNarrativeInteractAbility_FinishInteraction, "FinishInteraction" }, // 1552052147
+		{ &Z_Construct_UFunction_UNarrativeInteractAbility_HandleInteraction, "HandleInteraction" }, // 3357210898
 		{ &Z_Construct_UFunction_UNarrativeInteractAbility_OnReceiveEndInteractEvent, "OnReceiveEndInteractEvent" }, // 131612780
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -278,7 +306,7 @@ struct Z_Construct_UClass_UNarrativeInteractAbility_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeInteractAbility_Statics::NewProp_InteractingWithComponent = { "InteractingWithComponent", nullptr, (EPropertyFlags)0x011400000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractAbility, InteractingWithComponent), Z_Construct_UClass_UNarrativeInteractableComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractingWithComponent_MetaData), NewProp_InteractingWithComponent_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInteractAbility_Statics::NewProp_SlotConfiguration = { "SlotConfiguration", nullptr, (EPropertyFlags)0x0010008000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractAbility, SlotConfiguration), Z_Construct_UScriptStruct_FInteractionSlotConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SlotConfiguration_MetaData), NewProp_SlotConfiguration_MetaData) }; // 345810728
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInteractAbility_Statics::NewProp_SlotConfiguration = { "SlotConfiguration", nullptr, (EPropertyFlags)0x0010008000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractAbility, SlotConfiguration), Z_Construct_UScriptStruct_FInteractionSlotConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SlotConfiguration_MetaData), NewProp_SlotConfiguration_MetaData) }; // 3769733267
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeInteractAbility_Statics::NewProp_InteractionComponent = { "InteractionComponent", nullptr, (EPropertyFlags)0x011400000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractAbility, InteractionComponent), Z_Construct_UClass_UNarrativeInteractionComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionComponent_MetaData), NewProp_InteractionComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeInteractAbility_Statics::NewProp_WaitEndInteract = { "WaitEndInteract", nullptr, (EPropertyFlags)0x0114000000000014, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractAbility, WaitEndInteract), Z_Construct_UClass_UAbilityTask_WaitGameplayEvent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WaitEndInteract_MetaData), NewProp_WaitEndInteract_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UNarrativeInteractAbility_Statics::PropPointers[] = {
@@ -325,14 +353,14 @@ UNarrativeInteractAbility::~UNarrativeInteractAbility() {}
 // End Class UNarrativeInteractAbility
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeInteractAbility_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeInteractAbility_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeInteractAbility, UNarrativeInteractAbility::StaticClass, TEXT("UNarrativeInteractAbility"), &Z_Registration_Info_UClass_UNarrativeInteractAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInteractAbility), 2096723896U) },
+		{ Z_Construct_UClass_UNarrativeInteractAbility, UNarrativeInteractAbility::StaticClass, TEXT("UNarrativeInteractAbility"), &Z_Registration_Info_UClass_UNarrativeInteractAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInteractAbility), 1895317025U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeInteractAbility_h_3642653743(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeInteractAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeInteractAbility_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeInteractAbility_h_2742855053(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeInteractAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeInteractAbility_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

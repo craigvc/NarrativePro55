@@ -31,11 +31,15 @@ struct Z_Construct_UClass_UVendorInventoryComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A special type of inventory you should use for vendors. Vendors are essentially just lootable containers, however looting/storing items\n * will consume/remove currency from the player and vendors when the looting occurs. The UI will also display prices. \n */" },
+#endif
 		{ "DisplayName", "Narrative Vendor Inventory" },
 		{ "IncludePath", "VendorInventoryComponent.h" },
 		{ "ModuleRelativePath", "Public/VendorInventoryComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A special type of inventory you should use for vendors. Vendors are essentially just lootable containers, however looting/storing items\nwill consume/remove currency from the player and vendors when the looting occurs. The UI will also display prices." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -82,14 +86,14 @@ UVendorInventoryComponent::~UVendorInventoryComponent() {}
 // End Class UVendorInventoryComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_VendorInventoryComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_VendorInventoryComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UVendorInventoryComponent, UVendorInventoryComponent::StaticClass, TEXT("UVendorInventoryComponent"), &Z_Registration_Info_UClass_UVendorInventoryComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVendorInventoryComponent), 2662411400U) },
+		{ Z_Construct_UClass_UVendorInventoryComponent, UVendorInventoryComponent::StaticClass, TEXT("UVendorInventoryComponent"), &Z_Registration_Info_UClass_UVendorInventoryComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVendorInventoryComponent), 2152608053U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_VendorInventoryComponent_h_971036457(TEXT("/Script/NarrativeInventory"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_VendorInventoryComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_VendorInventoryComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_VendorInventoryComponent_h_1712563243(TEXT("/Script/NarrativeInventory"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_VendorInventoryComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_VendorInventoryComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

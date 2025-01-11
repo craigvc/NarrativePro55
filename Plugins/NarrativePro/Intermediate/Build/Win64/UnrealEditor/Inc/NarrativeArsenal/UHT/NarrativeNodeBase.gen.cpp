@@ -36,9 +36,13 @@ struct Z_Construct_UFunction_UNarrativeNodeBase_AreConditionsMet_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Events & Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check if all the conditions are met on this quest/dialogue node\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if all the conditions are met on this quest/dialogue node" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NarrativeComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -103,9 +107,13 @@ struct Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Events & Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Execute all the events on this quest/dialogue node - this is blueprint callable so dialogue UI can call this\n//when a piece of dialogue is spoken\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Execute all the events on this quest/dialogue node - this is blueprint callable so dialogue UI can call this\nwhen a piece of dialogue is spoken" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NarrativeComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -126,7 +134,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UNarrativeN
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics::NewProp_Controller = { "Controller", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeNodeBase_eventProcessEvents_Parms, Controller), Z_Construct_UClass_APlayerController_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics::NewProp_NarrativeComponent = { "NarrativeComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeNodeBase_eventProcessEvents_Parms, NarrativeComponent), Z_Construct_UClass_UTalesComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NarrativeComponent_MetaData), NewProp_NarrativeComponent_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics::NewProp_Runtime_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics::NewProp_Runtime = { "Runtime", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeNodeBase_eventProcessEvents_Parms, Runtime), Z_Construct_UEnum_NarrativeArsenal_EEventRuntime, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Runtime_MetaData), NewProp_Runtime_MetaData) }; // 905326616
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics::NewProp_Runtime = { "Runtime", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeNodeBase_eventProcessEvents_Parms, Runtime), Z_Construct_UEnum_NarrativeArsenal_EEventRuntime, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Runtime_MetaData), NewProp_Runtime_MetaData) }; // 969879644
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics::NewProp_Pawn,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents_Statics::NewProp_Controller,
@@ -178,50 +186,78 @@ struct Z_Construct_UClass_UNarrativeNodeBase_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The base class for all narrative nodes in eiher a quest state machine, or a dialogue tree \n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeNodeBase.h" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The base class for all narrative nodes in eiher a quest state machine, or a dialogue tree" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NodePos_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The position the graph node is at, we need this because narrative does lots of sorting depending on the nodes Y position*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The position the graph node is at, we need this because narrative does lots of sorting depending on the nodes Y position" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Conditions_Inner_MetaData[] = {
 		{ "Category", "Events & Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09This node only appears if the following conditions are met. Note that currently only dialogues support conditions, they won't do anything in quests!\n\x09\n\x09In multiplayer games the server will check the conditions to ensure your game is server authoritative.\n\x09*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This node only appears if the following conditions are met. Note that currently only dialogues support conditions, they won't do anything in quests!\n\nIn multiplayer games the server will check the conditions to ensure your game is server authoritative." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Conditions_MetaData[] = {
 		{ "Category", "Events & Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09This node only appears if the following conditions are met. Note that currently only dialogues support conditions, they won't do anything in quests!\n\x09\n\x09In multiplayer games the server will check the conditions to ensure your game is server authoritative.\n\x09*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This node only appears if the following conditions are met. Note that currently only dialogues support conditions, they won't do anything in quests!\n\nIn multiplayer games the server will check the conditions to ensure your game is server authoritative." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Events_Inner_MetaData[] = {
 		{ "Category", "Events & Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Events that should fire when this is reached. These are supported by both quests and dialogues, and will fire on both client and server. */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Events that should fire when this is reached. These are supported by both quests and dialogues, and will fire on both client and server." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Events_MetaData[] = {
 		{ "Category", "Events & Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Events that should fire when this is reached. These are supported by both quests and dialogues, and will fire on both client and server. */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Events that should fire when this is reached. These are supported by both quests and dialogues, and will fire on both client and server." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ID_MetaData[] = {
 		{ "Category", "Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**An optional ID for this node, can be left empty*/" },
+#endif
 		{ "DisplayPriority", "0" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeNodeBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An optional ID for this node, can be left empty" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_NodePos;
@@ -233,8 +269,8 @@ struct Z_Construct_UClass_UNarrativeNodeBase_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeNodeBase_AreConditionsMet, "AreConditionsMet" }, // 3856284959
-		{ &Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents, "ProcessEvents" }, // 1935489264
+		{ &Z_Construct_UFunction_UNarrativeNodeBase_AreConditionsMet, "AreConditionsMet" }, // 3372765297
+		{ &Z_Construct_UFunction_UNarrativeNodeBase_ProcessEvents, "ProcessEvents" }, // 2575348742
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -294,14 +330,14 @@ UNarrativeNodeBase::~UNarrativeNodeBase() {}
 // End Class UNarrativeNodeBase
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeNodeBase_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeNodeBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeNodeBase, UNarrativeNodeBase::StaticClass, TEXT("UNarrativeNodeBase"), &Z_Registration_Info_UClass_UNarrativeNodeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeNodeBase), 553311796U) },
+		{ Z_Construct_UClass_UNarrativeNodeBase, UNarrativeNodeBase::StaticClass, TEXT("UNarrativeNodeBase"), &Z_Registration_Info_UClass_UNarrativeNodeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeNodeBase), 229932127U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeNodeBase_h_2111944203(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeNodeBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeNodeBase_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeNodeBase_h_3741154021(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeNodeBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeNodeBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

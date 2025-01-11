@@ -30,11 +30,15 @@ struct Z_Construct_UClass_UNarrativeComboBoxString_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "Category", "Narrative Common Widgets" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for a string combo box in Narrative - \n */" },
+#endif
 		{ "IncludePath", "Widgets/NarrativeComboBoxString.h" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeComboBoxString.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for a string combo box in Narrative -" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -80,14 +84,14 @@ UNarrativeComboBoxString::~UNarrativeComboBoxString() {}
 // End Class UNarrativeComboBoxString
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeComboBoxString_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeComboBoxString_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeComboBoxString, UNarrativeComboBoxString::StaticClass, TEXT("UNarrativeComboBoxString"), &Z_Registration_Info_UClass_UNarrativeComboBoxString, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeComboBoxString), 2887346703U) },
+		{ Z_Construct_UClass_UNarrativeComboBoxString, UNarrativeComboBoxString::StaticClass, TEXT("UNarrativeComboBoxString"), &Z_Registration_Info_UClass_UNarrativeComboBoxString, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeComboBoxString), 378903417U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeComboBoxString_h_3255918048(TEXT("/Script/NarrativeCommonUI"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeComboBoxString_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeComboBoxString_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeComboBoxString_h_4162380304(TEXT("/Script/NarrativeCommonUI"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeComboBoxString_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeComboBoxString_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

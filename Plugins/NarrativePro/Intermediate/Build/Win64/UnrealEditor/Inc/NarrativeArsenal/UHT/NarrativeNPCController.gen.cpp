@@ -44,9 +44,13 @@ struct Z_Construct_UFunction_ANarrativeNPCController_CleanUp_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NarrativeNPCController" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tells the AI controller it needs to destroy itself and its pawn. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tells the AI controller it needs to destroy itself and its pawn." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RemovePawnDelay_MetaData[] = {
 		{ "NativeConst", "" },
@@ -258,9 +262,13 @@ struct Z_Construct_UFunction_ANarrativeNPCController_GetNPCData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NarrativeNPCController" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab the NPCs data asset \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab the NPCs data asset" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -302,9 +310,13 @@ struct Z_Construct_UFunction_ANarrativeNPCController_GetNPCName_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NarrativeNPCController" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab the NPCs name\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab the NPCs name" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -363,9 +375,13 @@ struct Z_Construct_UFunction_ANarrativeNPCController_HandleDeath_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Gives our NPC controller a chance to react to death.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gives our NPC controller a chance to react to death." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_KilledActorASC_MetaData[] = {
 		{ "EditInline", "true" },
@@ -415,9 +431,13 @@ struct Z_Construct_UFunction_ANarrativeNPCController_IsAlive_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NarrativeNPCController" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check whether our controlled NPC is alive\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether our controlled NPC is alive" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -465,9 +485,13 @@ struct Z_Construct_UFunction_ANarrativeNPCController_RequestAttackToken_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Attack Tokens" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Request an attack token from the target ASC. Return true if we successfully claimed the token and can attack. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Request an attack token from the target ASC. Return true if we successfully claimed the token and can attack." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetToAttack_MetaData[] = {
 		{ "EditInline", "true" },
@@ -521,9 +545,13 @@ struct Z_Construct_UFunction_ANarrativeNPCController_ReturnToken_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Attack Tokens" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Give our token back to the current ASC - called automatically by RequestAttackToken if we already have one. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Give our token back to the current ASC - called automatically by RequestAttackToken if we already have one." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -587,33 +615,49 @@ struct Z_Construct_UClass_ANarrativeNPCController_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * NPC Controller for NPCs spawned by the Narrative NPC subsystem. \n */" },
+#endif
 		{ "HideCategories", "Collision Rendering Transformation" },
 		{ "IncludePath", "AI/NarrativeNPCController.h" },
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NPC Controller for NPCs spawned by the Narrative NPC subsystem." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCActivityComponent_MetaData[] = {
 		{ "Category", "Narrative|Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The NPC activity component, stores the behaviour tree and current state and can write that to disk.*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPC activity component, stores the behaviour tree and current state and can write that to disk." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionComponent_MetaData[] = {
 		{ "Category", "Narrative|Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//NPCs interaction component \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NPCs interaction component" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GrantedToken_MetaData[] = {
 		{ "Category", "Attack Tokens" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The current attack token we've claimed \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/NarrativeNPCController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The current attack token we've claimed" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_NPCActivityComponent;
@@ -622,17 +666,17 @@ struct Z_Construct_UClass_ANarrativeNPCController_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ANarrativeNPCController_CleanUp, "CleanUp" }, // 3844948430
+		{ &Z_Construct_UFunction_ANarrativeNPCController_CleanUp, "CleanUp" }, // 2116282825
 		{ &Z_Construct_UFunction_ANarrativeNPCController_GetActivityComponent, "GetActivityComponent" }, // 2935231910
 		{ &Z_Construct_UFunction_ANarrativeNPCController_GetControlledNPC, "GetControlledNPC" }, // 2753447907
 		{ &Z_Construct_UFunction_ANarrativeNPCController_GetCurrentTree, "GetCurrentTree" }, // 449105167
 		{ &Z_Construct_UFunction_ANarrativeNPCController_GetInteractionComponent, "GetInteractionComponent" }, // 4103467915
-		{ &Z_Construct_UFunction_ANarrativeNPCController_GetNPCData, "GetNPCData" }, // 447716976
-		{ &Z_Construct_UFunction_ANarrativeNPCController_GetNPCName, "GetNPCName" }, // 1664341185
-		{ &Z_Construct_UFunction_ANarrativeNPCController_HandleDeath, "HandleDeath" }, // 1560905347
-		{ &Z_Construct_UFunction_ANarrativeNPCController_IsAlive, "IsAlive" }, // 3813356648
-		{ &Z_Construct_UFunction_ANarrativeNPCController_RequestAttackToken, "RequestAttackToken" }, // 1710403596
-		{ &Z_Construct_UFunction_ANarrativeNPCController_ReturnToken, "ReturnToken" }, // 218724878
+		{ &Z_Construct_UFunction_ANarrativeNPCController_GetNPCData, "GetNPCData" }, // 3307138692
+		{ &Z_Construct_UFunction_ANarrativeNPCController_GetNPCName, "GetNPCName" }, // 1115279810
+		{ &Z_Construct_UFunction_ANarrativeNPCController_HandleDeath, "HandleDeath" }, // 3342129870
+		{ &Z_Construct_UFunction_ANarrativeNPCController_IsAlive, "IsAlive" }, // 1145180117
+		{ &Z_Construct_UFunction_ANarrativeNPCController_RequestAttackToken, "RequestAttackToken" }, // 2398944188
+		{ &Z_Construct_UFunction_ANarrativeNPCController_ReturnToken, "ReturnToken" }, // 1431994747
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -692,14 +736,14 @@ ANarrativeNPCController::~ANarrativeNPCController() {}
 // End Class ANarrativeNPCController
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NarrativeNPCController_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NarrativeNPCController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativeNPCController, ANarrativeNPCController::StaticClass, TEXT("ANarrativeNPCController"), &Z_Registration_Info_UClass_ANarrativeNPCController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeNPCController), 40141399U) },
+		{ Z_Construct_UClass_ANarrativeNPCController, ANarrativeNPCController::StaticClass, TEXT("ANarrativeNPCController"), &Z_Registration_Info_UClass_ANarrativeNPCController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeNPCController), 3807557058U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NarrativeNPCController_h_3857070046(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NarrativeNPCController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NarrativeNPCController_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NarrativeNPCController_h_3080239335(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NarrativeNPCController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_NarrativeNPCController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

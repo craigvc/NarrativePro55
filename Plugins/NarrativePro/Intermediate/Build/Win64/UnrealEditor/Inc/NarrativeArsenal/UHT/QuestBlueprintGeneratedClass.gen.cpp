@@ -30,15 +30,23 @@ struct Z_Construct_UClass_UQuestBlueprintGeneratedClass_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Blueprint generated class for quest blueprints. The quest compiler compiles the quest and stores it in\n * the QuestTemplate object ready for use at runtime. Good explanation at https://heapcleaner.wordpress.com/2016/06/12/inside-of-unreal-engine-blueprint/\n */" },
+#endif
 		{ "IncludePath", "Tales/QuestBlueprintGeneratedClass.h" },
 		{ "ModuleRelativePath", "Public/Tales/QuestBlueprintGeneratedClass.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Blueprint generated class for quest blueprints. The quest compiler compiles the quest and stores it in\nthe QuestTemplate object ready for use at runtime. Good explanation at https://heapcleaner.wordpress.com/2016/06/12/inside-of-unreal-engine-blueprint/" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestTemplate_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The quest template to be created \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestBlueprintGeneratedClass.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The quest template to be created" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_QuestTemplate;
@@ -92,14 +100,14 @@ UQuestBlueprintGeneratedClass::~UQuestBlueprintGeneratedClass() {}
 // End Class UQuestBlueprintGeneratedClass
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestBlueprintGeneratedClass_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestBlueprintGeneratedClass_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestBlueprintGeneratedClass, UQuestBlueprintGeneratedClass::StaticClass, TEXT("UQuestBlueprintGeneratedClass"), &Z_Registration_Info_UClass_UQuestBlueprintGeneratedClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestBlueprintGeneratedClass), 3300180560U) },
+		{ Z_Construct_UClass_UQuestBlueprintGeneratedClass, UQuestBlueprintGeneratedClass::StaticClass, TEXT("UQuestBlueprintGeneratedClass"), &Z_Registration_Info_UClass_UQuestBlueprintGeneratedClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestBlueprintGeneratedClass), 1101416335U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestBlueprintGeneratedClass_h_3263598339(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestBlueprintGeneratedClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestBlueprintGeneratedClass_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestBlueprintGeneratedClass_h_2401754678(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestBlueprintGeneratedClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestBlueprintGeneratedClass_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -33,23 +33,35 @@ struct Z_Construct_UClass_UGameplayEffectItem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A \"consumable\" item that applies the selected gameplay effect to the user when consumed. Great for potions, food, bandages, etc. Can technically be non-consumable via unchecking consume on use if you want a re-usable item that applies a GE \n */" },
+#endif
 		{ "IncludePath", "Items/GameplayEffectItem.h" },
 		{ "ModuleRelativePath", "Public/Items/GameplayEffectItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A \"consumable\" item that applies the selected gameplay effect to the user when consumed. Great for potions, food, bandages, etc. Can technically be non-consumable via unchecking consume on use if you want a re-usable item that applies a GE" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GameplayEffectClass_MetaData[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Default attributes for a character for initializing on spawn/respawn.\n// This is an instant GE that overrides the values for attributes that get reset on spawn/respawn.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/GameplayEffectItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default attributes for a character for initializing on spawn/respawn.\nThis is an instant GE that overrides the values for attributes that get reset on spawn/respawn." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SetByCallerValues_MetaData[] = {
 		{ "Categories", "SetByCaller" },
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** A list of all the set by caller tags, along with the values we should set them to. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/GameplayEffectItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A list of all the set by caller tags, along with the values we should set them to." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_GameplayEffectClass;
@@ -111,14 +123,14 @@ UGameplayEffectItem::~UGameplayEffectItem() {}
 // End Class UGameplayEffectItem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_GameplayEffectItem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_GameplayEffectItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UGameplayEffectItem, UGameplayEffectItem::StaticClass, TEXT("UGameplayEffectItem"), &Z_Registration_Info_UClass_UGameplayEffectItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameplayEffectItem), 2043838912U) },
+		{ Z_Construct_UClass_UGameplayEffectItem, UGameplayEffectItem::StaticClass, TEXT("UGameplayEffectItem"), &Z_Registration_Info_UClass_UGameplayEffectItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameplayEffectItem), 1451590601U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_GameplayEffectItem_h_3846582871(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_GameplayEffectItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_GameplayEffectItem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_GameplayEffectItem_h_2172004077(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_GameplayEffectItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_GameplayEffectItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

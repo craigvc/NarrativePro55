@@ -27,9 +27,13 @@ struct Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__Del
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when the save system updates \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the save system updates" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -91,11 +95,15 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_DeleteSave_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Deletes a saved game from disk. USE THIS WITH CAUTION. Return true if save file deleted, false if delete failed or file didn't exist.*/" },
+#endif
 		{ "CPP_Default_SaveName", "NarrativeSave" },
 		{ "CPP_Default_Slot", "0" },
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Deletes a saved game from disk. USE THIS WITH CAUTION. Return true if save file deleted, false if delete failed or file didn't exist." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SaveName_MetaData[] = {
 		{ "NativeConst", "" },
@@ -156,9 +164,13 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_GetSaveObject_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Return our current save object if one exists  */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return our current save object if one exists" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -200,9 +212,13 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_IsLoading_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether or not we have player data and we're just waiting to do a deferred load of it */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not we have player data and we're just waiting to do a deferred load of it" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -249,9 +265,13 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_IsSavingDisabled_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether or not to disable saving. Useful for certain times - perhaps you want to disable saving whilst we are in combat etc. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not to disable saving. Useful for certain times - perhaps you want to disable saving whilst we are in combat etc." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -347,11 +367,15 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_Load_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Assuming a save file exists, this will load the save file in. Essentially this will update the state of any actors in the world implementing INarrativeSavableActor\n\x09* and spawn in any missing actors in the save file that aren't in the world already. We will also check for any components implemeting INarrativeSavableComponent \n\x09* and save their state too. \n\x09*/" },
+#endif
 		{ "CPP_Default_SaveName", "NarrativeSave" },
 		{ "CPP_Default_Slot", "0" },
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Assuming a save file exists, this will load the save file in. Essentially this will update the state of any actors in the world implementing INarrativeSavableActor\nand spawn in any missing actors in the save file that aren't in the world already. We will also check for any components implemeting INarrativeSavableComponent\nand save their state too." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SaveName_MetaData[] = {
 		{ "NativeConst", "" },
@@ -413,9 +437,13 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_LoadSingleActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Update a single actor so its state matches that of the saved record for that actor. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Update a single actor so its state matches that of the saved record for that actor." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
@@ -467,9 +495,13 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_LookupActorByGUID_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Lookups" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Allows you to quickly lookup an actor reference using its save GUID. Useful for actor references - save the GUID to disk and look it up later.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to quickly lookup an actor reference using its save GUID. Useful for actor references - save the GUID to disk and look it up later." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SearchGUID_MetaData[] = {
 		{ "NativeConst", "" },
@@ -692,9 +724,13 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_RemoveSingleActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Remove a single actor from the save file */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Remove a single actor from the save file" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
@@ -747,11 +783,15 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_Save_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Will write to the records to a save file, and actually commit the save file to disk also. \n\x09*/" },
+#endif
 		{ "CPP_Default_SaveName", "NarrativeSave" },
 		{ "CPP_Default_Slot", "0" },
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Will write to the records to a save file, and actually commit the save file to disk also." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SaveName_MetaData[] = {
 		{ "NativeConst", "" },
@@ -813,9 +853,13 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_SaveSingleActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Update a single actor so its state matches that of the saved record for that actor. \n\x09\n\x09@param bDontRespawn tells the save system that this actor should not automatically be respawned by the save system, we need to do it manually.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Update a single actor so its state matches that of the saved record for that actor.\n\n      @param bDontRespawn tells the save system that this actor should not automatically be respawned by the save system, we need to do it manually." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
@@ -866,9 +910,13 @@ struct Z_Construct_UFunction_UNarrativeSaveSubsystem_SetSavingDisabled_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether or not to disable saving. Useful for certain times - perhaps you want to disable saving whilst we are in combat etc. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not to disable saving. Useful for certain times - perhaps you want to disable saving whilst we are in combat etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShoudldDisable_MetaData[] = {
 		{ "NativeConst", "" },
@@ -943,10 +991,14 @@ struct Z_Construct_UClass_UNarrativeSaveSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Excellent little subsystem for saving every actor in our world implementing INarrativeSavableActor, along with any INarrativeSavableComponents the actor has. \n * By default the actors transform will be remembered, along with any UPROPERTY(SaveGame) values on the actor/saved components itself. \n * Also contains logic for grabbing the arguments passed into our game mode's URL so that the main menu can nicely feed the save game to load and we can load it\n * before all actors in the world call BeginPlay(). \n * \n * Supports dynamically spawned actors, and will also handle saving and loading actors that are streamed/unstreamed via world partition. If you need to save an actor, \n * just give it the INarrativeSavableActor interface, and implement the Load function. \n */" },
+#endif
 		{ "IncludePath", "Subsystems/NarrativeSaveSubsystem.h" },
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Excellent little subsystem for saving every actor in our world implementing INarrativeSavableActor, along with any INarrativeSavableComponents the actor has.\nBy default the actors transform will be remembered, along with any UPROPERTY(SaveGame) values on the actor/saved components itself.\nAlso contains logic for grabbing the arguments passed into our game mode's URL so that the main menu can nicely feed the save game to load and we can load it\nbefore all actors in the world call BeginPlay().\n\nSupports dynamically spawned actors, and will also handle saving and loading actors that are streamed/unstreamed via world partition. If you need to save an actor,\njust give it the INarrativeSavableActor interface, and implement the Load function." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnBeginLoad_MetaData[] = {
 		{ "Category", "Delegates" },
@@ -969,15 +1021,23 @@ struct Z_Construct_UClass_UNarrativeSaveSubsystem_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentSaveSlot_MetaData[] = {
 		{ "Category", "Save Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The save slot we're currently playing in, whether we've loaded it or just saved to this slot. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The save slot we're currently playing in, whether we've loaded it or just saved to this slot." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentSaveName_MetaData[] = {
 		{ "Category", "Save Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The save name we're currently playing in, whether we've loaded it or just saved to this slot. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystems/NarrativeSaveSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The save name we're currently playing in, whether we've loaded it or just saved to this slot." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnBeginLoad;
@@ -991,22 +1051,22 @@ struct Z_Construct_UClass_UNarrativeSaveSubsystem_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_DeferredLoadPlayerData, "DeferredLoadPlayerData" }, // 403623272
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_DeleteSave, "DeleteSave" }, // 1924378914
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_GetSaveObject, "GetSaveObject" }, // 3496242146
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_IsLoading, "IsLoading" }, // 1944396576
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_IsSavingDisabled, "IsSavingDisabled" }, // 3306799048
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_DeleteSave, "DeleteSave" }, // 3653338946
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_GetSaveObject, "GetSaveObject" }, // 3997031750
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_IsLoading, "IsLoading" }, // 1476023983
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_IsSavingDisabled, "IsSavingDisabled" }, // 4118731545
 		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_LevelAddedToWorld, "LevelAddedToWorld" }, // 123914903
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_Load, "Load" }, // 3482486588
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_LoadSingleActor, "LoadSingleActor" }, // 3412283760
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_LookupActorByGUID, "LookupActorByGUID" }, // 242321892
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_Load, "Load" }, // 2399306519
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_LoadSingleActor, "LoadSingleActor" }, // 4259724957
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_LookupActorByGUID, "LookupActorByGUID" }, // 3766901040
 		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_OnActorDestroyed, "OnActorDestroyed" }, // 1670398253
 		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_OnActorPrespawned, "OnActorPrespawned" }, // 88412354
 		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_OnActorSpawned, "OnActorSpawned" }, // 3035653688
 		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_PreLevelRemovedFromWorld, "PreLevelRemovedFromWorld" }, // 1440590806
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_RemoveSingleActor, "RemoveSingleActor" }, // 1991569638
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_Save, "Save" }, // 2238286909
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_SaveSingleActor, "SaveSingleActor" }, // 1676857950
-		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_SetSavingDisabled, "SetSavingDisabled" }, // 2844603879
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_RemoveSingleActor, "RemoveSingleActor" }, // 3848194875
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_Save, "Save" }, // 2976556897
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_SaveSingleActor, "SaveSingleActor" }, // 1620476340
+		{ &Z_Construct_UFunction_UNarrativeSaveSubsystem_SetSavingDisabled, "SetSavingDisabled" }, // 3566455755
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1014,10 +1074,10 @@ struct Z_Construct_UClass_UNarrativeSaveSubsystem_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_OnBeginLoad = { "OnBeginLoad", nullptr, (EPropertyFlags)0x0010000010080014, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, OnBeginLoad), Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnBeginLoad_MetaData), NewProp_OnBeginLoad_MetaData) }; // 1964482132
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_OnFinishedLoad = { "OnFinishedLoad", nullptr, (EPropertyFlags)0x0010000010080014, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, OnFinishedLoad), Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFinishedLoad_MetaData), NewProp_OnFinishedLoad_MetaData) }; // 1964482132
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_OnBeginSave = { "OnBeginSave", nullptr, (EPropertyFlags)0x0010000010080014, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, OnBeginSave), Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnBeginSave_MetaData), NewProp_OnBeginSave_MetaData) }; // 1964482132
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_OnFinishedSave = { "OnFinishedSave", nullptr, (EPropertyFlags)0x0010000010080014, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, OnFinishedSave), Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFinishedSave_MetaData), NewProp_OnFinishedSave_MetaData) }; // 1964482132
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_OnBeginLoad = { "OnBeginLoad", nullptr, (EPropertyFlags)0x0010000010080014, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, OnBeginLoad), Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnBeginLoad_MetaData), NewProp_OnBeginLoad_MetaData) }; // 3271275570
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_OnFinishedLoad = { "OnFinishedLoad", nullptr, (EPropertyFlags)0x0010000010080014, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, OnFinishedLoad), Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFinishedLoad_MetaData), NewProp_OnFinishedLoad_MetaData) }; // 3271275570
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_OnBeginSave = { "OnBeginSave", nullptr, (EPropertyFlags)0x0010000010080014, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, OnBeginSave), Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnBeginSave_MetaData), NewProp_OnBeginSave_MetaData) }; // 3271275570
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_OnFinishedSave = { "OnFinishedSave", nullptr, (EPropertyFlags)0x0010000010080014, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, OnFinishedSave), Z_Construct_UDelegateFunction_NarrativeSaveSystem_OnSavePhaseChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFinishedSave_MetaData), NewProp_OnFinishedSave_MetaData) }; // 3271275570
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_NarrativeSaveGame = { "NarrativeSaveGame", nullptr, (EPropertyFlags)0x0124080000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, NarrativeSaveGame), Z_Construct_UClass_UNarrativeSave_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NarrativeSaveGame_MetaData), NewProp_NarrativeSaveGame_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_CurrentSaveSlot = { "CurrentSaveSlot", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, CurrentSaveSlot), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentSaveSlot_MetaData), NewProp_CurrentSaveSlot_MetaData) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UNarrativeSaveSubsystem_Statics::NewProp_CurrentSaveName = { "CurrentSaveName", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveSubsystem, CurrentSaveName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentSaveName_MetaData), NewProp_CurrentSaveName_MetaData) };
@@ -1068,14 +1128,14 @@ UNarrativeSaveSubsystem::~UNarrativeSaveSubsystem() {}
 // End Class UNarrativeSaveSubsystem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_Subsystems_NarrativeSaveSubsystem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_Subsystems_NarrativeSaveSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeSaveSubsystem, UNarrativeSaveSubsystem::StaticClass, TEXT("UNarrativeSaveSubsystem"), &Z_Registration_Info_UClass_UNarrativeSaveSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSaveSubsystem), 3573207062U) },
+		{ Z_Construct_UClass_UNarrativeSaveSubsystem, UNarrativeSaveSubsystem::StaticClass, TEXT("UNarrativeSaveSubsystem"), &Z_Registration_Info_UClass_UNarrativeSaveSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSaveSubsystem), 2675090801U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_Subsystems_NarrativeSaveSubsystem_h_2005198425(TEXT("/Script/NarrativeSaveSystem"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_Subsystems_NarrativeSaveSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_Subsystems_NarrativeSaveSubsystem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_Subsystems_NarrativeSaveSubsystem_h_3595157476(TEXT("/Script/NarrativeSaveSystem"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_Subsystems_NarrativeSaveSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_Subsystems_NarrativeSaveSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

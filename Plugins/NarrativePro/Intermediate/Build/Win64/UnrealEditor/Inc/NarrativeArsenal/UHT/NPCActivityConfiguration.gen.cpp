@@ -33,46 +33,70 @@ struct Z_Construct_UClass_UNPCActivityConfiguration_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines what activities an NPC can do, and what goal generators they will have.\n */" },
+#endif
 		{ "IncludePath", "AI/Activities/NPCActivityConfiguration.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines what activities an NPC can do, and what goal generators they will have." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FallbackActivity_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The fallback activity to run if we don' have a valid activity in our activity groups to run \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The fallback activity to run if we don' have a valid activity in our activity groups to run" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivityGroups_Inner_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The activities the NPC can run\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The activities the NPC can run" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivityGroups_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The activities the NPC can run\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The activities the NPC can run" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalGenerators_Inner_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The goal generators the NPC can use to generate goals - you can add your own goals manually, goals do not have to be added via generators if you dont want \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The goal generators the NPC can use to generate goals - you can add your own goals manually, goals do not have to be added via generators if you dont want" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GoalGenerators_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The goal generators the NPC can use to generate goals - you can add your own goals manually, goals do not have to be added via generators if you dont want \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivityConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The goal generators the NPC can use to generate goals - you can add your own goals manually, goals do not have to be added via generators if you dont want" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FallbackActivity;
@@ -137,14 +161,14 @@ UNPCActivityConfiguration::~UNPCActivityConfiguration() {}
 // End Class UNPCActivityConfiguration
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityConfiguration_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityConfiguration_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNPCActivityConfiguration, UNPCActivityConfiguration::StaticClass, TEXT("UNPCActivityConfiguration"), &Z_Registration_Info_UClass_UNPCActivityConfiguration, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCActivityConfiguration), 3442807721U) },
+		{ Z_Construct_UClass_UNPCActivityConfiguration, UNPCActivityConfiguration::StaticClass, TEXT("UNPCActivityConfiguration"), &Z_Registration_Info_UClass_UNPCActivityConfiguration, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCActivityConfiguration), 2394541328U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityConfiguration_h_801334793(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityConfiguration_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityConfiguration_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityConfiguration_h_3446729423(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityConfiguration_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivityConfiguration_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

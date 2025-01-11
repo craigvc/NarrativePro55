@@ -32,11 +32,15 @@ struct Z_Construct_UClass_UNarrativeItemBlueprintFactory_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Factory for creating a new NarrativeItemBlueprint \n */" },
+#endif
 		{ "HideCategories", "Object" },
 		{ "IncludePath", "NarrativeItemBlueprintFactory.h" },
 		{ "ModuleRelativePath", "Private/NarrativeItemBlueprintFactory.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Factory for creating a new NarrativeItemBlueprint" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -141,15 +145,15 @@ UItemCollectionFactory::~UItemCollectionFactory() {}
 // End Class UItemCollectionFactory
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventoryEditor_Private_NarrativeItemBlueprintFactory_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventoryEditor_Private_NarrativeItemBlueprintFactory_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeItemBlueprintFactory, UNarrativeItemBlueprintFactory::StaticClass, TEXT("UNarrativeItemBlueprintFactory"), &Z_Registration_Info_UClass_UNarrativeItemBlueprintFactory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeItemBlueprintFactory), 2003338654U) },
+		{ Z_Construct_UClass_UNarrativeItemBlueprintFactory, UNarrativeItemBlueprintFactory::StaticClass, TEXT("UNarrativeItemBlueprintFactory"), &Z_Registration_Info_UClass_UNarrativeItemBlueprintFactory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeItemBlueprintFactory), 1783732635U) },
 		{ Z_Construct_UClass_UItemCollectionFactory, UItemCollectionFactory::StaticClass, TEXT("UItemCollectionFactory"), &Z_Registration_Info_UClass_UItemCollectionFactory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemCollectionFactory), 2132167162U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventoryEditor_Private_NarrativeItemBlueprintFactory_h_3809241155(TEXT("/Script/NarrativeInventoryEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventoryEditor_Private_NarrativeItemBlueprintFactory_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventoryEditor_Private_NarrativeItemBlueprintFactory_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventoryEditor_Private_NarrativeItemBlueprintFactory_h_4052361354(TEXT("/Script/NarrativeInventoryEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventoryEditor_Private_NarrativeItemBlueprintFactory_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventoryEditor_Private_NarrativeItemBlueprintFactory_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

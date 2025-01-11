@@ -90,9 +90,13 @@ struct Z_Construct_UFunction_UTreePerk_GetPerkDescription_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab the description of the perk \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab the description of the perk" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -149,9 +153,13 @@ struct Z_Construct_UFunction_UTreePerk_SetPerkLevel_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Override this to apply whatever functionality you need to the player. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Override this to apply whatever functionality you need to the player." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewPerkLevel_MetaData[] = {
 		{ "NativeConst", "" },
@@ -208,68 +216,108 @@ struct Z_Construct_UClass_UTreePerk_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Represents a perk in the given skill tree. Owned by UTreeSkill and points to the next perks in the tree. \n */" },
+#endif
 		{ "IncludePath", "SkillTrees/TreePerk.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents a perk in the given skill tree. Owned by UTreeSkill and points to the next perks in the tree." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerkLevel_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The level this perk is at. -1 = not purchased\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The level this perk is at. -1 = not purchased" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxLevels_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The max amount of levels the perk allows\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The max amount of levels the perk allows" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LinkedPerks_Inner_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The perks that come after this one. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The perks that come after this one." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LinkedPerks_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The perks that come after this one. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The perks that come after this one." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LinkedPerkClasses_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The classes this perk should link to. IE you'll need to buy this perk before any of the linked ones. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The classes this perk should link to. IE you'll need to buy this perk before any of the linked ones." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerkDisplayName_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display name of this Perk. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name of this Perk." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerkDisplayIcon_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display icon of the perk\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display icon of the perk" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerkDescription_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The description of this Perk. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The description of this Perk." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerkVideo_MetaData[] = {
 		{ "Category", "Tree Perk" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The preview video for this perk, explaining what it does in the skills menu. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/TreePerk.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The preview video for this perk, explaining what it does in the skills menu." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_PerkLevel;
@@ -286,8 +334,8 @@ struct Z_Construct_UClass_UTreePerk_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UTreePerk_GetOwningComponent, "GetOwningComponent" }, // 2502853354
-		{ &Z_Construct_UFunction_UTreePerk_GetPerkDescription, "GetPerkDescription" }, // 4076361042
-		{ &Z_Construct_UFunction_UTreePerk_SetPerkLevel, "SetPerkLevel" }, // 2824721575
+		{ &Z_Construct_UFunction_UTreePerk_GetPerkDescription, "GetPerkDescription" }, // 2264435364
+		{ &Z_Construct_UFunction_UTreePerk_SetPerkLevel, "SetPerkLevel" }, // 530522334
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -355,14 +403,14 @@ UTreePerk::~UTreePerk() {}
 // End Class UTreePerk
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreePerk_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreePerk_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTreePerk, UTreePerk::StaticClass, TEXT("UTreePerk"), &Z_Registration_Info_UClass_UTreePerk, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTreePerk), 1937291459U) },
+		{ Z_Construct_UClass_UTreePerk, UTreePerk::StaticClass, TEXT("UTreePerk"), &Z_Registration_Info_UClass_UTreePerk, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTreePerk), 1244724138U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreePerk_h_1740457253(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreePerk_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreePerk_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreePerk_h_2929493444(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreePerk_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_TreePerk_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

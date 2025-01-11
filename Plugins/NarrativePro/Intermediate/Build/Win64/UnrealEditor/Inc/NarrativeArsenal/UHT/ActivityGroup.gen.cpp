@@ -53,9 +53,13 @@ struct Z_Construct_UFunction_UActivityGroup_CanUseGroup_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Define whether or not this group is usable. can optionally use FailReason to define why it failed */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/ActivityGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Define whether or not this group is usable. can optionally use FailReason to define why it failed" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_FailReason;
@@ -116,53 +120,81 @@ struct Z_Construct_UClass_UActivityGroup_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Groups activities so we can filter out invalid ones early \n */" },
+#endif
 		{ "IncludePath", "AI/Activities/ActivityGroup.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/ActivityGroup.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Groups activities so we can filter out invalid ones early" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerController_MetaData[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our controller, cached\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/ActivityGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our controller, cached" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerActivityComp_MetaData[] = {
 		{ "Category", "Activities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Owner comp, cached\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/ActivityGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Owner comp, cached" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Subgroups_Inner_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Subgroups of the group \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/ActivityGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Subgroups of the group" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Subgroups_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Subgroups of the group \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/ActivityGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Subgroups of the group" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GroupActivities_Inner_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Activities in the group \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/ActivityGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activities in the group" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GroupActivities_MetaData[] = {
 		{ "Category", "Activity Group" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Activities in the group \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/ActivityGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activities in the group" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwnerController;
@@ -174,7 +206,7 @@ struct Z_Construct_UClass_UActivityGroup_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UActivityGroup_CanUseGroup, "CanUseGroup" }, // 1193668175
+		{ &Z_Construct_UFunction_UActivityGroup_CanUseGroup, "CanUseGroup" }, // 129877761
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -234,14 +266,14 @@ UActivityGroup::~UActivityGroup() {}
 // End Class UActivityGroup
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_ActivityGroup_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_ActivityGroup_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UActivityGroup, UActivityGroup::StaticClass, TEXT("UActivityGroup"), &Z_Registration_Info_UClass_UActivityGroup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UActivityGroup), 3002028226U) },
+		{ Z_Construct_UClass_UActivityGroup, UActivityGroup::StaticClass, TEXT("UActivityGroup"), &Z_Registration_Info_UClass_UActivityGroup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UActivityGroup), 2079249413U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_ActivityGroup_h_1314118(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_ActivityGroup_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_ActivityGroup_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_ActivityGroup_h_2298861978(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_ActivityGroup_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_ActivityGroup_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

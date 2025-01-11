@@ -35,49 +35,77 @@ struct Z_Construct_UClass_UCharacterDefinition_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Data asset containing character data - the characters default appearance, etc.\n */" },
+#endif
 		{ "IncludePath", "Character/CharacterDefinition.h" },
 		{ "ModuleRelativePath", "Public/Character/CharacterDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Data asset containing character data - the characters default appearance, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultAppearance_MetaData[] = {
 		{ "AssetBundles", "SpawnedData" },
 		{ "Category", "Appearance" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The characters default appearance*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/CharacterDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The characters default appearance" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultCurrency_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Default currency this character should have in their inventory */" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/CharacterDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default currency this character should have in their inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultItemLoadout_MetaData[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The items we should grant the character by default. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/CharacterDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The items we should grant the character by default." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultOwnedTags_MetaData[] = {
 		{ "Categories", "Narrative.State" },
 		{ "Category", "Factions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Add any custom tags the character needs in here, for example State.Invulnerable if you want the character to never take damage. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/CharacterDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add any custom tags the character needs in here, for example State.Invulnerable if you want the character to never take damage." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultFactions_MetaData[] = {
 		{ "Categories", "Narrative.Factions" },
 		{ "Category", "Factions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The factions this character will be in by default - you can set the characters faction to something else later if desired. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/CharacterDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The factions this character will be in by default - you can set the characters faction to something else later if desired." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackPriority_MetaData[] = {
 		{ "Category", "Attack Priority" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Bots use this in their EQS query when looking for targets. Higher values make bots more drawn to us. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Character/CharacterDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Bots use this in their EQS query when looking for targets. Higher values make bots more drawn to us." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AssetType_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Character/CharacterDefinition.h" },
@@ -100,8 +128,8 @@ struct Z_Construct_UClass_UCharacterDefinition_Statics
 };
 const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_DefaultAppearance = { "DefaultAppearance", nullptr, (EPropertyFlags)0x0014000000000015, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterDefinition, DefaultAppearance), Z_Construct_UClass_UCharacterAppearanceBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultAppearance_MetaData), NewProp_DefaultAppearance_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_DefaultCurrency = { "DefaultCurrency", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterDefinition, DefaultCurrency), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultCurrency_MetaData), NewProp_DefaultCurrency_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_DefaultItemLoadout_Inner = { "DefaultItemLoadout", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 2828341262
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_DefaultItemLoadout = { "DefaultItemLoadout", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterDefinition, DefaultItemLoadout), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultItemLoadout_MetaData), NewProp_DefaultItemLoadout_MetaData) }; // 2828341262
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_DefaultItemLoadout_Inner = { "DefaultItemLoadout", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FLootTableRoll, METADATA_PARAMS(0, nullptr) }; // 396159061
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_DefaultItemLoadout = { "DefaultItemLoadout", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterDefinition, DefaultItemLoadout), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultItemLoadout_MetaData), NewProp_DefaultItemLoadout_MetaData) }; // 396159061
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_DefaultOwnedTags = { "DefaultOwnedTags", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterDefinition, DefaultOwnedTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultOwnedTags_MetaData), NewProp_DefaultOwnedTags_MetaData) }; // 3352185621
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_DefaultFactions = { "DefaultFactions", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterDefinition, DefaultFactions), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultFactions_MetaData), NewProp_DefaultFactions_MetaData) }; // 3352185621
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCharacterDefinition_Statics::NewProp_AttackPriority = { "AttackPriority", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterDefinition, AttackPriority), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackPriority_MetaData), NewProp_AttackPriority_MetaData) };
@@ -154,14 +182,14 @@ UCharacterDefinition::~UCharacterDefinition() {}
 // End Class UCharacterDefinition
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterDefinition_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterDefinition_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterDefinition, UCharacterDefinition::StaticClass, TEXT("UCharacterDefinition"), &Z_Registration_Info_UClass_UCharacterDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterDefinition), 753855351U) },
+		{ Z_Construct_UClass_UCharacterDefinition, UCharacterDefinition::StaticClass, TEXT("UCharacterDefinition"), &Z_Registration_Info_UClass_UCharacterDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterDefinition), 1418459533U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterDefinition_h_225480941(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterDefinition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterDefinition_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterDefinition_h_231320875(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterDefinition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_CharacterDefinition_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

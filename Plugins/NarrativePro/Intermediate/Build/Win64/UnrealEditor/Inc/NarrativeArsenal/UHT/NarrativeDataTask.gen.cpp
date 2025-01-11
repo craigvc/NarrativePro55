@@ -30,42 +30,66 @@ struct Z_Construct_UClass_UNarrativeDataTask_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Data Tasks are lightweight tasks that consist of a Task Name, ie \"FindItem\", and an argument, ie \"Pickaxe\".\n * \n * You can create data tasks in the content browser and store them using the CompleteNarrativeDataTask function. These data tasks are really useful for two main reasons:\n * 1. They can be used to move the player through a quest. IE KillNPC: Boss, FindItem: Dragonstone, etc\n * 2. Narrative saves these to disk, meaning you can check if the player has ever killed a given NPC, found a given item, etc (using HasCompletedTask function)\n * Dialogues can easily check these too, which is powerful, ie If HasCompletedTask \"KillNPC: King\" an NPC could say \"How could you have slain the king!\"\n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeDataTask.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDataTask.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Data Tasks are lightweight tasks that consist of a Task Name, ie \"FindItem\", and an argument, ie \"Pickaxe\".\n\nYou can create data tasks in the content browser and store them using the CompleteNarrativeDataTask function. These data tasks are really useful for two main reasons:\n1. They can be used to move the player through a quest. IE KillNPC: Boss, FindItem: Dragonstone, etc\n2. Narrative saves these to disk, meaning you can check if the player has ever killed a given NPC, found a given item, etc (using HasCompletedTask function)\nDialogues can easily check these too, which is powerful, ie If HasCompletedTask \"KillNPC: King\" an NPC could say \"How could you have slain the king!\"" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TaskName_MetaData[] = {
 		{ "Category", "Task Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**A short name describing what this Task is*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDataTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A short name describing what this Task is" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TaskDescription_MetaData[] = {
 		{ "Category", "Task Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**A description of this task. Will get used as a tooltip in the quest editor so write something useful!  */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDataTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A description of this task. Will get used as a tooltip in the quest editor so write something useful!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ArgumentName_MetaData[] = {
 		{ "Category", "Task Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The name of the argument the data task takes, for example a task called FindItems argument name might be \"Item Name\" for example  */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDataTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name of the argument the data task takes, for example a task called FindItems argument name might be \"Item Name\" for example" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TaskCategory_MetaData[] = {
 		{ "Category", "Task Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The category of this Task, used for organization in the quest tool*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDataTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The category of this Task, used for organization in the quest tool" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultArgument_MetaData[] = {
 		{ "Category", "Autofill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Default argument to autofill */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDataTask.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default argument to autofill" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_TaskName;
@@ -130,14 +154,14 @@ UNarrativeDataTask::~UNarrativeDataTask() {}
 // End Class UNarrativeDataTask
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDataTask_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDataTask_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeDataTask, UNarrativeDataTask::StaticClass, TEXT("UNarrativeDataTask"), &Z_Registration_Info_UClass_UNarrativeDataTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeDataTask), 4028140318U) },
+		{ Z_Construct_UClass_UNarrativeDataTask, UNarrativeDataTask::StaticClass, TEXT("UNarrativeDataTask"), &Z_Registration_Info_UClass_UNarrativeDataTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeDataTask), 948927518U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDataTask_h_3790404602(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDataTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDataTask_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDataTask_h_2781127169(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDataTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDataTask_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

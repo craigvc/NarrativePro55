@@ -40,9 +40,13 @@ struct Z_Construct_UFunction_UNarrativeSavableComponent_Load_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tell the Component it has been loaded in from a save. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeSavableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tell the Component it has been loaded in from a save." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -90,9 +94,13 @@ struct Z_Construct_UFunction_UNarrativeSavableComponent_PrepareForSave_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tell the Component it is about to be saved, and needs to populate all its save data \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeSavableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tell the Component it is about to be saved, and needs to populate all its save data" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -141,8 +149,8 @@ struct Z_Construct_UClass_UNarrativeSavableComponent_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeSavableComponent_Load, "Load" }, // 343992263
-		{ &Z_Construct_UFunction_UNarrativeSavableComponent_PrepareForSave, "PrepareForSave" }, // 2699929727
+		{ &Z_Construct_UFunction_UNarrativeSavableComponent_Load, "Load" }, // 3040603272
+		{ &Z_Construct_UFunction_UNarrativeSavableComponent_PrepareForSave, "PrepareForSave" }, // 1065222393
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -188,14 +196,14 @@ UNarrativeSavableComponent::~UNarrativeSavableComponent() {}
 // End Interface UNarrativeSavableComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeSavableComponent, UNarrativeSavableComponent::StaticClass, TEXT("UNarrativeSavableComponent"), &Z_Registration_Info_UClass_UNarrativeSavableComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSavableComponent), 1573843113U) },
+		{ Z_Construct_UClass_UNarrativeSavableComponent, UNarrativeSavableComponent::StaticClass, TEXT("UNarrativeSavableComponent"), &Z_Registration_Info_UClass_UNarrativeSavableComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSavableComponent), 586272322U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableComponent_h_1823010330(TEXT("/Script/NarrativeSaveSystem"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableComponent_h_102711857(TEXT("/Script/NarrativeSaveSystem"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeSavableComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

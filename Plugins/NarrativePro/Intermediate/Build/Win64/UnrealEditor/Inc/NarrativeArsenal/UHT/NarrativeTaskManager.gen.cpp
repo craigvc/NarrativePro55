@@ -31,15 +31,23 @@ struct Z_Construct_UClass_UNarrativeTaskManager_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Manages a map of UNarrativeTasks. Makes it really easy to grab a task asset using its string Name at runtime. \n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeTaskManager.h" },
 		{ "ModuleRelativePath", "Private/Tales/NarrativeTaskManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Manages a map of UNarrativeTasks. Makes it really easy to grab a task asset using its string Name at runtime." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NarrativeTaskMap_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Allows for efficiently grabbing a narrative event asset by its name \n" },
+#endif
 		{ "ModuleRelativePath", "Private/Tales/NarrativeTaskManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows for efficiently grabbing a narrative event asset by its name" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_NarrativeTaskMap_ValueProp;
@@ -98,14 +106,14 @@ UNarrativeTaskManager::~UNarrativeTaskManager() {}
 // End Class UNarrativeTaskManager
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Private_Tales_NarrativeTaskManager_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Private_Tales_NarrativeTaskManager_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeTaskManager, UNarrativeTaskManager::StaticClass, TEXT("UNarrativeTaskManager"), &Z_Registration_Info_UClass_UNarrativeTaskManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeTaskManager), 65980830U) },
+		{ Z_Construct_UClass_UNarrativeTaskManager, UNarrativeTaskManager::StaticClass, TEXT("UNarrativeTaskManager"), &Z_Registration_Info_UClass_UNarrativeTaskManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeTaskManager), 1313831741U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Private_Tales_NarrativeTaskManager_h_3761260307(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Private_Tales_NarrativeTaskManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Private_Tales_NarrativeTaskManager_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Private_Tales_NarrativeTaskManager_h_4145664965(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Private_Tales_NarrativeTaskManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Private_Tales_NarrativeTaskManager_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

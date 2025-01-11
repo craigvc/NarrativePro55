@@ -40,11 +40,15 @@ struct Z_Construct_UFunction_UNarrativeCommonHUD_ShowMajorNotification_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Notifications" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Show a major notification\n" },
+#endif
 		{ "CPP_Default_bOverrideCurrentNotification", "true" },
 		{ "CPP_Default_Duration", "5.000000" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonHUD.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Show a major notification" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NotificationText_MetaData[] = {
 		{ "NativeConst", "" },
@@ -115,10 +119,14 @@ struct Z_Construct_UFunction_UNarrativeCommonHUD_ShowNotification_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Notifications" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Show a notification - the UMG widget handles implementing this. bOverrideCurrentNotification is only relevant for major notifications - minors are shown in a stack. \n" },
+#endif
 		{ "CPP_Default_Duration", "5.000000" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonHUD.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Show a notification - the UMG widget handles implementing this. bOverrideCurrentNotification is only relevant for major notifications - minors are shown in a stack." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NotificationText_MetaData[] = {
 		{ "NativeConst", "" },
@@ -165,15 +173,17 @@ struct Z_Construct_UClass_UNarrativeCommonHUD_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "NarrativeCommonHUD.h" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonHUD.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeCommonHUD_ShowMajorNotification, "ShowMajorNotification" }, // 2042756057
-		{ &Z_Construct_UFunction_UNarrativeCommonHUD_ShowNotification, "ShowNotification" }, // 3461525902
+		{ &Z_Construct_UFunction_UNarrativeCommonHUD_ShowMajorNotification, "ShowMajorNotification" }, // 2782829573
+		{ &Z_Construct_UFunction_UNarrativeCommonHUD_ShowNotification, "ShowNotification" }, // 3726656056
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -219,14 +229,14 @@ UNarrativeCommonHUD::~UNarrativeCommonHUD() {}
 // End Class UNarrativeCommonHUD
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonHUD_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonHUD_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCommonHUD, UNarrativeCommonHUD::StaticClass, TEXT("UNarrativeCommonHUD"), &Z_Registration_Info_UClass_UNarrativeCommonHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCommonHUD), 2670895919U) },
+		{ Z_Construct_UClass_UNarrativeCommonHUD, UNarrativeCommonHUD::StaticClass, TEXT("UNarrativeCommonHUD"), &Z_Registration_Info_UClass_UNarrativeCommonHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCommonHUD), 214804441U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonHUD_h_2145973474(TEXT("/Script/NarrativeCommonUI"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonHUD_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonHUD_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonHUD_h_2442728198(TEXT("/Script/NarrativeCommonUI"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonHUD_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonHUD_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

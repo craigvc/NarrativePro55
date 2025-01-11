@@ -30,29 +30,45 @@ struct Z_Construct_UClass_UTeamMarkerComponent_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Navigation marker which changes shade to represent the others team attitude towards the viewer. \n */" },
+#endif
 		{ "IncludePath", "Components/TeamMarkerComponent.h" },
 		{ "ModuleRelativePath", "Public/Components/TeamMarkerComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Navigation marker which changes shade to represent the others team attitude towards the viewer." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FriendlyColor_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If we're friendly the nav marker will appear this color\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/TeamMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If we're friendly the nav marker will appear this color" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NeutralColor_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If we're neutral the nav marker will appear this color\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/TeamMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If we're neutral the nav marker will appear this color" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HostileColor_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If we're hostile the nav marker will appear this color\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/TeamMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If we're hostile the nav marker will appear this color" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_FriendlyColor;
@@ -111,14 +127,14 @@ UTeamMarkerComponent::~UTeamMarkerComponent() {}
 // End Class UTeamMarkerComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_TeamMarkerComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_TeamMarkerComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTeamMarkerComponent, UTeamMarkerComponent::StaticClass, TEXT("UTeamMarkerComponent"), &Z_Registration_Info_UClass_UTeamMarkerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTeamMarkerComponent), 3615010787U) },
+		{ Z_Construct_UClass_UTeamMarkerComponent, UTeamMarkerComponent::StaticClass, TEXT("UTeamMarkerComponent"), &Z_Registration_Info_UClass_UTeamMarkerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTeamMarkerComponent), 1940221361U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_TeamMarkerComponent_h_1955750116(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_TeamMarkerComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_TeamMarkerComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_TeamMarkerComponent_h_3019831942(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_TeamMarkerComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Components_TeamMarkerComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

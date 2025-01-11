@@ -31,41 +31,65 @@ struct Z_Construct_UClass_UCharacterCreatorOption_Scalar_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A global scalar value option that can be changed in the character creator - could be anything, height, pupil size, any sort of scalar you require. \n */" },
+#endif
 		{ "IncludePath", "CharacterCreator/Options/CharacterCreatorOption_Scalar.h" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Scalar.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A global scalar value option that can be changed in the character creator - could be anything, height, pupil size, any sort of scalar you require." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScalarTagID_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Scalars" },
 		{ "Category", "Scalar Value" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The ID you can use to reference this scalar value \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Scalar.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ID you can use to reference this scalar value" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinValue_MetaData[] = {
 		{ "Category", "Scalar Value" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The min value this scalar can go to \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Scalar.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The min value this scalar can go to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxValue_MetaData[] = {
 		{ "Category", "Scalar Value" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The max value this scalar can go to \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Scalar.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The max value this scalar can go to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StepValue_MetaData[] = {
 		{ "Category", "Scalar Value" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The scalars UI slider will use this step size\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Scalar.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The scalars UI slider will use this step size" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultValue_MetaData[] = {
 		{ "Category", "Scalar Value" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The default value the scalar will be set to \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Scalar.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The default value the scalar will be set to" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ScalarTagID;
@@ -130,14 +154,14 @@ UCharacterCreatorOption_Scalar::~UCharacterCreatorOption_Scalar() {}
 // End Class UCharacterCreatorOption_Scalar
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Scalar_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Scalar_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterCreatorOption_Scalar, UCharacterCreatorOption_Scalar::StaticClass, TEXT("UCharacterCreatorOption_Scalar"), &Z_Registration_Info_UClass_UCharacterCreatorOption_Scalar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorOption_Scalar), 2044554735U) },
+		{ Z_Construct_UClass_UCharacterCreatorOption_Scalar, UCharacterCreatorOption_Scalar::StaticClass, TEXT("UCharacterCreatorOption_Scalar"), &Z_Registration_Info_UClass_UCharacterCreatorOption_Scalar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorOption_Scalar), 1342461500U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Scalar_h_2990980557(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Scalar_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Scalar_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Scalar_h_1679755058(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Scalar_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Scalar_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

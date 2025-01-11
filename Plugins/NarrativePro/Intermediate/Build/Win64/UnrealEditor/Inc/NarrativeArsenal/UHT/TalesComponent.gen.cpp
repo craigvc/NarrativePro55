@@ -210,32 +210,52 @@ struct Z_Construct_UScriptStruct_FNarrativeUpdate_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\nUQuests aren't replicated the proper UE way (replicated flag on objects), because this is really complex and hasn't been very successful in testing.\nIt would also hog a lot more network performance, as quests often have hundreds of states, tasks, and branches,\nall of which would be sending network updates and replicating. \n\nSo in the meantime, the server authoritatively Begins, Forgets, Restarts, Updates quests etc, and then informs the client about\nthese changes via the FNarrativeUpdate stream so the clients can \"replay\" these actions in the order they happened and keep sync with the server. \n\nUsing this mechanism instead of RPCs ensures the updates are sent in the correct order. This is really important\nfor ensuring the client correctly stays in sync with the server. \n*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "UQuests aren't replicated the proper UE way (replicated flag on objects), because this is really complex and hasn't been very successful in testing.\nIt would also hog a lot more network performance, as quests often have hundreds of states, tasks, and branches,\nall of which would be sending network updates and replicating.\n\nSo in the meantime, the server authoritatively Begins, Forgets, Restarts, Updates quests etc, and then informs the client about\nthese changes via the FNarrativeUpdate stream so the clients can \"replay\" these actions in the order they happened and keep sync with the server.\n\nUsing this mechanism instead of RPCs ensures the updates are sent in the correct order. This is really important\nfor ensuring the client correctly stays in sync with the server." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UpdateType_MetaData[] = {
 		{ "Category", "Debug" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//What sort of update this is\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What sort of update this is" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestClass_MetaData[] = {
 		{ "Category", "Debug" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The quest that was updated \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The quest that was updated" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Payload_MetaData[] = {
 		{ "Category", "Debug" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Optional payload with some string data about the update\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional payload with some string data about the update" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IntPayload_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Some updates need to send some ints over the network, for example TaskProgressMade uses task idx and new progress \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Some updates need to send some ints over the network, for example TaskProgressMade uses task idx and new progress" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_UpdateType_Underlying;
@@ -310,14 +330,22 @@ struct Z_Construct_UScriptStruct_FSavedQuestBranch_Statics
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BranchID_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The ID of the branch \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ID of the branch" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TasksProgress_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//All we need to save a branch is remember what progress the tasks had. Tasks always have the same order, so just save their progress \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All we need to save a branch is remember what progress the tasks had. Tasks always have the same order, so just save their progress" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FNamePropertyParams NewProp_BranchID;
@@ -383,19 +411,31 @@ struct Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestClass_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The class of the quest that was active\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The class of the quest that was active" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentStateID_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The state the quest was at when the player saved \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The state the quest was at when the player saved" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestBranches_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The saved branch data\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The saved branch data" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReachedStateNames_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
@@ -416,8 +456,8 @@ struct Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewProp_QuestClass = { "QuestClass", nullptr, (EPropertyFlags)0x0014000001000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FNarrativeSavedQuest, QuestClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UQuest_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QuestClass_MetaData), NewProp_QuestClass_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewProp_CurrentStateID = { "CurrentStateID", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FNarrativeSavedQuest, CurrentStateID), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentStateID_MetaData), NewProp_CurrentStateID_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewProp_QuestBranches_Inner = { "QuestBranches", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSavedQuestBranch, METADATA_PARAMS(0, nullptr) }; // 2827484131
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewProp_QuestBranches = { "QuestBranches", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FNarrativeSavedQuest, QuestBranches), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QuestBranches_MetaData), NewProp_QuestBranches_MetaData) }; // 2827484131
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewProp_QuestBranches_Inner = { "QuestBranches", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSavedQuestBranch, METADATA_PARAMS(0, nullptr) }; // 196135495
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewProp_QuestBranches = { "QuestBranches", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FNarrativeSavedQuest, QuestBranches), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QuestBranches_MetaData), NewProp_QuestBranches_MetaData) }; // 196135495
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewProp_ReachedStateNames_Inner = { "ReachedStateNames", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewProp_ReachedStateNames = { "ReachedStateNames", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FNarrativeSavedQuest, ReachedStateNames), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReachedStateNames_MetaData), NewProp_ReachedStateNames_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::PropPointers[] = {
@@ -462,9 +502,13 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_OnNarrativeTaskCompleted__
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//General\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "General" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NarrativeTask_MetaData[] = {
 		{ "NativeConst", "" },
@@ -519,9 +563,13 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_OnDialogueBegan__DelegateS
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Dialogue\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Dialogue" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Dialogue;
@@ -750,8 +798,8 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__De
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineStarted_Parms, Dialogue), Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::NewProp_Node = { "Node", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineStarted_Parms, Node), Z_Construct_UClass_UDialogueNode_NPC_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineStarted_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 337249143
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::NewProp_Speaker = { "Speaker", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineStarted_Parms, Speaker), Z_Construct_UScriptStruct_FSpeakerInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speaker_MetaData), NewProp_Speaker_MetaData) }; // 1719779596
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineStarted_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 1755161311
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::NewProp_Speaker = { "Speaker", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineStarted_Parms, Speaker), Z_Construct_UScriptStruct_FSpeakerInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speaker_MetaData), NewProp_Speaker_MetaData) }; // 307691787
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::NewProp_Dialogue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature_Statics::NewProp_Node,
@@ -818,8 +866,8 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__D
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineFinished_Parms, Dialogue), Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::NewProp_Node = { "Node", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineFinished_Parms, Node), Z_Construct_UClass_UDialogueNode_NPC_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineFinished_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 337249143
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::NewProp_Speaker = { "Speaker", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineFinished_Parms, Speaker), Z_Construct_UScriptStruct_FSpeakerInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speaker_MetaData), NewProp_Speaker_MetaData) }; // 1719779596
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineFinished_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 1755161311
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::NewProp_Speaker = { "Speaker", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventNPCDialogueLineFinished_Parms, Speaker), Z_Construct_UScriptStruct_FSpeakerInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speaker_MetaData), NewProp_Speaker_MetaData) }; // 307691787
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::NewProp_Dialogue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature_Statics::NewProp_Node,
@@ -881,7 +929,7 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted_
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventPlayerDialogueLineStarted_Parms, Dialogue), Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature_Statics::NewProp_Node = { "Node", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventPlayerDialogueLineStarted_Parms, Node), Z_Construct_UClass_UDialogueNode_Player_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventPlayerDialogueLineStarted_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 337249143
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventPlayerDialogueLineStarted_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 1755161311
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature_Statics::NewProp_Dialogue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature_Statics::NewProp_Node,
@@ -940,7 +988,7 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventPlayerDialogueLineFinished_Parms, Dialogue), Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature_Statics::NewProp_Node = { "Node", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventPlayerDialogueLineFinished_Parms, Node), Z_Construct_UClass_UDialogueNode_Player_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventPlayerDialogueLineFinished_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 337249143
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeArsenal_eventPlayerDialogueLineFinished_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 1755161311
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature_Statics::NewProp_Dialogue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature_Statics::NewProp_Node,
@@ -984,9 +1032,13 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_OnJoinedParty__DelegateSig
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Parties\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Parties" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewParty_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1092,10 +1144,14 @@ struct Z_Construct_UFunction_UTalesComponent_BeginDialogue_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AdvancedDisplay", "1" },
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Only callable on the server. Server grabs root dialogue node, validates its conditions, and sends it to the client via ClientRecieveDialogueOptions\n\x09* \n\x09@param Dialogue The dialogue to begin \n\x09@param DefaultNPCAvatar The NPC Avatar to use. For multi-NPC dialogues each speaker obviously needs their own avatar assigned - see the functions comment on how to do this.  \n\x09@param StartFromID The ID of the node you want to jump to. Can be left empty and the dialogue will begin from the root node.\n\n\x09@return Whether the dialogue was successfully started \n\x09*/" },
+#endif
 		{ "CPP_Default_PlayParams", "()" },
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Only callable on the server. Server grabs root dialogue node, validates its conditions, and sends it to the client via ClientRecieveDialogueOptions\n\n       @param Dialogue The dialogue to begin\n       @param DefaultNPCAvatar The NPC Avatar to use. For multi-NPC dialogues each speaker obviously needs their own avatar assigned - see the functions comment on how to do this.\n       @param StartFromID The ID of the node you want to jump to. Can be left empty and the dialogue will begin from the root node.\n\n       @return Whether the dialogue was successfully started" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayParams_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1109,7 +1165,7 @@ struct Z_Construct_UFunction_UTalesComponent_BeginDialogue_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UTalesComponent_BeginDialogue_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventBeginDialogue_Parms, Dialogue), Z_Construct_UClass_UClass, Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_BeginDialogue_Statics::NewProp_PlayParams = { "PlayParams", nullptr, (EPropertyFlags)0x0010040000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventBeginDialogue_Parms, PlayParams), Z_Construct_UScriptStruct_FDialoguePlayParams, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayParams_MetaData), NewProp_PlayParams_MetaData) }; // 735790521
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_BeginDialogue_Statics::NewProp_PlayParams = { "PlayParams", nullptr, (EPropertyFlags)0x0010040000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventBeginDialogue_Parms, PlayParams), Z_Construct_UScriptStruct_FDialoguePlayParams, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayParams_MetaData), NewProp_PlayParams_MetaData) }; // 895619027
 void Z_Construct_UFunction_UTalesComponent_BeginDialogue_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((TalesComponent_eventBeginDialogue_Parms*)Obj)->ReturnValue = 1;
@@ -1156,10 +1212,14 @@ struct Z_Construct_UFunction_UTalesComponent_BeginQuest_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AdvancedDisplay", "1" },
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09""Begin a given quest. Return quest if success. \n\x09\n\x09@param QuestAsset The quest to use\n\x09@param StartFromID If this is set to a valid ID in the quest, we'll skip to this quest state instead of playing the quest from the start\n\n\x09@return The created UQuest instance\n\x09*/" },
+#endif
 		{ "CPP_Default_StartFromID", "None" },
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Begin a given quest. Return quest if success.\n\n@param QuestAsset The quest to use\n@param StartFromID If this is set to a valid ID in the quest, we'll skip to this quest state instead of playing the quest from the start\n\n@return The created UQuest instance" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -1221,9 +1281,13 @@ struct Z_Construct_UFunction_UTalesComponent_ClientBeginDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Used by the server to tell client to start dialogue. Also sends the initial chunk*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by the server to tell client to start dialogue. Also sends the initial chunk" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCReplyChainIDs_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1298,9 +1362,13 @@ struct Z_Construct_UFunction_UTalesComponent_ClientBeginPartyDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Used by the server to inform client to start party dialogue. Also sends the initial chunk*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by the server to inform client to start party dialogue. Also sends the initial chunk" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCReplyChainIDs_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1365,9 +1433,13 @@ struct Z_Construct_UFunction_UTalesComponent_ClientExitDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Used by the server to tell client to end dialogue*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by the server to tell client to end dialogue" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -1403,9 +1475,13 @@ struct Z_Construct_UFunction_UTalesComponent_ClientExitPartyDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Used by the server to tell client to end dialogue*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by the server to tell client to end dialogue" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -1451,9 +1527,13 @@ struct Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Once server loads a save in, it sends all the info to the client via this RPC so it can load it in. We do this so loading save\n\x09games can be done by the server and flow down to the client.\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Once server loads a save in, it sends all the info to the client via this RPC so it can load it in. We do this so loading save\ngames can be done by the server and flow down to the client." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InSavedQuests_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1474,8 +1554,8 @@ struct Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics::NewProp_InSavedQuests_Inner = { "InSavedQuests", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeSavedQuest, METADATA_PARAMS(0, nullptr) }; // 623608714
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics::NewProp_InSavedQuests = { "InSavedQuests", nullptr, (EPropertyFlags)0x0010000008000082, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventClientReceiveSave_Parms, InSavedQuests), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InSavedQuests_MetaData), NewProp_InSavedQuests_MetaData) }; // 623608714
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics::NewProp_InSavedQuests_Inner = { "InSavedQuests", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeSavedQuest, METADATA_PARAMS(0, nullptr) }; // 2066820107
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics::NewProp_InSavedQuests = { "InSavedQuests", nullptr, (EPropertyFlags)0x0010000008000082, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventClientReceiveSave_Parms, InSavedQuests), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InSavedQuests_MetaData), NewProp_InSavedQuests_MetaData) }; // 2066820107
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics::NewProp_Tasks_Inner = { "Tasks", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics::NewProp_Tasks = { "Tasks", nullptr, (EPropertyFlags)0x0010000008000082, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventClientReceiveSave_Parms, Tasks), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Tasks_MetaData), NewProp_Tasks_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UTalesComponent_ClientReceiveSave_Statics::NewProp_Quantities_Inner = { "Quantities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
@@ -1532,9 +1612,13 @@ struct Z_Construct_UFunction_UTalesComponent_ClientRecieveDialogueChunk_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Used by the server to send valid dialogue chunks to the client*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by the server to send valid dialogue chunks to the client" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCReplyChainIDs_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1603,9 +1687,13 @@ struct Z_Construct_UFunction_UTalesComponent_ClientSelectDialogueOption_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Allows the server to inform a client to select a dialogue option. Used by party dialogues */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows the server to inform a client to select a dialogue option. Used by party dialogues" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OptionID_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1767,7 +1855,7 @@ struct Z_Construct_UFunction_UTalesComponent_DialogueLineFinished_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTalesComponent_DialogueLineFinished_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventDialogueLineFinished_Parms, Dialogue), Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTalesComponent_DialogueLineFinished_Statics::NewProp_Node = { "Node", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventDialogueLineFinished_Parms, Node), Z_Construct_UClass_UDialogueNode_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_DialogueLineFinished_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventDialogueLineFinished_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 337249143
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_DialogueLineFinished_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventDialogueLineFinished_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 1755161311
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTalesComponent_DialogueLineFinished_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTalesComponent_DialogueLineFinished_Statics::NewProp_Dialogue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTalesComponent_DialogueLineFinished_Statics::NewProp_Node,
@@ -1822,7 +1910,7 @@ struct Z_Construct_UFunction_UTalesComponent_DialogueLineStarted_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTalesComponent_DialogueLineStarted_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventDialogueLineStarted_Parms, Dialogue), Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTalesComponent_DialogueLineStarted_Statics::NewProp_Node = { "Node", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventDialogueLineStarted_Parms, Node), Z_Construct_UClass_UDialogueNode_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_DialogueLineStarted_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventDialogueLineStarted_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 337249143
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_DialogueLineStarted_Statics::NewProp_DialogueLine = { "DialogueLine", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventDialogueLineStarted_Parms, DialogueLine), Z_Construct_UScriptStruct_FDialogueLine, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueLine_MetaData), NewProp_DialogueLine_MetaData) }; // 1755161311
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTalesComponent_DialogueLineStarted_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTalesComponent_DialogueLineStarted_Statics::NewProp_Dialogue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTalesComponent_DialogueLineStarted_Statics::NewProp_Node,
@@ -1916,9 +2004,13 @@ struct Z_Construct_UFunction_UTalesComponent_ForgetQuest_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09""Forget a given quest. The quest will be removed from the players quest list, \n\x09""and the quest can be started again later using BeginQuest() if desired.\n\n\x09@param QuestAsset The quest to use\n\x09@return Whether or not the quest was forgotten or not\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Forget a given quest. The quest will be removed from the players quest list,\nand the quest can be started again later using BeginQuest() if desired.\n\n@param QuestAsset The quest to use\n@return Whether or not the quest was forgotten or not" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -1969,9 +2061,13 @@ struct Z_Construct_UFunction_UTalesComponent_GetAllQuests_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Returns a list of all quests that are started, failed, or succeeded, in chronological order.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns a list of all quests that are started, failed, or succeeded, in chronological order." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
@@ -2058,9 +2154,13 @@ struct Z_Construct_UFunction_UTalesComponent_GetFailedQuests_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Returns a list of all failed quests, in chronological order.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns a list of all failed quests, in chronological order." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
@@ -2105,9 +2205,13 @@ struct Z_Construct_UFunction_UTalesComponent_GetInProgressQuests_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Returns a list of all quests that are in progress, in chronological order.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns a list of all quests that are in progress, in chronological order." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
@@ -2154,9 +2258,13 @@ struct Z_Construct_UFunction_UTalesComponent_GetNumberOfTimesTaskWasCompleted_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* \n\x09IN MULTIPLAYER GAMES, THIS FUNCTION WILL ONLY WORK ON THE SERVER. Please see MasterTaskList comment for more info. \n\n\x09""Check how many times the player has ever completed a narrative Task. Very efficient.\n\x09\n\x09Very powerful for scripting, for example we could check if the player has talked to an NPC at least 10 times and then change the dialogue\n\x09text to a more personalized greeting since the NPC would know the player better. \n\n\x09@return The number of times the Task has been completed by this narrative component. \n\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "IN MULTIPLAYER GAMES, THIS FUNCTION WILL ONLY WORK ON THE SERVER. Please see MasterTaskList comment for more info.\n\nCheck how many times the player has ever completed a narrative Task. Very efficient.\n\nVery powerful for scripting, for example we could check if the player has talked to an NPC at least 10 times and then change the dialogue\ntext to a more personalized greeting since the NPC would know the player better.\n\n@return The number of times the Task has been completed by this narrative component." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Task_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2296,9 +2404,13 @@ struct Z_Construct_UFunction_UTalesComponent_GetParty_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return our parties component, if we have one*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return our parties component, if we have one" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -2344,9 +2456,13 @@ struct Z_Construct_UFunction_UTalesComponent_GetQuestInstance_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Given a Quest class return its active quest object if we've started this quest */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Given a Quest class return its active quest object if we've started this quest" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -2392,9 +2508,13 @@ struct Z_Construct_UFunction_UTalesComponent_GetSucceededQuests_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Returns a list of all succeeded quests, in chronological order.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns a list of all succeeded quests, in chronological order." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
@@ -2442,10 +2562,14 @@ struct Z_Construct_UFunction_UTalesComponent_HasCompletedTask_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09""Check if the player has ever completed a given data task. For example you could check if the player has ever talked to a given NPC, taken a certain item, etc\n\x09*/" },
+#endif
 		{ "CPP_Default_Quantity", "1" },
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if the player has ever completed a given data task. For example you could check if the player has ever talked to a given NPC, taken a certain item, etc" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Task_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2515,10 +2639,14 @@ struct Z_Construct_UFunction_UTalesComponent_HasDialogueAvailable_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* \n\x09""Check if calling BeginDialogue on a given dialogue asset would actually play any dialogue.\n\x09\n\x09THIS WILL ONLY WORK ON THE AUTHORITY. Server should use this function then replicate any needed stuff to clients, this will always \n\x09return false on clients as they do not have the authority to begin dialogues. \n\n\x09""Essentially the same as BeginDialogue, just doesn't actually start the dialogue, just gives you\n\x09the bool return value to check if any dialogue would have started. \n\n\x09Same as BeginDialogue, however doesn't actually begin the dialogue.*/" },
+#endif
 		{ "CPP_Default_PlayParams", "()" },
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if calling BeginDialogue on a given dialogue asset would actually play any dialogue.\n\nTHIS WILL ONLY WORK ON THE AUTHORITY. Server should use this function then replicate any needed stuff to clients, this will always\nreturn false on clients as they do not have the authority to begin dialogues.\n\nEssentially the same as BeginDialogue, just doesn't actually start the dialogue, just gives you\nthe bool return value to check if any dialogue would have started.\n\nSame as BeginDialogue, however doesn't actually begin the dialogue." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayParams_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2532,7 +2660,7 @@ struct Z_Construct_UFunction_UTalesComponent_HasDialogueAvailable_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UTalesComponent_HasDialogueAvailable_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventHasDialogueAvailable_Parms, Dialogue), Z_Construct_UClass_UClass, Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_HasDialogueAvailable_Statics::NewProp_PlayParams = { "PlayParams", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventHasDialogueAvailable_Parms, PlayParams), Z_Construct_UScriptStruct_FDialoguePlayParams, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayParams_MetaData), NewProp_PlayParams_MetaData) }; // 735790521
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTalesComponent_HasDialogueAvailable_Statics::NewProp_PlayParams = { "PlayParams", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TalesComponent_eventHasDialogueAvailable_Parms, PlayParams), Z_Construct_UScriptStruct_FDialoguePlayParams, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayParams_MetaData), NewProp_PlayParams_MetaData) }; // 895619027
 void Z_Construct_UFunction_UTalesComponent_HasDialogueAvailable_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((TalesComponent_eventHasDialogueAvailable_Parms*)Obj)->ReturnValue = 1;
@@ -2576,9 +2704,13 @@ struct Z_Construct_UFunction_UTalesComponent_IsInDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return true if we're in a dialogue \n\n\x09@return Whether true if we're in a dialogue, false otherwise \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if we're in a dialogue\n\n       @return Whether true if we're in a dialogue, false otherwise" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -2626,9 +2758,13 @@ struct Z_Construct_UFunction_UTalesComponent_IsQuestFailed_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Return true if a given quest has been completed and was failed\n\x09@param QuestAsset The quest to check\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if a given quest has been completed and was failed\n@param QuestAsset The quest to check" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -2680,9 +2816,13 @@ struct Z_Construct_UFunction_UTalesComponent_IsQuestFinished_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Return true if a given quest has been completed, regardless of whether we failed or succeeded the quest\n\x09@param QuestAsset The quest to use\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if a given quest has been completed, regardless of whether we failed or succeeded the quest\n@param QuestAsset The quest to use" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -2734,9 +2874,13 @@ struct Z_Construct_UFunction_UTalesComponent_IsQuestInProgress_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Return true if a given quest is in progress but false if the quest is finished\n\x09@param QuestAsset The quest to check\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if a given quest is in progress but false if the quest is finished\n@param QuestAsset The quest to check" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -2788,9 +2932,13 @@ struct Z_Construct_UFunction_UTalesComponent_IsQuestStartedOrFinished_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Return true if a given quest is started or finished\n\x09@param QuestAsset The quest to check\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if a given quest is started or finished\n@param QuestAsset The quest to check" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -2842,9 +2990,13 @@ struct Z_Construct_UFunction_UTalesComponent_IsQuestSucceeded_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Return true if a given quest has been completed and was succeeded\n\x09@param QuestAsset The quest to check\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if a given quest has been completed and was succeeded\n@param QuestAsset The quest to check" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -3456,10 +3608,14 @@ struct Z_Construct_UFunction_UTalesComponent_RestartQuest_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AdvancedDisplay", "1" },
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Restart a given quest. Will only actually restart the quest if it has been started.\n\x09If the quest hasn't started,  this will do nothing.\n\n\x09@param QuestAsset The quest to use\n\x09@param StartFromID If this is set to a valid ID in the quest, we'll skip to this quest state instead of playing the quest its default start state\n\n\x09@return Whether or not the quest was restarted or not\n\x09*/" },
+#endif
 		{ "CPP_Default_StartFromID", "None" },
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Restart a given quest. Will only actually restart the quest if it has been started.\nIf the quest hasn't started,  this will do nothing.\n\n@param QuestAsset The quest to use\n@param StartFromID If this is set to a valid ID in the quest, we'll skip to this quest state instead of playing the quest its default start state\n\n@return Whether or not the quest was restarted or not" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_QuestClass;
@@ -3522,9 +3678,13 @@ struct Z_Construct_UFunction_UTalesComponent_ServerSelectDialogueOption_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Tell the server we've selected a dialogue option*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tell the server we've selected a dialogue option" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OptionID_MetaData[] = {
 		{ "NativeConst", "" },
@@ -3608,9 +3768,13 @@ struct Z_Construct_UFunction_UTalesComponent_ServerTrySkipCurrentDialogueLine_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Attempt to skip the current dialogue line */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attempt to skip the current dialogue line" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -3644,9 +3808,13 @@ struct Z_Construct_UFunction_UTalesComponent_TryExitDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Exit the dialogue, but authoritatively check we're allowed to before doing so. \n\x09* \n\x09@return Whether the dialogue was successfully exited\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Exit the dialogue, but authoritatively check we're allowed to before doing so.\n\n       @return Whether the dialogue was successfully exited" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -3693,9 +3861,13 @@ struct Z_Construct_UFunction_UTalesComponent_TrySelectDialogueOption_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called by the client when it tries selecting a dialogue option - the server ultimately decides if this goes through or not,\n\x09though the server validates replies before it sends them to you, so this should never fail */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called by the client when it tries selecting a dialogue option - the server ultimately decides if this goes through or not,\n       though the server validates replies before it sends them to you, so this should never fail" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Option;
@@ -3738,9 +3910,13 @@ struct Z_Construct_UFunction_UTalesComponent_TrySkipCurrentDialogueLine_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Attempt to skip the current dialogue line\n\x09Return true if we skipped the line, or if called on a client return true if we were able to ask server to skip the line (isn't guaranteed, server still needs to auth it)\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attempt to skip the current dialogue line\n       Return true if we skipped the line, or if called on a client return true if we were able to ask server to skip the line (isn't guaranteed, server still needs to auth it)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -3847,11 +4023,15 @@ struct Z_Construct_UClass_UTalesComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n* Add this component to your Player Controller. \n* Narrative Component acts as the connection to the Narrative system and allows you to start quests, dialogues, complete Tasks, etc.\n*/" },
+#endif
 		{ "DisplayName", "Tales Component" },
 		{ "IncludePath", "Tales/TalesComponent.h" },
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add this component to your Player Controller.\nNarrative Component acts as the connection to the Narrative system and allows you to start quests, dialogues, complete Tasks, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedQuests_MetaData[] = {
 		{ "Category", "Save" },
@@ -3859,158 +4039,262 @@ struct Z_Construct_UClass_UTalesComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MasterTaskList_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*A map of every narrative task the player has ever completed, where the key is the amount of times the action has been completed\n\x09""a TMap means we can very efficiently track large numbers of actions, such as shooting where the player may shoot a gun thousands of times */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A map of every narrative task the player has ever completed, where the key is the amount of times the action has been completed\n       a TMap means we can very efficiently track large numbers of actions, such as shooting where the player may shoot a gun thousands of times" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnNarrativeDataTaskCompleted_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a narrative data task is completed by the player */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a narrative data task is completed by the player" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestBranchCompleted_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest objective has been completed.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest objective has been completed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestNewState_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest objective is updated and we've received a new objective*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest objective is updated and we've received a new objective" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestTaskProgressChanged_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest task in a quest step has made progress. ie 6 out of 10 wolves killed*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest task in a quest step has made progress. ie 6 out of 10 wolves killed" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestTaskCompleted_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest task in a step is completed*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest task in a step is completed" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestSucceeded_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest is completed.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest is completed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestFailed_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest is failed.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest is failed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestStarted_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest is started.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest is started." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestForgotten_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest is forgotten.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest is forgotten." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnQuestRestarted_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a quest is restarted.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a quest is restarted." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnJoinedParty_MetaData[] = {
 		{ "Category", "Saving/Loading" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when we've joined a party*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when we've joined a party" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnLeaveParty_MetaData[] = {
 		{ "Category", "Saving/Loading" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when we've left a party*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when we've left a party" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDialogueBegan_MetaData[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a dialogue starts*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a dialogue starts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDialogueFinished_MetaData[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a dialogue has been finished for any reason*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a dialogue has been finished for any reason" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDialogueOptionSelected_MetaData[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a dialogue option is selected*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a dialogue option is selected" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDialogueRepliesAvailable_MetaData[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when the NPC(s) have finished talking and the players replies are available*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the NPC(s) have finished talking and the players replies are available" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnNPCDialogueLineStarted_MetaData[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a dialogue line starts*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a dialogue line starts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnNPCDialogueLineFinished_MetaData[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a dialogue line finishes*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a dialogue line finishes" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPlayerDialogueLineStarted_MetaData[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a dialogue line starts*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a dialogue line starts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPlayerDialogueLineFinished_MetaData[] = {
 		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Called when a dialogue line finishes*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when a dialogue line finishes" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PendingUpdateList_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Server replicates these back to client so client can keep its state machine in sync with the servers\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server replicates these back to client so client can keep its state machine in sync with the servers" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestList_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A list of all the quests the player is involved in\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A list of all the quests the player is involved in" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentDialogue_MetaData[] = {
 		{ "Category", "Quests" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Current dialogue the player is in \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Current dialogue the player is in" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PartyComponent_MetaData[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The party we're in, if any. */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The party we're in, if any." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerPC_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We cache the OwningController, we won't cache pawn as this might change\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/TalesComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We cache the OwningController, we won't cache pawn as this might change" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SavedQuests_Inner;
@@ -4048,39 +4332,39 @@ struct Z_Construct_UClass_UTalesComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UTalesComponent_BeginDialogue, "BeginDialogue" }, // 2441279351
-		{ &Z_Construct_UFunction_UTalesComponent_BeginQuest, "BeginQuest" }, // 3319828963
-		{ &Z_Construct_UFunction_UTalesComponent_ClientBeginDialogue, "ClientBeginDialogue" }, // 3317925005
-		{ &Z_Construct_UFunction_UTalesComponent_ClientBeginPartyDialogue, "ClientBeginPartyDialogue" }, // 22624701
-		{ &Z_Construct_UFunction_UTalesComponent_ClientExitDialogue, "ClientExitDialogue" }, // 4111371740
-		{ &Z_Construct_UFunction_UTalesComponent_ClientExitPartyDialogue, "ClientExitPartyDialogue" }, // 3406633976
-		{ &Z_Construct_UFunction_UTalesComponent_ClientReceiveSave, "ClientReceiveSave" }, // 2331648989
-		{ &Z_Construct_UFunction_UTalesComponent_ClientRecieveDialogueChunk, "ClientRecieveDialogueChunk" }, // 101938033
-		{ &Z_Construct_UFunction_UTalesComponent_ClientSelectDialogueOption, "ClientSelectDialogueOption" }, // 3668352230
+		{ &Z_Construct_UFunction_UTalesComponent_BeginDialogue, "BeginDialogue" }, // 3734774890
+		{ &Z_Construct_UFunction_UTalesComponent_BeginQuest, "BeginQuest" }, // 1192225268
+		{ &Z_Construct_UFunction_UTalesComponent_ClientBeginDialogue, "ClientBeginDialogue" }, // 1772251448
+		{ &Z_Construct_UFunction_UTalesComponent_ClientBeginPartyDialogue, "ClientBeginPartyDialogue" }, // 4004878679
+		{ &Z_Construct_UFunction_UTalesComponent_ClientExitDialogue, "ClientExitDialogue" }, // 3422542350
+		{ &Z_Construct_UFunction_UTalesComponent_ClientExitPartyDialogue, "ClientExitPartyDialogue" }, // 779456206
+		{ &Z_Construct_UFunction_UTalesComponent_ClientReceiveSave, "ClientReceiveSave" }, // 1449386531
+		{ &Z_Construct_UFunction_UTalesComponent_ClientRecieveDialogueChunk, "ClientRecieveDialogueChunk" }, // 4245178581
+		{ &Z_Construct_UFunction_UTalesComponent_ClientSelectDialogueOption, "ClientSelectDialogueOption" }, // 976708481
 		{ &Z_Construct_UFunction_UTalesComponent_DialogueBegan, "DialogueBegan" }, // 2688322663
 		{ &Z_Construct_UFunction_UTalesComponent_DialogueFinished, "DialogueFinished" }, // 3218878215
-		{ &Z_Construct_UFunction_UTalesComponent_DialogueLineFinished, "DialogueLineFinished" }, // 3810779824
-		{ &Z_Construct_UFunction_UTalesComponent_DialogueLineStarted, "DialogueLineStarted" }, // 2125342365
+		{ &Z_Construct_UFunction_UTalesComponent_DialogueLineFinished, "DialogueLineFinished" }, // 390118039
+		{ &Z_Construct_UFunction_UTalesComponent_DialogueLineStarted, "DialogueLineStarted" }, // 1912283865
 		{ &Z_Construct_UFunction_UTalesComponent_DialogueRepliesAvailable, "DialogueRepliesAvailable" }, // 4045425860
-		{ &Z_Construct_UFunction_UTalesComponent_ForgetQuest, "ForgetQuest" }, // 3870821847
-		{ &Z_Construct_UFunction_UTalesComponent_GetAllQuests, "GetAllQuests" }, // 290306135
+		{ &Z_Construct_UFunction_UTalesComponent_ForgetQuest, "ForgetQuest" }, // 3860573814
+		{ &Z_Construct_UFunction_UTalesComponent_GetAllQuests, "GetAllQuests" }, // 2516967985
 		{ &Z_Construct_UFunction_UTalesComponent_GetCurrentDialogue, "GetCurrentDialogue" }, // 1439711285
-		{ &Z_Construct_UFunction_UTalesComponent_GetFailedQuests, "GetFailedQuests" }, // 1622411487
-		{ &Z_Construct_UFunction_UTalesComponent_GetInProgressQuests, "GetInProgressQuests" }, // 3134733709
-		{ &Z_Construct_UFunction_UTalesComponent_GetNumberOfTimesTaskWasCompleted, "GetNumberOfTimesTaskWasCompleted" }, // 1250807669
+		{ &Z_Construct_UFunction_UTalesComponent_GetFailedQuests, "GetFailedQuests" }, // 780230797
+		{ &Z_Construct_UFunction_UTalesComponent_GetInProgressQuests, "GetInProgressQuests" }, // 1460577996
+		{ &Z_Construct_UFunction_UTalesComponent_GetNumberOfTimesTaskWasCompleted, "GetNumberOfTimesTaskWasCompleted" }, // 3322992995
 		{ &Z_Construct_UFunction_UTalesComponent_GetOwningController, "GetOwningController" }, // 1986161906
 		{ &Z_Construct_UFunction_UTalesComponent_GetOwningPawn, "GetOwningPawn" }, // 3893370423
-		{ &Z_Construct_UFunction_UTalesComponent_GetParty, "GetParty" }, // 3008580077
-		{ &Z_Construct_UFunction_UTalesComponent_GetQuestInstance, "GetQuestInstance" }, // 856065164
-		{ &Z_Construct_UFunction_UTalesComponent_GetSucceededQuests, "GetSucceededQuests" }, // 3072954776
-		{ &Z_Construct_UFunction_UTalesComponent_HasCompletedTask, "HasCompletedTask" }, // 3562709623
-		{ &Z_Construct_UFunction_UTalesComponent_HasDialogueAvailable, "HasDialogueAvailable" }, // 4285239299
-		{ &Z_Construct_UFunction_UTalesComponent_IsInDialogue, "IsInDialogue" }, // 4079567246
-		{ &Z_Construct_UFunction_UTalesComponent_IsQuestFailed, "IsQuestFailed" }, // 2014318661
-		{ &Z_Construct_UFunction_UTalesComponent_IsQuestFinished, "IsQuestFinished" }, // 2963269116
-		{ &Z_Construct_UFunction_UTalesComponent_IsQuestInProgress, "IsQuestInProgress" }, // 3958301320
-		{ &Z_Construct_UFunction_UTalesComponent_IsQuestStartedOrFinished, "IsQuestStartedOrFinished" }, // 1359872697
-		{ &Z_Construct_UFunction_UTalesComponent_IsQuestSucceeded, "IsQuestSucceeded" }, // 301836815
+		{ &Z_Construct_UFunction_UTalesComponent_GetParty, "GetParty" }, // 102216792
+		{ &Z_Construct_UFunction_UTalesComponent_GetQuestInstance, "GetQuestInstance" }, // 3381767688
+		{ &Z_Construct_UFunction_UTalesComponent_GetSucceededQuests, "GetSucceededQuests" }, // 4127304254
+		{ &Z_Construct_UFunction_UTalesComponent_HasCompletedTask, "HasCompletedTask" }, // 2225949334
+		{ &Z_Construct_UFunction_UTalesComponent_HasDialogueAvailable, "HasDialogueAvailable" }, // 1395263633
+		{ &Z_Construct_UFunction_UTalesComponent_IsInDialogue, "IsInDialogue" }, // 3162470721
+		{ &Z_Construct_UFunction_UTalesComponent_IsQuestFailed, "IsQuestFailed" }, // 3080785098
+		{ &Z_Construct_UFunction_UTalesComponent_IsQuestFinished, "IsQuestFinished" }, // 872380695
+		{ &Z_Construct_UFunction_UTalesComponent_IsQuestInProgress, "IsQuestInProgress" }, // 430537303
+		{ &Z_Construct_UFunction_UTalesComponent_IsQuestStartedOrFinished, "IsQuestStartedOrFinished" }, // 2304685030
+		{ &Z_Construct_UFunction_UTalesComponent_IsQuestSucceeded, "IsQuestSucceeded" }, // 3095030001
 		{ &Z_Construct_UFunction_UTalesComponent_NarrativeDataTaskCompleted, "NarrativeDataTaskCompleted" }, // 509512844
 		{ &Z_Construct_UFunction_UTalesComponent_OnRep_PartyComponent, "OnRep_PartyComponent" }, // 2334043939
 		{ &Z_Construct_UFunction_UTalesComponent_OnRep_PendingUpdateList, "OnRep_PendingUpdateList" }, // 18830482
@@ -4092,13 +4376,13 @@ struct Z_Construct_UClass_UTalesComponent_Statics
 		{ &Z_Construct_UFunction_UTalesComponent_QuestSucceeded, "QuestSucceeded" }, // 3050902633
 		{ &Z_Construct_UFunction_UTalesComponent_QuestTaskCompleted, "QuestTaskCompleted" }, // 443395054
 		{ &Z_Construct_UFunction_UTalesComponent_QuestTaskProgressMade, "QuestTaskProgressMade" }, // 3930715642
-		{ &Z_Construct_UFunction_UTalesComponent_RestartQuest, "RestartQuest" }, // 1982898370
-		{ &Z_Construct_UFunction_UTalesComponent_ServerSelectDialogueOption, "ServerSelectDialogueOption" }, // 2095756249
+		{ &Z_Construct_UFunction_UTalesComponent_RestartQuest, "RestartQuest" }, // 787808119
+		{ &Z_Construct_UFunction_UTalesComponent_ServerSelectDialogueOption, "ServerSelectDialogueOption" }, // 3705559119
 		{ &Z_Construct_UFunction_UTalesComponent_ServerTryExitDialogue, "ServerTryExitDialogue" }, // 215242630
-		{ &Z_Construct_UFunction_UTalesComponent_ServerTrySkipCurrentDialogueLine, "ServerTrySkipCurrentDialogueLine" }, // 3165744285
-		{ &Z_Construct_UFunction_UTalesComponent_TryExitDialogue, "TryExitDialogue" }, // 4089180427
-		{ &Z_Construct_UFunction_UTalesComponent_TrySelectDialogueOption, "TrySelectDialogueOption" }, // 2756513135
-		{ &Z_Construct_UFunction_UTalesComponent_TrySkipCurrentDialogueLine, "TrySkipCurrentDialogueLine" }, // 3001849215
+		{ &Z_Construct_UFunction_UTalesComponent_ServerTrySkipCurrentDialogueLine, "ServerTrySkipCurrentDialogueLine" }, // 2383986037
+		{ &Z_Construct_UFunction_UTalesComponent_TryExitDialogue, "TryExitDialogue" }, // 1853451239
+		{ &Z_Construct_UFunction_UTalesComponent_TrySelectDialogueOption, "TrySelectDialogueOption" }, // 1762490707
+		{ &Z_Construct_UFunction_UTalesComponent_TrySkipCurrentDialogueLine, "TrySkipCurrentDialogueLine" }, // 1781088169
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -4107,13 +4391,13 @@ struct Z_Construct_UClass_UTalesComponent_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_SavedQuests_Inner = { "SavedQuests", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeSavedQuest, METADATA_PARAMS(0, nullptr) }; // 623608714
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_SavedQuests = { "SavedQuests", nullptr, (EPropertyFlags)0x0010000001020001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, SavedQuests), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedQuests_MetaData), NewProp_SavedQuests_MetaData) }; // 623608714
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_SavedQuests_Inner = { "SavedQuests", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeSavedQuest, METADATA_PARAMS(0, nullptr) }; // 2066820107
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_SavedQuests = { "SavedQuests", nullptr, (EPropertyFlags)0x0010000001020001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, SavedQuests), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedQuests_MetaData), NewProp_SavedQuests_MetaData) }; // 2066820107
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_MasterTaskList_ValueProp = { "MasterTaskList", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_MasterTaskList_Key_KeyProp = { "MasterTaskList_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_MasterTaskList = { "MasterTaskList", nullptr, (EPropertyFlags)0x0010000001000001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, MasterTaskList), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MasterTaskList_MetaData), NewProp_MasterTaskList_MetaData) };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnNarrativeDataTaskCompleted = { "OnNarrativeDataTaskCompleted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnNarrativeDataTaskCompleted), Z_Construct_UDelegateFunction_NarrativeArsenal_OnNarrativeTaskCompleted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnNarrativeDataTaskCompleted_MetaData), NewProp_OnNarrativeDataTaskCompleted_MetaData) }; // 547277087
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnQuestBranchCompleted = { "OnQuestBranchCompleted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnQuestBranchCompleted), Z_Construct_UDelegateFunction_NarrativeArsenal_OnQuestBranchCompleted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnQuestBranchCompleted_MetaData), NewProp_OnQuestBranchCompleted_MetaData) }; // 302668507
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnNarrativeDataTaskCompleted = { "OnNarrativeDataTaskCompleted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnNarrativeDataTaskCompleted), Z_Construct_UDelegateFunction_NarrativeArsenal_OnNarrativeTaskCompleted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnNarrativeDataTaskCompleted_MetaData), NewProp_OnNarrativeDataTaskCompleted_MetaData) }; // 2812290541
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnQuestBranchCompleted = { "OnQuestBranchCompleted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnQuestBranchCompleted), Z_Construct_UDelegateFunction_NarrativeArsenal_OnQuestBranchCompleted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnQuestBranchCompleted_MetaData), NewProp_OnQuestBranchCompleted_MetaData) }; // 3817024431
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnQuestNewState = { "OnQuestNewState", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnQuestNewState), Z_Construct_UDelegateFunction_NarrativeArsenal_OnQuestNewState__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnQuestNewState_MetaData), NewProp_OnQuestNewState_MetaData) }; // 297653773
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnQuestTaskProgressChanged = { "OnQuestTaskProgressChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnQuestTaskProgressChanged), Z_Construct_UDelegateFunction_NarrativeArsenal_OnQuestTaskProgressChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnQuestTaskProgressChanged_MetaData), NewProp_OnQuestTaskProgressChanged_MetaData) }; // 1326950483
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnQuestTaskCompleted = { "OnQuestTaskCompleted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnQuestTaskCompleted), Z_Construct_UDelegateFunction_NarrativeArsenal_OnQuestTaskCompleted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnQuestTaskCompleted_MetaData), NewProp_OnQuestTaskCompleted_MetaData) }; // 3788866643
@@ -4122,18 +4406,18 @@ const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTa
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnQuestStarted = { "OnQuestStarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnQuestStarted), Z_Construct_UDelegateFunction_NarrativeArsenal_OnQuestStarted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnQuestStarted_MetaData), NewProp_OnQuestStarted_MetaData) }; // 2237310530
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnQuestForgotten = { "OnQuestForgotten", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnQuestForgotten), Z_Construct_UDelegateFunction_NarrativeArsenal_OnQuestForgotten__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnQuestForgotten_MetaData), NewProp_OnQuestForgotten_MetaData) }; // 1349934784
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnQuestRestarted = { "OnQuestRestarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnQuestRestarted), Z_Construct_UDelegateFunction_NarrativeArsenal_OnQuestRestarted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnQuestRestarted_MetaData), NewProp_OnQuestRestarted_MetaData) }; // 2479810187
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnJoinedParty = { "OnJoinedParty", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnJoinedParty), Z_Construct_UDelegateFunction_NarrativeArsenal_OnJoinedParty__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnJoinedParty_MetaData), NewProp_OnJoinedParty_MetaData) }; // 319242170
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnJoinedParty = { "OnJoinedParty", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnJoinedParty), Z_Construct_UDelegateFunction_NarrativeArsenal_OnJoinedParty__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnJoinedParty_MetaData), NewProp_OnJoinedParty_MetaData) }; // 2879814954
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnLeaveParty = { "OnLeaveParty", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnLeaveParty), Z_Construct_UDelegateFunction_NarrativeArsenal_OnLeaveParty__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnLeaveParty_MetaData), NewProp_OnLeaveParty_MetaData) }; // 4120762530
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnDialogueBegan = { "OnDialogueBegan", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnDialogueBegan), Z_Construct_UDelegateFunction_NarrativeArsenal_OnDialogueBegan__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueBegan_MetaData), NewProp_OnDialogueBegan_MetaData) }; // 1302023822
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnDialogueBegan = { "OnDialogueBegan", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnDialogueBegan), Z_Construct_UDelegateFunction_NarrativeArsenal_OnDialogueBegan__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueBegan_MetaData), NewProp_OnDialogueBegan_MetaData) }; // 1190227374
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnDialogueFinished = { "OnDialogueFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnDialogueFinished), Z_Construct_UDelegateFunction_NarrativeArsenal_OnDialogueFinished__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueFinished_MetaData), NewProp_OnDialogueFinished_MetaData) }; // 3248015710
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnDialogueOptionSelected = { "OnDialogueOptionSelected", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnDialogueOptionSelected), Z_Construct_UDelegateFunction_NarrativeArsenal_DialogueOptionSelected__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueOptionSelected_MetaData), NewProp_OnDialogueOptionSelected_MetaData) }; // 1044813234
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnDialogueRepliesAvailable = { "OnDialogueRepliesAvailable", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnDialogueRepliesAvailable), Z_Construct_UDelegateFunction_NarrativeArsenal_DialogueRepliesAvailable__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDialogueRepliesAvailable_MetaData), NewProp_OnDialogueRepliesAvailable_MetaData) }; // 4062142380
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnNPCDialogueLineStarted = { "OnNPCDialogueLineStarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnNPCDialogueLineStarted), Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnNPCDialogueLineStarted_MetaData), NewProp_OnNPCDialogueLineStarted_MetaData) }; // 1409776195
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnNPCDialogueLineFinished = { "OnNPCDialogueLineFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnNPCDialogueLineFinished), Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnNPCDialogueLineFinished_MetaData), NewProp_OnNPCDialogueLineFinished_MetaData) }; // 509381417
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnPlayerDialogueLineStarted = { "OnPlayerDialogueLineStarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnPlayerDialogueLineStarted), Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPlayerDialogueLineStarted_MetaData), NewProp_OnPlayerDialogueLineStarted_MetaData) }; // 3670508777
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnPlayerDialogueLineFinished = { "OnPlayerDialogueLineFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnPlayerDialogueLineFinished), Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPlayerDialogueLineFinished_MetaData), NewProp_OnPlayerDialogueLineFinished_MetaData) }; // 1891090800
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_PendingUpdateList_Inner = { "PendingUpdateList", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeUpdate, METADATA_PARAMS(0, nullptr) }; // 2131098846
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_PendingUpdateList = { "PendingUpdateList", "OnRep_PendingUpdateList", (EPropertyFlags)0x0010000100000020, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, PendingUpdateList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PendingUpdateList_MetaData), NewProp_PendingUpdateList_MetaData) }; // 2131098846
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnNPCDialogueLineStarted = { "OnNPCDialogueLineStarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnNPCDialogueLineStarted), Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineStarted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnNPCDialogueLineStarted_MetaData), NewProp_OnNPCDialogueLineStarted_MetaData) }; // 21521793
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnNPCDialogueLineFinished = { "OnNPCDialogueLineFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnNPCDialogueLineFinished), Z_Construct_UDelegateFunction_NarrativeArsenal_NPCDialogueLineFinished__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnNPCDialogueLineFinished_MetaData), NewProp_OnNPCDialogueLineFinished_MetaData) }; // 37658755
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnPlayerDialogueLineStarted = { "OnPlayerDialogueLineStarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnPlayerDialogueLineStarted), Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineStarted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPlayerDialogueLineStarted_MetaData), NewProp_OnPlayerDialogueLineStarted_MetaData) }; // 2616927375
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_OnPlayerDialogueLineFinished = { "OnPlayerDialogueLineFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, OnPlayerDialogueLineFinished), Z_Construct_UDelegateFunction_NarrativeArsenal_PlayerDialogueLineFinished__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPlayerDialogueLineFinished_MetaData), NewProp_OnPlayerDialogueLineFinished_MetaData) }; // 1996945548
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_PendingUpdateList_Inner = { "PendingUpdateList", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeUpdate, METADATA_PARAMS(0, nullptr) }; // 2620076116
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_PendingUpdateList = { "PendingUpdateList", "OnRep_PendingUpdateList", (EPropertyFlags)0x0010000100000020, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, PendingUpdateList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PendingUpdateList_MetaData), NewProp_PendingUpdateList_MetaData) }; // 2620076116
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_QuestList_Inner = { "QuestList", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UQuest_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_QuestList = { "QuestList", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, QuestList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QuestList_MetaData), NewProp_QuestList_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTalesComponent_Statics::NewProp_CurrentDialogue = { "CurrentDialogue", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTalesComponent, CurrentDialogue), Z_Construct_UClass_UDialogue_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentDialogue_MetaData), NewProp_CurrentDialogue_MetaData) };
@@ -4180,7 +4464,7 @@ UObject* (*const Z_Construct_UClass_UTalesComponent_Statics::DependentSingletons
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UTalesComponent_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UTalesComponent_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UTalesComponent, INarrativeSavableComponent), false },  // 1573843113
+	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UTalesComponent, INarrativeSavableComponent), false },  // 586272322
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UTalesComponent_Statics::ClassParams = {
 	&UTalesComponent::StaticClass,
@@ -4223,24 +4507,24 @@ UTalesComponent::~UTalesComponent() {}
 // End Class UTalesComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EUpdateType_StaticEnum, TEXT("EUpdateType"), &Z_Registration_Info_UEnum_EUpdateType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1145552154U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FDialogueInfo::StaticStruct, Z_Construct_UScriptStruct_FDialogueInfo_Statics::NewStructOps, TEXT("DialogueInfo"), &Z_Registration_Info_UScriptStruct_DialogueInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDialogueInfo), 2232263708U) },
-		{ FNarrativeUpdate::StaticStruct, Z_Construct_UScriptStruct_FNarrativeUpdate_Statics::NewStructOps, TEXT("NarrativeUpdate"), &Z_Registration_Info_UScriptStruct_NarrativeUpdate, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNarrativeUpdate), 2131098846U) },
-		{ FSavedQuestBranch::StaticStruct, Z_Construct_UScriptStruct_FSavedQuestBranch_Statics::NewStructOps, TEXT("SavedQuestBranch"), &Z_Registration_Info_UScriptStruct_SavedQuestBranch, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedQuestBranch), 2827484131U) },
-		{ FNarrativeSavedQuest::StaticStruct, Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewStructOps, TEXT("NarrativeSavedQuest"), &Z_Registration_Info_UScriptStruct_NarrativeSavedQuest, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNarrativeSavedQuest), 623608714U) },
+		{ FNarrativeUpdate::StaticStruct, Z_Construct_UScriptStruct_FNarrativeUpdate_Statics::NewStructOps, TEXT("NarrativeUpdate"), &Z_Registration_Info_UScriptStruct_NarrativeUpdate, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNarrativeUpdate), 2620076116U) },
+		{ FSavedQuestBranch::StaticStruct, Z_Construct_UScriptStruct_FSavedQuestBranch_Statics::NewStructOps, TEXT("SavedQuestBranch"), &Z_Registration_Info_UScriptStruct_SavedQuestBranch, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedQuestBranch), 196135495U) },
+		{ FNarrativeSavedQuest::StaticStruct, Z_Construct_UScriptStruct_FNarrativeSavedQuest_Statics::NewStructOps, TEXT("NarrativeSavedQuest"), &Z_Registration_Info_UScriptStruct_NarrativeSavedQuest, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNarrativeSavedQuest), 2066820107U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTalesComponent, UTalesComponent::StaticClass, TEXT("UTalesComponent"), &Z_Registration_Info_UClass_UTalesComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTalesComponent), 2921571702U) },
+		{ Z_Construct_UClass_UTalesComponent, UTalesComponent::StaticClass, TEXT("UTalesComponent"), &Z_Registration_Info_UClass_UTalesComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTalesComponent), 2288557292U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_3513390442(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_3046886864(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_TalesComponent_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

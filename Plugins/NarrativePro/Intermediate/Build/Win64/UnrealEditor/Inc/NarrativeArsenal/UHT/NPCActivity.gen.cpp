@@ -42,9 +42,13 @@ struct Z_Construct_UScriptStruct_FSavedNPCActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A saved NPC Activity - which consists of the class and the uint8 data to serialize\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A saved NPC Activity - which consists of the class and the uint8 data to serialize" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Class_MetaData[] = {
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
@@ -204,9 +208,13 @@ struct Z_Construct_UFunction_UNPCActivity_ScoreGoalItem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Override this if you want to ignore Goal.GetScore() and provide a custom score. IE you may want a SitOnCouch goal \n\x09to score higher if the owner has low stamina, but lower or zero if we have enough stamina. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Override this if you want to ignore Goal.GetScore() and provide a custom score. IE you may want a SitOnCouch goal\n       to score higher if the owner has low stamina, but lower or zero if we have enough stamina." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Goal_MetaData[] = {
 		{ "NativeConst", "" },
@@ -277,9 +285,13 @@ struct Z_Construct_UFunction_UNPCActivity_SetupBlackboard_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Once the activity starts, this will be called to try and set up the blackboard. You can return false\n\x09if the blackboard wasn't able to be setup and RunActivity will then return false to let the call know it failed. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Once the activity starts, this will be called to try and set up the blackboard. You can return false\n       if the blackboard wasn't able to be setup and RunActivity will then return false to let the call know it failed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BB_MetaData[] = {
 		{ "EditInline", "true" },
@@ -346,18 +358,26 @@ struct Z_Construct_UClass_UNPCActivity_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * NPC Activities essentially wrap a Behaviour tree, and stores the default variables the tree uses. The current activity lives on\n * the NPCs NPCActivityComponent, and can serialize its state to disk. That way when we load back in our behavior is remembered if we desire this. \n */" },
+#endif
 		{ "IncludePath", "AI/Activities/NPCActivity.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NPC Activities essentially wrap a Behaviour tree, and stores the default variables the tree uses. The current activity lives on\nthe NPCs NPCActivityComponent, and can serialize its state to disk. That way when we load back in our behavior is remembered if we desire this." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerController_MetaData[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We cache the AI controller \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We cache the AI controller" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerActivityComponent_MetaData[] = {
 		{ "Category", "NPC Activity" },
@@ -366,27 +386,43 @@ struct Z_Construct_UClass_UNPCActivity_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivityGoal_MetaData[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The goal this activity is operating on - for example AttackGoal for AttackActivity, etc. This can null if your activity doesn't need a goal \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The goal this activity is operating on - for example AttackGoal for AttackActivity, etc. This can null if your activity doesn't need a goal" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BehaviourTree_MetaData[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The behaviour tree the NPC needs to run\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The behaviour tree the NPC needs to run" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SupportedGoalType_MetaData[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The goal class this activity supports, if it supports one. You can leave this empty if your activity doesn't need a goal, eg Idle, etc. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The goal class this activity supports, if it supports one. You can leave this empty if your activity doesn't need a goal, eg Idle, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsInterruptable_MetaData[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether we're allowed to interrupt this activity or not \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NPCActivity.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether we're allowed to interrupt this activity or not" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwnerController;
@@ -401,8 +437,8 @@ struct Z_Construct_UClass_UNPCActivity_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UNPCActivity_IsInterruptable, "IsInterruptable" }, // 2262048722
 		{ &Z_Construct_UFunction_UNPCActivity_RemoveActivityGoal, "RemoveActivityGoal" }, // 1167175589
-		{ &Z_Construct_UFunction_UNPCActivity_ScoreGoalItem, "ScoreGoalItem" }, // 3311046090
-		{ &Z_Construct_UFunction_UNPCActivity_SetupBlackboard, "SetupBlackboard" }, // 551097438
+		{ &Z_Construct_UFunction_UNPCActivity_ScoreGoalItem, "ScoreGoalItem" }, // 49769951
+		{ &Z_Construct_UFunction_UNPCActivity_SetupBlackboard, "SetupBlackboard" }, // 1520751298
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -466,18 +502,18 @@ UNPCActivity::~UNPCActivity() {}
 // End Class UNPCActivity
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSavedNPCActivity::StaticStruct, Z_Construct_UScriptStruct_FSavedNPCActivity_Statics::NewStructOps, TEXT("SavedNPCActivity"), &Z_Registration_Info_UScriptStruct_SavedNPCActivity, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedNPCActivity), 1787664098U) },
+		{ FSavedNPCActivity::StaticStruct, Z_Construct_UScriptStruct_FSavedNPCActivity_Statics::NewStructOps, TEXT("SavedNPCActivity"), &Z_Registration_Info_UScriptStruct_SavedNPCActivity, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedNPCActivity), 2508512928U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNPCActivity, UNPCActivity::StaticClass, TEXT("UNPCActivity"), &Z_Registration_Info_UClass_UNPCActivity, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCActivity), 2589874206U) },
+		{ Z_Construct_UClass_UNPCActivity, UNPCActivity::StaticClass, TEXT("UNPCActivity"), &Z_Registration_Info_UClass_UNPCActivity, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCActivity), 2021223134U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_455249325(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_1824573077(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NPCActivity_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

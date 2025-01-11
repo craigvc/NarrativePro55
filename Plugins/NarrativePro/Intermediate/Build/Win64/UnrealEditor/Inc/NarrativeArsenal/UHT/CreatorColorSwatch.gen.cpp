@@ -30,10 +30,14 @@ struct Z_Construct_UClass_UCharacterCreatorColorSwatch_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Holds a collection of colours, used by the character creator \n */" },
+#endif
 		{ "IncludePath", "CharacterCreator/CreatorColorSwatch.h" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/CreatorColorSwatch.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Holds a collection of colours, used by the character creator" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Colors_MetaData[] = {
 		{ "Category", "Swatch Colors" },
@@ -93,14 +97,14 @@ UCharacterCreatorColorSwatch::~UCharacterCreatorColorSwatch() {}
 // End Class UCharacterCreatorColorSwatch
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CreatorColorSwatch_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CreatorColorSwatch_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterCreatorColorSwatch, UCharacterCreatorColorSwatch::StaticClass, TEXT("UCharacterCreatorColorSwatch"), &Z_Registration_Info_UClass_UCharacterCreatorColorSwatch, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorColorSwatch), 1985595652U) },
+		{ Z_Construct_UClass_UCharacterCreatorColorSwatch, UCharacterCreatorColorSwatch::StaticClass, TEXT("UCharacterCreatorColorSwatch"), &Z_Registration_Info_UClass_UCharacterCreatorColorSwatch, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorColorSwatch), 2252552946U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CreatorColorSwatch_h_510857001(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CreatorColorSwatch_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CreatorColorSwatch_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CreatorColorSwatch_h_1346440577(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CreatorColorSwatch_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CreatorColorSwatch_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -29,17 +29,25 @@ struct Z_Construct_UClass_UNarrativePhysicalMaterial_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Custom physical material for Narrative Pro. \n */" },
+#endif
 		{ "HideCategories", "Object" },
 		{ "IncludePath", "UnrealFramework/NarrativePhysicalMaterial.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePhysicalMaterial.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Custom physical material for Narrative Pro." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DamageMultiplier_MetaData[] = {
 		{ "Category", "Narrative Physical Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Special damage multiplier we'll apply if the damage calculation sees we've hit this material. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePhysicalMaterial.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Special damage multiplier we'll apply if the damage calculation sees we've hit this material." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DamageMultiplier;
@@ -92,14 +100,14 @@ UNarrativePhysicalMaterial::~UNarrativePhysicalMaterial() {}
 // End Class UNarrativePhysicalMaterial
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePhysicalMaterial_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePhysicalMaterial_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativePhysicalMaterial, UNarrativePhysicalMaterial::StaticClass, TEXT("UNarrativePhysicalMaterial"), &Z_Registration_Info_UClass_UNarrativePhysicalMaterial, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativePhysicalMaterial), 2837972524U) },
+		{ Z_Construct_UClass_UNarrativePhysicalMaterial, UNarrativePhysicalMaterial::StaticClass, TEXT("UNarrativePhysicalMaterial"), &Z_Registration_Info_UClass_UNarrativePhysicalMaterial, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativePhysicalMaterial), 3640640847U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePhysicalMaterial_h_2558166790(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePhysicalMaterial_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePhysicalMaterial_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePhysicalMaterial_h_3700757041(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePhysicalMaterial_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePhysicalMaterial_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -33,23 +33,35 @@ struct Z_Construct_UClass_UNarrativeAnimInstance_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Narrative anim instance class - we generally just have this to add the GameplayTagPropertyMap as lyra does. \n */" },
+#endif
 		{ "HideCategories", "AnimInstance" },
 		{ "IncludePath", "UnrealFramework/NarrativeAnimInstance.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Narrative anim instance class - we generally just have this to add the GameplayTagPropertyMap as lyra does." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GameplayTagPropertyMap_MetaData[] = {
 		{ "Category", "GameplayTags" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Brilliant container type that ships with GAS - lets us bind variables directly to gameplaytags. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Brilliant container type that ships with GAS - lets us bind variables directly to gameplaytags." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FlinchMontagesBack_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Flinch montages \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Flinch montages" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FlinchMontagesFront_MetaData[] = {
 		{ "Category", "Combat Data" },
@@ -65,15 +77,23 @@ struct Z_Construct_UClass_UNarrativeAnimInstance_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackCombos_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Combo montages for this characters melee attacks \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Combo montages for this characters melee attacks" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HeavyAttackCombos_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Combo montages for our characters heavy melee attacks \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Combo montages for our characters heavy melee attacks" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_GameplayTagPropertyMap;
@@ -150,14 +170,14 @@ UNarrativeAnimInstance::~UNarrativeAnimInstance() {}
 // End Class UNarrativeAnimInstance
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeAnimInstance_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeAnimInstance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeAnimInstance, UNarrativeAnimInstance::StaticClass, TEXT("UNarrativeAnimInstance"), &Z_Registration_Info_UClass_UNarrativeAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAnimInstance), 979469643U) },
+		{ Z_Construct_UClass_UNarrativeAnimInstance, UNarrativeAnimInstance::StaticClass, TEXT("UNarrativeAnimInstance"), &Z_Registration_Info_UClass_UNarrativeAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAnimInstance), 1613366595U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeAnimInstance_h_2121031833(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeAnimInstance_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeAnimInstance_h_5361987(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeAnimInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -39,9 +39,13 @@ struct Z_Construct_UScriptStruct_FCombatTraceData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Stored on both weapons and our player for unarmed combat. Replaces the need for expensive targeting actors, GAs just generate target data themselves\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stored on both weapons and our player for unarmed combat. Replaces the need for expensive targeting actors, GAs just generate target data themselves" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TraceDistance_MetaData[] = {
 		{ "Category", "Combat Trace Data" },
@@ -53,9 +57,13 @@ struct Z_Construct_UScriptStruct_FCombatTraceData_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bTraceMulti_MetaData[] = {
 		{ "Category", "Combat Trace Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//True if we want to trace multi instead of single \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "True if we want to trace multi instead of single" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_TraceDistance;
@@ -111,9 +119,13 @@ struct Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Combat" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Perform the tracing that generates the targeting data. Will fire off a targeting data ready delegate when finished. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Perform the tracing that generates the targeting data. Will fire off a targeting data ready delegate when finished." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -147,9 +159,13 @@ struct Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetDataUsingTrac
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Combat" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Version that lets us supply custom trace data if we want to ignore the weapons. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Version that lets us supply custom trace data if we want to ignore the weapons." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TraceData_MetaData[] = {
 		{ "NativeConst", "" },
@@ -159,7 +175,7 @@ struct Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetDataUsingTrac
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetDataUsingTrace_Statics::NewProp_TraceData = { "TraceData", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeCombatAbility_eventGenerateTargetDataUsingTrace_Parms, TraceData), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TraceData_MetaData), NewProp_TraceData_MetaData) }; // 179883577
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetDataUsingTrace_Statics::NewProp_TraceData = { "TraceData", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeCombatAbility_eventGenerateTargetDataUsingTrace_Parms, TraceData), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TraceData_MetaData), NewProp_TraceData_MetaData) }; // 845487567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetDataUsingTrace_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetDataUsingTrace_Statics::NewProp_TraceData,
 };
@@ -210,9 +226,13 @@ struct Z_Construct_UFunction_UNarrativeCombatAbility_GetTargetingViewPoint_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Combat Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the transform we should start tracing from. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the transform we should start tracing from." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -269,16 +289,20 @@ struct Z_Construct_UFunction_UNarrativeCombatAbility_GetTraceData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Combat Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the trace info this combat ability will use to generate its target data \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the trace info this combat ability will use to generate its target data" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeCombatAbility_GetTraceData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeCombatAbility_eventGetTraceData_Parms, ReturnValue), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(0, nullptr) }; // 179883577
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeCombatAbility_GetTraceData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeCombatAbility_eventGetTraceData_Parms, ReturnValue), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(0, nullptr) }; // 845487567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeCombatAbility_GetTraceData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeCombatAbility_GetTraceData_Statics::NewProp_ReturnValue,
 };
@@ -371,22 +395,34 @@ struct Z_Construct_UClass_UNarrativeCombatAbility_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Ability that has all of the hitscan, collision checking, damage dealing etc built in. Used by both melee and hitscan weapons. \n */" },
+#endif
 		{ "IncludePath", "GAS/NarrativeCombatAbility.h" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Ability that has all of the hitscan, collision checking, damage dealing etc built in. Used by both melee and hitscan weapons." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRequiresAmmo_MetaData[] = {
 		{ "Category", "Narrative Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//if true, we check our item has its ammo class, and if not the cost check will fail \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "if true, we check our item has its ammo class, and if not the cost check will fail" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDrawDebugTraces_MetaData[] = {
 		{ "Category", "Narrative Ability" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//if true, we'll draw debugging traces \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeCombatAbility.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "if true, we'll draw debugging traces" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bRequiresAmmo_SetBit(void* Obj);
@@ -396,10 +432,10 @@ struct Z_Construct_UClass_UNarrativeCombatAbility_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetData, "GenerateTargetData" }, // 4198714070
-		{ &Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetDataUsingTrace, "GenerateTargetDataUsingTrace" }, // 764559839
-		{ &Z_Construct_UFunction_UNarrativeCombatAbility_GetTargetingViewPoint, "GetTargetingViewPoint" }, // 594877307
-		{ &Z_Construct_UFunction_UNarrativeCombatAbility_GetTraceData, "GetTraceData" }, // 189798765
+		{ &Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetData, "GenerateTargetData" }, // 185289848
+		{ &Z_Construct_UFunction_UNarrativeCombatAbility_GenerateTargetDataUsingTrace, "GenerateTargetDataUsingTrace" }, // 1207996074
+		{ &Z_Construct_UFunction_UNarrativeCombatAbility_GetTargetingViewPoint, "GetTargetingViewPoint" }, // 3181238369
+		{ &Z_Construct_UFunction_UNarrativeCombatAbility_GetTraceData, "GetTraceData" }, // 3259601530
 		{ &Z_Construct_UFunction_UNarrativeCombatAbility_K2_TargetDataReady, "K2_TargetDataReady" }, // 3516827237
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -460,18 +496,18 @@ UNarrativeCombatAbility::~UNarrativeCombatAbility() {}
 // End Class UNarrativeCombatAbility
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FCombatTraceData::StaticStruct, Z_Construct_UScriptStruct_FCombatTraceData_Statics::NewStructOps, TEXT("CombatTraceData"), &Z_Registration_Info_UScriptStruct_CombatTraceData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCombatTraceData), 179883577U) },
+		{ FCombatTraceData::StaticStruct, Z_Construct_UScriptStruct_FCombatTraceData_Statics::NewStructOps, TEXT("CombatTraceData"), &Z_Registration_Info_UScriptStruct_CombatTraceData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCombatTraceData), 845487567U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCombatAbility, UNarrativeCombatAbility::StaticClass, TEXT("UNarrativeCombatAbility"), &Z_Registration_Info_UClass_UNarrativeCombatAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCombatAbility), 2174763141U) },
+		{ Z_Construct_UClass_UNarrativeCombatAbility, UNarrativeCombatAbility::StaticClass, TEXT("UNarrativeCombatAbility"), &Z_Registration_Info_UClass_UNarrativeCombatAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCombatAbility), 2237719128U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_303398902(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_2955655830(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeCombatAbility_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

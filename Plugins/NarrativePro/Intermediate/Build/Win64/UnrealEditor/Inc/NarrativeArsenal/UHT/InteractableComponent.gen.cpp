@@ -391,46 +391,74 @@ struct Z_Construct_UScriptStruct_FInteractionDefiniton_Statics
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnInteractDelegate_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//TODO figure this out - we need the interaction to define some behavior, for now i'm thinking some sort of delegate \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "TODO figure this out - we need the interaction to define some behavior, for now i'm thinking some sort of delegate" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bActive_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether this interaction is active or not \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether this interaction is active or not" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionTime_MetaData[] = {
 		{ "Category", "Interaction" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The amount of time the interaction needs its interact key held for \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of time the interaction needs its interact key held for" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractableNameText_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The name that will come up when the player looks at the interactable\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name that will come up when the player looks at the interactable" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractableVerb_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The verb that describes how the interaction works, ie \"Sit\" for a chair, \"Eat\" for food, \"Light\" for a fireplace\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The verb that describes how the interaction works, ie \"Sit\" for a chair, \"Eat\" for food, \"Light\" for a fireplace" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionInput_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The input action we require to begin this interaction\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The input action we require to begin this interaction" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionAnimation_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The animation our player can play during the interact. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The animation our player can play during the interact." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnInteractDelegate;
@@ -568,22 +596,34 @@ struct Z_Construct_UScriptStruct_FActiveInteractionSlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines a slot for interacting with the interactable. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a slot for interacting with the interactable." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotStatus_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The status of this slot\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The status of this slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotUser_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The interactor using the slot\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The interactor using the slot" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_SlotStatus_Underlying;
@@ -647,9 +687,13 @@ struct Z_Construct_UScriptStruct_FInteractionDebugVisualizeSlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines a debug slot the interactable visualizer will draw\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a debug slot the interactable visualizer will draw" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotDebugTransform_MetaData[] = {
 		{ "Category", "Debug Visualize Slot" },
@@ -753,8 +797,8 @@ struct Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics
 };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::NewProp_SlotTransform = { "SlotTransform", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(InteractionSlotBehavior_eventGetDebugSlots_Parms, SlotTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SlotTransform_MetaData), NewProp_SlotTransform_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::NewProp_OwnerTransform = { "OwnerTransform", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(InteractionSlotBehavior_eventGetDebugSlots_Parms, OwnerTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwnerTransform_MetaData), NewProp_OwnerTransform_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FInteractionDebugVisualizeSlot, METADATA_PARAMS(0, nullptr) }; // 202721004
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(InteractionSlotBehavior_eventGetDebugSlots_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 202721004
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FInteractionDebugVisualizeSlot, METADATA_PARAMS(0, nullptr) }; // 3946001769
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(InteractionSlotBehavior_eventGetDebugSlots_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 3946001769
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::NewProp_SlotTransform,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots_Statics::NewProp_OwnerTransform,
@@ -804,24 +848,32 @@ struct Z_Construct_UClass_UInteractionSlotBehavior_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines a behavior that should be ran when a player or NPC interacts with an Interaction Slot. Subclass this and add any variables your SlotInteractBehavior requires. \n */" },
+#endif
 		{ "IncludePath", "Interaction/InteractableComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a behavior that should be ran when a player or NPC interacts with an Interaction Slot. Subclass this and add any variables your SlotInteractBehavior requires." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotInteractBehavior_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//This ability will be fired when a character interacts with this slot. The slot will release when the ability ends.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This ability will be fired when a character interacts with this slot. The slot will release when the ability ends." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_SlotInteractBehavior;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots, "GetDebugSlots" }, // 3433698955
+		{ &Z_Construct_UFunction_UInteractionSlotBehavior_GetDebugSlots, "GetDebugSlots" }, // 21118263
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -889,35 +941,55 @@ struct Z_Construct_UScriptStruct_FInteractionSlotConfig_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines a slot for interacting with the interactable. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a slot for interacting with the interactable." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotTag_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Optional tag used for the slot \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional tag used for the slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DebugColor_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Debug color for the slot\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Debug color for the slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotTransform_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//NPCs will move to this transform when attempting to use the slot, and players can be motion warped to this spot etc if required. \n" },
+#endif
 		{ "MakeEditWidget", "" },
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NPCs will move to this transform when attempting to use the slot, and players can be motion warped to this spot etc if required." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotInteractBehavior_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//This ability will be fired when a character interacts with this slot. The slot will release when the ability ends.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This ability will be fired when a character interacts with this slot. The slot will release when the ability ends." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SlotTag;
@@ -984,9 +1056,13 @@ struct Z_Construct_UScriptStruct_FInteractionSlotClaimHandle_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Holds information about a claimer\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Holds information about a claimer" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandleIndex_MetaData[] = {
 		{ "Category", "Interaction" },
@@ -1074,9 +1150,13 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_CanInteract_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Return true if the given interactor is allowed to interact with us\n\x09* \n\x09* @param OutErrorText this is the reason why the interact isn't allowed \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if the given interactor is allowed to interact with us\n\n@param OutErrorText this is the reason why the interact isn't allowed" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionComp_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1141,10 +1221,14 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Claim a slot, set its active slot data to our character, and set its status to either targeted or claimed depending on bShouldTarget*/" },
+#endif
 		{ "CPP_Default_bMarkTargeted", "false" },
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Claim a slot, set its active slot data to our character, and set its status to either targeted or claimed depending on bShouldTarget" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Claimer_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1168,7 +1252,7 @@ void Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics::Ne
 	((NarrativeInteractableComponent_eventClaimSlot_Parms*)Obj)->bMarkTargeted = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics::NewProp_bMarkTargeted = { "bMarkTargeted", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(NarrativeInteractableComponent_eventClaimSlot_Parms), &Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics::NewProp_bMarkTargeted_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bMarkTargeted_MetaData), NewProp_bMarkTargeted_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventClaimSlot_Parms, ReturnValue), Z_Construct_UScriptStruct_FInteractionSlotClaimHandle, METADATA_PARAMS(0, nullptr) }; // 3600068177
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventClaimSlot_Parms, ReturnValue), Z_Construct_UScriptStruct_FInteractionSlotClaimHandle, METADATA_PARAMS(0, nullptr) }; // 1537703421
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics::NewProp_Claimer,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot_Statics::NewProp_SlotToClaimIdx,
@@ -1210,10 +1294,14 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_GetAvailableSlots_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return a list of available slots*/" },
+#endif
 		{ "CPP_Default_bIncludeTargeted", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return a list of available slots" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIncludeTargeted_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1272,9 +1360,13 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_GetClosestAvailable
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return the closest slot to the claimer.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the closest slot to the claimer." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Claimer_MetaData[] = {
 		{ "EditInline", "true" },
@@ -1334,9 +1426,13 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Used by NPCs to reserve the first available slot. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by NPCs to reserve the first available slot." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_SlotIndex;
@@ -1345,7 +1441,7 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot_Sta
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot_Statics::NewProp_SlotIndex = { "SlotIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventGetConfigAtSlot_Parms, SlotIndex), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventGetConfigAtSlot_Parms, ReturnValue), Z_Construct_UScriptStruct_FInteractionSlotConfig, METADATA_PARAMS(0, nullptr) }; // 345810728
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventGetConfigAtSlot_Parms, ReturnValue), Z_Construct_UScriptStruct_FInteractionSlotConfig, METADATA_PARAMS(0, nullptr) }; // 3769733267
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot_Statics::NewProp_SlotIndex,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot_Statics::NewProp_ReturnValue,
@@ -1383,9 +1479,13 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_HasSlotAvailable_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Ask if any slots are available\n\x09\n\x09@param bAllowTargeted consider a slot available if it is only targeted and not actually occupied */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Ask if any slots are available\n\n       @param bAllowTargeted consider a slot available if it is only targeted and not actually occupied" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAllowTargeted_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1644,9 +1744,13 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when our slot statuses replicate. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when our slot statuses replicate." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OldStatuses_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1657,8 +1761,8 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_Statics::NewProp_OldStatuses_Inner = { "OldStatuses", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FActiveInteractionSlot, METADATA_PARAMS(0, nullptr) }; // 3221666995
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_Statics::NewProp_OldStatuses = { "OldStatuses", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventOnRep_SlotStatuses_Parms, OldStatuses), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OldStatuses_MetaData), NewProp_OldStatuses_MetaData) }; // 3221666995
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_Statics::NewProp_OldStatuses_Inner = { "OldStatuses", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FActiveInteractionSlot, METADATA_PARAMS(0, nullptr) }; // 318054466
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_Statics::NewProp_OldStatuses = { "OldStatuses", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventOnRep_SlotStatuses_Parms, OldStatuses), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OldStatuses_MetaData), NewProp_OldStatuses_MetaData) }; // 318054466
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_Statics::NewProp_OldStatuses_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses_Statics::NewProp_OldStatuses,
@@ -1741,9 +1845,13 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_SetInteractableName
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Call this to change the name of the interactable. Will also refresh the interaction widget.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Call this to change the name of the interactable. Will also refresh the interaction widget." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewNameText_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1790,9 +1898,13 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Used by both players and NPCs to release a slot, adding it back into the available handles \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by both players and NPCs to release a slot, adding it back into the available handles" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Handle_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1807,7 +1919,7 @@ struct Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus_St
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus_Statics::NewProp_Handle = { "Handle", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventUpdateSlotStatus_Parms, Handle), Z_Construct_UScriptStruct_FInteractionSlotClaimHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handle_MetaData), NewProp_Handle_MetaData) }; // 3600068177
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus_Statics::NewProp_Handle = { "Handle", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventUpdateSlotStatus_Parms, Handle), Z_Construct_UScriptStruct_FInteractionSlotClaimHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handle_MetaData), NewProp_Handle_MetaData) }; // 1537703421
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus_Statics::NewProp_NewStatus_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus_Statics::NewProp_NewStatus = { "NewStatus", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeInteractableComponent_eventUpdateSlotStatus_Parms, NewStatus), Z_Construct_UEnum_NarrativeArsenal_EInteractionSlotStatus, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NewStatus_MetaData), NewProp_NewStatus_MetaData) }; // 1687533624
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus_Statics::PropPointers[] = {
@@ -1870,85 +1982,141 @@ struct Z_Construct_UClass_UNarrativeInteractableComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Not to be confused with the NarrativeInteractionComponent which enables a pawn to interact with interactables,\nthe NarrativeInteractableComponent enables an actor to be interacted with in some way. \n\nThis also contains interaction slots - these are a more lightweight implementation of UE's smartobjects however unlike SmartObjects they handle networking, \nand both NPC/Player interaction instead of being AI focused. They implement interaction behavior via a GameplayAbility which works well as lots of interaction \nneed to be latent, which GameplayAbilities excel at.See the UNarrativeInteractAbility class for more. \n\nIf no slots are added, interacting with the interactable object will just fire the OnInteract delegate - great for simple interactions like taking a pickup. \n*/" },
+#endif
 		{ "DisplayName", "Narrative Interactable" },
 		{ "IncludePath", "Interaction/InteractableComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Not to be confused with the NarrativeInteractionComponent which enables a pawn to interact with interactables,\nthe NarrativeInteractableComponent enables an actor to be interacted with in some way.\n\nThis also contains interaction slots - these are a more lightweight implementation of UE's smartobjects however unlike SmartObjects they handle networking,\nand both NPC/Player interaction instead of being AI focused. They implement interaction behavior via a GameplayAbility which works well as lots of interaction\nneed to be latent, which GameplayAbilities excel at.See the UNarrativeInteractAbility class for more.\n\nIf no slots are added, interacting with the interactable object will just fire the OnInteract delegate - great for simple interactions like taking a pickup." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionSlots_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The interactables interaction slots - this is essentially a more lightweight implementation of UE's smartobjects\n\x09that handles networking, and both NPC/Player interaction as smartobjects doesn't handle those well. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The interactables interaction slots - this is essentially a more lightweight implementation of UE's smartobjects\n       that handles networking, and both NPC/Player interaction as smartobjects doesn't handle those well." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotStatuses_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The active interaction slots\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The active interaction slots" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionTime_MetaData[] = {
 		{ "Category", "Interaction" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The time the player must hold the interact key to interact with this object\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The time the player must hold the interact key to interact with this object" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionDistance_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The max distance the player can be away from this actor before you can interact\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The max distance the player can be away from this actor before you can interact" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractableNameText_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The name that will come up when the player looks at the interactable\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name that will come up when the player looks at the interactable" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractableActionText_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The verb that describes how the interaction works, ie \"Sit\" for a chair, \"Eat\" for food, \"Light\" for a fireplace\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The verb that describes how the interaction works, ie \"Sit\" for a chair, \"Eat\" for food, \"Light\" for a fireplace" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FocusedOverlayMaterial_MetaData[] = {
 		{ "Category", "Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A material to draw over any mesh components our owner has when this interatable is focused \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A material to draw over any mesh components our owner has when this interatable is focused" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnBeginInteracted_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when the player presses the interact key whilst focusing on this interactable actor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when the player presses the interact key whilst focusing on this interactable actor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnEndInteracted_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when the player releases the interact key, stops looking at the interactable actor, or gets too far away after starting an interact\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when the player releases the interact key, stops looking at the interactable actor, or gets too far away after starting an interact" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnBeginFocus_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when the player presses the interact key whilst focusing on this interactable actor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when the player presses the interact key whilst focusing on this interactable actor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnEndFocus_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when the player releases the interact key, stops looking at the interactable actor, or gets too far away after starting an interact\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when the player releases the interact key, stops looking at the interactable actor, or gets too far away after starting an interact" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnInteracted_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when the player has interacted with the item for the required amount of time\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when the player has interacted with the item for the required amount of time" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnTargetedSlotTaken_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//[local + server] Called when a targeted slot gets removed. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/InteractableComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "[local + server] Called when a targeted slot gets removed." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InteractionSlots_Inner;
@@ -1969,19 +2137,19 @@ struct Z_Construct_UClass_UNarrativeInteractableComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_CanInteract, "CanInteract" }, // 991419014
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot, "ClaimSlot" }, // 780699931
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_GetAvailableSlots, "GetAvailableSlots" }, // 3370454744
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_GetClosestAvailableSlot, "GetClosestAvailableSlot" }, // 2338349246
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot, "GetConfigAtSlot" }, // 62875092
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_HasSlotAvailable, "HasSlotAvailable" }, // 871311676
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_CanInteract, "CanInteract" }, // 50551198
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_ClaimSlot, "ClaimSlot" }, // 3315483550
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_GetAvailableSlots, "GetAvailableSlots" }, // 271860855
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_GetClosestAvailableSlot, "GetClosestAvailableSlot" }, // 1963314829
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_GetConfigAtSlot, "GetConfigAtSlot" }, // 1778708494
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_HasSlotAvailable, "HasSlotAvailable" }, // 1387022460
 		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_OnBeginInteract, "OnBeginInteract" }, // 837065739
 		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_OnEndInteract, "OnEndInteract" }, // 2104419739
 		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_OnInteract, "OnInteract" }, // 3966365406
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses, "OnRep_SlotStatuses" }, // 726933476
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_OnRep_SlotStatuses, "OnRep_SlotStatuses" }, // 2596589624
 		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_SetInteractableActionText, "SetInteractableActionText" }, // 1605550706
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_SetInteractableNameText, "SetInteractableNameText" }, // 429348005
-		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus, "UpdateSlotStatus" }, // 2216044053
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_SetInteractableNameText, "SetInteractableNameText" }, // 2849312261
+		{ &Z_Construct_UFunction_UNarrativeInteractableComponent_UpdateSlotStatus, "UpdateSlotStatus" }, // 333392038
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1989,10 +2157,10 @@ struct Z_Construct_UClass_UNarrativeInteractableComponent_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_InteractionSlots_Inner = { "InteractionSlots", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FInteractionSlotConfig, METADATA_PARAMS(0, nullptr) }; // 345810728
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_InteractionSlots = { "InteractionSlots", nullptr, (EPropertyFlags)0x0010008000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractableComponent, InteractionSlots), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionSlots_MetaData), NewProp_InteractionSlots_MetaData) }; // 345810728
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_SlotStatuses_Inner = { "SlotStatuses", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FActiveInteractionSlot, METADATA_PARAMS(0, nullptr) }; // 3221666995
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_SlotStatuses = { "SlotStatuses", "OnRep_SlotStatuses", (EPropertyFlags)0x0010008100000034, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractableComponent, SlotStatuses), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SlotStatuses_MetaData), NewProp_SlotStatuses_MetaData) }; // 3221666995
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_InteractionSlots_Inner = { "InteractionSlots", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FInteractionSlotConfig, METADATA_PARAMS(0, nullptr) }; // 3769733267
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_InteractionSlots = { "InteractionSlots", nullptr, (EPropertyFlags)0x0010008000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractableComponent, InteractionSlots), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionSlots_MetaData), NewProp_InteractionSlots_MetaData) }; // 3769733267
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_SlotStatuses_Inner = { "SlotStatuses", nullptr, (EPropertyFlags)0x0000008000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FActiveInteractionSlot, METADATA_PARAMS(0, nullptr) }; // 318054466
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_SlotStatuses = { "SlotStatuses", "OnRep_SlotStatuses", (EPropertyFlags)0x0010008100000034, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractableComponent, SlotStatuses), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SlotStatuses_MetaData), NewProp_SlotStatuses_MetaData) }; // 318054466
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_InteractionTime = { "InteractionTime", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractableComponent, InteractionTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionTime_MetaData), NewProp_InteractionTime_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_InteractionDistance = { "InteractionDistance", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractableComponent, InteractionDistance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionDistance_MetaData), NewProp_InteractionDistance_MetaData) };
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UNarrativeInteractableComponent_Statics::NewProp_InteractableNameText = { "InteractableNameText", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeInteractableComponent, InteractableNameText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractableNameText_MetaData), NewProp_InteractableNameText_MetaData) };
@@ -2066,26 +2234,26 @@ UNarrativeInteractableComponent::~UNarrativeInteractableComponent() {}
 // End Class UNarrativeInteractableComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EInteractionSlotStatus_StaticEnum, TEXT("EInteractionSlotStatus"), &Z_Registration_Info_UEnum_EInteractionSlotStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1687533624U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FInteractionDefiniton::StaticStruct, Z_Construct_UScriptStruct_FInteractionDefiniton_Statics::NewStructOps, TEXT("InteractionDefiniton"), &Z_Registration_Info_UScriptStruct_InteractionDefiniton, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionDefiniton), 1038632964U) },
-		{ FActiveInteractionSlot::StaticStruct, Z_Construct_UScriptStruct_FActiveInteractionSlot_Statics::NewStructOps, TEXT("ActiveInteractionSlot"), &Z_Registration_Info_UScriptStruct_ActiveInteractionSlot, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FActiveInteractionSlot), 3221666995U) },
-		{ FInteractionDebugVisualizeSlot::StaticStruct, Z_Construct_UScriptStruct_FInteractionDebugVisualizeSlot_Statics::NewStructOps, TEXT("InteractionDebugVisualizeSlot"), &Z_Registration_Info_UScriptStruct_InteractionDebugVisualizeSlot, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionDebugVisualizeSlot), 202721004U) },
-		{ FInteractionSlotConfig::StaticStruct, Z_Construct_UScriptStruct_FInteractionSlotConfig_Statics::NewStructOps, TEXT("InteractionSlotConfig"), &Z_Registration_Info_UScriptStruct_InteractionSlotConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionSlotConfig), 345810728U) },
-		{ FInteractionSlotClaimHandle::StaticStruct, Z_Construct_UScriptStruct_FInteractionSlotClaimHandle_Statics::NewStructOps, TEXT("InteractionSlotClaimHandle"), &Z_Registration_Info_UScriptStruct_InteractionSlotClaimHandle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionSlotClaimHandle), 3600068177U) },
+		{ FInteractionDefiniton::StaticStruct, Z_Construct_UScriptStruct_FInteractionDefiniton_Statics::NewStructOps, TEXT("InteractionDefiniton"), &Z_Registration_Info_UScriptStruct_InteractionDefiniton, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionDefiniton), 250760251U) },
+		{ FActiveInteractionSlot::StaticStruct, Z_Construct_UScriptStruct_FActiveInteractionSlot_Statics::NewStructOps, TEXT("ActiveInteractionSlot"), &Z_Registration_Info_UScriptStruct_ActiveInteractionSlot, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FActiveInteractionSlot), 318054466U) },
+		{ FInteractionDebugVisualizeSlot::StaticStruct, Z_Construct_UScriptStruct_FInteractionDebugVisualizeSlot_Statics::NewStructOps, TEXT("InteractionDebugVisualizeSlot"), &Z_Registration_Info_UScriptStruct_InteractionDebugVisualizeSlot, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionDebugVisualizeSlot), 3946001769U) },
+		{ FInteractionSlotConfig::StaticStruct, Z_Construct_UScriptStruct_FInteractionSlotConfig_Statics::NewStructOps, TEXT("InteractionSlotConfig"), &Z_Registration_Info_UScriptStruct_InteractionSlotConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionSlotConfig), 3769733267U) },
+		{ FInteractionSlotClaimHandle::StaticStruct, Z_Construct_UScriptStruct_FInteractionSlotClaimHandle_Statics::NewStructOps, TEXT("InteractionSlotClaimHandle"), &Z_Registration_Info_UScriptStruct_InteractionSlotClaimHandle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionSlotClaimHandle), 1537703421U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UInteractionSlotBehavior, UInteractionSlotBehavior::StaticClass, TEXT("UInteractionSlotBehavior"), &Z_Registration_Info_UClass_UInteractionSlotBehavior, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInteractionSlotBehavior), 1153966979U) },
-		{ Z_Construct_UClass_UNarrativeInteractableComponent, UNarrativeInteractableComponent::StaticClass, TEXT("UNarrativeInteractableComponent"), &Z_Registration_Info_UClass_UNarrativeInteractableComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInteractableComponent), 331557743U) },
+		{ Z_Construct_UClass_UInteractionSlotBehavior, UInteractionSlotBehavior::StaticClass, TEXT("UInteractionSlotBehavior"), &Z_Registration_Info_UClass_UInteractionSlotBehavior, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInteractionSlotBehavior), 358439176U) },
+		{ Z_Construct_UClass_UNarrativeInteractableComponent, UNarrativeInteractableComponent::StaticClass, TEXT("UNarrativeInteractableComponent"), &Z_Registration_Info_UClass_UNarrativeInteractableComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInteractableComponent), 1966016352U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_540456841(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_234984662(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_InteractableComponent_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

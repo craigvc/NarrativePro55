@@ -42,9 +42,13 @@ struct Z_Construct_UFunction_UArsenalStatics_AddFactionsToActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Teams" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Put the actor in the given factions, provided it implements the team interface. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Put the actor in the given factions, provided it implements the team interface." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Factions_MetaData[] = {
 		{ "Categories", "Narrative.Factions" },
@@ -153,9 +157,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetCharacterCreatorMapName_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the charactor creator map name defined in the Narrative Pro settings. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the charactor creator map name defined in the Narrative Pro settings." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FNamePropertyParams NewProp_ReturnValue;
@@ -197,9 +205,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetCombatSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//BP getter for combat Settings. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "BP getter for combat Settings." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -241,9 +253,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetGameEntryMapName_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the game entry map name defined in the Narrative Pro settings. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the game entry map name defined in the Narrative Pro settings." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FNamePropertyParams NewProp_ReturnValue;
@@ -285,9 +301,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetGameplayDifficultyLevel_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the current gameplay difficulty level\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the current gameplay difficulty level" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -332,9 +352,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetGameResolution_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Resolution" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the current screen resolution\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the current screen resolution" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -377,9 +401,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the narrative game mode\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the narrative game mode" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -430,9 +458,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the narrative game state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the narrative game state" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -482,9 +514,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameUserSettings_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the narrative game user settings\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the narrative game user settings" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -526,9 +562,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetNarrativeProSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the narrative pro settings with the values configured in your DefaultEngine.ini file.  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the narrative pro settings with the values configured in your DefaultEngine.ini file." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -570,9 +610,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetNarrativeUISettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//BP getter for UI Settings.  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "BP getter for UI Settings." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -615,9 +659,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetTimeOfDay_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the ingame time of day \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the ingame time of day" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -668,9 +716,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetTimeOfDayAsString_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the ingame time of day, formatted as a string ie 16:35\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the ingame time of day, formatted as a string ie 16:35" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -720,9 +772,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetTimeOfDaySettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the time of day settings with the values configured in your DefaultGame.ini file.  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the time of day settings with the values configured in your DefaultGame.ini file." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -765,9 +821,13 @@ struct Z_Construct_UFunction_UArsenalStatics_GetTotalAccumulatedTime_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the total accumulated time since the player started playing the game, where 2400 is one full ingame day. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the total accumulated time since the player started playing the game, where 2400 is one full ingame day." },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -819,9 +879,13 @@ struct Z_Construct_UFunction_UArsenalStatics_IsSameTeam_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Teams" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Checks we're the same team, not just that we're friendly with each other.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks we're the same team, not just that we're friendly with each other." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TestActor_MetaData[] = {
 		{ "NativeConst", "" },
@@ -885,9 +949,13 @@ struct Z_Construct_UFunction_UArsenalStatics_IsTimeInRange_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//check if the time of day provided falls in the given range - handles looping over to the next day \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "check if the time of day provided falls in the given range - handles looping over to the next day" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Time_MetaData[] = {
 		{ "NativeConst", "" },
@@ -956,9 +1024,13 @@ struct Z_Construct_UFunction_UArsenalStatics_RemoveFactionsFromActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Teams" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//remove the actor from the given factions, provided it implements the team interface. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "remove the actor from the given factions, provided it implements the team interface." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Factions_MetaData[] = {
 		{ "Categories", "Narrative.Factions" },
@@ -1011,9 +1083,13 @@ struct Z_Construct_UFunction_UArsenalStatics_ReplaceInputVariables_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Wildcards" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Given some text, replace any {Input.Interact} style inputs with their rich text platform specific icon equivalents, ie {Input.Attack} becomes <img id=Input.Xbox.Attack/>\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Given some text, replace any {Input.Interact} style inputs with their rich text platform specific icon equivalents, ie {Input.Attack} becomes <img id=Input.Xbox.Attack/>" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PC;
@@ -1064,9 +1140,13 @@ struct Z_Construct_UFunction_UArsenalStatics_TimeToString_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Convert the float time into a 24 hour string\n" },
+#endif
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Convert the float time into a 24 hour string" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Time_MetaData[] = {
@@ -1144,35 +1224,39 @@ struct Z_Construct_UClass_UArsenalStatics_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Useful BP exposed functions for Narrative Pro. \n */" },
+#endif
 		{ "IncludePath", "ArsenalStatics.h" },
 		{ "ModuleRelativePath", "Public/ArsenalStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Useful BP exposed functions for Narrative Pro." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UArsenalStatics_AddFactionsToActor, "AddFactionsToActor" }, // 3100570937
+		{ &Z_Construct_UFunction_UArsenalStatics_AddFactionsToActor, "AddFactionsToActor" }, // 1015925946
 		{ &Z_Construct_UFunction_UArsenalStatics_GetAttitude, "GetAttitude" }, // 3736357463
-		{ &Z_Construct_UFunction_UArsenalStatics_GetCharacterCreatorMapName, "GetCharacterCreatorMapName" }, // 1264302251
-		{ &Z_Construct_UFunction_UArsenalStatics_GetCombatSettings, "GetCombatSettings" }, // 2673802078
-		{ &Z_Construct_UFunction_UArsenalStatics_GetGameEntryMapName, "GetGameEntryMapName" }, // 3448834121
-		{ &Z_Construct_UFunction_UArsenalStatics_GetGameplayDifficultyLevel, "GetGameplayDifficultyLevel" }, // 2440246040
-		{ &Z_Construct_UFunction_UArsenalStatics_GetGameResolution, "GetGameResolution" }, // 306135454
-		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameMode, "GetNarrativeGameMode" }, // 2261127101
-		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameState, "GetNarrativeGameState" }, // 1094295193
-		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameUserSettings, "GetNarrativeGameUserSettings" }, // 338520600
-		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeProSettings, "GetNarrativeProSettings" }, // 2359277252
-		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeUISettings, "GetNarrativeUISettings" }, // 494267421
-		{ &Z_Construct_UFunction_UArsenalStatics_GetTimeOfDay, "GetTimeOfDay" }, // 2061560295
-		{ &Z_Construct_UFunction_UArsenalStatics_GetTimeOfDayAsString, "GetTimeOfDayAsString" }, // 1282030102
-		{ &Z_Construct_UFunction_UArsenalStatics_GetTimeOfDaySettings, "GetTimeOfDaySettings" }, // 2265504151
-		{ &Z_Construct_UFunction_UArsenalStatics_GetTotalAccumulatedTime, "GetTotalAccumulatedTime" }, // 172786774
-		{ &Z_Construct_UFunction_UArsenalStatics_IsSameTeam, "IsSameTeam" }, // 2741074797
-		{ &Z_Construct_UFunction_UArsenalStatics_IsTimeInRange, "IsTimeInRange" }, // 3413024601
-		{ &Z_Construct_UFunction_UArsenalStatics_RemoveFactionsFromActor, "RemoveFactionsFromActor" }, // 475974797
-		{ &Z_Construct_UFunction_UArsenalStatics_ReplaceInputVariables, "ReplaceInputVariables" }, // 490044143
-		{ &Z_Construct_UFunction_UArsenalStatics_TimeToString, "TimeToString" }, // 3424684644
+		{ &Z_Construct_UFunction_UArsenalStatics_GetCharacterCreatorMapName, "GetCharacterCreatorMapName" }, // 3832074176
+		{ &Z_Construct_UFunction_UArsenalStatics_GetCombatSettings, "GetCombatSettings" }, // 2547487223
+		{ &Z_Construct_UFunction_UArsenalStatics_GetGameEntryMapName, "GetGameEntryMapName" }, // 1463235614
+		{ &Z_Construct_UFunction_UArsenalStatics_GetGameplayDifficultyLevel, "GetGameplayDifficultyLevel" }, // 1447635765
+		{ &Z_Construct_UFunction_UArsenalStatics_GetGameResolution, "GetGameResolution" }, // 1019010452
+		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameMode, "GetNarrativeGameMode" }, // 2046852757
+		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameState, "GetNarrativeGameState" }, // 3664701844
+		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeGameUserSettings, "GetNarrativeGameUserSettings" }, // 3536617669
+		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeProSettings, "GetNarrativeProSettings" }, // 1483942422
+		{ &Z_Construct_UFunction_UArsenalStatics_GetNarrativeUISettings, "GetNarrativeUISettings" }, // 2701425510
+		{ &Z_Construct_UFunction_UArsenalStatics_GetTimeOfDay, "GetTimeOfDay" }, // 58938164
+		{ &Z_Construct_UFunction_UArsenalStatics_GetTimeOfDayAsString, "GetTimeOfDayAsString" }, // 1024394599
+		{ &Z_Construct_UFunction_UArsenalStatics_GetTimeOfDaySettings, "GetTimeOfDaySettings" }, // 1440944569
+		{ &Z_Construct_UFunction_UArsenalStatics_GetTotalAccumulatedTime, "GetTotalAccumulatedTime" }, // 2693310834
+		{ &Z_Construct_UFunction_UArsenalStatics_IsSameTeam, "IsSameTeam" }, // 594393350
+		{ &Z_Construct_UFunction_UArsenalStatics_IsTimeInRange, "IsTimeInRange" }, // 1188513857
+		{ &Z_Construct_UFunction_UArsenalStatics_RemoveFactionsFromActor, "RemoveFactionsFromActor" }, // 2522170209
+		{ &Z_Construct_UFunction_UArsenalStatics_ReplaceInputVariables, "ReplaceInputVariables" }, // 1203460858
+		{ &Z_Construct_UFunction_UArsenalStatics_TimeToString, "TimeToString" }, // 218963916
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1218,14 +1302,14 @@ UArsenalStatics::~UArsenalStatics() {}
 // End Class UArsenalStatics
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalStatics_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalStatics_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UArsenalStatics, UArsenalStatics::StaticClass, TEXT("UArsenalStatics"), &Z_Registration_Info_UClass_UArsenalStatics, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UArsenalStatics), 706564513U) },
+		{ Z_Construct_UClass_UArsenalStatics, UArsenalStatics::StaticClass, TEXT("UArsenalStatics"), &Z_Registration_Info_UClass_UArsenalStatics, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UArsenalStatics), 2606066565U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalStatics_h_3016874998(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalStatics_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalStatics_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalStatics_h_639505056(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalStatics_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_ArsenalStatics_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

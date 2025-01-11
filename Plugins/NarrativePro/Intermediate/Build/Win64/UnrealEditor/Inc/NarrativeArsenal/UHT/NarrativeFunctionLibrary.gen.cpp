@@ -33,11 +33,15 @@ struct Z_Construct_UFunction_UNarrativeFunctionLibrary_CompleteLooseNarrativeDat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09Use this when you want to log a data task, but don't need a data task asset. For example if you tracked player finding items you'd create a \"FindItem\" data task asset,\n\x09""but sometimes you just want to track something super random and creating a whole task asset is overkill and just storing the argument is good enough */" },
+#endif
 		{ "CPP_Default_Quantity", "1" },
 		{ "DisplayName", "Complete Loose Narrative Data Task" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use this when you want to log a data task, but don't need a data task asset. For example if you tracked player finding items you'd create a \"FindItem\" data task asset,\nbut sometimes you just want to track something super random and creating a whole task asset is overkill and just storing the argument is good enough" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Target_MetaData[] = {
 		{ "EditInline", "true" },
@@ -110,11 +114,15 @@ struct Z_Construct_UFunction_UNarrativeFunctionLibrary_CompleteNarrativeDataTask
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Calls CompleteNarrativeTask on the narrative component\n\x09*\n\x09* @return Whether the task updated a quest \n\x09*/" },
+#endif
 		{ "CPP_Default_Quantity", "1" },
 		{ "DisplayName", "Complete Narrative Data Task" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Calls CompleteNarrativeTask on the narrative component\n\n@return Whether the task updated a quest" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Target_MetaData[] = {
 		{ "EditInline", "true" },
@@ -190,10 +198,14 @@ struct Z_Construct_UFunction_UNarrativeFunctionLibrary_GetNarrativeComponentFrom
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Find the narrative component from the supplied target object. \n\x09*\n\x09* @return The narrative component.\n\x09*/" },
+#endif
 		{ "DefaultToSelf", "Target" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Find the narrative component from the supplied target object.\n\n@return The narrative component." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -243,9 +255,13 @@ struct Z_Construct_UFunction_UNarrativeFunctionLibrary_GetTalesComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Grab the narrative component from the local pawn or player controller, whichever it exists on. \n\x09* \n\x09* @return The narrative component.\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab the narrative component from the local pawn or player controller, whichever it exists on.\n\n@return The narrative component." },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -300,9 +316,13 @@ struct Z_Construct_UFunction_UNarrativeFunctionLibrary_GetTaskByName_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab a narrative task by its name. Try use asset references instead of this if possible, since an task being renamed will break your code\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab a narrative task by its name. Try use asset references instead of this if possible, since an task being renamed will break your code" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -360,9 +380,13 @@ struct Z_Construct_UFunction_UNarrativeFunctionLibrary_MakeDisplayString_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Just used by narrative UI, BP exposed FName::NameToDisplayString\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Just used by narrative UI, BP exposed FName::NameToDisplayString" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_String_MetaData[] = {
 		{ "NativeConst", "" },
@@ -424,20 +448,24 @@ struct Z_Construct_UClass_UNarrativeFunctionLibrary_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * General functions used by narrative \n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeFunctionLibrary.h" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "General functions used by narrative" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_CompleteLooseNarrativeDataTask, "CompleteLooseNarrativeDataTask" }, // 4051869218
-		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_CompleteNarrativeDataTask, "CompleteNarrativeDataTask" }, // 4137418037
-		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_GetNarrativeComponentFromTarget, "GetNarrativeComponentFromTarget" }, // 422107062
-		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_GetTalesComponent, "GetTalesComponent" }, // 3357579402
-		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_GetTaskByName, "GetTaskByName" }, // 2398938004
-		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_MakeDisplayString, "MakeDisplayString" }, // 381546721
+		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_CompleteLooseNarrativeDataTask, "CompleteLooseNarrativeDataTask" }, // 1204710553
+		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_CompleteNarrativeDataTask, "CompleteNarrativeDataTask" }, // 36300910
+		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_GetNarrativeComponentFromTarget, "GetNarrativeComponentFromTarget" }, // 1779124004
+		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_GetTalesComponent, "GetTalesComponent" }, // 3951955554
+		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_GetTaskByName, "GetTaskByName" }, // 2679330166
+		{ &Z_Construct_UFunction_UNarrativeFunctionLibrary_MakeDisplayString, "MakeDisplayString" }, // 4080328213
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -483,14 +511,14 @@ UNarrativeFunctionLibrary::~UNarrativeFunctionLibrary() {}
 // End Class UNarrativeFunctionLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeFunctionLibrary_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeFunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeFunctionLibrary, UNarrativeFunctionLibrary::StaticClass, TEXT("UNarrativeFunctionLibrary"), &Z_Registration_Info_UClass_UNarrativeFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeFunctionLibrary), 1410111460U) },
+		{ Z_Construct_UClass_UNarrativeFunctionLibrary, UNarrativeFunctionLibrary::StaticClass, TEXT("UNarrativeFunctionLibrary"), &Z_Registration_Info_UClass_UNarrativeFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeFunctionLibrary), 3599389353U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeFunctionLibrary_h_2146444325(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeFunctionLibrary_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeFunctionLibrary_h_1271555345(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeFunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -34,9 +34,13 @@ struct Z_Construct_UScriptStruct_FStableActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Special type that can be used like any old actor reference, but persists through play sessions as it also caches the actors GUID. \n * Only works with actors that implement IStableActor and return a GUID via IStableActor.GetGUID()\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/StableActor/StableActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Special type that can be used like any old actor reference, but persists through play sessions as it also caches the actors GUID.\nOnly works with actors that implement IStableActor and return a GUID via IStableActor.GetGUID()" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StableActorGUID_MetaData[] = {
 		{ "Category", "Stable Actor" },
@@ -80,15 +84,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FStableActor()
 // End ScriptStruct FStableActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FStableActor::StaticStruct, Z_Construct_UScriptStruct_FStableActor_Statics::NewStructOps, TEXT("StableActor"), &Z_Registration_Info_UScriptStruct_StableActor, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FStableActor), 445850525U) },
+		{ FStableActor::StaticStruct, Z_Construct_UScriptStruct_FStableActor_Statics::NewStructOps, TEXT("StableActor"), &Z_Registration_Info_UScriptStruct_StableActor, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FStableActor), 3480758991U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_1643521911(TEXT("/Script/NarrativeArsenal"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_3957672243(TEXT("/Script/NarrativeArsenal"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActor_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

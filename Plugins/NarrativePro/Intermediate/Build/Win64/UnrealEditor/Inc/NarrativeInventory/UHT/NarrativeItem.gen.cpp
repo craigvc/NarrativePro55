@@ -72,27 +72,43 @@ struct Z_Construct_UScriptStruct_FNarrativeItemStat_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A stat that can be shown in the item preview window\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A stat that can be shown in the item preview window" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StatDisplayName_MetaData[] = {
 		{ "Category", "Item Stat" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The stats display name.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The stats display name." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StringVariable_MetaData[] = {
 		{ "Category", "Item Stat" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The backing string variable for the stat - implemented using GetStringVariable function that can be overriden in Blueprints! \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The backing string variable for the stat - implemented using GetStringVariable function that can be overriden in Blueprints!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StatTooltip_MetaData[] = {
 		{ "Category", "Item Stat" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tooltip the stat will show when hovered \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tooltip the stat will show when hovered" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_StatDisplayName;
@@ -156,9 +172,13 @@ struct Z_Construct_UFunction_UNarrativeItem_Activated_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* If this item is activatable, this will be called when the item is activated\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If this item is activatable, this will be called when the item is activated" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -213,9 +233,13 @@ struct Z_Construct_UFunction_UNarrativeItem_CanBeRemoved_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Allows you to define whether or not the item can be dropped, nice for if you want to implement special quest items that cannot be dropped for example \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to define whether or not the item can be dropped, nice for if you want to implement special quest items that cannot be dropped for example" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -283,9 +307,13 @@ struct Z_Construct_UFunction_UNarrativeItem_CanUse_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Allows you to define whether the item can be used or not.\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to define whether the item can be used or not." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -341,9 +369,13 @@ struct Z_Construct_UFunction_UNarrativeItem_Deactivated_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* If this item is activatable, this will be called when the item is deactivated\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If this item is activatable, this will be called when the item is deactivated" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -545,9 +577,13 @@ struct Z_Construct_UFunction_UNarrativeItem_GetParsedDescription_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Return the description, with any string variables parsed out\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the description, with any string variables parsed out" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -646,9 +682,13 @@ struct Z_Construct_UFunction_UNarrativeItem_GetRawDescription_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return the description - allows BPs to override this in case you want automatically dynamically generated descriptions based on the items properties. */" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the description - allows BPs to override this in case you want automatically dynamically generated descriptions based on the items properties." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -690,9 +730,13 @@ struct Z_Construct_UFunction_UNarrativeItem_GetStackSpace_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the amount of space the item stack has left \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the amount of space the item stack has left" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
@@ -793,9 +837,13 @@ struct Z_Construct_UFunction_UNarrativeItem_GetStringVariable_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Allows you to use variables in your items description, ie Hello {Item Name}.\n\x09*\n\x09* Simply override this function, then check the value of variable name and return whatever value you like!\n\x09*\n\x09* ie if(VariableName == \"PlayerName\") {return OwningPawn->GetUsername();}; - then Hello {PlayerName}! will automatically become Hello xXNoobPwner420Xx! etc \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to use variables in your items description, ie Hello {Item Name}.\n\nSimply override this function, then check the value of variable name and return whatever value you like!\n\nie if(VariableName == \"PlayerName\") {return OwningPawn->GetUsername();}; - then Hello {PlayerName}! will automatically become Hello xXNoobPwner420Xx! etc" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VariableName_MetaData[] = {
 		{ "NativeConst", "" },
@@ -887,9 +935,13 @@ struct Z_Construct_UFunction_UNarrativeItem_MarkDirtyForReplication_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Mark the object as needing replication. We must call this internally after modifying any replicated properties*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Mark the object as needing replication. We must call this internally after modifying any replicated properties" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -1178,9 +1230,13 @@ struct Z_Construct_UFunction_UNarrativeItem_ShouldShowInInventory_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Allows you to define whether the item should be shown in the inventory, you may want to hide items from time to time\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to define whether the item should be shown in the inventory, you may want to hide items from time to time" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -1248,9 +1304,13 @@ struct Z_Construct_UFunction_UNarrativeItem_ShouldUseOnAdd_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Define whether the item should automatically use itself when added to our inventory.\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Define whether the item should automatically use itself when added to our inventory." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -1327,155 +1387,243 @@ struct Z_Construct_UClass_UNarrativeItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Item is the base class for an item that can be added to the inventory\n */" },
+#endif
 		{ "IncludePath", "NarrativeItem.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Item is the base class for an item that can be added to the inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_World_MetaData[] = {
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PickupMesh_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The mesh to display for this items pickup*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The mesh to display for this items pickup" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Thumbnail_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The thumbnail for this item*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The thumbnail for this item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseSound_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The use sound for the item*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The use sound for the item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DisplayName_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The display name for this item in the inventory*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name for this item in the inventory" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Description_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**An optional description for the item*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
 		{ "MultiLine", "TRUE" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An optional description for the item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Weight_MetaData[] = {
 		{ "Category", "Item" },
 		{ "ClampMin", "0.000000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The weight of the item*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The weight of the item" },
+#endif
 		{ "Units", "Kilograms" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemTags_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Any gameplay tags we wish to give this item*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Any gameplay tags we wish to give this item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BaseValue_MetaData[] = {
 		{ "Category", "Item - Trade" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This is the value of the item, used by vendors. */" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This is the value of the item, used by vendors." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bConsumeOnUse_MetaData[] = {
 		{ "Category", "Item - Usage" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**If true, 1 of this item will be consumed every time the item is used. */" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, 1 of this item will be consumed every time the item is used." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseActionText_MetaData[] = {
 		{ "Category", "Item - Usage" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The text for using the item. (Equip, Eat, etc)*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The text for using the item. (Equip, Eat, etc)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseRechargeDuration_MetaData[] = {
 		{ "Category", "Item - Usage" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The amount of time you have to wait between uses of the item, 0 means no recharge delay at all*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of time you have to wait between uses of the item, 0 means no recharge delay at all" },
+#endif
 		{ "Units", "Seconds" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCanActivate_MetaData[] = {
 		{ "Category", "Item - Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Some items might need to be activatable. Check this box if you want the item to be able to activate. \n\x09""Activating will mean different things for different item types, for example clothing being activated would\n\x09mean it equips to the player - you define this using the Activate and Deactivate() functions. \n\x09\n\x09""Activated items will also show a check on the UI*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Some items might need to be activatable. Check this box if you want the item to be able to activate.\n       Activating will mean different things for different item types, for example clothing being activated would\n       mean it equips to the player - you define this using the Activate and Deactivate() functions.\n\n       Activated items will also show a check on the UI" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bToggleActiveOnUse_MetaData[] = {
 		{ "Category", "Item - Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**If checked, using this item will cause it to activate/deactivate*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If checked, using this item will cause it to activate/deactivate" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bActive_MetaData[] = {
 		{ "Category", "Item - Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return true if this item is active */" },
+#endif
 		{ "EditCondition", "bCanActivate" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if this item is active" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bFavourite_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Whether or not this item has been favourited*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not this item has been favourited" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bStackable_MetaData[] = {
 		{ "Category", "Item - Stacking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Whether or not this item can be stacked*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not this item can be stacked" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxStackSize_MetaData[] = {
 		{ "Category", "Item - Stacking" },
 		{ "ClampMin", "2" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The maximum size that a stack of items can be*/" },
+#endif
 		{ "EditCondition", "bStackable" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum size that a stack of items can be" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Stats_MetaData[] = {
 		{ "Category", "Item - UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The stats to show in the Item Preview UI - make sure to implement GetStringVariable function and return a value matching each stat you add.\n\x09\n\x09Items have 6 stats supported out of the box, Display Name, Weight, Stack Weight, Quantity, Recharge Duration, and Max Stack Size - if you want to add more simply\n\x09override the GetStringVariable function and return a valid value for your desired variable\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The stats to show in the Item Preview UI - make sure to implement GetStringVariable function and return a value matching each stat you add.\n\n       Items have 6 stats supported out of the box, Display Name, Weight, Stack Weight, Quantity, Recharge Duration, and Max Stack Size - if you want to add more simply\n       override the GetStringVariable function and return a valid value for your desired variable" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningInventory_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The inventory that owns this item*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The inventory that owns this item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RepKey_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Used to efficiently replicate inventory items*/" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used to efficiently replicate inventory items" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnItemModified_MetaData[] = {
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Quantity_MetaData[] = {
 		{ "Category", "Item" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The amount of the item*/" },
+#endif
 		{ "EditCondition", "bStackable" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/NarrativeItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of the item" },
+#endif
 		{ "UIMin", "1" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LastUseTime_MetaData[] = {
@@ -1517,29 +1665,29 @@ struct Z_Construct_UClass_UNarrativeItem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeItem_Activated, "Activated" }, // 1166579378
-		{ &Z_Construct_UFunction_UNarrativeItem_CanBeRemoved, "CanBeRemoved" }, // 98271267
-		{ &Z_Construct_UFunction_UNarrativeItem_CanUse, "CanUse" }, // 3983262073
-		{ &Z_Construct_UFunction_UNarrativeItem_Deactivated, "Deactivated" }, // 944740404
+		{ &Z_Construct_UFunction_UNarrativeItem_Activated, "Activated" }, // 1935724010
+		{ &Z_Construct_UFunction_UNarrativeItem_CanBeRemoved, "CanBeRemoved" }, // 2164880030
+		{ &Z_Construct_UFunction_UNarrativeItem_CanUse, "CanUse" }, // 3055461434
+		{ &Z_Construct_UFunction_UNarrativeItem_Deactivated, "Deactivated" }, // 2140734460
 		{ &Z_Construct_UFunction_UNarrativeItem_GetLastUseTime, "GetLastUseTime" }, // 1820025000
 		{ &Z_Construct_UFunction_UNarrativeItem_GetMaxStackSize, "GetMaxStackSize" }, // 3123914061
 		{ &Z_Construct_UFunction_UNarrativeItem_GetOwningController, "GetOwningController" }, // 3336804061
 		{ &Z_Construct_UFunction_UNarrativeItem_GetOwningPawn, "GetOwningPawn" }, // 2519917773
-		{ &Z_Construct_UFunction_UNarrativeItem_GetParsedDescription, "GetParsedDescription" }, // 285957464
+		{ &Z_Construct_UFunction_UNarrativeItem_GetParsedDescription, "GetParsedDescription" }, // 1969483408
 		{ &Z_Construct_UFunction_UNarrativeItem_GetQuantity, "GetQuantity" }, // 1230997374
-		{ &Z_Construct_UFunction_UNarrativeItem_GetRawDescription, "GetRawDescription" }, // 455840656
-		{ &Z_Construct_UFunction_UNarrativeItem_GetStackSpace, "GetStackSpace" }, // 2245608918
+		{ &Z_Construct_UFunction_UNarrativeItem_GetRawDescription, "GetRawDescription" }, // 2570884525
+		{ &Z_Construct_UFunction_UNarrativeItem_GetStackSpace, "GetStackSpace" }, // 1628318600
 		{ &Z_Construct_UFunction_UNarrativeItem_GetStackWeight, "GetStackWeight" }, // 606078975
-		{ &Z_Construct_UFunction_UNarrativeItem_GetStringVariable, "GetStringVariable" }, // 3562601843
+		{ &Z_Construct_UFunction_UNarrativeItem_GetStringVariable, "GetStringVariable" }, // 1750889652
 		{ &Z_Construct_UFunction_UNarrativeItem_IsStackFull, "IsStackFull" }, // 1749443527
-		{ &Z_Construct_UFunction_UNarrativeItem_MarkDirtyForReplication, "MarkDirtyForReplication" }, // 3038543479
+		{ &Z_Construct_UFunction_UNarrativeItem_MarkDirtyForReplication, "MarkDirtyForReplication" }, // 375216120
 		{ &Z_Construct_UFunction_UNarrativeItem_OnRep_bActive, "OnRep_bActive" }, // 489913197
 		{ &Z_Construct_UFunction_UNarrativeItem_OnRep_Quantity, "OnRep_Quantity" }, // 3952461149
 		{ &Z_Construct_UFunction_UNarrativeItem_OnUse, "OnUse" }, // 29390388
 		{ &Z_Construct_UFunction_UNarrativeItem_SetActive, "SetActive" }, // 254289900
 		{ &Z_Construct_UFunction_UNarrativeItem_SetLastUseTime, "SetLastUseTime" }, // 3231951260
-		{ &Z_Construct_UFunction_UNarrativeItem_ShouldShowInInventory, "ShouldShowInInventory" }, // 3272636649
-		{ &Z_Construct_UFunction_UNarrativeItem_ShouldUseOnAdd, "ShouldUseOnAdd" }, // 418378278
+		{ &Z_Construct_UFunction_UNarrativeItem_ShouldShowInInventory, "ShouldShowInInventory" }, // 1444357960
+		{ &Z_Construct_UFunction_UNarrativeItem_ShouldUseOnAdd, "ShouldUseOnAdd" }, // 3378943289
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1589,8 +1737,8 @@ void Z_Construct_UClass_UNarrativeItem_Statics::NewProp_bStackable_SetBit(void* 
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_bStackable = { "bStackable", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UNarrativeItem), &Z_Construct_UClass_UNarrativeItem_Statics::NewProp_bStackable_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bStackable_MetaData), NewProp_bStackable_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_MaxStackSize = { "MaxStackSize", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeItem, MaxStackSize), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxStackSize_MetaData), NewProp_MaxStackSize_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_Stats_Inner = { "Stats", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeItemStat, METADATA_PARAMS(0, nullptr) }; // 3878473346
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_Stats = { "Stats", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeItem, Stats), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Stats_MetaData), NewProp_Stats_MetaData) }; // 3878473346
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_Stats_Inner = { "Stats", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FNarrativeItemStat, METADATA_PARAMS(0, nullptr) }; // 2915597606
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_Stats = { "Stats", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeItem, Stats), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Stats_MetaData), NewProp_Stats_MetaData) }; // 2915597606
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_OwningInventory = { "OwningInventory", nullptr, (EPropertyFlags)0x001000000008001c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeItem, OwningInventory), Z_Construct_UClass_UNarrativeInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningInventory_MetaData), NewProp_OwningInventory_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_RepKey = { "RepKey", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeItem, RepKey), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RepKey_MetaData), NewProp_RepKey_MetaData) };
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeItem_Statics::NewProp_OnItemModified = { "OnItemModified", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeItem, OnItemModified), Z_Construct_UDelegateFunction_NarrativeInventory_OnItemModified__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemModified_MetaData), NewProp_OnItemModified_MetaData) }; // 2110759853
@@ -1672,18 +1820,18 @@ UNarrativeItem::~UNarrativeItem() {}
 // End Class UNarrativeItem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FNarrativeItemStat::StaticStruct, Z_Construct_UScriptStruct_FNarrativeItemStat_Statics::NewStructOps, TEXT("NarrativeItemStat"), &Z_Registration_Info_UScriptStruct_NarrativeItemStat, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNarrativeItemStat), 3878473346U) },
+		{ FNarrativeItemStat::StaticStruct, Z_Construct_UScriptStruct_FNarrativeItemStat_Statics::NewStructOps, TEXT("NarrativeItemStat"), &Z_Registration_Info_UScriptStruct_NarrativeItemStat, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNarrativeItemStat), 2915597606U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeItem, UNarrativeItem::StaticClass, TEXT("UNarrativeItem"), &Z_Registration_Info_UClass_UNarrativeItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeItem), 3380934775U) },
+		{ Z_Construct_UClass_UNarrativeItem, UNarrativeItem::StaticClass, TEXT("UNarrativeItem"), &Z_Registration_Info_UClass_UNarrativeItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeItem), 357461506U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_1046245327(TEXT("/Script/NarrativeInventory"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_2172659195(TEXT("/Script/NarrativeInventory"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_NarrativeItem_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

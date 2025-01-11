@@ -32,22 +32,32 @@ struct Z_Construct_UClass_UCharacterCreatorOption_Vector_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "CharacterCreator/Options/CharacterCreatorOption_Vector.h" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Vector.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VectorTagID_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Vectors" },
 		{ "Category", "Vector Value" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The ID you can use to reference this Vector value \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Vector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ID you can use to reference this Vector value" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AvailableOptions_MetaData[] = {
 		{ "Category", "Vector Value" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The values that can be selected for this option - value will default to first color in the swatch. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Options/CharacterCreatorOption_Vector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The values that can be selected for this option - value will default to first color in the swatch." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_VectorTagID;
@@ -103,14 +113,14 @@ UCharacterCreatorOption_Vector::~UCharacterCreatorOption_Vector() {}
 // End Class UCharacterCreatorOption_Vector
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Vector_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Vector_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterCreatorOption_Vector, UCharacterCreatorOption_Vector::StaticClass, TEXT("UCharacterCreatorOption_Vector"), &Z_Registration_Info_UClass_UCharacterCreatorOption_Vector, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorOption_Vector), 2438669562U) },
+		{ Z_Construct_UClass_UCharacterCreatorOption_Vector, UCharacterCreatorOption_Vector::StaticClass, TEXT("UCharacterCreatorOption_Vector"), &Z_Registration_Info_UClass_UCharacterCreatorOption_Vector, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorOption_Vector), 200469266U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Vector_h_2727389514(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Vector_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Vector_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Vector_h_2841562821(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Vector_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Options_CharacterCreatorOption_Vector_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

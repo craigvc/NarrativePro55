@@ -47,7 +47,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EPartyEventPolicy_Statics
 		{ "AllPartyMembers.DisplayName", "All Party Members" },
 		{ "AllPartyMembers.Name", "EPartyEventPolicy::AllPartyMembers" },
 		{ "AllPartyMembers.ToolTip", "The event is run on every party member - for example if your event gave the player a reward, every member in the party would receive the award." },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//How do we handle running this event on a party?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
 		{ "Party.Comment", "/**The event is run on the party itself - Use this if you want the event to effect the party in some way - for example if you want your event\n\x09to begin a quest for all members in the party, use this to run the event on the parties narrative component. */" },
 		{ "Party.DisplayName", "Party" },
@@ -57,7 +59,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EPartyEventPolicy_Statics
 		{ "PartyLeader.DisplayName", "Party Leader" },
 		{ "PartyLeader.Name", "EPartyEventPolicy::PartyLeader" },
 		{ "PartyLeader.ToolTip", "The event is run on the party leader - for example if your event gave the player a reward, only the party leader would receieve the award." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How do we handle running this event on a party?" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -111,7 +115,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EEventRuntime_Statics
 		{ "Both.Comment", "// Run the event at both start and end. This means your event will be executed twice. \n" },
 		{ "Both.Name", "EEventRuntime::Both" },
 		{ "Both.ToolTip", "Run the event at both start and end. This means your event will be executed twice." },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n* Used for picking when an event should run\n*/" },
+#endif
 		{ "End.Comment", "/* Execute the event at the end. \n\n\x09""For dialogue, this is when the dialogue line finishes playing.\n\x09""For Quest states, this is when the state is exited\n\x09""For Quest branches, this is when the branch gets taken to a new state and gets deactivated. \n\x09*/" },
 		{ "End.Name", "EEventRuntime::End" },
 		{ "End.ToolTip", "Execute the event at the end.\n\n      For dialogue, this is when the dialogue line finishes playing.\n      For Quest states, this is when the state is exited\n      For Quest branches, this is when the branch gets taken to a new state and gets deactivated." },
@@ -119,7 +125,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EEventRuntime_Statics
 		{ "Start.Comment", "/* Execute the event at the start.\n\n\x09""For dialogue, this is when the dialogue line starts playing.\n\x09""For Quest states, this is when the state is entered\n\x09""For Quest branches, this is when the branch becomes active\n\x09*/" },
 		{ "Start.Name", "EEventRuntime::Start" },
 		{ "Start.ToolTip", "Execute the event at the start.\n\n      For dialogue, this is when the dialogue line starts playing.\n      For Quest states, this is when the state is entered\n      For Quest branches, this is when the branch becomes active" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used for picking when an event should run" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -170,7 +178,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EEventFilter_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n* Used for picking who an event should be allowed to run on \n*/" },
+#endif
 		{ "EF_Anyone.DisplayName", "Anyone" },
 		{ "EF_Anyone.Name", "EEventFilter::EF_Anyone" },
 		{ "EF_OnlyNPCs.DisplayName", "Only NPCs" },
@@ -178,7 +188,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EEventFilter_Statics
 		{ "EF_OnlyPlayers.DisplayName", "Only Players" },
 		{ "EF_OnlyPlayers.Name", "EEventFilter::EF_OnlyPlayers" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used for picking who an event should be allowed to run on" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -239,9 +251,13 @@ struct Z_Construct_UFunction_UNarrativeEvent_ExecuteEvent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Execute the event.\n\x09@param Pawn this is the Players Pawn, or the NPC Target if you've added some NPC targets to NPCTargets array. \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Execute the event.\n       @param Pawn this is the Players Pawn, or the NPC Target if you've added some NPC targets to NPCTargets array." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NarrativeComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -295,9 +311,13 @@ struct Z_Construct_UFunction_UNarrativeEvent_GetCharacterTargets_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//return the characters to run the event on \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "return the characters to run the event on" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
@@ -357,9 +377,13 @@ struct Z_Construct_UFunction_UNarrativeEvent_GetGraphDisplayText_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Define the text that will show up on a node if this event is added to it */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Define the text that will show up on a node if this event is added to it" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
@@ -416,9 +440,13 @@ struct Z_Construct_UFunction_UNarrativeEvent_GetHintText_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**If the event is on a dialogue option, this is the text we'll show after the line. (Begin Quest, etc)*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If the event is on a dialogue option, this is the text we'll show after the line. (Begin Quest, etc)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -473,60 +501,92 @@ struct Z_Construct_UClass_UNarrativeEvent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Narrative Events allow you to write a little bit of code that fires when a given quest or dialogue node is reached. \n *\n * For example, you could make a Narrative Event \"Give item\" that adds an item to the players inventory. Then, you could \n * add that event to a dialogue node, for example if an NPC said \"Heres my sword, I want you to take it.\" you could add your\n * event to that dialogue node and actually add the sword item to the players inventory. \n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeEvent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Narrative Events allow you to write a little bit of code that fires when a given quest or dialogue node is reached.\n\nFor example, you could make a Narrative Event \"Give item\" that adds an item to the players inventory. Then, you could\nadd that event to a dialogue node, for example if an NPC said \"Heres my sword, I want you to take it.\" you could add your\nevent to that dialogue node and actually add the sword item to the players inventory." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRefireOnLoad_MetaData[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09When the game loads back in, should we fire this event off again when your quest loads back in?\n\x09\n\x09""For example, if we used a GiveXP event to give the player 500XP when we get to a certain quest state, this should be false.\n\x09Since XP is saved already, quitting and reloading would grant 500XP on top of the previous amount, which is not what we want. \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When the game loads back in, should we fire this event off again when your quest loads back in?\n\nFor example, if we used a GiveXP event to give the player 500XP when we get to a certain quest state, this should be false.\nSince XP is saved already, quitting and reloading would grant 500XP on top of the previous amount, which is not what we want." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventRuntime_MetaData[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09""Defines when the event should be executed \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines when the event should be executed" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventFilter_MetaData[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09""Defines what types of characters the event should be allowed to run on \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines what types of characters the event should be allowed to run on" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PartyEventPolicy_MetaData[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09""Defines how events should be executed when the dialogue is playing as a party. Ignored if not in a party. \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines how events should be executed when the dialogue is playing as a party. Ignored if not in a party." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterTargets_MetaData[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Characters we should run the event on. If empty, we'll run on the character that owns the quest/dialogue.*/" },
+#endif
 		{ "EditCondition", "EventFilter == EEventFilter::EF_Anyone" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Characters we should run the event on. If empty, we'll run on the character that owns the quest/dialogue." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCTargets_MetaData[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** NPCs we should run the event on. If empty, we'll run the event on all NPCs in the dialogue */" },
+#endif
 		{ "EditCondition", "EventFilter == EEventFilter::EF_OnlyNPCs" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NPCs we should run the event on. If empty, we'll run the event on all NPCs in the dialogue" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerTargets_MetaData[] = {
 		{ "Category", "Event" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Players we should run the event on. If empty, we'll run on the character that owns the quest/dialogue. */" },
+#endif
 		{ "EditCondition", "EventFilter == EEventFilter::EF_OnlyPlayers" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeEvent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Players we should run the event on. If empty, we'll run on the character that owns the quest/dialogue." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bRefireOnLoad_SetBit(void* Obj);
@@ -546,10 +606,10 @@ struct Z_Construct_UClass_UNarrativeEvent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeEvent_ExecuteEvent, "ExecuteEvent" }, // 2250481192
-		{ &Z_Construct_UFunction_UNarrativeEvent_GetCharacterTargets, "GetCharacterTargets" }, // 2374397844
-		{ &Z_Construct_UFunction_UNarrativeEvent_GetGraphDisplayText, "GetGraphDisplayText" }, // 2616135600
-		{ &Z_Construct_UFunction_UNarrativeEvent_GetHintText, "GetHintText" }, // 1750343444
+		{ &Z_Construct_UFunction_UNarrativeEvent_ExecuteEvent, "ExecuteEvent" }, // 3497429774
+		{ &Z_Construct_UFunction_UNarrativeEvent_GetCharacterTargets, "GetCharacterTargets" }, // 539603176
+		{ &Z_Construct_UFunction_UNarrativeEvent_GetGraphDisplayText, "GetGraphDisplayText" }, // 4164058899
+		{ &Z_Construct_UFunction_UNarrativeEvent_GetHintText, "GetHintText" }, // 1742010179
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -563,11 +623,11 @@ void Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_bRefireOnLoad_SetBit(vo
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_bRefireOnLoad = { "bRefireOnLoad", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UNarrativeEvent), &Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_bRefireOnLoad_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bRefireOnLoad_MetaData), NewProp_bRefireOnLoad_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_EventRuntime_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_EventRuntime = { "EventRuntime", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeEvent, EventRuntime), Z_Construct_UEnum_NarrativeArsenal_EEventRuntime, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventRuntime_MetaData), NewProp_EventRuntime_MetaData) }; // 905326616
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_EventRuntime = { "EventRuntime", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeEvent, EventRuntime), Z_Construct_UEnum_NarrativeArsenal_EEventRuntime, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventRuntime_MetaData), NewProp_EventRuntime_MetaData) }; // 969879644
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_EventFilter_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_EventFilter = { "EventFilter", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeEvent, EventFilter), Z_Construct_UEnum_NarrativeArsenal_EEventFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventFilter_MetaData), NewProp_EventFilter_MetaData) }; // 386119466
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_EventFilter = { "EventFilter", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeEvent, EventFilter), Z_Construct_UEnum_NarrativeArsenal_EEventFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventFilter_MetaData), NewProp_EventFilter_MetaData) }; // 3015831236
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_PartyEventPolicy_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_PartyEventPolicy = { "PartyEventPolicy", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeEvent, PartyEventPolicy), Z_Construct_UEnum_NarrativeArsenal_EPartyEventPolicy, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PartyEventPolicy_MetaData), NewProp_PartyEventPolicy_MetaData) }; // 3300278807
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_PartyEventPolicy = { "PartyEventPolicy", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeEvent, PartyEventPolicy), Z_Construct_UEnum_NarrativeArsenal_EPartyEventPolicy, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PartyEventPolicy_MetaData), NewProp_PartyEventPolicy_MetaData) }; // 271506539
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_CharacterTargets_Inner = { "CharacterTargets", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UCharacterDefinition_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_CharacterTargets = { "CharacterTargets", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeEvent, CharacterTargets), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterTargets_MetaData), NewProp_CharacterTargets_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeEvent_Statics::NewProp_NPCTargets_Inner = { "NPCTargets", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UNPCDefinition_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -627,20 +687,20 @@ UNarrativeEvent::~UNarrativeEvent() {}
 // End Class UNarrativeEvent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EPartyEventPolicy_StaticEnum, TEXT("EPartyEventPolicy"), &Z_Registration_Info_UEnum_EPartyEventPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3300278807U) },
-		{ EEventRuntime_StaticEnum, TEXT("EEventRuntime"), &Z_Registration_Info_UEnum_EEventRuntime, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 905326616U) },
-		{ EEventFilter_StaticEnum, TEXT("EEventFilter"), &Z_Registration_Info_UEnum_EEventFilter, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 386119466U) },
+		{ EPartyEventPolicy_StaticEnum, TEXT("EPartyEventPolicy"), &Z_Registration_Info_UEnum_EPartyEventPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 271506539U) },
+		{ EEventRuntime_StaticEnum, TEXT("EEventRuntime"), &Z_Registration_Info_UEnum_EEventRuntime, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 969879644U) },
+		{ EEventFilter_StaticEnum, TEXT("EEventFilter"), &Z_Registration_Info_UEnum_EEventFilter, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3015831236U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeEvent, UNarrativeEvent::StaticClass, TEXT("UNarrativeEvent"), &Z_Registration_Info_UClass_UNarrativeEvent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeEvent), 3148671552U) },
+		{ Z_Construct_UClass_UNarrativeEvent, UNarrativeEvent::StaticClass, TEXT("UNarrativeEvent"), &Z_Registration_Info_UClass_UNarrativeEvent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeEvent), 4240432499U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_3969731103(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_1799578193(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeEvent_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -83,9 +83,13 @@ struct Z_Construct_UFunction_UNPCInteractionComponent_OnTargetSlotTaken_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when our targeted slot gets invalidated \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/NPCInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when our targeted slot gets invalidated" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StealerComp_MetaData[] = {
 		{ "EditInline", "true" },
@@ -143,9 +147,13 @@ struct Z_Construct_UFunction_UNPCInteractionComponent_TargetClosestInteractionSl
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter|Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Start targeting an interaction slot \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/NPCInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start targeting an interaction slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Interactable_MetaData[] = {
 		{ "EditInline", "true" },
@@ -201,9 +209,13 @@ struct Z_Construct_UFunction_UNPCInteractionComponent_TargetInteractionSlot_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative|NarrativeCharacter|Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Start targeting an interaction slot \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/NPCInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start targeting an interaction slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Interactable_MetaData[] = {
 		{ "EditInline", "true" },
@@ -271,25 +283,33 @@ struct Z_Construct_UClass_UNPCInteractionComponent_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Interaction component used by NPCCharacters. \n */" },
+#endif
 		{ "IncludePath", "Interaction/NPCInteractionComponent.h" },
 		{ "ModuleRelativePath", "Public/Interaction/NPCInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Interaction component used by NPCCharacters." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnTargetedInteractionSlotChanged_MetaData[] = {
 		{ "Category", "Narrative|NarrativeCharacter|Interaction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We broadcast this whenever our targeted slot changes so interact activity can change its BB values. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/NPCInteractionComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We broadcast this whenever our targeted slot changes so interact activity can change its BB values." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnTargetedInteractionSlotChanged;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNPCInteractionComponent_OnTargetSlotTaken, "OnTargetSlotTaken" }, // 3537936110
-		{ &Z_Construct_UFunction_UNPCInteractionComponent_TargetClosestInteractionSlot, "TargetClosestInteractionSlot" }, // 2517313867
-		{ &Z_Construct_UFunction_UNPCInteractionComponent_TargetInteractionSlot, "TargetInteractionSlot" }, // 3262036217
+		{ &Z_Construct_UFunction_UNPCInteractionComponent_OnTargetSlotTaken, "OnTargetSlotTaken" }, // 3407604450
+		{ &Z_Construct_UFunction_UNPCInteractionComponent_TargetClosestInteractionSlot, "TargetClosestInteractionSlot" }, // 1106040822
+		{ &Z_Construct_UFunction_UNPCInteractionComponent_TargetInteractionSlot, "TargetInteractionSlot" }, // 4283253622
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -339,14 +359,14 @@ UNPCInteractionComponent::~UNPCInteractionComponent() {}
 // End Class UNPCInteractionComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_NPCInteractionComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_NPCInteractionComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNPCInteractionComponent, UNPCInteractionComponent::StaticClass, TEXT("UNPCInteractionComponent"), &Z_Registration_Info_UClass_UNPCInteractionComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCInteractionComponent), 2079723688U) },
+		{ Z_Construct_UClass_UNPCInteractionComponent, UNPCInteractionComponent::StaticClass, TEXT("UNPCInteractionComponent"), &Z_Registration_Info_UClass_UNPCInteractionComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNPCInteractionComponent), 3147077691U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_NPCInteractionComponent_h_2903607348(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_NPCInteractionComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_NPCInteractionComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_NPCInteractionComponent_h_3878385594(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_NPCInteractionComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Interaction_NPCInteractionComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

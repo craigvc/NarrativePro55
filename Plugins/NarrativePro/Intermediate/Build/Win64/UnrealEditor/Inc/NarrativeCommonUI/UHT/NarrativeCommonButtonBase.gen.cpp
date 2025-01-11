@@ -30,9 +30,13 @@ struct Z_Construct_UFunction_UNarrativeCommonButtonBase_ForceSetIsSelected_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Common Button" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Just a wrapper for SetSelectedInternal, which annoyingly is BP Protected and requires wrapping. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeCommonButtonBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Just a wrapper for SetSelectedInternal, which annoyingly is BP Protected and requires wrapping." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bInSelected_MetaData[] = {
 		{ "NativeConst", "" },
@@ -101,9 +105,13 @@ struct Z_Construct_UFunction_UNarrativeCommonButtonBase_SetButtonText_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Common Button" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Sets the buttons text block text. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeCommonButtonBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the buttons text block text." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_InText;
@@ -156,30 +164,46 @@ struct Z_Construct_UClass_UNarrativeCommonButtonBase_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "Category", "Narrative Common Widgets" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The base class for a narrative common UI button. Includes a bit of extra functionality over the base common button. \n */" },
+#endif
 		{ "IncludePath", "Widgets/NarrativeCommonButtonBase.h" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeCommonButtonBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The base class for a narrative common UI button. Includes a bit of extra functionality over the base common button." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ButtonTextBlock_MetaData[] = {
 		{ "BindWidgetOptional", "" },
 		{ "Category", "Button Text" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Optional button text that can be placed on the button. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeCommonButtonBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional button text that can be placed on the button." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ButtonText_MetaData[] = {
 		{ "Category", "Button Text" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The text to display on the buttons text block.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeCommonButtonBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The text to display on the buttons text block." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TextJustification_MetaData[] = {
 		{ "Category", "Button Text" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The justification for text to display on the buttons text block.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeCommonButtonBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The justification for text to display on the buttons text block." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ButtonTextBlock;
@@ -188,8 +212,8 @@ struct Z_Construct_UClass_UNarrativeCommonButtonBase_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeCommonButtonBase_ForceSetIsSelected, "ForceSetIsSelected" }, // 3987655666
-		{ &Z_Construct_UFunction_UNarrativeCommonButtonBase_SetButtonText, "SetButtonText" }, // 727176092
+		{ &Z_Construct_UFunction_UNarrativeCommonButtonBase_ForceSetIsSelected, "ForceSetIsSelected" }, // 2416987401
+		{ &Z_Construct_UFunction_UNarrativeCommonButtonBase_SetButtonText, "SetButtonText" }, // 2432742160
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -243,14 +267,14 @@ UNarrativeCommonButtonBase::~UNarrativeCommonButtonBase() {}
 // End Class UNarrativeCommonButtonBase
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeCommonButtonBase_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeCommonButtonBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCommonButtonBase, UNarrativeCommonButtonBase::StaticClass, TEXT("UNarrativeCommonButtonBase"), &Z_Registration_Info_UClass_UNarrativeCommonButtonBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCommonButtonBase), 878593737U) },
+		{ Z_Construct_UClass_UNarrativeCommonButtonBase, UNarrativeCommonButtonBase::StaticClass, TEXT("UNarrativeCommonButtonBase"), &Z_Registration_Info_UClass_UNarrativeCommonButtonBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCommonButtonBase), 4099295314U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeCommonButtonBase_h_907589090(TEXT("/Script/NarrativeCommonUI"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeCommonButtonBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeCommonButtonBase_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeCommonButtonBase_h_673732341(TEXT("/Script/NarrativeCommonUI"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeCommonButtonBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_Widgets_NarrativeCommonButtonBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -33,9 +33,13 @@ struct Z_Construct_UFunction_UStableActorStatics_GetStableActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Stable Actor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Create a stable actor from an actor reference \n" },
+#endif
 		{ "ModuleRelativePath", "Public/StableActor/StableActorStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create a stable actor from an actor reference" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -52,7 +56,7 @@ struct Z_Construct_UFunction_UStableActorStatics_GetStableActor_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UStableActorStatics_GetStableActor_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventGetStableActor_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UStableActorStatics_GetStableActor_Statics::NewProp_StableActor = { "StableActor", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventGetStableActor_Parms, StableActor), Z_Construct_UScriptStruct_FStableActor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StableActor_MetaData), NewProp_StableActor_MetaData) }; // 445850525
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UStableActorStatics_GetStableActor_Statics::NewProp_StableActor = { "StableActor", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventGetStableActor_Parms, StableActor), Z_Construct_UScriptStruct_FStableActor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StableActor_MetaData), NewProp_StableActor_MetaData) }; // 3480758991
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UStableActorStatics_GetStableActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventGetStableActor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UStableActorStatics_GetStableActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStableActorStatics_GetStableActor_Statics::NewProp_WorldContextObject,
@@ -93,9 +97,13 @@ struct Z_Construct_UFunction_UStableActorStatics_MakeStableActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Stable Actor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Create a stable actor from an actor reference \n" },
+#endif
 		{ "ModuleRelativePath", "Public/StableActor/StableActorStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create a stable actor from an actor reference" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
@@ -104,7 +112,7 @@ struct Z_Construct_UFunction_UStableActorStatics_MakeStableActor_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UStableActorStatics_MakeStableActor_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventMakeStableActor_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UStableActorStatics_MakeStableActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventMakeStableActor_Parms, ReturnValue), Z_Construct_UScriptStruct_FStableActor, METADATA_PARAMS(0, nullptr) }; // 445850525
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UStableActorStatics_MakeStableActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventMakeStableActor_Parms, ReturnValue), Z_Construct_UScriptStruct_FStableActor, METADATA_PARAMS(0, nullptr) }; // 3480758991
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UStableActorStatics_MakeStableActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStableActorStatics_MakeStableActor_Statics::NewProp_Actor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStableActorStatics_MakeStableActor_Statics::NewProp_ReturnValue,
@@ -143,9 +151,13 @@ struct Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Stable Actor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Create a stable actor from an actor reference \n" },
+#endif
 		{ "ModuleRelativePath", "Public/StableActor/StableActorStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create a stable actor from an actor reference" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -163,7 +175,7 @@ struct Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventMakeStableActorFromGUID_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics::NewProp_StableActorGuid = { "StableActorGuid", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventMakeStableActorFromGUID_Parms, StableActorGuid), Z_Construct_UScriptStruct_FGuid, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StableActorGuid_MetaData), NewProp_StableActorGuid_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventMakeStableActorFromGUID_Parms, ReturnValue), Z_Construct_UScriptStruct_FStableActor, METADATA_PARAMS(0, nullptr) }; // 445850525
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(StableActorStatics_eventMakeStableActorFromGUID_Parms, ReturnValue), Z_Construct_UScriptStruct_FStableActor, METADATA_PARAMS(0, nullptr) }; // 3480758991
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics::NewProp_WorldContextObject,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID_Statics::NewProp_StableActorGuid,
@@ -212,17 +224,21 @@ struct Z_Construct_UClass_UStableActorStatics_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Functions that simply working with FStableActors. \n */" },
+#endif
 		{ "IncludePath", "StableActor/StableActorStatics.h" },
 		{ "ModuleRelativePath", "Public/StableActor/StableActorStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Functions that simply working with FStableActors." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UStableActorStatics_GetStableActor, "GetStableActor" }, // 4281589301
-		{ &Z_Construct_UFunction_UStableActorStatics_MakeStableActor, "MakeStableActor" }, // 3879075821
-		{ &Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID, "MakeStableActorFromGUID" }, // 1972230893
+		{ &Z_Construct_UFunction_UStableActorStatics_GetStableActor, "GetStableActor" }, // 2781562104
+		{ &Z_Construct_UFunction_UStableActorStatics_MakeStableActor, "MakeStableActor" }, // 115275245
+		{ &Z_Construct_UFunction_UStableActorStatics_MakeStableActorFromGUID, "MakeStableActorFromGUID" }, // 1201636759
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -268,14 +284,14 @@ UStableActorStatics::~UStableActorStatics() {}
 // End Class UStableActorStatics
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActorStatics_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActorStatics_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UStableActorStatics, UStableActorStatics::StaticClass, TEXT("UStableActorStatics"), &Z_Registration_Info_UClass_UStableActorStatics, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStableActorStatics), 2049078398U) },
+		{ Z_Construct_UClass_UStableActorStatics, UStableActorStatics::StaticClass, TEXT("UStableActorStatics"), &Z_Registration_Info_UClass_UStableActorStatics, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStableActorStatics), 3743226702U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActorStatics_h_3117103336(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActorStatics_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActorStatics_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActorStatics_h_2728106267(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActorStatics_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_StableActor_StableActorStatics_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

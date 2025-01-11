@@ -232,45 +232,69 @@ struct Z_Construct_UScriptStruct_FNavigationMarkerSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LocationDisplayName_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display name to use for this location \n" },
+#endif
 		{ "EditCondition", "bOverride_LocationDisplayName" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name to use for this location" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LocationIcon_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The icon to use for this location \n" },
+#endif
 		{ "EditCondition", "bOverride_LocationIcon" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The icon to use for this location" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IconTint_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tint for the icon\n" },
+#endif
 		{ "EditCondition", "bOverride_IconTint" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tint for the icon" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IconSize_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The icons size on the compass, map, screen marker, whereever the icon is being used \n" },
+#endif
 		{ "EditCondition", "bOverride_IconSize" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The icons size on the compass, map, screen marker, whereever the icon is being used" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IconOffset_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Add an offset in the actors space - more efficient than making markers scene components with a transform \n" },
+#endif
 		{ "EditCondition", "bOverride_IconOffset" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add an offset in the actors space - more efficient than making markers scene components with a transform" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShowActorRotation_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether this markers rotation should be shown on the map, for any navigator widgets that use this feature\n" },
+#endif
 		{ "EditCondition", "bOverride_bShowActorRotation" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether this markers rotation should be shown on the map, for any navigator widgets that use this feature" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bOverride_LocationDisplayName_SetBit(void* Obj);
@@ -387,9 +411,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_AddDomains_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// addd domains \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "addd domains" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewMarkerDomains_MetaData[] = {
 		{ "Categories", "Navigator.NavigatorTypes" },
@@ -461,9 +489,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_CanInteract_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Handle what the marker should be clickable or hoverable, or if it is just an icon with no interaction\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Handle what the marker should be clickable or hoverable, or if it is just an icon with no interaction" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Selector_MetaData[] = {
 		{ "EditInline", "true" },
@@ -540,9 +572,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerActionText_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Text for what happens when we click on the marker \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Text for what happens when we click on the marker" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Selector_MetaData[] = {
 		{ "EditInline", "true" },
@@ -620,9 +656,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerColor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Display color for the marker, override if you need dynamic \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Display color for the marker, override if you need dynamic" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NavigatorType_MetaData[] = {
 		{ "Categories", "Navigator.NavigatorTypes" },
@@ -695,9 +735,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerDisplayText_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Display text for the marker, override if you need dynamic \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Display text for the marker, override if you need dynamic" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NavigatorType_MetaData[] = {
 		{ "Categories", "Navigator.NavigatorTypes" },
@@ -752,9 +796,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab the settings for the nav marker and any overrides - this is just called once on init for marker icons\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab the settings for the nav marker and any overrides - this is just called once on init for marker icons" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NavigatorType_MetaData[] = {
 		{ "Categories", "Navigator.NavigatorTypes" },
@@ -767,7 +815,7 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings_Static
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings_Statics::NewProp_NavigatorType = { "NavigatorType", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationMarkerComponent_eventGetMarkerSettings_Parms, NavigatorType), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NavigatorType_MetaData), NewProp_NavigatorType_MetaData) }; // 1298103297
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationMarkerComponent_eventGetMarkerSettings_Parms, ReturnValue), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(0, nullptr) }; // 1503443034
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigationMarkerComponent_eventGetMarkerSettings_Parms, ReturnValue), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(0, nullptr) }; // 1355227794
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings_Statics::NewProp_NavigatorType,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings_Statics::NewProp_ReturnValue,
@@ -821,9 +869,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_OnSelect_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Handle what the marker should do when clicked in the map\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Handle what the marker should do when clicked in the map" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Selector_MetaData[] = {
 		{ "EditInline", "true" },
@@ -869,9 +921,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_RefreshMarker_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Call this function whenever you've changed some settings on the marker! It will inform the UI widgets they need to refresh themselves. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Call this function whenever you've changed some settings on the marker! It will inform the UI widgets they need to refresh themselves." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -905,9 +961,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_RemoveDomains_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//remove domains \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "remove domains" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RemoveDomains_MetaData[] = {
 		{ "Categories", "Navigator.NavigatorTypes" },
@@ -1001,9 +1061,13 @@ struct Z_Construct_UFunction_UNavigationMarkerComponent_SetDomains_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Check if this marker should be shown in the given location \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if this marker should be shown in the given location" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewMarkerDomain_MetaData[] = {
 		{ "Categories", "Navigator.NavigatorTypes" },
@@ -1071,78 +1135,122 @@ struct Z_Construct_UClass_UNavigationMarkerComponent_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Add this component to any actor you want to show up on Narrative Navigator UI like the compass, world map, etc. */" },
+#endif
 		{ "DisplayName", "Navigation Marker" },
 		{ "IncludePath", "NavigationMarkerComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add this component to any actor you want to show up on Narrative Navigator UI like the compass, world map, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMarkerSettings_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The properties the navigation marker should use \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The properties the navigation marker should use" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldMapOverrideSettings_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If the world map needs any settings changed from the defaults, override them in here! \n" },
+#endif
 		{ "DisplayName", "Override Settings (World Map)" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If the world map needs any settings changed from the defaults, override them in here!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinimapOverrideSettings_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If the minimap needs any settings changed from the defaults, override them in here! \n" },
+#endif
 		{ "DisplayName", "Override Settings (Minimap)" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If the minimap needs any settings changed from the defaults, override them in here!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CompassOverrideSettings_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If the compass needs any settings changed from the defaults, override them in here! \n" },
+#endif
 		{ "DisplayName", "Override Settings (Compass)" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If the compass needs any settings changed from the defaults, override them in here!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScreenspaceOverrideSettings_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If the screen space marker need any settings changed from the defaults, override them in here! \n" },
+#endif
 		{ "DisplayName", "Override Settings (Screen Space)" },
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If the screen space marker need any settings changed from the defaults, override them in here!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMarkerActionText_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Text the marker should show as its action text in the world map when hovered\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Text the marker should show as its action text in the world map when hovered" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bPinToMapEdge_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether this marker should always be on the edge of the map, rather than going beyond the maps border \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether this marker should always be on the edge of the map, rather than going beyond the maps border" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerStartFadeOutDistance_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Compass only - The distance at which the compass begins to fade the marker out\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Compass only - The distance at which the compass begins to fade the marker out" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerStartFadeInDistance_MetaData[] = {
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Compass - only The distance at which we the compass begins to fade the marker in\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Compass - only The distance at which we the compass begins to fade the marker in" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerDomain_MetaData[] = {
 		{ "Categories", "Navigator.NavigatorTypes" },
 		{ "Category", "Marker Setup" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//What navigation widgets will this navigation marker show up on?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What navigation widgets will this navigation marker show up on?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnRefreshRequired_MetaData[] = {
 		{ "Category", "Marker" },
@@ -1150,9 +1258,13 @@ struct Z_Construct_UClass_UNavigationMarkerComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnSelected_MetaData[] = {
 		{ "Category", "Marker" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called when the marker is selected in the world map \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationMarkerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the marker is selected in the world map" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DefaultMarkerSettings;
@@ -1171,17 +1283,17 @@ struct Z_Construct_UClass_UNavigationMarkerComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_AddDomains, "AddDomains" }, // 2800774660
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_CanInteract, "CanInteract" }, // 2500360815
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerActionText, "GetMarkerActionText" }, // 4234151248
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerColor, "GetMarkerColor" }, // 4073166849
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerDisplayText, "GetMarkerDisplayText" }, // 3617214034
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings, "GetMarkerSettings" }, // 1175311911
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_OnSelect, "OnSelect" }, // 1856201563
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_RefreshMarker, "RefreshMarker" }, // 2871200914
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_RemoveDomains, "RemoveDomains" }, // 3733406535
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_AddDomains, "AddDomains" }, // 1676733030
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_CanInteract, "CanInteract" }, // 2003087476
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerActionText, "GetMarkerActionText" }, // 4032614003
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerColor, "GetMarkerColor" }, // 2821710218
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerDisplayText, "GetMarkerDisplayText" }, // 1741081766
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_GetMarkerSettings, "GetMarkerSettings" }, // 2936139187
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_OnSelect, "OnSelect" }, // 3970077129
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_RefreshMarker, "RefreshMarker" }, // 2384400588
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_RemoveDomains, "RemoveDomains" }, // 1836724685
 		{ &Z_Construct_UFunction_UNavigationMarkerComponent_SetDefaultDomains, "SetDefaultDomains" }, // 903680741
-		{ &Z_Construct_UFunction_UNavigationMarkerComponent_SetDomains, "SetDomains" }, // 1737875434
+		{ &Z_Construct_UFunction_UNavigationMarkerComponent_SetDomains, "SetDomains" }, // 3785365323
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1189,11 +1301,11 @@ struct Z_Construct_UClass_UNavigationMarkerComponent_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_DefaultMarkerSettings = { "DefaultMarkerSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, DefaultMarkerSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMarkerSettings_MetaData), NewProp_DefaultMarkerSettings_MetaData) }; // 1503443034
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_WorldMapOverrideSettings = { "WorldMapOverrideSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, WorldMapOverrideSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldMapOverrideSettings_MetaData), NewProp_WorldMapOverrideSettings_MetaData) }; // 1503443034
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_MinimapOverrideSettings = { "MinimapOverrideSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, MinimapOverrideSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinimapOverrideSettings_MetaData), NewProp_MinimapOverrideSettings_MetaData) }; // 1503443034
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_CompassOverrideSettings = { "CompassOverrideSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, CompassOverrideSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CompassOverrideSettings_MetaData), NewProp_CompassOverrideSettings_MetaData) }; // 1503443034
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_ScreenspaceOverrideSettings = { "ScreenspaceOverrideSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, ScreenspaceOverrideSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScreenspaceOverrideSettings_MetaData), NewProp_ScreenspaceOverrideSettings_MetaData) }; // 1503443034
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_DefaultMarkerSettings = { "DefaultMarkerSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, DefaultMarkerSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMarkerSettings_MetaData), NewProp_DefaultMarkerSettings_MetaData) }; // 1355227794
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_WorldMapOverrideSettings = { "WorldMapOverrideSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, WorldMapOverrideSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldMapOverrideSettings_MetaData), NewProp_WorldMapOverrideSettings_MetaData) }; // 1355227794
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_MinimapOverrideSettings = { "MinimapOverrideSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, MinimapOverrideSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinimapOverrideSettings_MetaData), NewProp_MinimapOverrideSettings_MetaData) }; // 1355227794
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_CompassOverrideSettings = { "CompassOverrideSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, CompassOverrideSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CompassOverrideSettings_MetaData), NewProp_CompassOverrideSettings_MetaData) }; // 1355227794
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_ScreenspaceOverrideSettings = { "ScreenspaceOverrideSettings", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, ScreenspaceOverrideSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScreenspaceOverrideSettings_MetaData), NewProp_ScreenspaceOverrideSettings_MetaData) }; // 1355227794
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_DefaultMarkerActionText = { "DefaultMarkerActionText", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationMarkerComponent, DefaultMarkerActionText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMarkerActionText_MetaData), NewProp_DefaultMarkerActionText_MetaData) };
 void Z_Construct_UClass_UNavigationMarkerComponent_Statics::NewProp_bPinToMapEdge_SetBit(void* Obj)
 {
@@ -1257,19 +1369,19 @@ UNavigationMarkerComponent::~UNavigationMarkerComponent() {}
 // End Class UNavigationMarkerComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FZoneDrawData::StaticStruct, Z_Construct_UScriptStruct_FZoneDrawData_Statics::NewStructOps, TEXT("ZoneDrawData"), &Z_Registration_Info_UScriptStruct_ZoneDrawData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FZoneDrawData), 1846893630U) },
-		{ FNavigationMarkerSettings::StaticStruct, Z_Construct_UScriptStruct_FNavigationMarkerSettings_Statics::NewStructOps, TEXT("NavigationMarkerSettings"), &Z_Registration_Info_UScriptStruct_NavigationMarkerSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNavigationMarkerSettings), 1503443034U) },
+		{ FNavigationMarkerSettings::StaticStruct, Z_Construct_UScriptStruct_FNavigationMarkerSettings_Statics::NewStructOps, TEXT("NavigationMarkerSettings"), &Z_Registration_Info_UScriptStruct_NavigationMarkerSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNavigationMarkerSettings), 1355227794U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNavigationMarkerComponent, UNavigationMarkerComponent::StaticClass, TEXT("UNavigationMarkerComponent"), &Z_Registration_Info_UClass_UNavigationMarkerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigationMarkerComponent), 3736850006U) },
+		{ Z_Construct_UClass_UNavigationMarkerComponent, UNavigationMarkerComponent::StaticClass, TEXT("UNavigationMarkerComponent"), &Z_Registration_Info_UClass_UNavigationMarkerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigationMarkerComponent), 3476329329U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_2439364683(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_776695811(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigationMarkerComponent_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

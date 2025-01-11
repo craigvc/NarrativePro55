@@ -32,42 +32,62 @@ struct Z_Construct_UClass_UNarrativeInventoryItemButton_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for items in the inventory. Typically we don't use C++ bases but we want to enable easily supporting multiple button types which BindWidget handles nicely. \n */" },
+#endif
 		{ "IncludePath", "Widgets/NarrativeInventoryItemButton.h" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeInventoryItemButton.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for items in the inventory. Typically we don't use C++ bases but we want to enable easily supporting multiple button types which BindWidget handles nicely." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[] = {
 		{ "Category", "Button Text" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The item that this inventory button has been created for \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeInventoryItemButton.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The item that this inventory button has been created for" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnerWidget_MetaData[] = {
 		{ "Category", "Button Text" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The inventory widget that we're a child of \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeInventoryItemButton.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The inventory widget that we're a child of" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TextBlock_Quantity_MetaData[] = {
 		{ "BindWidgetOptional", "" },
 		{ "Category", "Button Text" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Text block showing the quantity of the item \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeInventoryItemButton.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Text block showing the quantity of the item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TextBlock_Weight_MetaData[] = {
 		{ "BindWidgetOptional", "" },
 		{ "Category", "Button Text" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Text block showing the weight of the item \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Widgets/NarrativeInventoryItemButton.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Text block showing the weight of the item" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Item;
@@ -130,14 +150,14 @@ UNarrativeInventoryItemButton::~UNarrativeInventoryItemButton() {}
 // End Class UNarrativeInventoryItemButton
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_Widgets_NarrativeInventoryItemButton_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_Widgets_NarrativeInventoryItemButton_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeInventoryItemButton, UNarrativeInventoryItemButton::StaticClass, TEXT("UNarrativeInventoryItemButton"), &Z_Registration_Info_UClass_UNarrativeInventoryItemButton, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInventoryItemButton), 4123718322U) },
+		{ Z_Construct_UClass_UNarrativeInventoryItemButton, UNarrativeInventoryItemButton::StaticClass, TEXT("UNarrativeInventoryItemButton"), &Z_Registration_Info_UClass_UNarrativeInventoryItemButton, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeInventoryItemButton), 1794959166U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_Widgets_NarrativeInventoryItemButton_h_4045471824(TEXT("/Script/NarrativeInventory"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_Widgets_NarrativeInventoryItemButton_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_Widgets_NarrativeInventoryItemButton_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_Widgets_NarrativeInventoryItemButton_h_2656593905(TEXT("/Script/NarrativeInventory"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_Widgets_NarrativeInventoryItemButton_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_Widgets_NarrativeInventoryItemButton_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

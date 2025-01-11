@@ -302,18 +302,26 @@ struct Z_Construct_UClass_ANarrativePlayerState_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base player state for Narrative Pro core. \n */" },
+#endif
 		{ "HideCategories", "Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
 		{ "IncludePath", "UnrealFramework/NarrativePlayerState.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerState.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base player state for Narrative Pro core." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Factions_MetaData[] = {
 		{ "Category", "Factions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our affiliation \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our affiliation" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilitySystemComponent_MetaData[] = {
 		{ "Category", "Narrative|Components" },
@@ -331,10 +339,14 @@ struct Z_Construct_UClass_ANarrativePlayerState_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillTreeComponent_MetaData[] = {
 		{ "Category", "Narrative|Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The skill tree component - this holds our perks, skills, and skill tree points. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativePlayerState.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The skill tree component - this holds our perks, skills, and skill tree points." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Factions;
@@ -420,14 +432,14 @@ ANarrativePlayerState::~ANarrativePlayerState() {}
 // End Class ANarrativePlayerState
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerState_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerState_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativePlayerState, ANarrativePlayerState::StaticClass, TEXT("ANarrativePlayerState"), &Z_Registration_Info_UClass_ANarrativePlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativePlayerState), 2886958083U) },
+		{ Z_Construct_UClass_ANarrativePlayerState, ANarrativePlayerState::StaticClass, TEXT("ANarrativePlayerState"), &Z_Registration_Info_UClass_ANarrativePlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativePlayerState), 1308477798U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerState_h_1040198531(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerState_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerState_h_2891284202(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativePlayerState_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

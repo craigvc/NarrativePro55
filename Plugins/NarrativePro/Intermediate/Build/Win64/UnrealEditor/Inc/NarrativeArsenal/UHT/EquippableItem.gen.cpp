@@ -46,9 +46,13 @@ struct Z_Construct_UFunction_UEquippableItem_HandleEquip_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Allows you to override what equipping the item does. By default this sets the players mesh to the Equippable Mesh, but perhaps\n\x09you want a weapon actor to spawn in, or have an equippable aura effect that follows the player. by overriding HandleEquip you can \n\x09""do whatever custom logic you want. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to override what equipping the item does. By default this sets the players mesh to the Equippable Mesh, but perhaps\n       you want a weapon actor to spawn in, or have an equippable aura effect that follows the player. by overriding HandleEquip you can\n       do whatever custom logic you want." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -91,9 +95,13 @@ struct Z_Construct_UFunction_UEquippableItem_HandleUnequip_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Allows you to override what happens when the item unequips. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to override what happens when the item unequips." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -136,47 +144,75 @@ struct Z_Construct_UClass_UEquippableItem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The base class for an equippable item the player can put on. Networking is built right in.\n */" },
+#endif
 		{ "IncludePath", "Items/EquippableItem.h" },
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The base class for an equippable item the player can put on. Networking is built right in." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EquippableSlot_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot" },
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The slot this item equips to*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The slot this item equips to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EquipmentModGE_MetaData[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Default attributes for a character for initializing on spawn/respawn.\n// This is an instant GE that overrides the values for attributes that get reset on spawn/respawn.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default attributes for a character for initializing on spawn/respawn.\nThis is an instant GE that overrides the values for attributes that get reset on spawn/respawn." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EquipmentGEHandle_MetaData[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The handle to the equipment gameplay effect that applies the equipments attributes to our player. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The handle to the equipment gameplay effect that applies the equipments attributes to our player." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackRating_MetaData[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The amount we'll increase the wearers attack rating by when this item is equipped */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount we'll increase the wearers attack rating by when this item is equipped" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ArmorRating_MetaData[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The amount we'll increase the wearers armor rating by when this item is equipped */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount we'll increase the wearers armor rating by when this item is equipped" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Abilities_MetaData[] = {
 		{ "Category", "Weapon|Abilities" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*Equipping this item will grant these abilities to the user; we'll remove them when the item is unequipped\n\x09Note that WeaponItems grant the abilities when wielded, not when equipped. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Equipping this item will grant these abilities to the user; we'll remove them when the item is unequipped\n       Note that WeaponItems grant the abilities when wielded, not when equipped." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_EquippableSlot;
@@ -189,8 +225,8 @@ struct Z_Construct_UClass_UEquippableItem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UEquippableItem_HandleEquip, "HandleEquip" }, // 2600565859
-		{ &Z_Construct_UFunction_UEquippableItem_HandleUnequip, "HandleUnequip" }, // 2742685160
+		{ &Z_Construct_UFunction_UEquippableItem_HandleEquip, "HandleEquip" }, // 3241451638
+		{ &Z_Construct_UFunction_UEquippableItem_HandleUnequip, "HandleUnequip" }, // 3490465054
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -264,16 +300,24 @@ struct Z_Construct_UClass_UEquippableItem_Clothing_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines a clothing item. Will use the skeletal mesh set in your EquipmentComponent and set it to the clothing mesh you select.\n */" },
+#endif
 		{ "IncludePath", "Items/EquippableItem.h" },
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a clothing item. Will use the skeletal mesh set in your EquipmentComponent and set it to the clothing mesh you select." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClothingMeshData_MetaData[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The mesh to apply to the player */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/EquippableItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The mesh to apply to the player" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ClothingMeshData;
@@ -284,7 +328,7 @@ struct Z_Construct_UClass_UEquippableItem_Clothing_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UEquippableItem_Clothing_Statics::NewProp_ClothingMeshData = { "ClothingMeshData", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEquippableItem_Clothing, ClothingMeshData), Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ClothingMeshData_MetaData), NewProp_ClothingMeshData_MetaData) }; // 2114742728
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UEquippableItem_Clothing_Statics::NewProp_ClothingMeshData = { "ClothingMeshData", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEquippableItem_Clothing, ClothingMeshData), Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ClothingMeshData_MetaData), NewProp_ClothingMeshData_MetaData) }; // 2712583594
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEquippableItem_Clothing_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEquippableItem_Clothing_Statics::NewProp_ClothingMeshData,
 };
@@ -326,15 +370,15 @@ UEquippableItem_Clothing::~UEquippableItem_Clothing() {}
 // End Class UEquippableItem_Clothing
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_EquippableItem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_EquippableItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEquippableItem, UEquippableItem::StaticClass, TEXT("UEquippableItem"), &Z_Registration_Info_UClass_UEquippableItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEquippableItem), 1279414451U) },
-		{ Z_Construct_UClass_UEquippableItem_Clothing, UEquippableItem_Clothing::StaticClass, TEXT("UEquippableItem_Clothing"), &Z_Registration_Info_UClass_UEquippableItem_Clothing, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEquippableItem_Clothing), 3609676337U) },
+		{ Z_Construct_UClass_UEquippableItem, UEquippableItem::StaticClass, TEXT("UEquippableItem"), &Z_Registration_Info_UClass_UEquippableItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEquippableItem), 2072862692U) },
+		{ Z_Construct_UClass_UEquippableItem_Clothing, UEquippableItem_Clothing::StaticClass, TEXT("UEquippableItem_Clothing"), &Z_Registration_Info_UClass_UEquippableItem_Clothing, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEquippableItem_Clothing), 3732333284U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_EquippableItem_h_3707338709(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_EquippableItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_EquippableItem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_EquippableItem_h_4018249203(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_EquippableItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_EquippableItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

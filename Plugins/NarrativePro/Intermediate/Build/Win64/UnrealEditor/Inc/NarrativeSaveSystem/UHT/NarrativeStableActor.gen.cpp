@@ -50,9 +50,13 @@ struct Z_Construct_UFunction_UNarrativeStableActor_GetActorGUID_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Stable Actor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Get the actors stable GUID.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeStableActor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the actors stable GUID." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -108,7 +112,7 @@ struct Z_Construct_UClass_UNarrativeStableActor_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeStableActor_GetActorGUID, "GetActorGUID" }, // 230848068
+		{ &Z_Construct_UFunction_UNarrativeStableActor_GetActorGUID, "GetActorGUID" }, // 3726637522
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -154,14 +158,14 @@ UNarrativeStableActor::~UNarrativeStableActor() {}
 // End Interface UNarrativeStableActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeStableActor_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeStableActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeStableActor, UNarrativeStableActor::StaticClass, TEXT("UNarrativeStableActor"), &Z_Registration_Info_UClass_UNarrativeStableActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeStableActor), 2445607432U) },
+		{ Z_Construct_UClass_UNarrativeStableActor, UNarrativeStableActor::StaticClass, TEXT("UNarrativeStableActor"), &Z_Registration_Info_UClass_UNarrativeStableActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeStableActor), 3333092418U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeStableActor_h_804696901(TEXT("/Script/NarrativeSaveSystem"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeStableActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeStableActor_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeStableActor_h_3176468523(TEXT("/Script/NarrativeSaveSystem"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeStableActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_NarrativeStableActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -32,23 +32,35 @@ struct Z_Construct_UClass_USaveSystemDeveloperSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Settings for configuring the Narrative Save System. \n */" },
+#endif
 		{ "DisplayName", "Narrative - Save System" },
 		{ "IncludePath", "SaveSystemDeveloperSettings.h" },
 		{ "ModuleRelativePath", "Public/SaveSystemDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Settings for configuring the Narrative Save System." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAutoLoadFirstSaveInEditor_MetaData[] = {
 		{ "Category", "Narrative Pro|Save System" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If true, Narrative will automatically load the save in slot 1, provided you have a game saved in that slot.\n\x09This is great for QA testing - it saves you having to open the pause menu and load your game every time you load in. */" },
+#endif
 		{ "ModuleRelativePath", "Public/SaveSystemDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, Narrative will automatically load the save in slot 1, provided you have a game saved in that slot.\n      This is great for QA testing - it saves you having to open the pause menu and load your game every time you load in." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SaveGameClass_MetaData[] = {
 		{ "Category", "Narrative Pro|Save System" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The save class we'll use to save our world to disk. */" },
+#endif
 		{ "ModuleRelativePath", "Public/SaveSystemDeveloperSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The save class we'll use to save our world to disk." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bAutoLoadFirstSaveInEditor_SetBit(void* Obj);
@@ -109,14 +121,14 @@ USaveSystemDeveloperSettings::~USaveSystemDeveloperSettings() {}
 // End Class USaveSystemDeveloperSettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemDeveloperSettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemDeveloperSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USaveSystemDeveloperSettings, USaveSystemDeveloperSettings::StaticClass, TEXT("USaveSystemDeveloperSettings"), &Z_Registration_Info_UClass_USaveSystemDeveloperSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveSystemDeveloperSettings), 1600930226U) },
+		{ Z_Construct_UClass_USaveSystemDeveloperSettings, USaveSystemDeveloperSettings::StaticClass, TEXT("USaveSystemDeveloperSettings"), &Z_Registration_Info_UClass_USaveSystemDeveloperSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveSystemDeveloperSettings), 2366300829U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemDeveloperSettings_h_3878127114(TEXT("/Script/NarrativeSaveSystem"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemDeveloperSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemDeveloperSettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemDeveloperSettings_h_2401486210(TEXT("/Script/NarrativeSaveSystem"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemDeveloperSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeSaveSystem_Public_SaveSystemDeveloperSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

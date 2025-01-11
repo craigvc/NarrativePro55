@@ -29,7 +29,9 @@ struct Z_Construct_UClass_UCustomWaypointMarker_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "CustomWaypointMarker.h" },
 		{ "ModuleRelativePath", "Public/CustomWaypointMarker.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
@@ -78,14 +80,14 @@ UCustomWaypointMarker::~UCustomWaypointMarker() {}
 // End Class UCustomWaypointMarker
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypointMarker_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypointMarker_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCustomWaypointMarker, UCustomWaypointMarker::StaticClass, TEXT("UCustomWaypointMarker"), &Z_Registration_Info_UClass_UCustomWaypointMarker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomWaypointMarker), 1009784094U) },
+		{ Z_Construct_UClass_UCustomWaypointMarker, UCustomWaypointMarker::StaticClass, TEXT("UCustomWaypointMarker"), &Z_Registration_Info_UClass_UCustomWaypointMarker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomWaypointMarker), 1915330664U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypointMarker_h_2505251413(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypointMarker_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypointMarker_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypointMarker_h_2974196169(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypointMarker_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_CustomWaypointMarker_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

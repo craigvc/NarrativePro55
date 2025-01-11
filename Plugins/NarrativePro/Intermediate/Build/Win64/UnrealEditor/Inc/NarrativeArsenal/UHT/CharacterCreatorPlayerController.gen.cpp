@@ -29,11 +29,15 @@ struct Z_Construct_UClass_ACharacterCreatorPlayerController_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for character creator PC, decided to use a cpp base for this as updating save file in BP was annoying with regards to refs etc. \n */" },
+#endif
 		{ "HideCategories", "Collision Rendering Transformation" },
 		{ "IncludePath", "CharacterCreator/CharacterCreatorPlayerController.h" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorPlayerController.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for character creator PC, decided to use a cpp base for this as updating save file in BP was annoying with regards to refs etc." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -80,14 +84,14 @@ ACharacterCreatorPlayerController::~ACharacterCreatorPlayerController() {}
 // End Class ACharacterCreatorPlayerController
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorPlayerController_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorPlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACharacterCreatorPlayerController, ACharacterCreatorPlayerController::StaticClass, TEXT("ACharacterCreatorPlayerController"), &Z_Registration_Info_UClass_ACharacterCreatorPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACharacterCreatorPlayerController), 1647372916U) },
+		{ Z_Construct_UClass_ACharacterCreatorPlayerController, ACharacterCreatorPlayerController::StaticClass, TEXT("ACharacterCreatorPlayerController"), &Z_Registration_Info_UClass_ACharacterCreatorPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACharacterCreatorPlayerController), 3024175229U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorPlayerController_h_3029720504(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorPlayerController_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorPlayerController_h_3600367608(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorPlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

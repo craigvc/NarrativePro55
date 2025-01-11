@@ -31,10 +31,14 @@ struct Z_Construct_UClass_UWeaponItemBlueprint_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A custom Narrative item that equips a weapon visual to the player, grants some abilities, and modifies our attack power. \n */" },
+#endif
 		{ "IncludePath", "ArsenalBlueprints.h" },
 		{ "ModuleRelativePath", "Public/ArsenalBlueprints.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A custom Narrative item that equips a weapon visual to the player, grants some abilities, and modifies our attack power." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -93,10 +97,14 @@ struct Z_Construct_UClass_UGameplayEffectItemBlueprint_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A narrative item that grants a gameplay effect to the user when used! Very useful for things like potions. \n */" },
+#endif
 		{ "IncludePath", "ArsenalBlueprints.h" },
 		{ "ModuleRelativePath", "Public/ArsenalBlueprints.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A narrative item that grants a gameplay effect to the user when used! Very useful for things like potions." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -143,15 +151,15 @@ UGameplayEffectItemBlueprint::~UGameplayEffectItemBlueprint() {}
 // End Class UGameplayEffectItemBlueprint
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Public_ArsenalBlueprints_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Public_ArsenalBlueprints_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWeaponItemBlueprint, UWeaponItemBlueprint::StaticClass, TEXT("UWeaponItemBlueprint"), &Z_Registration_Info_UClass_UWeaponItemBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWeaponItemBlueprint), 459970581U) },
-		{ Z_Construct_UClass_UGameplayEffectItemBlueprint, UGameplayEffectItemBlueprint::StaticClass, TEXT("UGameplayEffectItemBlueprint"), &Z_Registration_Info_UClass_UGameplayEffectItemBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameplayEffectItemBlueprint), 492337219U) },
+		{ Z_Construct_UClass_UWeaponItemBlueprint, UWeaponItemBlueprint::StaticClass, TEXT("UWeaponItemBlueprint"), &Z_Registration_Info_UClass_UWeaponItemBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWeaponItemBlueprint), 3227822349U) },
+		{ Z_Construct_UClass_UGameplayEffectItemBlueprint, UGameplayEffectItemBlueprint::StaticClass, TEXT("UGameplayEffectItemBlueprint"), &Z_Registration_Info_UClass_UGameplayEffectItemBlueprint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameplayEffectItemBlueprint), 2155095351U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Public_ArsenalBlueprints_h_2237171778(TEXT("/Script/NarrativeArsenalEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Public_ArsenalBlueprints_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Public_ArsenalBlueprints_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Public_ArsenalBlueprints_h_3166664024(TEXT("/Script/NarrativeArsenalEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Public_ArsenalBlueprints_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenalEditor_Public_ArsenalBlueprints_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

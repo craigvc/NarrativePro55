@@ -80,10 +80,14 @@ struct Z_Construct_UClass_UQuestNodeUserWidget_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Parent class for a custom UMG widget that narrative will add to Quest nodes if you want to override narratives default UI\n */" },
+#endif
 		{ "IncludePath", "QuestNodeUserWidget.h" },
 		{ "ModuleRelativePath", "Public/QuestNodeUserWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Parent class for a custom UMG widget that narrative will add to Quest nodes if you want to override narratives default UI" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Node_MetaData[] = {
 		{ "Category", "Quest Node" },
@@ -168,14 +172,14 @@ UQuestNodeUserWidget::~UQuestNodeUserWidget() {}
 // End Class UQuestNodeUserWidget
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Public_QuestNodeUserWidget_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Public_QuestNodeUserWidget_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestNodeUserWidget, UQuestNodeUserWidget::StaticClass, TEXT("UQuestNodeUserWidget"), &Z_Registration_Info_UClass_UQuestNodeUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestNodeUserWidget), 2304186564U) },
+		{ Z_Construct_UClass_UQuestNodeUserWidget, UQuestNodeUserWidget::StaticClass, TEXT("UQuestNodeUserWidget"), &Z_Registration_Info_UClass_UQuestNodeUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestNodeUserWidget), 2420500837U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Public_QuestNodeUserWidget_h_3821617075(TEXT("/Script/NarrativeQuestEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Public_QuestNodeUserWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeQuestEditor_Public_QuestNodeUserWidget_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Public_QuestNodeUserWidget_h_1453544772(TEXT("/Script/NarrativeQuestEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Public_QuestNodeUserWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeQuestEditor_Public_QuestNodeUserWidget_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

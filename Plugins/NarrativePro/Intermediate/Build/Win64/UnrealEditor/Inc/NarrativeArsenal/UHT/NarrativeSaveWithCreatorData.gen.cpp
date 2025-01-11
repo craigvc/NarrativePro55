@@ -30,9 +30,13 @@ struct Z_Construct_UFunction_UNarrativeSaveWithCreatorData_ClearMeshesAndGrooms_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Creator Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Clear our creator meshes and grooms - we do this usually when the form changes. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/NarrativeSaveWithCreatorData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Clear our creator meshes and grooms - we do this usually when the form changes." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -68,9 +72,13 @@ struct Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorDataGroom_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Creator Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "///**Set a creator data groom*/\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/NarrativeSaveWithCreatorData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set a creator data groom" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Slot_MetaData[] = {
 		{ "NativeConst", "" },
@@ -124,9 +132,13 @@ struct Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorDataMesh_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Creator Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "///**Set a creator data mesh*/\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/NarrativeSaveWithCreatorData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set a creator data mesh" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshItem;
@@ -170,9 +182,13 @@ struct Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorScalarValue
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Creator Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Set a creator scalar value*/" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/NarrativeSaveWithCreatorData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set a creator scalar value" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TagID_MetaData[] = {
 		{ "NativeConst", "" },
@@ -226,9 +242,13 @@ struct Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorVectorValue
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Creator Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Set a creator Vector value*/" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/NarrativeSaveWithCreatorData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set a creator Vector value" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TagID_MetaData[] = {
 		{ "NativeConst", "" },
@@ -293,22 +313,34 @@ struct Z_Construct_UClass_UNarrativeSaveWithCreatorData_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A narrative save file, but we've added character creator data - the character creator level reads/writes to this.\n */" },
+#endif
 		{ "IncludePath", "CharacterCreator/NarrativeSaveWithCreatorData.h" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/NarrativeSaveWithCreatorData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A narrative save file, but we've added character creator data - the character creator level reads/writes to this." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterCreatorAttributes_MetaData[] = {
 		{ "Category", "Creator Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*Our character creator attributes*/" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/NarrativeSaveWithCreatorData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our character creator attributes" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterCreatorUsername_MetaData[] = {
 		{ "Category", "Creator Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Our characters username we set in the character creator. If empty for some reason we'll use the default username. */" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/NarrativeSaveWithCreatorData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our characters username we set in the character creator. If empty for some reason we'll use the default username." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CharacterCreatorAttributes;
@@ -316,11 +348,11 @@ struct Z_Construct_UClass_UNarrativeSaveWithCreatorData_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_ClearMeshesAndGrooms, "ClearMeshesAndGrooms" }, // 1105387676
-		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorDataGroom, "SetCreatorDataGroom" }, // 800133079
-		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorDataMesh, "SetCreatorDataMesh" }, // 2748526685
-		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorScalarValue, "SetCreatorScalarValue" }, // 1465799209
-		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorVectorValue, "SetCreatorVectorValue" }, // 1651225859
+		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_ClearMeshesAndGrooms, "ClearMeshesAndGrooms" }, // 3199050745
+		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorDataGroom, "SetCreatorDataGroom" }, // 1997124617
+		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorDataMesh, "SetCreatorDataMesh" }, // 4248092645
+		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorScalarValue, "SetCreatorScalarValue" }, // 379047314
+		{ &Z_Construct_UFunction_UNarrativeSaveWithCreatorData_SetCreatorVectorValue, "SetCreatorVectorValue" }, // 949429666
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -328,7 +360,7 @@ struct Z_Construct_UClass_UNarrativeSaveWithCreatorData_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeSaveWithCreatorData_Statics::NewProp_CharacterCreatorAttributes = { "CharacterCreatorAttributes", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveWithCreatorData, CharacterCreatorAttributes), Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterCreatorAttributes_MetaData), NewProp_CharacterCreatorAttributes_MetaData) }; // 420917075
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeSaveWithCreatorData_Statics::NewProp_CharacterCreatorAttributes = { "CharacterCreatorAttributes", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveWithCreatorData, CharacterCreatorAttributes), Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterCreatorAttributes_MetaData), NewProp_CharacterCreatorAttributes_MetaData) }; // 3953964664
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UNarrativeSaveWithCreatorData_Statics::NewProp_CharacterCreatorUsername = { "CharacterCreatorUsername", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeSaveWithCreatorData, CharacterCreatorUsername), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterCreatorUsername_MetaData), NewProp_CharacterCreatorUsername_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UNarrativeSaveWithCreatorData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNarrativeSaveWithCreatorData_Statics::NewProp_CharacterCreatorAttributes,
@@ -373,14 +405,14 @@ UNarrativeSaveWithCreatorData::~UNarrativeSaveWithCreatorData() {}
 // End Class UNarrativeSaveWithCreatorData
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_NarrativeSaveWithCreatorData_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_NarrativeSaveWithCreatorData_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeSaveWithCreatorData, UNarrativeSaveWithCreatorData::StaticClass, TEXT("UNarrativeSaveWithCreatorData"), &Z_Registration_Info_UClass_UNarrativeSaveWithCreatorData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSaveWithCreatorData), 4012933005U) },
+		{ Z_Construct_UClass_UNarrativeSaveWithCreatorData, UNarrativeSaveWithCreatorData::StaticClass, TEXT("UNarrativeSaveWithCreatorData"), &Z_Registration_Info_UClass_UNarrativeSaveWithCreatorData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeSaveWithCreatorData), 4241979945U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_NarrativeSaveWithCreatorData_h_263036724(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_NarrativeSaveWithCreatorData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_NarrativeSaveWithCreatorData_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_NarrativeSaveWithCreatorData_h_2442407596(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_NarrativeSaveWithCreatorData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_NarrativeSaveWithCreatorData_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

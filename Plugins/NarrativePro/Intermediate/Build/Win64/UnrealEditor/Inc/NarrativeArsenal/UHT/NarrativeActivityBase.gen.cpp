@@ -39,9 +39,13 @@ struct Z_Construct_UScriptStruct_FActivityExecutionContext_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Because activities can be executed from many different sources, we pass a child of this struct along as context when we run an activity so we know why the activity is being ran, what thing is trying to run the activity, etc. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Because activities can be executed from many different sources, we pass a child of this struct along as context when we run an activity so we know why the activity is being ran, what thing is trying to run the activity, etc." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void* NewStructOps()
@@ -93,27 +97,43 @@ struct Z_Construct_UScriptStruct_FActivityExecutionContext_Scheduled_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Context for an NPCs schedule running the activity \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Context for an NPCs schedule running the activity" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StartTime_MetaData[] = {
 		{ "Category", "Scheduled Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//When the activity starts and ends \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When the activity starts and ends" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimeAtStart_MetaData[] = {
 		{ "Category", "Scheduled Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//When the activity ends \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When the activity ends" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bStartedFromAdvanceTime_MetaData[] = {
 		{ "Category", "Scheduled Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether the activity was started from advance time\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the activity was started from advance time" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_StartTime;
@@ -197,9 +217,13 @@ struct Z_Construct_UFunction_UNarrativeActivityBase_CanRunActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Allows the behavior to specify whether it can be ran. For example we may have a MoveToLocation activity - that would want to check\n\x09the NPC is not falling using this function and deny the activity to run if we were falling. */" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows the behavior to specify whether it can be ran. For example we may have a MoveToLocation activity - that would want to check\n       the NPC is not falling using this function and deny the activity to run if we were falling." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_FailReason;
@@ -265,9 +289,13 @@ struct Z_Construct_UFunction_UNarrativeActivityBase_DescribeActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Activity Base" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Debugging tools use this to grab a description of the behavior\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Debugging tools use this to grab a description of the behavior" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
@@ -309,9 +337,13 @@ struct Z_Construct_UFunction_UNarrativeActivityBase_EndActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Ends the activity - the activity component can then select a new one for us to do. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Ends the activity - the activity component can then select a new one for us to do." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -360,9 +392,13 @@ struct Z_Construct_UFunction_UNarrativeActivityBase_K2_EndActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called after the tree has finished running.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called after the tree has finished running." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -391,9 +427,13 @@ struct Z_Construct_UFunction_UNarrativeActivityBase_K2_RunActivity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called after the tree has started running and blackboard values have been set. Do anything you need in here! \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called after the tree has started running and blackboard values have been set. Do anything you need in here!" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -432,36 +472,56 @@ struct Z_Construct_UClass_UNarrativeActivityBase_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for settlement and NPC activities. \n */" },
+#endif
 		{ "IncludePath", "AI/Activities/NarrativeActivityBase.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for settlement and NPC activities." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivityName_MetaData[] = {
 		{ "Category", "Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The name of the this activity\n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name of the this activity" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwnedTags_MetaData[] = {
 		{ "Category", "Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The tags we'll grant the NPC/Settlement when this ability starts \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The tags we'll grant the NPC/Settlement when this ability starts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BlockTags_MetaData[] = {
 		{ "Category", "Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We'll block the activity from running if the has any of these tags \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We'll block the activity from running if the has any of these tags" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RequireTags_MetaData[] = {
 		{ "Category", "Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We'll require these tags to be on the owner before we run the activity \n" },
+#endif
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeActivityBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We'll require these tags to be on the owner before we run the activity" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ActivityName;
@@ -471,11 +531,11 @@ struct Z_Construct_UClass_UNarrativeActivityBase_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeActivityBase_CanRunActivity, "CanRunActivity" }, // 69472353
-		{ &Z_Construct_UFunction_UNarrativeActivityBase_DescribeActivity, "DescribeActivity" }, // 3909197203
-		{ &Z_Construct_UFunction_UNarrativeActivityBase_EndActivity, "EndActivity" }, // 1734705282
-		{ &Z_Construct_UFunction_UNarrativeActivityBase_K2_EndActivity, "K2_EndActivity" }, // 1330785600
-		{ &Z_Construct_UFunction_UNarrativeActivityBase_K2_RunActivity, "K2_RunActivity" }, // 1028260590
+		{ &Z_Construct_UFunction_UNarrativeActivityBase_CanRunActivity, "CanRunActivity" }, // 2291250021
+		{ &Z_Construct_UFunction_UNarrativeActivityBase_DescribeActivity, "DescribeActivity" }, // 3826975877
+		{ &Z_Construct_UFunction_UNarrativeActivityBase_EndActivity, "EndActivity" }, // 1850743080
+		{ &Z_Construct_UFunction_UNarrativeActivityBase_K2_EndActivity, "K2_EndActivity" }, // 981300735
+		{ &Z_Construct_UFunction_UNarrativeActivityBase_K2_RunActivity, "K2_RunActivity" }, // 2242166434
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -531,19 +591,19 @@ UNarrativeActivityBase::~UNarrativeActivityBase() {}
 // End Class UNarrativeActivityBase
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FActivityExecutionContext::StaticStruct, Z_Construct_UScriptStruct_FActivityExecutionContext_Statics::NewStructOps, TEXT("ActivityExecutionContext"), &Z_Registration_Info_UScriptStruct_ActivityExecutionContext, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FActivityExecutionContext), 2319855637U) },
-		{ FActivityExecutionContext_Scheduled::StaticStruct, Z_Construct_UScriptStruct_FActivityExecutionContext_Scheduled_Statics::NewStructOps, TEXT("ActivityExecutionContext_Scheduled"), &Z_Registration_Info_UScriptStruct_ActivityExecutionContext_Scheduled, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FActivityExecutionContext_Scheduled), 416183730U) },
+		{ FActivityExecutionContext::StaticStruct, Z_Construct_UScriptStruct_FActivityExecutionContext_Statics::NewStructOps, TEXT("ActivityExecutionContext"), &Z_Registration_Info_UScriptStruct_ActivityExecutionContext, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FActivityExecutionContext), 3041783245U) },
+		{ FActivityExecutionContext_Scheduled::StaticStruct, Z_Construct_UScriptStruct_FActivityExecutionContext_Scheduled_Statics::NewStructOps, TEXT("ActivityExecutionContext_Scheduled"), &Z_Registration_Info_UScriptStruct_ActivityExecutionContext_Scheduled, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FActivityExecutionContext_Scheduled), 1931917624U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeActivityBase, UNarrativeActivityBase::StaticClass, TEXT("UNarrativeActivityBase"), &Z_Registration_Info_UClass_UNarrativeActivityBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeActivityBase), 3232157011U) },
+		{ Z_Construct_UClass_UNarrativeActivityBase, UNarrativeActivityBase::StaticClass, TEXT("UNarrativeActivityBase"), &Z_Registration_Info_UClass_UNarrativeActivityBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeActivityBase), 2931476678U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_478334170(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_1451315021(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeActivityBase_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

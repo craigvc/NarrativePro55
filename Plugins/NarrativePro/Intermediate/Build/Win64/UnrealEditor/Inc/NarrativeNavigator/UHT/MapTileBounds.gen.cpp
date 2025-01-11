@@ -36,15 +36,23 @@ struct Z_Construct_UClass_AMapTileBounds_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapWidth_MetaData[] = {
 		{ "Category", "Map Bounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The width our map should be, in unreal units (cm)*/" },
+#endif
 		{ "ModuleRelativePath", "Public/MapTileBounds.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The width our map should be, in unreal units (cm)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumTiles_MetaData[] = {
 		{ "Category", "Map Bounds" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*The number of 1024x1024 tiles that should make up the map. For smaller maps you could use a single tile - for large open world maps you'll want more\n\x09or your map will become blurry and low resolution. */" },
+#endif
 		{ "ModuleRelativePath", "Public/MapTileBounds.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The number of 1024x1024 tiles that should make up the map. For smaller maps you could use a single tile - for large open world maps you'll want more\n       or your map will become blurry and low resolution." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapTileBounds_MetaData[] = {
 		{ "Category", "Map Bounds" },
@@ -115,14 +123,14 @@ AMapTileBounds::~AMapTileBounds() {}
 // End Class AMapTileBounds
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileBounds_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileBounds_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMapTileBounds, AMapTileBounds::StaticClass, TEXT("AMapTileBounds"), &Z_Registration_Info_UClass_AMapTileBounds, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMapTileBounds), 1935178015U) },
+		{ Z_Construct_UClass_AMapTileBounds, AMapTileBounds::StaticClass, TEXT("AMapTileBounds"), &Z_Registration_Info_UClass_AMapTileBounds, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMapTileBounds), 749990930U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileBounds_h_1969130994(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileBounds_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileBounds_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileBounds_h_262132937(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileBounds_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileBounds_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

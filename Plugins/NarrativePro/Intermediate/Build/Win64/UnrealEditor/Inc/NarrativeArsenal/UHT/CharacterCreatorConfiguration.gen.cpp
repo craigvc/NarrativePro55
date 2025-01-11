@@ -43,28 +43,44 @@ struct Z_Construct_UClass_UCharacterCreatorPage_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines a page in the character creator\n" },
+#endif
 		{ "IncludePath", "CharacterCreator/CharacterCreatorConfiguration.h" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a page in the character creator" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PageID_MetaData[] = {
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The gameplay tag identifying this creator section\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The gameplay tag identifying this creator section" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PageTitleText_MetaData[] = {
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display name for this page\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name for this page" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PageSections_MetaData[] = {
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//All of the sections on the page\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All of the sections on the page" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PageID;
@@ -139,28 +155,44 @@ struct Z_Construct_UClass_UCharacterCreatorSection_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines a section of a character creator page\n" },
+#endif
 		{ "IncludePath", "CharacterCreator/CharacterCreatorConfiguration.h" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a section of a character creator page" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SectionID_MetaData[] = {
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The gameplay tag identifying this creator section\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The gameplay tag identifying this creator section" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SectionDisplayName_MetaData[] = {
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display name for this section\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name for this section" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Options_MetaData[] = {
 		{ "Category", "Mesh Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The options that can be edited on this page\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The options that can be edited on this page" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SectionID;
@@ -235,50 +267,78 @@ struct Z_Construct_UClass_UCharacterCreatorForm_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A form defines a character creator options - ie Male, Female, Goblin, etc. It also defines what the character looks like by default when you switch forms.  \n */" },
+#endif
 		{ "IncludePath", "CharacterCreator/CharacterCreatorConfiguration.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A form defines a character creator options - ie Male, Female, Goblin, etc. It also defines what the character looks like by default when you switch forms." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FormDisplayName_MetaData[] = {
 		{ "Category", "Form" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display name of this form - Male, Female, Dog, Cat, etc!  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name of this form - Male, Female, Dog, Cat, etc!" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FormTag_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Forms" },
 		{ "Category", "Form" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The forms tag ID - you can grab this ingame to determine players form - useful for items that may display differently on different genders etc \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The forms tag ID - you can grab this ingame to determine players form - useful for items that may display differently on different genders etc" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterCreatorPages_MetaData[] = {
 		{ "Category", "Form" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The pages in the character creator - each page is made up of sections, and each section has settings in it that can be changed. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The pages in the character creator - each page is made up of sections, and each section has settings in it that can be changed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultCharacterCreatorMeshes_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot.Mesh" },
 		{ "Category", "Form" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The default meshes the form has when selected \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The default meshes the form has when selected" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultCharacterCreatorGrooms_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot.Groom" },
 		{ "Category", "Form" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The default grooms this form has when selected \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The default grooms this form has when selected" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultCharacterUnarmedAnim_MetaData[] = {
 		{ "Category", "Form" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The animation blueprint this form should have by default \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The animation blueprint this form should have by default" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_FormDisplayName;
@@ -374,17 +434,25 @@ struct Z_Construct_UClass_UCharacterCreatorConfiguration_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Asset that defines all the configurable settings for the character creator. \n */" },
+#endif
 		{ "IncludePath", "CharacterCreator/CharacterCreatorConfiguration.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Asset that defines all the configurable settings for the character creator." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterCreatorForms_MetaData[] = {
 		{ "Category", "Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The pages in the character creator - each page is made up of sections, and each section has settings in it that can be changed. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorConfiguration.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The pages in the character creator - each page is made up of sections, and each section has settings in it that can be changed." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CharacterCreatorForms_Inner;
@@ -440,17 +508,17 @@ UCharacterCreatorConfiguration::~UCharacterCreatorConfiguration() {}
 // End Class UCharacterCreatorConfiguration
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorConfiguration_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorConfiguration_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterCreatorPage, UCharacterCreatorPage::StaticClass, TEXT("UCharacterCreatorPage"), &Z_Registration_Info_UClass_UCharacterCreatorPage, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorPage), 1121811644U) },
-		{ Z_Construct_UClass_UCharacterCreatorSection, UCharacterCreatorSection::StaticClass, TEXT("UCharacterCreatorSection"), &Z_Registration_Info_UClass_UCharacterCreatorSection, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorSection), 1832354659U) },
-		{ Z_Construct_UClass_UCharacterCreatorForm, UCharacterCreatorForm::StaticClass, TEXT("UCharacterCreatorForm"), &Z_Registration_Info_UClass_UCharacterCreatorForm, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorForm), 3140456390U) },
-		{ Z_Construct_UClass_UCharacterCreatorConfiguration, UCharacterCreatorConfiguration::StaticClass, TEXT("UCharacterCreatorConfiguration"), &Z_Registration_Info_UClass_UCharacterCreatorConfiguration, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorConfiguration), 2828672237U) },
+		{ Z_Construct_UClass_UCharacterCreatorPage, UCharacterCreatorPage::StaticClass, TEXT("UCharacterCreatorPage"), &Z_Registration_Info_UClass_UCharacterCreatorPage, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorPage), 787238020U) },
+		{ Z_Construct_UClass_UCharacterCreatorSection, UCharacterCreatorSection::StaticClass, TEXT("UCharacterCreatorSection"), &Z_Registration_Info_UClass_UCharacterCreatorSection, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorSection), 3522927140U) },
+		{ Z_Construct_UClass_UCharacterCreatorForm, UCharacterCreatorForm::StaticClass, TEXT("UCharacterCreatorForm"), &Z_Registration_Info_UClass_UCharacterCreatorForm, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorForm), 2935009249U) },
+		{ Z_Construct_UClass_UCharacterCreatorConfiguration, UCharacterCreatorConfiguration::StaticClass, TEXT("UCharacterCreatorConfiguration"), &Z_Registration_Info_UClass_UCharacterCreatorConfiguration, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorConfiguration), 3417755873U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorConfiguration_h_826986088(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorConfiguration_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorConfiguration_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorConfiguration_h_2220459411(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorConfiguration_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorConfiguration_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

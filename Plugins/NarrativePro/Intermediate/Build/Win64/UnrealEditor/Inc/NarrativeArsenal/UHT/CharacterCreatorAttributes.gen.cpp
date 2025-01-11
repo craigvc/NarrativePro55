@@ -51,9 +51,13 @@ struct Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Base class for a creator attribute - these attributes make up our character creator appearance\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for a creator attribute - these attributes make up our character creator appearance" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void* NewStructOps()
@@ -105,23 +109,35 @@ struct Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Morph_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Base class for a morph target that can be changed on the character \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for a morph target that can be changed on the character" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MorphName_MetaData[] = {
 		{ "Category", "Morph" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The name of the morph \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name of the morph" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MorphValue_MetaData[] = {
 		{ "Category", "Morph" },
 		{ "ClampMax", "1.000000" },
 		{ "ClampMin", "0.000000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The value we need to set the morph to \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The value we need to set the morph to" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FNamePropertyParams NewProp_MorphName;
@@ -186,9 +202,13 @@ struct Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ParameterNames_MetaData[] = {
 		{ "Category", "Mesh Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The parameters to effect - this is an array so you can effect multiple parameters with the one value if needed. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The parameters to effect - this is an array so you can effect multiple parameters with the one value if needed." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FNamePropertyParams NewProp_ParameterNames_Inner;
@@ -255,9 +275,13 @@ struct Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Vector_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VectorTagID_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Vectors" },
 		{ "Category", "Mesh Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The vector tag we'll read the vector value from \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The vector tag we'll read the vector value from" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_VectorTagID;
@@ -321,9 +345,13 @@ struct Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Scalar_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScalarTagID_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Scalars" },
 		{ "Category", "Mesh Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The scalar tag we'll read the scalar value from \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The scalar tag we'll read the scalar value from" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ScalarTagID;
@@ -386,15 +414,23 @@ struct Z_Construct_UScriptStruct_FCreatorMeshMorph_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScalarTag_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Scalars" },
 		{ "Category", "Morph Option" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The scalar value we'll drive the morph with \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The scalar value we'll drive the morph with" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MorphNames_MetaData[] = {
 		{ "Category", "Morph Option" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The morph names \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The morph names" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ScalarTag;
@@ -458,27 +494,43 @@ struct Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines a material we need to apply to the set mesh, along with any params to set on it  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a material we need to apply to the set mesh, along with any params to set on it" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Material_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The material to apply\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The material to apply" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VectorParams_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The vector parameter values to apply to the material \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The vector parameter values to apply to the material" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScalarParams_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The scalar parameter values to apply to the material \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The scalar parameter values to apply to the material" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Material;
@@ -494,10 +546,10 @@ struct Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics
 	static const UECodeGen_Private::FStructParams StructParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0114000001010005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCreatorMeshMaterial, Material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Material_MetaData), NewProp_Material_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_VectorParams_Inner = { "VectorParams", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Vector, METADATA_PARAMS(0, nullptr) }; // 3704214798
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_VectorParams = { "VectorParams", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCreatorMeshMaterial, VectorParams), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VectorParams_MetaData), NewProp_VectorParams_MetaData) }; // 3704214798
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_ScalarParams_Inner = { "ScalarParams", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Scalar, METADATA_PARAMS(0, nullptr) }; // 2179393787
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_ScalarParams = { "ScalarParams", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCreatorMeshMaterial, ScalarParams), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScalarParams_MetaData), NewProp_ScalarParams_MetaData) }; // 2179393787
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_VectorParams_Inner = { "VectorParams", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Vector, METADATA_PARAMS(0, nullptr) }; // 259143876
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_VectorParams = { "VectorParams", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCreatorMeshMaterial, VectorParams), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VectorParams_MetaData), NewProp_VectorParams_MetaData) }; // 259143876
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_ScalarParams_Inner = { "ScalarParams", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Scalar, METADATA_PARAMS(0, nullptr) }; // 3329226917
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_ScalarParams = { "ScalarParams", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCreatorMeshMaterial, ScalarParams), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScalarParams_MetaData), NewProp_ScalarParams_MetaData) }; // 3329226917
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_Material,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewProp_VectorParams_Inner,
@@ -549,41 +601,65 @@ struct Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Base class for a default mesh for a slot \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for a default mesh for a slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Mesh_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The mesh we should apply to the character \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The mesh we should apply to the character" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUseLeaderPose_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Should the mesh follow the leader pose component?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should the mesh follow the leader pose component?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MeshAnimBP_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If we're not using leader pose this is the animBP the mesh should use\n" },
+#endif
 		{ "EditCondition", "!bUseLeaderPose" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If we're not using leader pose this is the animBP the mesh should use" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MeshMaterials_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Maps material index -> Creator mesh material. By default if a value doesn't exist in this map we'll just use the material \n// that was set on the mesh by default and wont set any params on it or anything. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Maps material index -> Creator mesh material. By default if a value doesn't exist in this map we'll just use the material\n that was set on the mesh by default and wont set any params on it or anything." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Morphs_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The morphs to apply to the mesh\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The morphs to apply to the mesh" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Mesh;
@@ -608,10 +684,10 @@ void Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_bUseLeaderPose = { "bUseLeaderPose", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FCharacterCreatorAttribute_Mesh), &Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_bUseLeaderPose_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bUseLeaderPose_MetaData), NewProp_bUseLeaderPose_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_MeshAnimBP = { "MeshAnimBP", nullptr, (EPropertyFlags)0x0014000001010005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttribute_Mesh, MeshAnimBP), Z_Construct_UClass_UClass, Z_Construct_UClass_UAnimInstance_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshAnimBP_MetaData), NewProp_MeshAnimBP_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_MeshMaterials_Inner = { "MeshMaterials", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCreatorMeshMaterial, METADATA_PARAMS(0, nullptr) }; // 1566717625
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_MeshMaterials = { "MeshMaterials", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttribute_Mesh, MeshMaterials), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshMaterials_MetaData), NewProp_MeshMaterials_MetaData) }; // 1566717625
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_Morphs_Inner = { "Morphs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCreatorMeshMorph, METADATA_PARAMS(0, nullptr) }; // 3138440107
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_Morphs = { "Morphs", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttribute_Mesh, Morphs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Morphs_MetaData), NewProp_Morphs_MetaData) }; // 3138440107
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_MeshMaterials_Inner = { "MeshMaterials", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCreatorMeshMaterial, METADATA_PARAMS(0, nullptr) }; // 2825176568
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_MeshMaterials = { "MeshMaterials", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttribute_Mesh, MeshMaterials), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshMaterials_MetaData), NewProp_MeshMaterials_MetaData) }; // 2825176568
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_Morphs_Inner = { "Morphs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCreatorMeshMorph, METADATA_PARAMS(0, nullptr) }; // 2380180938
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_Morphs = { "Morphs", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttribute_Mesh, Morphs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Morphs_MetaData), NewProp_Morphs_MetaData) }; // 2380180938
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_Mesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewProp_bUseLeaderPose,
@@ -665,21 +741,33 @@ struct Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Groom_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Base class for a default groom for a slot \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for a default groom for a slot" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GroomAsset_MetaData[] = {
 		{ "Category", "Groom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The groom we should apply\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The groom we should apply" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GroomBindingAsset_MetaData[] = {
 		{ "Category", "Groom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The groom binding we should apply\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The groom binding we should apply" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_GroomAsset;
@@ -740,56 +828,88 @@ struct Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A set of character attributes ready to be applied to a character  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A set of character attributes ready to be applied to a character" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FormTag_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Forms" },
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The form we've selected in the character creator \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The form we've selected in the character creator" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UnarmedAnimBP_MetaData[] = {
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The animBP the character should use when unarmed - this should probably be soft referenced\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The animBP the character should use when unarmed - this should probably be soft referenced" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Meshes_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot.Mesh" },
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The meshes to apply to the character\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The meshes to apply to the character" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Grooms_MetaData[] = {
 		{ "Categories", "Narrative.Equipment.Slot.Groom" },
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The grooms to apply to the character\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The grooms to apply to the character" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Morphs_MetaData[] = {
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The morphs to apply to the character\n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The morphs to apply to the character" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScalarValues_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Scalars" },
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Global scalar values that morphs and meshes can reference \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Global scalar values that morphs and meshes can reference" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VectorValues_MetaData[] = {
 		{ "Categories", "Narrative.CharacterCreator.Vectors" },
 		{ "Category", "Attribute" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Global vector values that morphs and meshes can reference \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/CharacterCreatorAttributes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Global vector values that morphs and meshes can reference" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_FormTag;
@@ -817,14 +937,14 @@ struct Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics
 };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_FormTag = { "FormTag", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, FormTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FormTag_MetaData), NewProp_FormTag_MetaData) }; // 1298103297
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_UnarmedAnimBP = { "UnarmedAnimBP", nullptr, (EPropertyFlags)0x0014000001010005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, UnarmedAnimBP), Z_Construct_UClass_UClass, Z_Construct_UClass_UAnimInstance_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UnarmedAnimBP_MetaData), NewProp_UnarmedAnimBP_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Meshes_ValueProp = { "Meshes", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh, METADATA_PARAMS(0, nullptr) }; // 2114742728
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Meshes_ValueProp = { "Meshes", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh, METADATA_PARAMS(0, nullptr) }; // 2712583594
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Meshes_Key_KeyProp = { "Meshes_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Meshes = { "Meshes", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, Meshes), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Meshes_MetaData), NewProp_Meshes_MetaData) }; // 1298103297 2114742728
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Grooms_ValueProp = { "Grooms", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Groom, METADATA_PARAMS(0, nullptr) }; // 1267147590
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Meshes = { "Meshes", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, Meshes), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Meshes_MetaData), NewProp_Meshes_MetaData) }; // 1298103297 2712583594
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Grooms_ValueProp = { "Grooms", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Groom, METADATA_PARAMS(0, nullptr) }; // 1903438328
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Grooms_Key_KeyProp = { "Grooms_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Grooms = { "Grooms", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, Grooms), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Grooms_MetaData), NewProp_Grooms_MetaData) }; // 1298103297 1267147590
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Morphs_Inner = { "Morphs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Morph, METADATA_PARAMS(0, nullptr) }; // 3532211338
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Morphs = { "Morphs", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, Morphs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Morphs_MetaData), NewProp_Morphs_MetaData) }; // 3532211338
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Grooms = { "Grooms", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, Grooms), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Grooms_MetaData), NewProp_Grooms_MetaData) }; // 1298103297 1903438328
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Morphs_Inner = { "Morphs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Morph, METADATA_PARAMS(0, nullptr) }; // 604252063
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_Morphs = { "Morphs", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, Morphs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Morphs_MetaData), NewProp_Morphs_MetaData) }; // 604252063
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_ScalarValues_ValueProp = { "ScalarValues", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_ScalarValues_Key_KeyProp = { "ScalarValues_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
 const UECodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewProp_ScalarValues = { "ScalarValues", nullptr, (EPropertyFlags)0x0010000001010005, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCharacterCreatorAttributeSet, ScalarValues), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScalarValues_MetaData), NewProp_ScalarValues_MetaData) }; // 1298103297
@@ -874,24 +994,24 @@ UScriptStruct* Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet()
 // End ScriptStruct FCharacterCreatorAttributeSet
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorAttributes_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorAttributes_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FCharacterCreatorAttribute::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Statics::NewStructOps, TEXT("CharacterCreatorAttribute"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttribute, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttribute), 1970597509U) },
-		{ FCharacterCreatorAttribute_Morph::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Morph_Statics::NewStructOps, TEXT("CharacterCreatorAttribute_Morph"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttribute_Morph, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttribute_Morph), 3532211338U) },
-		{ FCreatorMeshMaterialParam::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Statics::NewStructOps, TEXT("CreatorMeshMaterialParam"), &Z_Registration_Info_UScriptStruct_CreatorMeshMaterialParam, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMaterialParam), 4186243942U) },
-		{ FCreatorMeshMaterialParam_Vector::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Vector_Statics::NewStructOps, TEXT("CreatorMeshMaterialParam_Vector"), &Z_Registration_Info_UScriptStruct_CreatorMeshMaterialParam_Vector, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMaterialParam_Vector), 3704214798U) },
-		{ FCreatorMeshMaterialParam_Scalar::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Scalar_Statics::NewStructOps, TEXT("CreatorMeshMaterialParam_Scalar"), &Z_Registration_Info_UScriptStruct_CreatorMeshMaterialParam_Scalar, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMaterialParam_Scalar), 2179393787U) },
-		{ FCreatorMeshMorph::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMorph_Statics::NewStructOps, TEXT("CreatorMeshMorph"), &Z_Registration_Info_UScriptStruct_CreatorMeshMorph, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMorph), 3138440107U) },
-		{ FCreatorMeshMaterial::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewStructOps, TEXT("CreatorMeshMaterial"), &Z_Registration_Info_UScriptStruct_CreatorMeshMaterial, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMaterial), 1566717625U) },
-		{ FCharacterCreatorAttribute_Mesh::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewStructOps, TEXT("CharacterCreatorAttribute_Mesh"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttribute_Mesh, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttribute_Mesh), 2114742728U) },
-		{ FCharacterCreatorAttribute_Groom::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Groom_Statics::NewStructOps, TEXT("CharacterCreatorAttribute_Groom"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttribute_Groom, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttribute_Groom), 1267147590U) },
-		{ FCharacterCreatorAttributeSet::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewStructOps, TEXT("CharacterCreatorAttributeSet"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttributeSet), 420917075U) },
+		{ FCharacterCreatorAttribute::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Statics::NewStructOps, TEXT("CharacterCreatorAttribute"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttribute, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttribute), 2105655880U) },
+		{ FCharacterCreatorAttribute_Morph::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Morph_Statics::NewStructOps, TEXT("CharacterCreatorAttribute_Morph"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttribute_Morph, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttribute_Morph), 604252063U) },
+		{ FCreatorMeshMaterialParam::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Statics::NewStructOps, TEXT("CreatorMeshMaterialParam"), &Z_Registration_Info_UScriptStruct_CreatorMeshMaterialParam, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMaterialParam), 3805147709U) },
+		{ FCreatorMeshMaterialParam_Vector::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Vector_Statics::NewStructOps, TEXT("CreatorMeshMaterialParam_Vector"), &Z_Registration_Info_UScriptStruct_CreatorMeshMaterialParam_Vector, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMaterialParam_Vector), 259143876U) },
+		{ FCreatorMeshMaterialParam_Scalar::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMaterialParam_Scalar_Statics::NewStructOps, TEXT("CreatorMeshMaterialParam_Scalar"), &Z_Registration_Info_UScriptStruct_CreatorMeshMaterialParam_Scalar, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMaterialParam_Scalar), 3329226917U) },
+		{ FCreatorMeshMorph::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMorph_Statics::NewStructOps, TEXT("CreatorMeshMorph"), &Z_Registration_Info_UScriptStruct_CreatorMeshMorph, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMorph), 2380180938U) },
+		{ FCreatorMeshMaterial::StaticStruct, Z_Construct_UScriptStruct_FCreatorMeshMaterial_Statics::NewStructOps, TEXT("CreatorMeshMaterial"), &Z_Registration_Info_UScriptStruct_CreatorMeshMaterial, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCreatorMeshMaterial), 2825176568U) },
+		{ FCharacterCreatorAttribute_Mesh::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Mesh_Statics::NewStructOps, TEXT("CharacterCreatorAttribute_Mesh"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttribute_Mesh, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttribute_Mesh), 2712583594U) },
+		{ FCharacterCreatorAttribute_Groom::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttribute_Groom_Statics::NewStructOps, TEXT("CharacterCreatorAttribute_Groom"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttribute_Groom, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttribute_Groom), 1903438328U) },
+		{ FCharacterCreatorAttributeSet::StaticStruct, Z_Construct_UScriptStruct_FCharacterCreatorAttributeSet_Statics::NewStructOps, TEXT("CharacterCreatorAttributeSet"), &Z_Registration_Info_UScriptStruct_CharacterCreatorAttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterCreatorAttributeSet), 3953964664U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorAttributes_h_4239593184(TEXT("/Script/NarrativeArsenal"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorAttributes_h_3920681120(TEXT("/Script/NarrativeArsenal"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorAttributes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorAttributes_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorAttributes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_CharacterCreatorAttributes_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

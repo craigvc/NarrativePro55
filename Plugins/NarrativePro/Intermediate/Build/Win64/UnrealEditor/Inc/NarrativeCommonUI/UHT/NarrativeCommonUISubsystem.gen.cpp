@@ -122,10 +122,14 @@ struct Z_Construct_UFunction_UNarrativeCommonUISubsystem_ShowNotification_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Common UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Send a notification to the narrative HUD\n" },
+#endif
 		{ "CPP_Default_Duration", "5.000000" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonUISubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Send a notification to the narrative HUD" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NotificationText_MetaData[] = {
 		{ "NativeConst", "" },
@@ -187,23 +191,35 @@ struct Z_Construct_UClass_UNarrativeCommonUISubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Currently just used to provide efficient access to the narrative HUD, but may be used for more in future. \n */" },
+#endif
 		{ "IncludePath", "NarrativeCommonUISubsystem.h" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonUISubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Currently just used to provide efficient access to the narrative HUD, but may be used for more in future." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CommonHUD_MetaData[] = {
 		{ "Category", "Narrative Common UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Cached common hud \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonUISubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Cached common hud" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnHandleSubtitle_MetaData[] = {
 		{ "Category", "Narrative Common UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Allows blueprints to handle UE5 subtitles if they want!\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeCommonUISubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows blueprints to handle UE5 subtitles if they want!" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CommonHUD;
@@ -212,7 +228,7 @@ struct Z_Construct_UClass_UNarrativeCommonUISubsystem_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UNarrativeCommonUISubsystem_OnSetSubtitle, "OnSetSubtitle" }, // 1653987693
-		{ &Z_Construct_UFunction_UNarrativeCommonUISubsystem_ShowNotification, "ShowNotification" }, // 1285589851
+		{ &Z_Construct_UFunction_UNarrativeCommonUISubsystem_ShowNotification, "ShowNotification" }, // 3155970356
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -265,14 +281,14 @@ UNarrativeCommonUISubsystem::~UNarrativeCommonUISubsystem() {}
 // End Class UNarrativeCommonUISubsystem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUISubsystem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUISubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCommonUISubsystem, UNarrativeCommonUISubsystem::StaticClass, TEXT("UNarrativeCommonUISubsystem"), &Z_Registration_Info_UClass_UNarrativeCommonUISubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCommonUISubsystem), 3446412955U) },
+		{ Z_Construct_UClass_UNarrativeCommonUISubsystem, UNarrativeCommonUISubsystem::StaticClass, TEXT("UNarrativeCommonUISubsystem"), &Z_Registration_Info_UClass_UNarrativeCommonUISubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCommonUISubsystem), 274783611U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUISubsystem_h_1020854742(TEXT("/Script/NarrativeCommonUI"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUISubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUISubsystem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUISubsystem_h_987814035(TEXT("/Script/NarrativeCommonUI"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUISubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUISubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -31,19 +31,27 @@ struct Z_Construct_UClass_UNarrativeEvent_AddGoalToNPC_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Adds a goal to the given NPC. You may prefer to use a BP Event to bind this instead, as that will pass you a pointer back\n * to the created goal, meaning you can keep a reference to the goal, update it, or remove it. \n */" },
+#endif
 		{ "DisplayName", "Add Goal To NPC" },
 		{ "IncludePath", "AI/Activities/NarrativeEvent_AddGoalToNPC.h" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeEvent_AddGoalToNPC.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Adds a goal to the given NPC. You may prefer to use a BP Event to bind this instead, as that will pass you a pointer back\nto the created goal, meaning you can keep a reference to the goal, update it, or remove it." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Goal_MetaData[] = {
 		{ "Category", "NPC Activity" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The goal to send to the NPC \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/AI/Activities/NarrativeEvent_AddGoalToNPC.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The goal to send to the NPC" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Goal;
@@ -96,14 +104,14 @@ UNarrativeEvent_AddGoalToNPC::~UNarrativeEvent_AddGoalToNPC() {}
 // End Class UNarrativeEvent_AddGoalToNPC
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeEvent_AddGoalToNPC_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeEvent_AddGoalToNPC_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeEvent_AddGoalToNPC, UNarrativeEvent_AddGoalToNPC::StaticClass, TEXT("UNarrativeEvent_AddGoalToNPC"), &Z_Registration_Info_UClass_UNarrativeEvent_AddGoalToNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeEvent_AddGoalToNPC), 650292789U) },
+		{ Z_Construct_UClass_UNarrativeEvent_AddGoalToNPC, UNarrativeEvent_AddGoalToNPC::StaticClass, TEXT("UNarrativeEvent_AddGoalToNPC"), &Z_Registration_Info_UClass_UNarrativeEvent_AddGoalToNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeEvent_AddGoalToNPC), 628088300U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeEvent_AddGoalToNPC_h_3606142603(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeEvent_AddGoalToNPC_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeEvent_AddGoalToNPC_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeEvent_AddGoalToNPC_h_2848302950(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeEvent_AddGoalToNPC_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_AI_Activities_NarrativeEvent_AddGoalToNPC_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

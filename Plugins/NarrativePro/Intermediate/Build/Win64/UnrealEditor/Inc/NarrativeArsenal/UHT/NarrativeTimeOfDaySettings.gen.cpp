@@ -29,63 +29,91 @@ struct Z_Construct_UClass_UNarrativeTimeOfDaySettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Settings for the Narrative time of day system in the game state. \n */" },
+#endif
 		{ "DisplayName", "Narrative Time Of Day Settings" },
 		{ "IncludePath", "Settings/NarrativeTimeOfDaySettings.h" },
 		{ "ModuleRelativePath", "Public/Settings/NarrativeTimeOfDaySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Settings for the Narrative time of day system in the game state." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDynamicTimeOfDay_MetaData[] = {
 		{ "Category", "Narrative Pro|Narrative Sky" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If true the time of day will be updated on tick using the Day/NightLengthMinutes values */" },
+#endif
 		{ "ModuleRelativePath", "Public/Settings/NarrativeTimeOfDaySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true the time of day will be updated on tick using the Day/NightLengthMinutes values" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultTimeOfDay_MetaData[] = {
 		{ "Category", "Narrative Pro|Narrative Sky" },
 		{ "ClampMax", "2400.000000" },
 		{ "ClampMin", "0.000000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Default time of day we'll start the time at when the game state is initialized.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/Settings/NarrativeTimeOfDaySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Default time of day we'll start the time at when the game state is initialized." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DayLengthMinutes_MetaData[] = {
 		{ "Category", "Narrative Pro|Narrative Sky" },
 		{ "ClampMin", "0.010000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Day length in minutes, if a BP_NarrativeSky is in the level. */" },
+#endif
 		{ "EditCondition", "bDynamicTimeOfDay" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Settings/NarrativeTimeOfDaySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Day length in minutes, if a BP_NarrativeSky is in the level." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NightLengthMinutes_MetaData[] = {
 		{ "Category", "Narrative Pro|Narrative Sky" },
 		{ "ClampMin", "0.010000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Night length in minutes, if a BP_NarrativeSky is in the level. */" },
+#endif
 		{ "EditCondition", "bDynamicTimeOfDay" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Settings/NarrativeTimeOfDaySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Night length in minutes, if a BP_NarrativeSky is in the level." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SunriseTime_MetaData[] = {
 		{ "Category", "Narrative Pro|Narrative Sky" },
 		{ "ClampMax", "1200" },
 		{ "ClampMin", "400" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The time the sun should rise - if you have a Narrative sky in the level it will use this */" },
+#endif
 		{ "EditCondition", "bDynamicTimeOfDay" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Settings/NarrativeTimeOfDaySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The time the sun should rise - if you have a Narrative sky in the level it will use this" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SunsetTime_MetaData[] = {
 		{ "Category", "Narrative Pro|Narrative Sky" },
 		{ "ClampMax", "2400" },
 		{ "ClampMin", "1300" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The time the sun should set - if you have a Narrative sky in the level it will use this */" },
+#endif
 		{ "EditCondition", "bDynamicTimeOfDay" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Settings/NarrativeTimeOfDaySettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The time the sun should set - if you have a Narrative sky in the level it will use this" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bDynamicTimeOfDay_SetBit(void* Obj);
@@ -158,14 +186,14 @@ UNarrativeTimeOfDaySettings::~UNarrativeTimeOfDaySettings() {}
 // End Class UNarrativeTimeOfDaySettings
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeTimeOfDaySettings_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeTimeOfDaySettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeTimeOfDaySettings, UNarrativeTimeOfDaySettings::StaticClass, TEXT("UNarrativeTimeOfDaySettings"), &Z_Registration_Info_UClass_UNarrativeTimeOfDaySettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeTimeOfDaySettings), 2003784653U) },
+		{ Z_Construct_UClass_UNarrativeTimeOfDaySettings, UNarrativeTimeOfDaySettings::StaticClass, TEXT("UNarrativeTimeOfDaySettings"), &Z_Registration_Info_UClass_UNarrativeTimeOfDaySettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeTimeOfDaySettings), 120954301U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeTimeOfDaySettings_h_2226552566(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeTimeOfDaySettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeTimeOfDaySettings_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeTimeOfDaySettings_h_1467997947(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeTimeOfDaySettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settings_NarrativeTimeOfDaySettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

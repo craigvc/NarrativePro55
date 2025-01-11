@@ -103,9 +103,13 @@ struct Z_Construct_UFunction_UWeaponItem_ConsumeAmmo_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tell our weapon to use some ammo\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tell our weapon to use some ammo" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -152,9 +156,13 @@ struct Z_Construct_UFunction_UWeaponItem_GetAttackRange_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Used by bots to determine whether they are close enough to perform an attack with this weapon \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by bots to determine whether they are close enough to perform an attack with this weapon" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -197,9 +205,13 @@ struct Z_Construct_UFunction_UWeaponItem_GetComboAnims_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return the combo animations for a given attack type - by default this won't return any combo anims, weapons that need combos should override this. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the combo animations for a given attack type - by default this won't return any combo anims, weapons that need combos should override this." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bHeavyAttack_MetaData[] = {
 		{ "NativeConst", "" },
@@ -263,7 +275,7 @@ struct Z_Construct_UFunction_UWeaponItem_GetTraceData_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UWeaponItem_GetTraceData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WeaponItem_eventGetTraceData_Parms, ReturnValue), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(0, nullptr) }; // 179883577
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UWeaponItem_GetTraceData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WeaponItem_eventGetTraceData_Parms, ReturnValue), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(0, nullptr) }; // 845487567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UWeaponItem_GetTraceData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UWeaponItem_GetTraceData_Statics::NewProp_ReturnValue,
 };
@@ -307,9 +319,13 @@ struct Z_Construct_UFunction_UWeaponItem_HandleUnWield_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Called when our owner stops holding this weapon */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when our owner stops holding this weapon" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -352,9 +368,13 @@ struct Z_Construct_UFunction_UWeaponItem_HandleWield_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Equippable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Called when our owner actually starts holding this weapon */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when our owner actually starts holding this weapon" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -435,9 +455,13 @@ struct Z_Construct_UFunction_UWeaponItem_Reload_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Update the ammo in our clip. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Update the ammo in our clip." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -548,100 +572,164 @@ struct Z_Construct_UClass_UWeaponItem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for an equippable weapon. Weapons don't generally have any attack logic in them, instead they grant abilities which have the logic. \n */" },
+#endif
 		{ "IncludePath", "Items/WeaponItem.h" },
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for an equippable weapon. Weapons don't generally have any attack logic in them, instead they grant abilities which have the logic." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponAnimLayer_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Anim BP we'll apply to the owner when the weapon is unholstered. TODO should probably be soft reffed. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Anim BP we'll apply to the owner when the weapon is unholstered. TODO should probably be soft reffed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponVisualClass_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Weapon visual actor to spawn*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Weapon visual actor to spawn" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponCameraMode_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Camera mode to use when using this weapon*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Camera mode to use when using this weapon" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponVisualAttachBone_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Weapon visual bone to attach to*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Weapon visual bone to attach to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponVisualHolsteredAttachBone_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Weapon visual bone to attach to for holstered state */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Weapon visual bone to attach to for holstered state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponVisualAttachOffset_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Weapon visual offset from attach */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Weapon visual offset from attach" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponVisualHolsteredAttachOffset_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Weapon visual offset from attach for holster*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Weapon visual offset from attach for holster" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bPawnFollowsControlRotation_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Allows us to define whether the pawn should follow the camera rotation with this weapon equipped. Bots will not apply this as they need their AIFocus to work. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows us to define whether the pawn should follow the camera rotation with this weapon equipped. Bots will not apply this as they need their AIFocus to work." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bPawnOrientsRotationToMovement_MetaData[] = {
 		{ "Category", "Weapon" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Allows us to define whether the pawn orient their rotation to velocity with this weapon equipped. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows us to define whether the pawn orient their rotation to velocity with this weapon equipped." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackDamage_MetaData[] = {
 		{ "Category", "Weapon|Config|Attack" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** base damage this weapon should do. It is up the combat ability whether it wants/needs this value. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "base damage this weapon should do. It is up the combat ability whether it wants/needs this value." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HeavyAttackDamageMultiplier_MetaData[] = {
 		{ "Category", "Weapon|Config|Attack" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** How much should base damage be multiplied for a heavy attack. It is up the combat ability whether it wants/needs this value, some weapons may not have heavy attacks. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How much should base damage be multiplied for a heavy attack. It is up the combat ability whether it wants/needs this value, some weapons may not have heavy attacks." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RequiredAmmo_MetaData[] = {
 		{ "Category", "Weapon|Config|Ammo" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Ammo item class for this weapon. Combat Ability will deny activation if we don't have the required ammo. \n\x09""empty class means weapon can attack without ammo. This is in WeaponItem base class as any weapon should be able to support ammo, not just firearms. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Ammo item class for this weapon. Combat Ability will deny activation if we don't have the required ammo.\n      empty class means weapon can attack without ammo. This is in WeaponItem base class as any weapon should be able to support ammo, not just firearms." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClipSize_MetaData[] = {
 		{ "Category", "Weapon|Config|Ammo" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The amount of ammo loaded into the clip of the weapon. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of ammo loaded into the clip of the weapon." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AmmoInClip_MetaData[] = {
 		{ "Category", "Weapon|Config|Ammo" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The amount of ammo loaded into the clip of the weapon. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of ammo loaded into the clip of the weapon." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BashTraceData_MetaData[] = {
 		{ "Category", "Weapon|Config|Trace" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Weapon trace distance when doing a weapon bash */" },
+#endif
 		{ "ModuleRelativePath", "Public/Items/WeaponItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Weapon trace distance when doing a weapon bash" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_WeaponAnimLayer;
@@ -665,14 +753,14 @@ struct Z_Construct_UClass_UWeaponItem_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UWeaponItem_CanAttack, "CanAttack" }, // 3253107654
-		{ &Z_Construct_UFunction_UWeaponItem_ConsumeAmmo, "ConsumeAmmo" }, // 3291394074
-		{ &Z_Construct_UFunction_UWeaponItem_GetAttackRange, "GetAttackRange" }, // 1744003869
-		{ &Z_Construct_UFunction_UWeaponItem_GetComboAnims, "GetComboAnims" }, // 888956762
-		{ &Z_Construct_UFunction_UWeaponItem_GetTraceData, "GetTraceData" }, // 2071915562
-		{ &Z_Construct_UFunction_UWeaponItem_HandleUnWield, "HandleUnWield" }, // 3592603742
-		{ &Z_Construct_UFunction_UWeaponItem_HandleWield, "HandleWield" }, // 340280337
+		{ &Z_Construct_UFunction_UWeaponItem_ConsumeAmmo, "ConsumeAmmo" }, // 1332542296
+		{ &Z_Construct_UFunction_UWeaponItem_GetAttackRange, "GetAttackRange" }, // 28929380
+		{ &Z_Construct_UFunction_UWeaponItem_GetComboAnims, "GetComboAnims" }, // 1840405091
+		{ &Z_Construct_UFunction_UWeaponItem_GetTraceData, "GetTraceData" }, // 650651095
+		{ &Z_Construct_UFunction_UWeaponItem_HandleUnWield, "HandleUnWield" }, // 2094349802
+		{ &Z_Construct_UFunction_UWeaponItem_HandleWield, "HandleWield" }, // 3081805034
 		{ &Z_Construct_UFunction_UWeaponItem_IsHolstered, "IsHolstered" }, // 3424630705
-		{ &Z_Construct_UFunction_UWeaponItem_Reload, "Reload" }, // 2235473241
+		{ &Z_Construct_UFunction_UWeaponItem_Reload, "Reload" }, // 4157181698
 		{ &Z_Construct_UFunction_UWeaponItem_WantsReload, "WantsReload" }, // 1269953025
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -703,7 +791,7 @@ const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UWeaponItem_Sta
 const UECodeGen_Private::FSoftClassPropertyParams Z_Construct_UClass_UWeaponItem_Statics::NewProp_RequiredAmmo = { "RequiredAmmo", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWeaponItem, RequiredAmmo), Z_Construct_UClass_UAmmoItem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RequiredAmmo_MetaData), NewProp_RequiredAmmo_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UWeaponItem_Statics::NewProp_ClipSize = { "ClipSize", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWeaponItem, ClipSize), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ClipSize_MetaData), NewProp_ClipSize_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UWeaponItem_Statics::NewProp_AmmoInClip = { "AmmoInClip", nullptr, (EPropertyFlags)0x0020080000020035, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWeaponItem, AmmoInClip), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AmmoInClip_MetaData), NewProp_AmmoInClip_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UWeaponItem_Statics::NewProp_BashTraceData = { "BashTraceData", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWeaponItem, BashTraceData), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BashTraceData_MetaData), NewProp_BashTraceData_MetaData) }; // 179883577
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UWeaponItem_Statics::NewProp_BashTraceData = { "BashTraceData", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWeaponItem, BashTraceData), Z_Construct_UScriptStruct_FCombatTraceData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BashTraceData_MetaData), NewProp_BashTraceData_MetaData) }; // 845487567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UWeaponItem_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWeaponItem_Statics::NewProp_WeaponAnimLayer,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWeaponItem_Statics::NewProp_WeaponVisualClass,
@@ -766,14 +854,14 @@ UWeaponItem::~UWeaponItem() {}
 // End Class UWeaponItem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_WeaponItem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_WeaponItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWeaponItem, UWeaponItem::StaticClass, TEXT("UWeaponItem"), &Z_Registration_Info_UClass_UWeaponItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWeaponItem), 1126125285U) },
+		{ Z_Construct_UClass_UWeaponItem, UWeaponItem::StaticClass, TEXT("UWeaponItem"), &Z_Registration_Info_UClass_UWeaponItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWeaponItem), 1280733482U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_WeaponItem_h_3351709615(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_WeaponItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_WeaponItem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_WeaponItem_h_3143154199(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_WeaponItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Items_WeaponItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

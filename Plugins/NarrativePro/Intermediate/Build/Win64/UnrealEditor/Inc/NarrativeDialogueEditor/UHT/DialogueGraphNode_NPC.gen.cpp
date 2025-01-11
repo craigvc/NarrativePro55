@@ -29,7 +29,9 @@ struct Z_Construct_UClass_UDialogueGraphNode_NPC_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "DialogueGraphNode_NPC.h" },
 		{ "ModuleRelativePath", "Private/DialogueGraphNode_NPC.h" },
 	};
@@ -78,14 +80,14 @@ UDialogueGraphNode_NPC::~UDialogueGraphNode_NPC() {}
 // End Class UDialogueGraphNode_NPC
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphNode_NPC_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphNode_NPC_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueGraphNode_NPC, UDialogueGraphNode_NPC::StaticClass, TEXT("UDialogueGraphNode_NPC"), &Z_Registration_Info_UClass_UDialogueGraphNode_NPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueGraphNode_NPC), 2387725368U) },
+		{ Z_Construct_UClass_UDialogueGraphNode_NPC, UDialogueGraphNode_NPC::StaticClass, TEXT("UDialogueGraphNode_NPC"), &Z_Registration_Info_UClass_UDialogueGraphNode_NPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueGraphNode_NPC), 4143925971U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphNode_NPC_h_2790318629(TEXT("/Script/NarrativeDialogueEditor"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphNode_NPC_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphNode_NPC_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphNode_NPC_h_2907086758(TEXT("/Script/NarrativeDialogueEditor"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphNode_NPC_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeDialogueEditor_Private_DialogueGraphNode_NPC_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

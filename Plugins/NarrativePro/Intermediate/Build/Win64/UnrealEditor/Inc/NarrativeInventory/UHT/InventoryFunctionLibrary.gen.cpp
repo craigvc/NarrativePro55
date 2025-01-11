@@ -30,10 +30,14 @@ struct Z_Construct_UFunction_UInventoryFunctionLibrary_GetInventoryComponentFrom
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Find the inventory component from the supplied target object. \n\x09* \n\x09* If given a pawn/controller, will check pawns player state and controller for the inventory component also. \n\x09*\n\x09* @return The inventory component.\n\x09*/" },
+#endif
 		{ "DefaultToSelf", "Target" },
 		{ "ModuleRelativePath", "Public/InventoryFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Find the inventory component from the supplied target object.\n\nIf given a pawn/controller, will check pawns player state and controller for the inventory component also.\n\n@return The inventory component." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
@@ -84,9 +88,13 @@ struct Z_Construct_UFunction_UInventoryFunctionLibrary_SortItemArrayAlphabetical
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Sort the array of inventory items from a-z\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sort the array of inventory items from a-z" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InItems_MetaData[] = {
 		{ "EditInline", "true" },
@@ -158,9 +166,13 @@ struct Z_Construct_UFunction_UInventoryFunctionLibrary_SortItemArrayWeight_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Sort the array of inventory items using stack weight\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/InventoryFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sort the array of inventory items using stack weight" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InItems_MetaData[] = {
 		{ "EditInline", "true" },
@@ -240,16 +252,18 @@ struct Z_Construct_UClass_UInventoryFunctionLibrary_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "InventoryFunctionLibrary.h" },
 		{ "ModuleRelativePath", "Public/InventoryFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UInventoryFunctionLibrary_GetInventoryComponentFromTarget, "GetInventoryComponentFromTarget" }, // 1200174124
-		{ &Z_Construct_UFunction_UInventoryFunctionLibrary_SortItemArrayAlphabetical, "SortItemArrayAlphabetical" }, // 4045225168
-		{ &Z_Construct_UFunction_UInventoryFunctionLibrary_SortItemArrayWeight, "SortItemArrayWeight" }, // 4195357885
+		{ &Z_Construct_UFunction_UInventoryFunctionLibrary_GetInventoryComponentFromTarget, "GetInventoryComponentFromTarget" }, // 6565250
+		{ &Z_Construct_UFunction_UInventoryFunctionLibrary_SortItemArrayAlphabetical, "SortItemArrayAlphabetical" }, // 586480204
+		{ &Z_Construct_UFunction_UInventoryFunctionLibrary_SortItemArrayWeight, "SortItemArrayWeight" }, // 703547621
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -295,14 +309,14 @@ UInventoryFunctionLibrary::~UInventoryFunctionLibrary() {}
 // End Class UInventoryFunctionLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryFunctionLibrary_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryFunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UInventoryFunctionLibrary, UInventoryFunctionLibrary::StaticClass, TEXT("UInventoryFunctionLibrary"), &Z_Registration_Info_UClass_UInventoryFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInventoryFunctionLibrary), 1451090068U) },
+		{ Z_Construct_UClass_UInventoryFunctionLibrary, UInventoryFunctionLibrary::StaticClass, TEXT("UInventoryFunctionLibrary"), &Z_Registration_Info_UClass_UInventoryFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInventoryFunctionLibrary), 3970898189U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryFunctionLibrary_h_3467430808(TEXT("/Script/NarrativeInventory"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryFunctionLibrary_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryFunctionLibrary_h_2231173152(TEXT("/Script/NarrativeInventory"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeInventory_Public_InventoryFunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

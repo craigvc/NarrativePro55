@@ -45,7 +45,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EStateNodeType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n* Used for checking the result of our state machine.\n*/" },
+#endif
 		{ "Failure.Comment", "// Fail, the quest will be failed when this state is reached \n" },
 		{ "Failure.Name", "EStateNodeType::Failure" },
 		{ "Failure.ToolTip", "Fail, the quest will be failed when this state is reached" },
@@ -56,7 +58,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EStateNodeType_Statics
 		{ "Success.Comment", "// Success, the quest will be completed when this state is reached\n" },
 		{ "Success.Name", "EStateNodeType::Success" },
 		{ "Success.ToolTip", "Success, the quest will be completed when this state is reached" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used for checking the result of our state machine." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -107,53 +111,85 @@ struct Z_Construct_UScriptStruct_FQuestTask_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A quest is a series of state machines, branches are taken by completing all the FNarrativeTasks in that branch.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A quest is a series of state machines, branches are taken by completing all the FNarrativeTasks in that branch." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Task_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The event the player needs to do to complete this task*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The event the player needs to do to complete this task" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Argument_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The reference to be passed into the action*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The reference to be passed into the action" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Quantity_MetaData[] = {
 		{ "Category", "Task" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The amount of times we need to complete this action to move on to the next part of the quest*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of times we need to complete this action to move on to the next part of the quest" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bHidden_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Should this task be hidden from the player (Great for quests with hidden options)*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should this task be hidden from the player (Great for quests with hidden options)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bOptional_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** SINGLE PLAYER ONLY: Should this task be optional?*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "SINGLE PLAYER ONLY: Should this task be optional?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRetroactive_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** SINGLE PLAYER ONLY: Should it count if the player has already done this task in the past?*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "SINGLE PLAYER ONLY: Should it count if the player has already done this task in the past?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TaskDescription_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Description for this task. For example \"Kill 10 Goblins\", \"Obtain an Iron Sword\", \"Find the briefcase\", etc... */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
 		{ "MultiLine", "TRUE" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Description for this task. For example \"Kill 10 Goblins\", \"Obtain an Iron Sword\", \"Find the briefcase\", etc..." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentProgress_MetaData[] = {
 		{ "Category", "Quests" },
@@ -245,30 +281,46 @@ struct Z_Construct_UClass_UQuestNode_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Base class for states and branches in the quests state machine*/" },
+#endif
 		{ "IncludePath", "Tales/QuestSM.h" },
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for states and branches in the quests state machine" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Description_MetaData[] = {
 		{ "Category", "Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Description for this quest node. For example \"Kill 10 Goblins\", \"Find the Gemstone\", or \"I've found the Gemstone, I need to return to King Edward\" */" },
+#endif
 		{ "DisplayAfter", "ID" },
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
 		{ "MultiLine", "TRUE" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Description for this quest node. For example \"Kill 10 Goblins\", \"Find the Gemstone\", or \"I've found the Gemstone, I need to return to King Edward\"" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnEnteredFuncName_MetaData[] = {
 		{ "AdvancedDisplay", "TRUE" },
 		{ "Category", "Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Name of custom event to call when this state/branch is reached/taken\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Name of custom event to call when this state/branch is reached/taken" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningQuest_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The quest object that owns this node. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The quest object that owns this node." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_Description;
@@ -376,9 +428,13 @@ struct Z_Construct_UClass_UQuestState_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StateNodeType_MetaData[] = {
 		{ "Category", "Quest State" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Determines how the state is interpreted by the quest that has reached it .*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Determines how the state is interpreted by the quest that has reached it ." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Branches_Inner;
@@ -395,7 +451,7 @@ struct Z_Construct_UClass_UQuestState_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UQuestState_Statics::NewProp_Branches_Inner = { "Branches", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UQuestBranch_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UQuestState_Statics::NewProp_Branches = { "Branches", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UQuestState, Branches), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Branches_MetaData), NewProp_Branches_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UQuestState_Statics::NewProp_StateNodeType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UQuestState_Statics::NewProp_StateNodeType = { "StateNodeType", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UQuestState, StateNodeType), Z_Construct_UEnum_NarrativeArsenal_EStateNodeType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StateNodeType_MetaData), NewProp_StateNodeType_MetaData) }; // 3284130415
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UQuestState_Statics::NewProp_StateNodeType = { "StateNodeType", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UQuestState, StateNodeType), Z_Construct_UEnum_NarrativeArsenal_EStateNodeType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StateNodeType_MetaData), NewProp_StateNodeType_MetaData) }; // 2055674120
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UQuestState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuestState_Statics::NewProp_Branches_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuestState_Statics::NewProp_Branches,
@@ -458,29 +514,45 @@ struct Z_Construct_UClass_UQuestBranch_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestTasks_Inner_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09*The tasks that need to be completed to take this branch to its destination \n\x09* \n\x09* Plenty of quest tasks come with narrative, Please see the the Narrative/Content/DefaultTasks/ folder \n\x09* for some examples. You can copy these and create custom ones for your game, like ObtainItem, KillEnemy, etc - whatever you need. \n\x09*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The tasks that need to be completed to take this branch to its destination\n\nPlenty of quest tasks come with narrative, Please see the the Narrative/Content/DefaultTasks/ folder\nfor some examples. You can copy these and create custom ones for your game, like ObtainItem, KillEnemy, etc - whatever you need." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestTasks_MetaData[] = {
 		{ "Category", "Task" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09*The tasks that need to be completed to take this branch to its destination \n\x09* \n\x09* Plenty of quest tasks come with narrative, Please see the the Narrative/Content/DefaultTasks/ folder \n\x09* for some examples. You can copy these and create custom ones for your game, like ObtainItem, KillEnemy, etc - whatever you need. \n\x09*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The tasks that need to be completed to take this branch to its destination\n\nPlenty of quest tasks come with narrative, Please see the the Narrative/Content/DefaultTasks/ folder\nfor some examples. You can copy these and create custom ones for your game, like ObtainItem, KillEnemy, etc - whatever you need." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bHidden_MetaData[] = {
 		{ "Category", "Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Should this branch be hidden from the player on the narrative demo UI (Great for quests with hidden options that we want to be part\n\x09of the quest logic, but we don't want the UI to show)*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should this branch be hidden from the player on the narrative demo UI (Great for quests with hidden options that we want to be part\n       of the quest logic, but we don't want the UI to show)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DestinationState_MetaData[] = {
 		{ "Category", "Details" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**State where we will go if this branch is taken. Branch will be ignored if this is null*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/QuestSM.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "State where we will go if this branch is taken. Branch will be ignored if this is null" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_QuestTasks_Inner;
@@ -547,23 +619,23 @@ UQuestBranch::~UQuestBranch() {}
 // End Class UQuestBranch
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EStateNodeType_StaticEnum, TEXT("EStateNodeType"), &Z_Registration_Info_UEnum_EStateNodeType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3284130415U) },
+		{ EStateNodeType_StaticEnum, TEXT("EStateNodeType"), &Z_Registration_Info_UEnum_EStateNodeType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2055674120U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FQuestTask::StaticStruct, Z_Construct_UScriptStruct_FQuestTask_Statics::NewStructOps, TEXT("QuestTask"), &Z_Registration_Info_UScriptStruct_QuestTask, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FQuestTask), 3108414290U) },
+		{ FQuestTask::StaticStruct, Z_Construct_UScriptStruct_FQuestTask_Statics::NewStructOps, TEXT("QuestTask"), &Z_Registration_Info_UScriptStruct_QuestTask, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FQuestTask), 2613385969U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestNode, UQuestNode::StaticClass, TEXT("UQuestNode"), &Z_Registration_Info_UClass_UQuestNode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestNode), 583584540U) },
-		{ Z_Construct_UClass_UQuestState, UQuestState::StaticClass, TEXT("UQuestState"), &Z_Registration_Info_UClass_UQuestState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestState), 4072128592U) },
-		{ Z_Construct_UClass_UQuestBranch, UQuestBranch::StaticClass, TEXT("UQuestBranch"), &Z_Registration_Info_UClass_UQuestBranch, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestBranch), 3448656937U) },
+		{ Z_Construct_UClass_UQuestNode, UQuestNode::StaticClass, TEXT("UQuestNode"), &Z_Registration_Info_UClass_UQuestNode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestNode), 3983030078U) },
+		{ Z_Construct_UClass_UQuestState, UQuestState::StaticClass, TEXT("UQuestState"), &Z_Registration_Info_UClass_UQuestState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestState), 1696262811U) },
+		{ Z_Construct_UClass_UQuestBranch, UQuestBranch::StaticClass, TEXT("UQuestBranch"), &Z_Registration_Info_UClass_UQuestBranch, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestBranch), 3712443617U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_2017027289(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_4148065062(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_QuestSM_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

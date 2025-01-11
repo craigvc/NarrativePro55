@@ -110,19 +110,31 @@ struct Z_Construct_UScriptStruct_FAttackToken_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//An attack token that has been created for a given attacker. Inspired by \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An attack token that has been created for a given attacker. Inspired by" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Owner_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The NPC that owns this attack token\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPC that owns this attack token" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TokenGrantedTime_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The game time that the token was granted \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The game time that the token was granted" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Owner;
@@ -174,9 +186,13 @@ struct Z_Construct_UDelegateFunction_NarrativeArsenal_OnDied__DelegateSignature_
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Delegates \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegates" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_KilledActorASC_MetaData[] = {
 		{ "EditInline", "true" },
@@ -266,50 +282,78 @@ struct Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Custom Ability system component for Narrative pro. Has ISavableComponent for saving attributes.\n */" },
+#endif
 		{ "HideCategories", "Object LOD Lighting Transform Sockets TextureStreaming Object LOD Lighting Transform Sockets TextureStreaming" },
 		{ "IncludePath", "GAS/NarrativeAbilitySystemComponent.h" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Custom Ability system component for Narrative pro. Has ISavableComponent for saving attributes." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttributesToSave_MetaData[] = {
 		{ "Category", "Saving" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//This defines the attributes that should be saved to disk \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This defines the attributes that should be saved to disk" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumAttackTokens_MetaData[] = {
 		{ "Category", "Attack Tokens" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//ATTACK TOKENS - maintained really just on the server, clients don't need to worry about these\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "ATTACK TOKENS - maintained really just on the server, clients don't need to worry about these" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackPriority_MetaData[] = {
 		{ "Category", "Attack Tokens" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//NPCs will use this value when they decide whether they should attack us or not. Higher priority people are attacked first \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NPCs will use this value when they decide whether they should attack us or not. Higher priority people are attacked first" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GrantedAttackTokens_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**The attackers we've granted a token to are in here. We don't actally bother with a TokenHandle \n\x09or anything extra as that overcomplicates things - tokens are just pointers to the token holder*/" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The attackers we've granted a token to are in here. We don't actally bother with a TokenHandle\n       or anything extra as that overcomplicates things - tokens are just pointers to the token holder" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDied_MetaData[] = {
 		{ "Category", "Narrative|GAS" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Any ASC owner wishing to do something OnDeath should bind to this - it fires on server and all clients when the ASC dies. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Any ASC owner wishing to do something OnDeath should bind to this - it fires on server and all clients when the ASC dies." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsDead_MetaData[] = {
 		{ "Category", "Narrative|GAS" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedAttributes_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We use this to remember attribute -> attribute value \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilitySystemComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We use this to remember attribute -> attribute value" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AttributesToSave_Inner;
@@ -339,9 +383,9 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeAbil
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_AttributesToSave = { "AttributesToSave", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilitySystemComponent, AttributesToSave), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttributesToSave_MetaData), NewProp_AttributesToSave_MetaData) }; // 2792951819
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_NumAttackTokens = { "NumAttackTokens", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilitySystemComponent, NumAttackTokens), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NumAttackTokens_MetaData), NewProp_NumAttackTokens_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_AttackPriority = { "AttackPriority", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilitySystemComponent, AttackPriority), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackPriority_MetaData), NewProp_AttackPriority_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_GrantedAttackTokens_Inner = { "GrantedAttackTokens", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FAttackToken, METADATA_PARAMS(0, nullptr) }; // 3161305063
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_GrantedAttackTokens = { "GrantedAttackTokens", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilitySystemComponent, GrantedAttackTokens), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GrantedAttackTokens_MetaData), NewProp_GrantedAttackTokens_MetaData) }; // 3161305063
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_OnDied = { "OnDied", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilitySystemComponent, OnDied), Z_Construct_UDelegateFunction_NarrativeArsenal_OnDied__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDied_MetaData), NewProp_OnDied_MetaData) }; // 1316151693
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_GrantedAttackTokens_Inner = { "GrantedAttackTokens", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FAttackToken, METADATA_PARAMS(0, nullptr) }; // 969797321
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_GrantedAttackTokens = { "GrantedAttackTokens", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilitySystemComponent, GrantedAttackTokens), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GrantedAttackTokens_MetaData), NewProp_GrantedAttackTokens_MetaData) }; // 969797321
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_OnDied = { "OnDied", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilitySystemComponent, OnDied), Z_Construct_UDelegateFunction_NarrativeArsenal_OnDied__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDied_MetaData), NewProp_OnDied_MetaData) }; // 3558189
 void Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::NewProp_bIsDead_SetBit(void* Obj)
 {
 	((UNarrativeAbilitySystemComponent*)Obj)->bIsDead = 1;
@@ -368,7 +412,7 @@ UObject* (*const Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::De
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UNarrativeAbilitySystemComponent, INarrativeSavableComponent), false },  // 1573843113
+	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UNarrativeAbilitySystemComponent, INarrativeSavableComponent), false },  // 586272322
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UNarrativeAbilitySystemComponent_Statics::ClassParams = {
 	&UNarrativeAbilitySystemComponent::StaticClass,
@@ -409,19 +453,19 @@ UNarrativeAbilitySystemComponent::~UNarrativeAbilitySystemComponent() {}
 // End Class UNarrativeAbilitySystemComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FSavedAttribute::StaticStruct, Z_Construct_UScriptStruct_FSavedAttribute_Statics::NewStructOps, TEXT("SavedAttribute"), &Z_Registration_Info_UScriptStruct_SavedAttribute, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedAttribute), 2261838316U) },
-		{ FAttackToken::StaticStruct, Z_Construct_UScriptStruct_FAttackToken_Statics::NewStructOps, TEXT("AttackToken"), &Z_Registration_Info_UScriptStruct_AttackToken, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAttackToken), 3161305063U) },
+		{ FAttackToken::StaticStruct, Z_Construct_UScriptStruct_FAttackToken_Statics::NewStructOps, TEXT("AttackToken"), &Z_Registration_Info_UScriptStruct_AttackToken, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAttackToken), 969797321U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeAbilitySystemComponent, UNarrativeAbilitySystemComponent::StaticClass, TEXT("UNarrativeAbilitySystemComponent"), &Z_Registration_Info_UClass_UNarrativeAbilitySystemComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAbilitySystemComponent), 2877670344U) },
+		{ Z_Construct_UClass_UNarrativeAbilitySystemComponent, UNarrativeAbilitySystemComponent::StaticClass, TEXT("UNarrativeAbilitySystemComponent"), &Z_Registration_Info_UClass_UNarrativeAbilitySystemComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAbilitySystemComponent), 3342260187U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_928353937(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_3861465467(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilitySystemComponent_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

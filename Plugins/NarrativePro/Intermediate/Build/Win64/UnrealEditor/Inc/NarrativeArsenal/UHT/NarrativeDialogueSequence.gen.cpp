@@ -65,9 +65,13 @@ struct Z_Construct_UEnum_NarrativeArsenal_EAnchorOriginRule_Statics
 		{ "AOR_Speaker.Name", "EAnchorOriginRule::AOR_Speaker" },
 		{ "AOR_Speaker.ToolTip", "The shots anchor will be the person saying the line." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If we're using an anchored shot, defines the location of the anchor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If we're using an anchored shot, defines the location of the anchor" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -126,9 +130,13 @@ struct Z_Construct_UEnum_NarrativeArsenal_EAnchorRotationRule_Statics
 		{ "ARR_Conversation.Name", "EAnchorRotationRule::ARR_Conversation" },
 		{ "ARR_Conversation.ToolTip", "Anchor rot will be the offset vector from the speaker to the listener" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If we're using an anchored shot, defines the rotation of the anchor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If we're using an anchored shot, defines the rotation of the anchor" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -178,7 +186,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EShotTrackingRule_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Defines how the tracking should work\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
 		{ "STR_Custom.DisplayName", "Custom" },
 		{ "STR_Custom.Name", "EShotTrackingRule::STR_Custom" },
@@ -192,7 +202,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EShotTrackingRule_Statics
 		{ "STR_Speaker.DisplayName", "Speaker" },
 		{ "STR_Speaker.Name", "EShotTrackingRule::STR_Speaker" },
 		{ "STR_Speaker.ToolTip", "The shot will track the person saying the line." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines how the tracking should work" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -248,41 +260,61 @@ struct Z_Construct_UScriptStruct_FShotTrackingSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AvatarToTrack_MetaData[] = {
 		{ "Category", "Tracking/Focus" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**What avatar should we track */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What avatar should we track" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TrackedAvatarCustomID_MetaData[] = {
 		{ "Category", "Tracking/Focus" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If TrackedAvatar is custom, this is the ID of the avatar to use as the override */" },
+#endif
 		{ "EditCondition", "AvatarToTrack == EShotTrackingRule::STR_Custom" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If TrackedAvatar is custom, this is the ID of the avatar to use as the override" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TrackBoneNudge_MetaData[] = {
 		{ "Category", "Tracking/Focus" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Offset the tracking in actors local space. */" },
+#endif
 		{ "EditCondition", "AvatarToTrack != EShotTrackingRule::STR_Disabled" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Offset the tracking in actors local space." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUpdateTrackingEveryFrame_MetaData[] = {
 		{ "Category", "Tracking/Focus" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**If true the camera will update the tracking every frame. This is important if your character head is moving around a lot. */" },
+#endif
 		{ "EditCondition", "AvatarToTrack != EShotTrackingRule::STR_Disabled" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true the camera will update the tracking every frame. This is important if your character head is moving around a lot." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UpdateTrackingInterpSpeed_MetaData[] = {
 		{ "Category", "Tracking/Focus" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If Update Tracking every frame is turned on, how fast should we interp towards the head as it moves around  */" },
+#endif
 		{ "EditCondition", "AvatarToTrack != EShotTrackingRule::STR_Disabled" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If Update Tracking every frame is turned on, how fast should we interp towards the head as it moves around" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_AvatarToTrack_Underlying;
@@ -300,7 +332,7 @@ struct Z_Construct_UScriptStruct_FShotTrackingSettings_Statics
 	static const UECodeGen_Private::FStructParams StructParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FShotTrackingSettings_Statics::NewProp_AvatarToTrack_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FShotTrackingSettings_Statics::NewProp_AvatarToTrack = { "AvatarToTrack", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FShotTrackingSettings, AvatarToTrack), Z_Construct_UEnum_NarrativeArsenal_EShotTrackingRule, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AvatarToTrack_MetaData), NewProp_AvatarToTrack_MetaData) }; // 2455177096
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FShotTrackingSettings_Statics::NewProp_AvatarToTrack = { "AvatarToTrack", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FShotTrackingSettings, AvatarToTrack), Z_Construct_UEnum_NarrativeArsenal_EShotTrackingRule, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AvatarToTrack_MetaData), NewProp_AvatarToTrack_MetaData) }; // 1536966536
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FShotTrackingSettings_Statics::NewProp_TrackedAvatarCustomID = { "TrackedAvatarCustomID", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FShotTrackingSettings, TrackedAvatarCustomID), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TrackedAvatarCustomID_MetaData), NewProp_TrackedAvatarCustomID_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FShotTrackingSettings_Statics::NewProp_TrackBoneNudge = { "TrackBoneNudge", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FShotTrackingSettings, TrackBoneNudge), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TrackBoneNudge_MetaData), NewProp_TrackBoneNudge_MetaData) };
 void Z_Construct_UScriptStruct_FShotTrackingSettings_Statics::NewProp_bUpdateTrackingEveryFrame_SetBit(void* Obj)
@@ -360,9 +392,13 @@ struct Z_Construct_UFunction_UNarrativeDialogueSequence_EndSequence_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogue Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Plays the level sequence. Pretty rare you'd ever want to override this in BP but the option is there! */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Plays the level sequence. Pretty rare you'd ever want to override this in BP but the option is there!" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -411,9 +447,13 @@ struct Z_Construct_UFunction_UNarrativeDialogueSequence_GetGraphDisplayText_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogue Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Define the text that will show up on a node if this event is added to it */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Define the text that will show up on a node if this event is added to it" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -470,9 +510,13 @@ struct Z_Construct_UFunction_UNarrativeDialogueSequence_GetShotAnchorTransform_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogue Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Return the space the sequence will be shot in. Defaults to using the anchor actors head location. This is that if \n\x09\x09""different height characters are used, the shot will be lined up correctly regardless of height. Also applies some extra\n\x09\x09offsetting to adhere to the 180 degree rule if bUse180DegreeRule is checked. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the space the sequence will be shot in. Defaults to using the anchor actors head location. This is that if\n               different height characters are used, the shot will be lined up correctly regardless of height. Also applies some extra\n               offsetting to adhere to the 180 degree rule if bUse180DegreeRule is checked." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -516,9 +560,13 @@ struct Z_Construct_UFunction_UNarrativeDialogueSequence_OnStop_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogue Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called before the shot is stopped and its sequence player is de-initialized. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called before the shot is stopped and its sequence player is de-initialized." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -554,9 +602,13 @@ struct Z_Construct_UFunction_UNarrativeDialogueSequence_PlaySequence_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogue Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Plays the level sequence. Pretty rare you'd ever want to override this in BP but the option is there! */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Plays the level sequence. Pretty rare you'd ever want to override this in BP but the option is there!" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -603,23 +655,35 @@ struct Z_Construct_UClass_UNarrativeDialogueSequence_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Encapsulates a Level Sequence, along with all extra data needed to play that level sequence in the context of a dialogue \n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeDialogueSequence.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Encapsulates a Level Sequence, along with all extra data needed to play that level sequence in the context of a dialogue" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FriendlyShotName_MetaData[] = {
 		{ "Category", "Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The sequences to use - one will be selected at random \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The sequences to use - one will be selected at random" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SequenceAssets_MetaData[] = {
 		{ "Category", "Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The sequences to use - one will be selected at random \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The sequences to use - one will be selected at random" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlaybackSettings_MetaData[] = {
 		{ "Category", "Sequence" },
@@ -627,85 +691,133 @@ struct Z_Construct_UClass_UNarrativeDialogueSequence_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CropSettings_MetaData[] = {
 		{ "Category", "Camera Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Controls the crop settings. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Controls the crop settings." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShouldRestart_MetaData[] = {
 		{ "Category", "Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If narrative tries playing this sequence but it already started playing it from an earlier node, should we restart the shot or just let the existing one continue? */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If narrative tries playing this sequence but it already started playing it from an earlier node, should we restart the shot or just let the existing one continue?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AnchorOriginRule_MetaData[] = {
 		{ "Category", "Anchoring" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Sequence origin will be relative to the selected item */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sequence origin will be relative to the selected item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AnchorOriginNudge_MetaData[] = {
 		{ "Category", "Anchoring" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Allows you to nudge the shot upwards, downwards, etc. Extra offset applied to shot transform. Applied in speakers transform space. */" },
+#endif
 		{ "EditCondition", "AnchorOriginRule != EAnchorOriginRule::AOR_Disabled" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows you to nudge the shot upwards, downwards, etc. Extra offset applied to shot transform. Applied in speakers transform space." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AnchorRotationRule_MetaData[] = {
 		{ "Category", "Anchoring" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Sequence rotation will be relative to the selected item*/" },
+#endif
 		{ "EditCondition", "AnchorOriginRule != EAnchorOriginRule::AOR_Disabled" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sequence rotation will be relative to the selected item" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AnchorAvatarCustomID_MetaData[] = {
 		{ "Category", "Anchoring" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If AnchorAvatar is custom, this is the ID of the avatar to use as the override */" },
+#endif
 		{ "EditCondition", "AnchorOriginRule == EAnchorOriginRule::AOR_Custom" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If AnchorAvatar is custom, this is the ID of the avatar to use as the override" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUse180DegreeRule_MetaData[] = {
 		{ "Category", "Framing" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Force the player and all other speakers to be on opposite sides of the screen using Y-axis movement and Yaw. \n\x09\x09You wouldn't want this enabled for ultra close up shots, or if you want your character to be in the middle of the screen, \n\x09\x09""but otherwise you should enable this as the 180 degree rule is a classic cinematography rule*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Force the player and all other speakers to be on opposite sides of the screen using Y-axis movement and Yaw.\n               You wouldn't want this enabled for ultra close up shots, or if you want your character to be in the middle of the screen,\n               but otherwise you should enable this as the 180 degree rule is a classic cinematography rule" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UnitsY180DegreeRule_MetaData[] = {
 		{ "Category", "Framing" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If using 180 degree rule, how many degrees of yaw to push the shots in either direction */" },
+#endif
 		{ "EditCondition", "bUse180DegreeRule" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If using 180 degree rule, how many degrees of yaw to push the shots in either direction" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DegreesYaw180DegreeRule_MetaData[] = {
 		{ "Category", "Framing" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If using 180 degree rule, how many degrees of yaw to push the shots in either direction */" },
+#endif
 		{ "EditCondition", "bUse180DegreeRule" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If using 180 degree rule, how many degrees of yaw to push the shots in either direction" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LookAtTrackingSettings_MetaData[] = {
 		{ "Category", "Tracking/Focus" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**What avatar should the camera track on if this is enabled */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What avatar should the camera track on if this is enabled" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FocusTrackingSettings_MetaData[] = {
 		{ "Category", "Tracking/Focus" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**What avatar should the camera track on if this is enabled */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What avatar should the camera track on if this is enabled" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDrawDebugFocusPoint_MetaData[] = {
 		{ "Category", "Tracking/Focus" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**If true the camera will draw a box showing focus point */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true the camera will draw a box showing focus point" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Speaker_MetaData[] = {
 		{ "Category", "Sequence" },
@@ -733,9 +845,13 @@ struct Z_Construct_UClass_UNarrativeDialogueSequence_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Cinecam_MetaData[] = {
 		{ "Category", "Sequence" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The cinecam spawned in by the sequence \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeDialogueSequence.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The cinecam spawned in by the sequence" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Dialogue_MetaData[] = {
 		{ "Category", "Sequence" },
@@ -774,11 +890,11 @@ struct Z_Construct_UClass_UNarrativeDialogueSequence_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_EndSequence, "EndSequence" }, // 4196154800
-		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_GetGraphDisplayText, "GetGraphDisplayText" }, // 86485933
-		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_GetShotAnchorTransform, "GetShotAnchorTransform" }, // 917486418
-		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_OnStop, "OnStop" }, // 3146743432
-		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_PlaySequence, "PlaySequence" }, // 2984495963
+		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_EndSequence, "EndSequence" }, // 2315865408
+		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_GetGraphDisplayText, "GetGraphDisplayText" }, // 75992893
+		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_GetShotAnchorTransform, "GetShotAnchorTransform" }, // 872267006
+		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_OnStop, "OnStop" }, // 1809664486
+		{ &Z_Construct_UFunction_UNarrativeDialogueSequence_PlaySequence, "PlaySequence" }, // 268149865
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -797,10 +913,10 @@ void Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_bShouldResta
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_bShouldRestart = { "bShouldRestart", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(uint8), sizeof(UNarrativeDialogueSequence), &Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_bShouldRestart_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bShouldRestart_MetaData), NewProp_bShouldRestart_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_AnchorOriginRule_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_AnchorOriginRule = { "AnchorOriginRule", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, AnchorOriginRule), Z_Construct_UEnum_NarrativeArsenal_EAnchorOriginRule, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorOriginRule_MetaData), NewProp_AnchorOriginRule_MetaData) }; // 887019820
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_AnchorOriginRule = { "AnchorOriginRule", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, AnchorOriginRule), Z_Construct_UEnum_NarrativeArsenal_EAnchorOriginRule, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorOriginRule_MetaData), NewProp_AnchorOriginRule_MetaData) }; // 3202757549
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_AnchorOriginNudge = { "AnchorOriginNudge", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, AnchorOriginNudge), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorOriginNudge_MetaData), NewProp_AnchorOriginNudge_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_AnchorRotationRule_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_AnchorRotationRule = { "AnchorRotationRule", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, AnchorRotationRule), Z_Construct_UEnum_NarrativeArsenal_EAnchorRotationRule, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorRotationRule_MetaData), NewProp_AnchorRotationRule_MetaData) }; // 394070100
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_AnchorRotationRule = { "AnchorRotationRule", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, AnchorRotationRule), Z_Construct_UEnum_NarrativeArsenal_EAnchorRotationRule, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorRotationRule_MetaData), NewProp_AnchorRotationRule_MetaData) }; // 4025412661
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_AnchorAvatarCustomID = { "AnchorAvatarCustomID", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, AnchorAvatarCustomID), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorAvatarCustomID_MetaData), NewProp_AnchorAvatarCustomID_MetaData) };
 void Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_bUse180DegreeRule_SetBit(void* Obj)
 {
@@ -809,8 +925,8 @@ void Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_bUse180Degre
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_bUse180DegreeRule = { "bUse180DegreeRule", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UNarrativeDialogueSequence), &Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_bUse180DegreeRule_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bUse180DegreeRule_MetaData), NewProp_bUse180DegreeRule_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_UnitsY180DegreeRule = { "UnitsY180DegreeRule", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, UnitsY180DegreeRule), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UnitsY180DegreeRule_MetaData), NewProp_UnitsY180DegreeRule_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_DegreesYaw180DegreeRule = { "DegreesYaw180DegreeRule", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, DegreesYaw180DegreeRule), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DegreesYaw180DegreeRule_MetaData), NewProp_DegreesYaw180DegreeRule_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_LookAtTrackingSettings = { "LookAtTrackingSettings", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, LookAtTrackingSettings), Z_Construct_UScriptStruct_FShotTrackingSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAtTrackingSettings_MetaData), NewProp_LookAtTrackingSettings_MetaData) }; // 803217605
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_FocusTrackingSettings = { "FocusTrackingSettings", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, FocusTrackingSettings), Z_Construct_UScriptStruct_FShotTrackingSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FocusTrackingSettings_MetaData), NewProp_FocusTrackingSettings_MetaData) }; // 803217605
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_LookAtTrackingSettings = { "LookAtTrackingSettings", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, LookAtTrackingSettings), Z_Construct_UScriptStruct_FShotTrackingSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAtTrackingSettings_MetaData), NewProp_LookAtTrackingSettings_MetaData) }; // 4039728735
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_FocusTrackingSettings = { "FocusTrackingSettings", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeDialogueSequence, FocusTrackingSettings), Z_Construct_UScriptStruct_FShotTrackingSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FocusTrackingSettings_MetaData), NewProp_FocusTrackingSettings_MetaData) }; // 4039728735
 void Z_Construct_UClass_UNarrativeDialogueSequence_Statics::NewProp_bDrawDebugFocusPoint_SetBit(void* Obj)
 {
 	((UNarrativeDialogueSequence*)Obj)->bDrawDebugFocusPoint = 1;
@@ -890,23 +1006,23 @@ UNarrativeDialogueSequence::~UNarrativeDialogueSequence() {}
 // End Class UNarrativeDialogueSequence
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EAnchorOriginRule_StaticEnum, TEXT("EAnchorOriginRule"), &Z_Registration_Info_UEnum_EAnchorOriginRule, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 887019820U) },
-		{ EAnchorRotationRule_StaticEnum, TEXT("EAnchorRotationRule"), &Z_Registration_Info_UEnum_EAnchorRotationRule, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 394070100U) },
-		{ EShotTrackingRule_StaticEnum, TEXT("EShotTrackingRule"), &Z_Registration_Info_UEnum_EShotTrackingRule, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2455177096U) },
+		{ EAnchorOriginRule_StaticEnum, TEXT("EAnchorOriginRule"), &Z_Registration_Info_UEnum_EAnchorOriginRule, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3202757549U) },
+		{ EAnchorRotationRule_StaticEnum, TEXT("EAnchorRotationRule"), &Z_Registration_Info_UEnum_EAnchorRotationRule, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4025412661U) },
+		{ EShotTrackingRule_StaticEnum, TEXT("EShotTrackingRule"), &Z_Registration_Info_UEnum_EShotTrackingRule, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1536966536U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FShotTrackingSettings::StaticStruct, Z_Construct_UScriptStruct_FShotTrackingSettings_Statics::NewStructOps, TEXT("ShotTrackingSettings"), &Z_Registration_Info_UScriptStruct_ShotTrackingSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FShotTrackingSettings), 803217605U) },
+		{ FShotTrackingSettings::StaticStruct, Z_Construct_UScriptStruct_FShotTrackingSettings_Statics::NewStructOps, TEXT("ShotTrackingSettings"), &Z_Registration_Info_UScriptStruct_ShotTrackingSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FShotTrackingSettings), 4039728735U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeDialogueSequence, UNarrativeDialogueSequence::StaticClass, TEXT("UNarrativeDialogueSequence"), &Z_Registration_Info_UClass_UNarrativeDialogueSequence, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeDialogueSequence), 2348804754U) },
+		{ Z_Construct_UClass_UNarrativeDialogueSequence, UNarrativeDialogueSequence::StaticClass, TEXT("UNarrativeDialogueSequence"), &Z_Registration_Info_UClass_UNarrativeDialogueSequence, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeDialogueSequence), 2776282789U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_696746407(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_3640646324(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeDialogueSequence_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

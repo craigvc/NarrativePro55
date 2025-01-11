@@ -31,22 +31,34 @@ struct Z_Construct_UClass_UCharacterCreatorItem_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Some options like grooms and meshes show a box of items you can select for the option. This is the base class for one of those items. \n */" },
+#endif
 		{ "IncludePath", "CharacterCreator/Items/CharacterCreatorItem.h" },
 		{ "ModuleRelativePath", "Public/CharacterCreator/Items/CharacterCreatorItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Some options like grooms and meshes show a box of items you can select for the option. This is the base class for one of those items." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemDisplayName_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The items display name \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Items/CharacterCreatorItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The items display name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemThumbnail_MetaData[] = {
 		{ "Category", "Mesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The items thumbnail \n" },
+#endif
 		{ "ModuleRelativePath", "Public/CharacterCreator/Items/CharacterCreatorItem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The items thumbnail" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ItemDisplayName;
@@ -102,14 +114,14 @@ UCharacterCreatorItem::~UCharacterCreatorItem() {}
 // End Class UCharacterCreatorItem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Items_CharacterCreatorItem_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Items_CharacterCreatorItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterCreatorItem, UCharacterCreatorItem::StaticClass, TEXT("UCharacterCreatorItem"), &Z_Registration_Info_UClass_UCharacterCreatorItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorItem), 3684496000U) },
+		{ Z_Construct_UClass_UCharacterCreatorItem, UCharacterCreatorItem::StaticClass, TEXT("UCharacterCreatorItem"), &Z_Registration_Info_UClass_UCharacterCreatorItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterCreatorItem), 2581601367U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Items_CharacterCreatorItem_h_3663162067(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Items_CharacterCreatorItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Items_CharacterCreatorItem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Items_CharacterCreatorItem_h_3752802192(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Items_CharacterCreatorItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_CharacterCreator_Items_CharacterCreatorItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

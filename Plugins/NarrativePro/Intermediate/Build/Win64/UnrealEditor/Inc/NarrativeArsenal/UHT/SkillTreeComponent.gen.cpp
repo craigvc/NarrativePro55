@@ -46,14 +46,22 @@ struct Z_Construct_UScriptStruct_FSavedPerk_Statics
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerkClass_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The perk class - we'll search for this when loading game. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The perk class - we'll search for this when loading game." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerkLevel_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The level to restore the perk to\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The level to restore the perk to" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_PerkClass;
@@ -116,14 +124,22 @@ struct Z_Construct_UScriptStruct_FSavedSkill_Statics
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillClass_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The skills class - we'll search for this when loading game. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The skills class - we'll search for this when loading game." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillLevel_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The level to restore the skill to\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The level to restore the skill to" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_SkillClass;
@@ -186,14 +202,22 @@ struct Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedSkills_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The skills and their levels\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The skills and their levels" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedPerks_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The perks we've purchased and their levels  \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The perks we've purchased and their levels" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SavedSkills_Inner;
@@ -207,10 +231,10 @@ struct Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedSkills_Inner = { "SavedSkills", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSavedSkill, METADATA_PARAMS(0, nullptr) }; // 1414437198
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedSkills = { "SavedSkills", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSkillTreeSaveData, SavedSkills), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedSkills_MetaData), NewProp_SavedSkills_MetaData) }; // 1414437198
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedPerks_Inner = { "SavedPerks", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSavedPerk, METADATA_PARAMS(0, nullptr) }; // 399858452
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedPerks = { "SavedPerks", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSkillTreeSaveData, SavedPerks), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedPerks_MetaData), NewProp_SavedPerks_MetaData) }; // 399858452
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedSkills_Inner = { "SavedSkills", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSavedSkill, METADATA_PARAMS(0, nullptr) }; // 2230185849
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedSkills = { "SavedSkills", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSkillTreeSaveData, SavedSkills), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedSkills_MetaData), NewProp_SavedSkills_MetaData) }; // 2230185849
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedPerks_Inner = { "SavedPerks", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSavedPerk, METADATA_PARAMS(0, nullptr) }; // 2662209854
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedPerks = { "SavedPerks", nullptr, (EPropertyFlags)0x0010000001000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSkillTreeSaveData, SavedPerks), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedPerks_MetaData), NewProp_SavedPerks_MetaData) }; // 2662209854
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedSkills_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewProp_SavedSkills,
@@ -317,9 +341,13 @@ struct Z_Construct_UFunction_USkillTreeComponent_BuyPerk_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Attempt to buy a perk. Will check that the prerequisite perks are purchased first. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attempt to buy a perk. Will check that the prerequisite perks are purchased first." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_Perk;
@@ -376,9 +404,13 @@ struct Z_Construct_UFunction_USkillTreeComponent_CanBuyPerk_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return whether or not we can purchase a perk. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return whether or not we can purchase a perk." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_Perk;
@@ -434,9 +466,13 @@ struct Z_Construct_UFunction_USkillTreeComponent_GetPerk_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Provided we own a perk, return the instance of it. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Provided we own a perk, return the instance of it." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_PerkClass;
@@ -483,9 +519,13 @@ struct Z_Construct_UFunction_USkillTreeComponent_GetPerkLevel_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check what level a given perk is \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check what level a given perk is" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_PerkClass;
@@ -531,9 +571,13 @@ struct Z_Construct_UFunction_USkillTreeComponent_GiveSkillPoints_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Give the player the given amount of skill points \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Give the player the given amount of skill points" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Points_MetaData[] = {
 		{ "NativeConst", "" },
@@ -580,9 +624,13 @@ struct Z_Construct_UFunction_USkillTreeComponent_HasPerk_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check if we have a given perk \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if we have a given perk" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_PerkClass;
@@ -634,9 +682,13 @@ struct Z_Construct_UFunction_USkillTreeComponent_HasRequiredPerks_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return whether or not we've unlocked previous perks - doesn't take into account skill points or anything like that - use CanBuyPerk if you want that. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return whether or not we've unlocked previous perks - doesn't take into account skill points or anything like that - use CanBuyPerk if you want that." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_Perk;
@@ -703,48 +755,76 @@ struct Z_Construct_UClass_USkillTreeComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\nAdd to the PlayerState. \n\nThe skill tree component holds the players skills! Skills consist of a linked number of nodes called perks. Both perks and skills have levels - you can have a stealth skill\nwhich may be level 19, and within that skill you might have a perk called featherlight which may be purchased, and leveled up. IE 5% quieter footsteps at level 1, 10% at level 2, etc. \n\nNarrative ships with a Perk_AttributeMod which allows for easy attribute modifier perks, ie 5% higher attack damage, 10% higher sneak, etc. \n\nPerks are what you'd expect - hold 15% more weight, gain a new ability, etc! They are saved to disk via the FSavedPerk, which the component loads\nback in automatically. \n*/" },
+#endif
 		{ "IncludePath", "SkillTrees/SkillTreeComponent.h" },
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add to the PlayerState.\n\nThe skill tree component holds the players skills! Skills consist of a linked number of nodes called perks. Both perks and skills have levels - you can have a stealth skill\nwhich may be level 19, and within that skill you might have a perk called featherlight which may be purchased, and leveled up. IE 5% quieter footsteps at level 1, 10% at level 2, etc.\n\nNarrative ships with a Perk_AttributeMod which allows for easy attribute modifier perks, ie 5% higher attack damage, 10% higher sneak, etc.\n\nPerks are what you'd expect - hold 15% more weight, gain a new ability, etc! They are saved to disk via the FSavedPerk, which the component loads\nback in automatically." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillTreeSkills_Inner_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The skills in the skill tree, and the perks. Current perks are only set on the server - replication has not yet been supported. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The skills in the skill tree, and the perks. Current perks are only set on the server - replication has not yet been supported." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillTreeSkills_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The skills in the skill tree, and the perks. Current perks are only set on the server - replication has not yet been supported. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The skills in the skill tree, and the perks. Current perks are only set on the server - replication has not yet been supported." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PurchasedPerks_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//All perks we've purchased go in here. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All perks we've purchased go in here." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PrerequisiteMap_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Given a perk class, the map will give you all the perks you need to have purchased before you can buy that perk. We cache them in here for tidyness and efficiency \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Given a perk class, the map will give you all the perks you need to have purchased before you can buy that perk. We cache them in here for tidyness and efficiency" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillTreeSaveData_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The save data for our skill tree skills and perks. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The save data for our skill tree skills and perks." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkillTreePoints_MetaData[] = {
 		{ "Category", "Tree Skill" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The amount of skill tree points we have available. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/SkillTrees/SkillTreeComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of skill tree points we have available." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SkillTreeSkills_Inner;
@@ -759,13 +839,13 @@ struct Z_Construct_UClass_USkillTreeComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_USkillTreeComponent_BuyPerk, "BuyPerk" }, // 1513687422
-		{ &Z_Construct_UFunction_USkillTreeComponent_CanBuyPerk, "CanBuyPerk" }, // 3764257195
-		{ &Z_Construct_UFunction_USkillTreeComponent_GetPerk, "GetPerk" }, // 303550069
-		{ &Z_Construct_UFunction_USkillTreeComponent_GetPerkLevel, "GetPerkLevel" }, // 3818222783
-		{ &Z_Construct_UFunction_USkillTreeComponent_GiveSkillPoints, "GiveSkillPoints" }, // 979261860
-		{ &Z_Construct_UFunction_USkillTreeComponent_HasPerk, "HasPerk" }, // 1094695201
-		{ &Z_Construct_UFunction_USkillTreeComponent_HasRequiredPerks, "HasRequiredPerks" }, // 3834407310
+		{ &Z_Construct_UFunction_USkillTreeComponent_BuyPerk, "BuyPerk" }, // 709974990
+		{ &Z_Construct_UFunction_USkillTreeComponent_CanBuyPerk, "CanBuyPerk" }, // 2368091797
+		{ &Z_Construct_UFunction_USkillTreeComponent_GetPerk, "GetPerk" }, // 1362047967
+		{ &Z_Construct_UFunction_USkillTreeComponent_GetPerkLevel, "GetPerkLevel" }, // 1433220248
+		{ &Z_Construct_UFunction_USkillTreeComponent_GiveSkillPoints, "GiveSkillPoints" }, // 2105176524
+		{ &Z_Construct_UFunction_USkillTreeComponent_HasPerk, "HasPerk" }, // 853722185
+		{ &Z_Construct_UFunction_USkillTreeComponent_HasRequiredPerks, "HasRequiredPerks" }, // 544437326
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -781,7 +861,7 @@ const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_USkillTreeCompo
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USkillTreeComponent_Statics::NewProp_PrerequisiteMap_ValueProp = { "PrerequisiteMap", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FPerkArray, METADATA_PARAMS(0, nullptr) }; // 3528315523
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_USkillTreeComponent_Statics::NewProp_PrerequisiteMap_Key_KeyProp = { "PrerequisiteMap_Key", nullptr, (EPropertyFlags)0x0004000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_UTreePerk_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_USkillTreeComponent_Statics::NewProp_PrerequisiteMap = { "PrerequisiteMap", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USkillTreeComponent, PrerequisiteMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PrerequisiteMap_MetaData), NewProp_PrerequisiteMap_MetaData) }; // 3528315523
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USkillTreeComponent_Statics::NewProp_SkillTreeSaveData = { "SkillTreeSaveData", nullptr, (EPropertyFlags)0x0020080001020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USkillTreeComponent, SkillTreeSaveData), Z_Construct_UScriptStruct_FSkillTreeSaveData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkillTreeSaveData_MetaData), NewProp_SkillTreeSaveData_MetaData) }; // 2813743447
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USkillTreeComponent_Statics::NewProp_SkillTreeSaveData = { "SkillTreeSaveData", nullptr, (EPropertyFlags)0x0020080001020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USkillTreeComponent, SkillTreeSaveData), Z_Construct_UScriptStruct_FSkillTreeSaveData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkillTreeSaveData_MetaData), NewProp_SkillTreeSaveData_MetaData) }; // 435147216
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USkillTreeComponent_Statics::NewProp_SkillTreePoints = { "SkillTreePoints", nullptr, (EPropertyFlags)0x0020080001020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USkillTreeComponent, SkillTreePoints), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkillTreePoints_MetaData), NewProp_SkillTreePoints_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USkillTreeComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USkillTreeComponent_Statics::NewProp_SkillTreeSkills_Inner,
@@ -801,7 +881,7 @@ UObject* (*const Z_Construct_UClass_USkillTreeComponent_Statics::DependentSingle
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_USkillTreeComponent_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_USkillTreeComponent_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(USkillTreeComponent, INarrativeSavableComponent), false },  // 1573843113
+	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(USkillTreeComponent, INarrativeSavableComponent), false },  // 586272322
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_USkillTreeComponent_Statics::ClassParams = {
 	&USkillTreeComponent::StaticClass,
@@ -835,21 +915,21 @@ USkillTreeComponent::~USkillTreeComponent() {}
 // End Class USkillTreeComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSavedPerk::StaticStruct, Z_Construct_UScriptStruct_FSavedPerk_Statics::NewStructOps, TEXT("SavedPerk"), &Z_Registration_Info_UScriptStruct_SavedPerk, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedPerk), 399858452U) },
-		{ FSavedSkill::StaticStruct, Z_Construct_UScriptStruct_FSavedSkill_Statics::NewStructOps, TEXT("SavedSkill"), &Z_Registration_Info_UScriptStruct_SavedSkill, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedSkill), 1414437198U) },
-		{ FSkillTreeSaveData::StaticStruct, Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewStructOps, TEXT("SkillTreeSaveData"), &Z_Registration_Info_UScriptStruct_SkillTreeSaveData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSkillTreeSaveData), 2813743447U) },
+		{ FSavedPerk::StaticStruct, Z_Construct_UScriptStruct_FSavedPerk_Statics::NewStructOps, TEXT("SavedPerk"), &Z_Registration_Info_UScriptStruct_SavedPerk, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedPerk), 2662209854U) },
+		{ FSavedSkill::StaticStruct, Z_Construct_UScriptStruct_FSavedSkill_Statics::NewStructOps, TEXT("SavedSkill"), &Z_Registration_Info_UScriptStruct_SavedSkill, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSavedSkill), 2230185849U) },
+		{ FSkillTreeSaveData::StaticStruct, Z_Construct_UScriptStruct_FSkillTreeSaveData_Statics::NewStructOps, TEXT("SkillTreeSaveData"), &Z_Registration_Info_UScriptStruct_SkillTreeSaveData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSkillTreeSaveData), 435147216U) },
 		{ FPerkArray::StaticStruct, Z_Construct_UScriptStruct_FPerkArray_Statics::NewStructOps, TEXT("PerkArray"), &Z_Registration_Info_UScriptStruct_PerkArray, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FPerkArray), 3528315523U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USkillTreeComponent, USkillTreeComponent::StaticClass, TEXT("USkillTreeComponent"), &Z_Registration_Info_UClass_USkillTreeComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USkillTreeComponent), 3419402873U) },
+		{ Z_Construct_UClass_USkillTreeComponent, USkillTreeComponent::StaticClass, TEXT("USkillTreeComponent"), &Z_Registration_Info_UClass_USkillTreeComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USkillTreeComponent), 4153125107U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_1026914073(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_1250909664(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_SkillTrees_SkillTreeComponent_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -48,58 +48,94 @@ struct Z_Construct_UScriptStruct_FSettlementSpawn_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Defines a spawn in our settlement - who should spawn, where they should spawn, as well as if they have previously been killed so we can prevent spawning, etc. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a spawn in our settlement - who should spawn, where they should spawn, as well as if they have previously been killed so we can prevent spawning, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDisabled_MetaData[] = {
 		{ "Category", "Spawn Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether or not the spawn is disabled. Enemies that have been killed will disable their spawn if bRememberIfKilled is true \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not the spawn is disabled. Enemies that have been killed will disable their spawn if bRememberIfKilled is true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnID_MetaData[] = {
 		{ "Category", "Spawn Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Used internally by settlements to identify which spawn is which \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used internally by settlements to identify which spawn is which" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnTag_MetaData[] = {
 		{ "Category", "Spawn Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Optional tag, can used to grab the spawn to modify it later (for example to change the spawned NPC)\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional tag, can used to grab the spawn to modify it later (for example to change the spawned NPC)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCToSpawn_MetaData[] = {
 		{ "Category", "Spawn Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The NPC we want the spawn to spawn in \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPC we want the spawn to spawn in" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnTransform_MetaData[] = {
 		{ "Category", "Spawn Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Where we'll spawn the NPC\n" },
+#endif
 		{ "MakeEditWidget", "" },
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Where we'll spawn the NPC" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRememberIfKilled_MetaData[] = {
 		{ "Category", "Spawn Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether the spawn should deactivate itself once its enemy is killed, or whether we should respawn \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the spawn should deactivate itself once its enemy is killed, or whether we should respawn" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnedNPC_MetaData[] = {
 		{ "Category", "Spawn Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//A pointer to the NPC, provided they are currently spawned in \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A pointer to the NPC, provided they are currently spawned in" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bReleased_MetaData[] = {
 		{ "Category", "Spawn Info" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether the spawn has released the NPC or not. If true, the NPC has been detached from this spawn and no longer owns it. We also won't spawn it when we activate. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the spawn has released the NPC or not. If true, the NPC has been detached from this spawn and no longer owns it. We also won't spawn it when we activate." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bDisabled_SetBit(void* Obj);
@@ -337,9 +373,13 @@ struct Z_Construct_UFunction_ASettlement_GetSpawnData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settlement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab spawn data using spawn ID\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab spawn data using spawn ID" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnID_MetaData[] = {
 		{ "NativeConst", "" },
@@ -351,7 +391,7 @@ struct Z_Construct_UFunction_ASettlement_GetSpawnData_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ASettlement_GetSpawnData_Statics::NewProp_SpawnID = { "SpawnID", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Settlement_eventGetSpawnData_Parms, SpawnID), Z_Construct_UScriptStruct_FGuid, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnID_MetaData), NewProp_SpawnID_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ASettlement_GetSpawnData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Settlement_eventGetSpawnData_Parms, ReturnValue), Z_Construct_UScriptStruct_FSettlementSpawn, METADATA_PARAMS(0, nullptr) }; // 1158354933
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ASettlement_GetSpawnData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Settlement_eventGetSpawnData_Parms, ReturnValue), Z_Construct_UScriptStruct_FSettlementSpawn, METADATA_PARAMS(0, nullptr) }; // 4204452260
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASettlement_GetSpawnData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASettlement_GetSpawnData_Statics::NewProp_SpawnID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASettlement_GetSpawnData_Statics::NewProp_ReturnValue,
@@ -388,9 +428,13 @@ struct Z_Construct_UFunction_ASettlement_IsActive_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settlement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check whether settlement is active or whether WP has deactivated it \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether settlement is active or whether WP has deactivated it" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -437,9 +481,13 @@ struct Z_Construct_UFunction_ASettlement_IsCleared_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settlement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Return true if the settlement is cleared, meaning all spawns are deactivated and no NPCs remain \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return true if the settlement is cleared, meaning all spawns are deactivated and no NPCs remain" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -598,9 +646,13 @@ struct Z_Construct_UFunction_ASettlement_SetDisabled_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Settlement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Disable the settlement\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Disable the settlement" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bNewDisabled_MetaData[] = {
 		{ "NativeConst", "" },
@@ -667,75 +719,119 @@ struct Z_Construct_UClass_ASettlement_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\nIntended for non-multiplayer games, Settlements are useful for creating towns, villages, bandit camps, etc. They are always loaded into the world, however exist in a lightweight\ndeactivated state until activated. In this deactivated state you can access their name, location, check/modify which NPCs will spawn there etc. \nThis means you can change which NPCs spawn at a settlement, check if a settlement is cleared, move spawns around, etc even if a settlement\nisn't activated.  however none of their NPCs will be spawned in this deactivated state. \n\nOnce activated, settlements will spawn their NPCs in, and remove them when deactivated. They are typically activated by an ASettlementLoader. When World Partition\nloads/unloads the settlement loader, it will automatically activate or deactivate the settlement, meaning only settlements your player is near will be activated, and have their loaded in! \nThis means you get good performance. If your game has hundreds of towns or villages, only nearby ones will have their NPCs kept in the world. \n\nFinally, settlements are saved to disk. That means that if your ever change what NPC is spawned at a settlement, or whether you've discovered or cleared a \nsettlement, when you come back in and load your save the settlement will be as you left it. \n*/" },
+#endif
 		{ "IncludePath", "Settlements/Settlement.h" },
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Intended for non-multiplayer games, Settlements are useful for creating towns, villages, bandit camps, etc. They are always loaded into the world, however exist in a lightweight\ndeactivated state until activated. In this deactivated state you can access their name, location, check/modify which NPCs will spawn there etc.\nThis means you can change which NPCs spawn at a settlement, check if a settlement is cleared, move spawns around, etc even if a settlement\nisn't activated.  however none of their NPCs will be spawned in this deactivated state.\n\nOnce activated, settlements will spawn their NPCs in, and remove them when deactivated. They are typically activated by an ASettlementLoader. When World Partition\nloads/unloads the settlement loader, it will automatically activate or deactivate the settlement, meaning only settlements your player is near will be activated, and have their loaded in!\nThis means you get good performance. If your game has hundreds of towns or villages, only nearby ones will have their NPCs kept in the world.\n\nFinally, settlements are saved to disk. That means that if your ever change what NPC is spawned at a settlement, or whether you've discovered or cleared a\nsettlement, when you come back in and load your save the settlement will be as you left it." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementRoot_MetaData[] = {
 		{ "Category", "Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Root component - we want the settlement to have a transform \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Root component - we want the settlement to have a transform" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementActivityManager_MetaData[] = {
 		{ "Category", "Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The settlement activity component. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The settlement activity component." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POIMarker_MetaData[] = {
 		{ "Category", "Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//All settlements get a POI marker by default \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All settlements get a POI marker by default" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Spawns_MetaData[] = {
 		{ "Category", "Settlement Configuration|Spawns" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The settlements spawns\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The settlements spawns" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDisabled_MetaData[] = {
 		{ "Category", "Settlement Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Enable this if you want to prevent the settlement activating, usually for debugging \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enable this if you want to prevent the settlement activating, usually for debugging" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementGUID_MetaData[] = {
 		{ "Category", "Settlement Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The GUID that the save system uses to identify and save the settlement\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The GUID that the save system uses to identify and save the settlement" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementTag_MetaData[] = {
 		{ "Categories", "Narrative.Settlements" },
 		{ "Category", "Settlement Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The gameplay tag used to identity the settlement \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The gameplay tag used to identity the settlement" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POITag_MetaData[] = {
 		{ "Categories", "Narrative.POIs" },
 		{ "Category", "Settlement Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//If you want the settlement to be registered as a POI, provide a valid POI tag here and the settlement will auto-register itself as a POI. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If you want the settlement to be registered as a POI, provide a valid POI tag here and the settlement will auto-register itself as a POI." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementDisplayName_MetaData[] = {
 		{ "Category", "Settlement Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The display name of the settlement. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The display name of the settlement." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SettlementSchedule_MetaData[] = {
 		{ "Category", "Settlement Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The settlements schedule, if one is desired.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The settlements schedule, if one is desired." },
+#endif
 	};
 #if WITH_EDITORONLY_DATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpriteComponent_MetaData[] = {
@@ -747,9 +843,13 @@ struct Z_Construct_UClass_ASettlement_Statics
 #endif // WITH_EDITORONLY_DATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bActive_MetaData[] = {
 		{ "Category", "Settlement Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Whether the settlement is active or not \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Settlements/Settlement.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the settlement is active or not" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SettlementRoot;
@@ -775,12 +875,12 @@ struct Z_Construct_UClass_ASettlement_Statics
 		{ &Z_Construct_UFunction_ASettlement_Activate, "Activate" }, // 1047279188
 		{ &Z_Construct_UFunction_ASettlement_ClaimNPC, "ClaimNPC" }, // 1316704991
 		{ &Z_Construct_UFunction_ASettlement_Deactivate, "Deactivate" }, // 3960373170
-		{ &Z_Construct_UFunction_ASettlement_GetSpawnData, "GetSpawnData" }, // 1281479680
-		{ &Z_Construct_UFunction_ASettlement_IsActive, "IsActive" }, // 360478883
-		{ &Z_Construct_UFunction_ASettlement_IsCleared, "IsCleared" }, // 2249618123
+		{ &Z_Construct_UFunction_ASettlement_GetSpawnData, "GetSpawnData" }, // 3944137217
+		{ &Z_Construct_UFunction_ASettlement_IsActive, "IsActive" }, // 4236437613
+		{ &Z_Construct_UFunction_ASettlement_IsCleared, "IsCleared" }, // 1400416472
 		{ &Z_Construct_UFunction_ASettlement_ReleaseNPC, "ReleaseNPC" }, // 2840418125
 		{ &Z_Construct_UFunction_ASettlement_SetActive, "SetActive" }, // 1765730615
-		{ &Z_Construct_UFunction_ASettlement_SetDisabled, "SetDisabled" }, // 3206541371
+		{ &Z_Construct_UFunction_ASettlement_SetDisabled, "SetDisabled" }, // 1368423256
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -792,8 +892,8 @@ struct Z_Construct_UClass_ASettlement_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASettlement_Statics::NewProp_SettlementRoot = { "SettlementRoot", nullptr, (EPropertyFlags)0x011400000009001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASettlement, SettlementRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettlementRoot_MetaData), NewProp_SettlementRoot_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASettlement_Statics::NewProp_SettlementActivityManager = { "SettlementActivityManager", nullptr, (EPropertyFlags)0x011400000009001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASettlement, SettlementActivityManager), Z_Construct_UClass_USettlementActivityComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SettlementActivityManager_MetaData), NewProp_SettlementActivityManager_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASettlement_Statics::NewProp_POIMarker = { "POIMarker", nullptr, (EPropertyFlags)0x011400000009001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASettlement, POIMarker), Z_Construct_UClass_UPOINavigationMarker_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_POIMarker_MetaData), NewProp_POIMarker_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ASettlement_Statics::NewProp_Spawns_Inner = { "Spawns", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSettlementSpawn, METADATA_PARAMS(0, nullptr) }; // 1158354933
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ASettlement_Statics::NewProp_Spawns = { "Spawns", nullptr, (EPropertyFlags)0x0010000001000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASettlement, Spawns), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Spawns_MetaData), NewProp_Spawns_MetaData) }; // 1158354933
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ASettlement_Statics::NewProp_Spawns_Inner = { "Spawns", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSettlementSpawn, METADATA_PARAMS(0, nullptr) }; // 4204452260
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ASettlement_Statics::NewProp_Spawns = { "Spawns", nullptr, (EPropertyFlags)0x0010000001000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASettlement, Spawns), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Spawns_MetaData), NewProp_Spawns_MetaData) }; // 4204452260
 void Z_Construct_UClass_ASettlement_Statics::NewProp_bDisabled_SetBit(void* Obj)
 {
 	((ASettlement*)Obj)->bDisabled = 1;
@@ -836,7 +936,7 @@ UObject* (*const Z_Construct_UClass_ASettlement_Statics::DependentSingletons[])(
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASettlement_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ASettlement_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableActor_NoRegister, (int32)VTABLE_OFFSET(ASettlement, INarrativeSavableActor), false },  // 2545445142
+	{ Z_Construct_UClass_UNarrativeSavableActor_NoRegister, (int32)VTABLE_OFFSET(ASettlement, INarrativeSavableActor), false },  // 2378775156
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ASettlement_Statics::ClassParams = {
 	&ASettlement::StaticClass,
@@ -870,18 +970,18 @@ ASettlement::~ASettlement() {}
 // End Class ASettlement
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSettlementSpawn::StaticStruct, Z_Construct_UScriptStruct_FSettlementSpawn_Statics::NewStructOps, TEXT("SettlementSpawn"), &Z_Registration_Info_UScriptStruct_SettlementSpawn, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSettlementSpawn), 1158354933U) },
+		{ FSettlementSpawn::StaticStruct, Z_Construct_UScriptStruct_FSettlementSpawn_Statics::NewStructOps, TEXT("SettlementSpawn"), &Z_Registration_Info_UScriptStruct_SettlementSpawn, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSettlementSpawn), 4204452260U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASettlement, ASettlement::StaticClass, TEXT("ASettlement"), &Z_Registration_Info_UClass_ASettlement, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASettlement), 2562519173U) },
+		{ Z_Construct_UClass_ASettlement, ASettlement::StaticClass, TEXT("ASettlement"), &Z_Registration_Info_UClass_ASettlement, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASettlement), 915327073U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_691572669(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_696864329(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Settlements_Settlement_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

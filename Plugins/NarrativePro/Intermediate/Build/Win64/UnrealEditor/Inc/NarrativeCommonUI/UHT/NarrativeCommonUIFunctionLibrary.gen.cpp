@@ -29,9 +29,13 @@ struct Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PlayCommonVideoPl
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Common UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tell a common video player to play, as the play function isn't exposed to blueprints.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeCommonUIFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tell a common video player to play, as the play function isn't exposed to blueprints." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VideoPlayer_MetaData[] = {
 		{ "EditInline", "true" },
@@ -79,11 +83,15 @@ struct Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PushHUDNotificati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Common UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Add a notification to the Narrative HUD, provided one has been created \n" },
+#endif
 		{ "CPP_Default_Duration", "5.000000" },
 		{ "DisplayName", "Show Narrative HUD Notification" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonUIFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add a notification to the Narrative HUD, provided one has been created" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -145,12 +153,16 @@ struct Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PushMajorHUDNotif
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Common UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Add a major notification to the Narrative HUD, provided one has been created \n" },
+#endif
 		{ "CPP_Default_bOverrideCurrentNotification", "true" },
 		{ "CPP_Default_Duration", "5.000000" },
 		{ "DisplayName", "Show Major Narrative HUD Notification" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonUIFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add a major notification to the Narrative HUD, provided one has been created" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -225,9 +237,13 @@ struct Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_SetCommonVideoPla
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Narrative Common UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Tell a common video player to set its source, as the play function isn't exposed to blueprints.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeCommonUIFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tell a common video player to set its source, as the play function isn't exposed to blueprints." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VideoPlayer_MetaData[] = {
 		{ "EditInline", "true" },
@@ -288,17 +304,19 @@ struct Z_Construct_UClass_UNarrativeCommonUIFunctionLibrary_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "NarrativeCommonUIFunctionLibrary.h" },
 		{ "ModuleRelativePath", "Public/NarrativeCommonUIFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PlayCommonVideoPlayer, "PlayCommonVideoPlayer" }, // 1505202915
-		{ &Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PushHUDNotification, "PushHUDNotification" }, // 3979196658
-		{ &Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PushMajorHUDNotification, "PushMajorHUDNotification" }, // 4115205045
-		{ &Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_SetCommonVideoPlayerSource, "SetCommonVideoPlayerSource" }, // 471022610
+		{ &Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PlayCommonVideoPlayer, "PlayCommonVideoPlayer" }, // 499466911
+		{ &Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PushHUDNotification, "PushHUDNotification" }, // 161634533
+		{ &Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_PushMajorHUDNotification, "PushMajorHUDNotification" }, // 2897674448
+		{ &Z_Construct_UFunction_UNarrativeCommonUIFunctionLibrary_SetCommonVideoPlayerSource, "SetCommonVideoPlayerSource" }, // 268307168
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -344,14 +362,14 @@ UNarrativeCommonUIFunctionLibrary::~UNarrativeCommonUIFunctionLibrary() {}
 // End Class UNarrativeCommonUIFunctionLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUIFunctionLibrary_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUIFunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCommonUIFunctionLibrary, UNarrativeCommonUIFunctionLibrary::StaticClass, TEXT("UNarrativeCommonUIFunctionLibrary"), &Z_Registration_Info_UClass_UNarrativeCommonUIFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCommonUIFunctionLibrary), 2482089763U) },
+		{ Z_Construct_UClass_UNarrativeCommonUIFunctionLibrary, UNarrativeCommonUIFunctionLibrary::StaticClass, TEXT("UNarrativeCommonUIFunctionLibrary"), &Z_Registration_Info_UClass_UNarrativeCommonUIFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCommonUIFunctionLibrary), 634550499U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUIFunctionLibrary_h_1039834328(TEXT("/Script/NarrativeCommonUI"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUIFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUIFunctionLibrary_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUIFunctionLibrary_h_3195442046(TEXT("/Script/NarrativeCommonUI"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUIFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeCommonUI_Public_NarrativeCommonUIFunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

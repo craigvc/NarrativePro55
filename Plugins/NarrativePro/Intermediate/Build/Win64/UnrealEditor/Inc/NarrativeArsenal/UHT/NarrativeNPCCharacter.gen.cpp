@@ -50,54 +50,86 @@ struct Z_Construct_UScriptStruct_FTaggedDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Represents a tagged dialogue - this is essentially a dialogue that can be kicked off via a tag \"TaggedDialogue.Taunt, TaggedDialogue.Greet, etc. \"\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents a tagged dialogue - this is essentially a dialogue that can be kicked off via a tag \"TaggedDialogue.Taunt, TaggedDialogue.Greet, etc. \"" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Tag_MetaData[] = {
 		{ "Categories", "Narrative.TaggedDialogue" },
 		{ "Category", "Tagged Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The tag that will kick off this dialogue. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The tag that will kick off this dialogue." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Dialogue_MetaData[] = {
 		{ "Category", "Tagged Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The dialogue to begin */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The dialogue to begin" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxDistance_MetaData[] = {
 		{ "Category", "Tagged Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Instigator needs to be less than this many units away to play the dialogue. Negative means don't check  */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Instigator needs to be less than this many units away to play the dialogue. Negative means don't check" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Chance_MetaData[] = {
 		{ "Category", "Tagged Dialogue" },
 		{ "ClampMax", "1.000000" },
 		{ "ClampMin", "0.000000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The chance of this dialogue beginning, for example  */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The chance of this dialogue beginning, for example" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Cooldown_MetaData[] = {
 		{ "Category", "Tagged Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The amount of time we should cooldown before playing this dialogue again. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of time we should cooldown before playing this dialogue again." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RequiredTags_MetaData[] = {
 		{ "Category", "Tagged Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Tags that will be required for the NPC to begin this tagged dialogue */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tags that will be required for the NPC to begin this tagged dialogue" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BlockedTags_MetaData[] = {
 		{ "Category", "Tagged Dialogue" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Tags that if owned by the NPC, will prevent this dialogue beginning. For example, we wouldn't want to greet a player if we were fighting someone. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tags that if owned by the NPC, will prevent this dialogue beginning. For example, we wouldn't want to greet a player if we were fighting someone." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LastPlayTime_MetaData[] = {
 		{ "Category", "Tagged Dialogue" },
@@ -181,9 +213,13 @@ struct Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Notify the NPC a tagged dialogue should try play - this is blueprint implementable \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Notify the NPC a tagged dialogue should try play - this is blueprint implementable" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Dialogue;
@@ -191,7 +227,7 @@ struct Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue_St
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeNPCCharacter_eventExecutePlayTaggedDialogue_Parms, Dialogue), Z_Construct_UScriptStruct_FTaggedDialogue, METADATA_PARAMS(0, nullptr) }; // 1666674158
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue_Statics::NewProp_Dialogue = { "Dialogue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeNPCCharacter_eventExecutePlayTaggedDialogue_Parms, Dialogue), Z_Construct_UScriptStruct_FTaggedDialogue, METADATA_PARAMS(0, nullptr) }; // 360676729
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue_Statics::NewProp_DialogueInstigator = { "DialogueInstigator", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NarrativeNPCCharacter_eventExecutePlayTaggedDialogue_Parms, DialogueInstigator), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue_Statics::NewProp_Dialogue,
@@ -353,9 +389,13 @@ struct Z_Construct_UFunction_ANarrativeNPCCharacter_GetNPCName_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Grab the NPCs name\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grab the NPCs name" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FTextPropertyParams NewProp_ReturnValue;
@@ -529,9 +569,13 @@ struct Z_Construct_UFunction_ANarrativeNPCCharacter_PlayTaggedDialogue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Notify the NPC a tagged dialogue should try play, like a greeting, farewell, taunt, etc. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Notify the NPC a tagged dialogue should try play, like a greeting, farewell, taunt, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Tag_MetaData[] = {
 		{ "Categories", "Narrative.TaggedDialogue" },
@@ -604,9 +648,13 @@ struct Z_Construct_UFunction_ANarrativeNPCCharacter_ShouldBeAggressiveTowardsTar
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Hostiles" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Allows a chance to let us be hostile towards any perceived target if you return true, even if they aren't in a hostile faction. \n\x09This would let you do things like have friendly NPCs turn on the player if you've damaged them enough, etc. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows a chance to let us be hostile towards any perceived target if you return true, even if they aren't in a hostile faction.\n       This would let you do things like have friendly NPCs turn on the player if you've damaged them enough, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Target_MetaData[] = {
 		{ "NativeConst", "" },
@@ -676,12 +724,16 @@ struct Z_Construct_UClass_ANarrativeNPCCharacter_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Base class for a NarrativeCharacter that is AI Controlled. \n */" },
+#endif
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "UnrealFramework/NarrativeNPCCharacter.h" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Base class for a NarrativeCharacter that is AI Controlled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InventoryComponent_MetaData[] = {
 		{ "Category", "Narrative|Components" },
@@ -690,10 +742,14 @@ struct Z_Construct_UClass_ANarrativeNPCCharacter_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TradingInventoryComponent_MetaData[] = {
 		{ "Category", "Narrative|Components" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//NPCs have a seperate inventory for trading from. \n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NPCs have a seperate inventory for trading from." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCInteractableComponent_MetaData[] = {
 		{ "Category", "Narrative|Components" },
@@ -701,57 +757,93 @@ struct Z_Construct_UClass_ANarrativeNPCCharacter_Statics
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AICRecord_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//In order to link NPCs and their AIController save records, we have NPCs store their AIC record. That works nicely. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "In order to link NPCs and their AIController save records, we have NPCs store their AIC record. That works nicely." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCData_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The NPCs data asset - this is set automatically by the NPC subsystem when it detects the NPC has spawned in */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The NPCs data asset - this is set automatically by the NPC subsystem when it detects the NPC has spawned in" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningSettlement_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** References the settlement that last spawned us, if one did.  */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "References the settlement that last spawned us, if one did." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningSpawn_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Settlement spawn ID */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Settlement spawn ID" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCLevel_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This NPCs level - NPCs levels are defined by their NPC asset */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This NPCs level - NPCs levels are defined by their NPC asset" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NPCFactions_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** This NPCs faction - can be changed at anytime and will be saved to disk */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This NPCs faction - can be changed at anytime and will be saved to disk" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAggressiveOnTakeDamage_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If true, this NPC will start attacking anyone that causes damage to them, provided they aren't in the same faction. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, this NPC will start attacking anyone that causes damage to them, provided they aren't in the same faction." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TaggedDialogues_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If true, this NPC will start attacking anyone that causes damage to them, provided they aren't in the same faction. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, this NPC will start attacking anyone that causes damage to them, provided they aren't in the same faction." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Hostiles_MetaData[] = {
 		{ "Category", "NPC" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Consider anything in this list a \"hostile override\" - that is to say even if the actor is neutral or even friendly, we'll treat them as a hostile and attack.\n\x09We need this because there are occasions where we want friendlies to attack each other, maybe during a quest. We also often want to attack neutrals that have attacked us. */" },
+#endif
 		{ "ModuleRelativePath", "Public/UnrealFramework/NarrativeNPCCharacter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Consider anything in this list a \"hostile override\" - that is to say even if the actor is neutral or even friendly, we'll treat them as a hostile and attack.\n      We need this because there are occasions where we want friendlies to attack each other, maybe during a quest. We also often want to attack neutrals that have attacked us." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InventoryComponent;
@@ -772,17 +864,17 @@ struct Z_Construct_UClass_ANarrativeNPCCharacter_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue, "ExecutePlayTaggedDialogue" }, // 3498575155
+		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_ExecutePlayTaggedDialogue, "ExecutePlayTaggedDialogue" }, // 1144860031
 		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_GetActivityComponent, "GetActivityComponent" }, // 901961117
 		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_GetInventoryComponent, "GetInventoryComponent" }, // 3506942383
 		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_GetNPCController, "GetNPCController" }, // 1467414764
-		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_GetNPCName, "GetNPCName" }, // 624923137
+		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_GetNPCName, "GetNPCName" }, // 3016963003
 		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_GetTradingInventoryComponent, "GetTradingInventoryComponent" }, // 4133761756
 		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_NPCDataReady, "NPCDataReady" }, // 2407415416
 		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_OnRep_NPCData, "OnRep_NPCData" }, // 3922941366
 		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_OnRep_NPCFactions, "OnRep_NPCFactions" }, // 4038828497
-		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_PlayTaggedDialogue, "PlayTaggedDialogue" }, // 291977788
-		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_ShouldBeAggressiveTowardsTarget, "ShouldBeAggressiveTowardsTarget" }, // 2381852121
+		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_PlayTaggedDialogue, "PlayTaggedDialogue" }, // 3422594312
+		{ &Z_Construct_UFunction_ANarrativeNPCCharacter_ShouldBeAggressiveTowardsTarget, "ShouldBeAggressiveTowardsTarget" }, // 150970818
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -794,7 +886,7 @@ struct Z_Construct_UClass_ANarrativeNPCCharacter_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_InventoryComponent = { "InventoryComponent", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, InventoryComponent), Z_Construct_UClass_UNarrativeInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InventoryComponent_MetaData), NewProp_InventoryComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_TradingInventoryComponent = { "TradingInventoryComponent", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, TradingInventoryComponent), Z_Construct_UClass_UNarrativeInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TradingInventoryComponent_MetaData), NewProp_TradingInventoryComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_NPCInteractableComponent = { "NPCInteractableComponent", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, NPCInteractableComponent), Z_Construct_UClass_UNPCInteractable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NPCInteractableComponent_MetaData), NewProp_NPCInteractableComponent_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_AICRecord = { "AICRecord", nullptr, (EPropertyFlags)0x0020080001000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, AICRecord), Z_Construct_UScriptStruct_FNarrativeActorRecord, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AICRecord_MetaData), NewProp_AICRecord_MetaData) }; // 1167937850
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_AICRecord = { "AICRecord", nullptr, (EPropertyFlags)0x0020080001000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, AICRecord), Z_Construct_UScriptStruct_FNarrativeActorRecord, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AICRecord_MetaData), NewProp_AICRecord_MetaData) }; // 3502951769
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_NPCData = { "NPCData", "OnRep_NPCData", (EPropertyFlags)0x0124080100000034, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, NPCData), Z_Construct_UClass_UNPCDefinition_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NPCData_MetaData), NewProp_NPCData_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_OwningSettlement = { "OwningSettlement", nullptr, (EPropertyFlags)0x0020080001020015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, OwningSettlement), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningSettlement_MetaData), NewProp_OwningSettlement_MetaData) }; // 1298103297
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_OwningSpawn = { "OwningSpawn", nullptr, (EPropertyFlags)0x0020080001020015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, OwningSpawn), Z_Construct_UScriptStruct_FGuid, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningSpawn_MetaData), NewProp_OwningSpawn_MetaData) };
@@ -805,8 +897,8 @@ void Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_bAggressiveOnTak
 	((ANarrativeNPCCharacter*)Obj)->bAggressiveOnTakeDamage = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_bAggressiveOnTakeDamage = { "bAggressiveOnTakeDamage", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ANarrativeNPCCharacter), &Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_bAggressiveOnTakeDamage_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bAggressiveOnTakeDamage_MetaData), NewProp_bAggressiveOnTakeDamage_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_TaggedDialogues_Inner = { "TaggedDialogues", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTaggedDialogue, METADATA_PARAMS(0, nullptr) }; // 1666674158
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_TaggedDialogues = { "TaggedDialogues", nullptr, (EPropertyFlags)0x0020080000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, TaggedDialogues), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TaggedDialogues_MetaData), NewProp_TaggedDialogues_MetaData) }; // 1666674158
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_TaggedDialogues_Inner = { "TaggedDialogues", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTaggedDialogue, METADATA_PARAMS(0, nullptr) }; // 360676729
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_TaggedDialogues = { "TaggedDialogues", nullptr, (EPropertyFlags)0x0020080000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, TaggedDialogues), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TaggedDialogues_MetaData), NewProp_TaggedDialogues_MetaData) }; // 360676729
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_Hostiles_Inner = { "Hostiles", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::NewProp_Hostiles = { "Hostiles", nullptr, (EPropertyFlags)0x0124080000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANarrativeNPCCharacter, Hostiles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Hostiles_MetaData), NewProp_Hostiles_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANarrativeNPCCharacter_Statics::PropPointers[] = {
@@ -832,7 +924,7 @@ UObject* (*const Z_Construct_UClass_ANarrativeNPCCharacter_Statics::DependentSin
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ANarrativeNPCCharacter_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableActor_NoRegister, (int32)VTABLE_OFFSET(ANarrativeNPCCharacter, INarrativeSavableActor), false },  // 2545445142
+	{ Z_Construct_UClass_UNarrativeSavableActor_NoRegister, (int32)VTABLE_OFFSET(ANarrativeNPCCharacter, INarrativeSavableActor), false },  // 2378775156
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ANarrativeNPCCharacter_Statics::ClassParams = {
 	&ANarrativeNPCCharacter::StaticClass,
@@ -877,18 +969,18 @@ ANarrativeNPCCharacter::~ANarrativeNPCCharacter() {}
 // End Class ANarrativeNPCCharacter
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FTaggedDialogue::StaticStruct, Z_Construct_UScriptStruct_FTaggedDialogue_Statics::NewStructOps, TEXT("TaggedDialogue"), &Z_Registration_Info_UScriptStruct_TaggedDialogue, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTaggedDialogue), 1666674158U) },
+		{ FTaggedDialogue::StaticStruct, Z_Construct_UScriptStruct_FTaggedDialogue_Statics::NewStructOps, TEXT("TaggedDialogue"), &Z_Registration_Info_UScriptStruct_TaggedDialogue, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTaggedDialogue), 360676729U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANarrativeNPCCharacter, ANarrativeNPCCharacter::StaticClass, TEXT("ANarrativeNPCCharacter"), &Z_Registration_Info_UClass_ANarrativeNPCCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeNPCCharacter), 1540272174U) },
+		{ Z_Construct_UClass_ANarrativeNPCCharacter, ANarrativeNPCCharacter::StaticClass, TEXT("ANarrativeNPCCharacter"), &Z_Registration_Info_UClass_ANarrativeNPCCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANarrativeNPCCharacter), 4233575522U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_2536574467(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_1838076771(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_UnrealFramework_NarrativeNPCCharacter_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

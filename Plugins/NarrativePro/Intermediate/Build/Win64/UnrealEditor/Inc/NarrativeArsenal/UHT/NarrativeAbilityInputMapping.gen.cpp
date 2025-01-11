@@ -41,15 +41,23 @@ struct Z_Construct_UScriptStruct_FAbilityInputMappingData_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputAction_MetaData[] = {
 		{ "Category", "GameplayInputAbilityInfo" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The input action\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilityInputMapping.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The input action" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputID_MetaData[] = {
 		{ "Category", "GameplayInputAbilityInfo" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The input ID the action maps to \n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilityInputMapping.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The input ID the action maps to" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputAction;
@@ -107,10 +115,14 @@ struct Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Used by Narrative weapons to define which input actions map to which abilities. \n */" },
+#endif
 		{ "IncludePath", "GAS/NarrativeAbilityInputMapping.h" },
 		{ "ModuleRelativePath", "Public/GAS/NarrativeAbilityInputMapping.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used by Narrative weapons to define which input actions map to which abilities." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputAbilities_MetaData[] = {
 		{ "Category", "AbilitySystem" },
@@ -126,8 +138,8 @@ struct Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics::NewProp_InputAbilities_Inner = { "InputAbilities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FAbilityInputMappingData, METADATA_PARAMS(0, nullptr) }; // 2162511338
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics::NewProp_InputAbilities = { "InputAbilities", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilityInputMapping, InputAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputAbilities_MetaData), NewProp_InputAbilities_MetaData) }; // 2162511338
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics::NewProp_InputAbilities_Inner = { "InputAbilities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FAbilityInputMappingData, METADATA_PARAMS(0, nullptr) }; // 3341091815
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics::NewProp_InputAbilities = { "InputAbilities", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeAbilityInputMapping, InputAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputAbilities_MetaData), NewProp_InputAbilities_MetaData) }; // 3341091815
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics::NewProp_InputAbilities_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNarrativeAbilityInputMapping_Statics::NewProp_InputAbilities,
@@ -171,18 +183,18 @@ UNarrativeAbilityInputMapping::~UNarrativeAbilityInputMapping() {}
 // End Class UNarrativeAbilityInputMapping
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FAbilityInputMappingData::StaticStruct, Z_Construct_UScriptStruct_FAbilityInputMappingData_Statics::NewStructOps, TEXT("AbilityInputMappingData"), &Z_Registration_Info_UScriptStruct_AbilityInputMappingData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAbilityInputMappingData), 2162511338U) },
+		{ FAbilityInputMappingData::StaticStruct, Z_Construct_UScriptStruct_FAbilityInputMappingData_Statics::NewStructOps, TEXT("AbilityInputMappingData"), &Z_Registration_Info_UScriptStruct_AbilityInputMappingData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAbilityInputMappingData), 3341091815U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeAbilityInputMapping, UNarrativeAbilityInputMapping::StaticClass, TEXT("UNarrativeAbilityInputMapping"), &Z_Registration_Info_UClass_UNarrativeAbilityInputMapping, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAbilityInputMapping), 1681393711U) },
+		{ Z_Construct_UClass_UNarrativeAbilityInputMapping, UNarrativeAbilityInputMapping::StaticClass, TEXT("UNarrativeAbilityInputMapping"), &Z_Registration_Info_UClass_UNarrativeAbilityInputMapping, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAbilityInputMapping), 970436425U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_1797980718(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_126626481(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_NarrativeAbilityInputMapping_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

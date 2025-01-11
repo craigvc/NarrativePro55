@@ -30,16 +30,24 @@ struct Z_Construct_UClass_UNarrativeAnimSet_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Stores a set of animations to make them easily re-usable. Used for combos and flinches in the base tool. \n */" },
+#endif
 		{ "IncludePath", "GAS/AttackComboAnimSet.h" },
 		{ "ModuleRelativePath", "Public/GAS/AttackComboAnimSet.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stores a set of animations to make them easily re-usable. Used for combos and flinches in the base tool." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Montages_MetaData[] = {
 		{ "Category", "Combat Data" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Attack montages for the melee attack\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GAS/AttackComboAnimSet.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attack montages for the melee attack" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Montages_Inner;
@@ -95,14 +103,14 @@ UNarrativeAnimSet::~UNarrativeAnimSet() {}
 // End Class UNarrativeAnimSet
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_AttackComboAnimSet_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_AttackComboAnimSet_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeAnimSet, UNarrativeAnimSet::StaticClass, TEXT("UNarrativeAnimSet"), &Z_Registration_Info_UClass_UNarrativeAnimSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAnimSet), 569881121U) },
+		{ Z_Construct_UClass_UNarrativeAnimSet, UNarrativeAnimSet::StaticClass, TEXT("UNarrativeAnimSet"), &Z_Registration_Info_UClass_UNarrativeAnimSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeAnimSet), 3326189686U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_AttackComboAnimSet_h_3868351030(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_AttackComboAnimSet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_AttackComboAnimSet_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_AttackComboAnimSet_h_2405981669(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_AttackComboAnimSet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_GAS_AttackComboAnimSet_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

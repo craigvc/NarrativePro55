@@ -30,15 +30,23 @@ struct Z_Construct_UClass_UDialogueBlueprintGeneratedClass_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Blueprint generated class for Dialogue blueprints. The Dialogue compiler compiles the Dialogue and stores it in\n * the DialogueTemplate object ready for use at runtime. Good explanation at https://heapcleaner.wordpress.com/2016/06/12/inside-of-unreal-engine-blueprint/\n */" },
+#endif
 		{ "IncludePath", "Tales/DialogueBlueprintGeneratedClass.h" },
 		{ "ModuleRelativePath", "Public/Tales/DialogueBlueprintGeneratedClass.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Blueprint generated class for Dialogue blueprints. The Dialogue compiler compiles the Dialogue and stores it in\nthe DialogueTemplate object ready for use at runtime. Good explanation at https://heapcleaner.wordpress.com/2016/06/12/inside-of-unreal-engine-blueprint/" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueTemplate_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The Dialogue template to be created \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/DialogueBlueprintGeneratedClass.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The Dialogue template to be created" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DialogueTemplate;
@@ -92,14 +100,14 @@ UDialogueBlueprintGeneratedClass::~UDialogueBlueprintGeneratedClass() {}
 // End Class UDialogueBlueprintGeneratedClass
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueBlueprintGeneratedClass_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueBlueprintGeneratedClass_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueBlueprintGeneratedClass, UDialogueBlueprintGeneratedClass::StaticClass, TEXT("UDialogueBlueprintGeneratedClass"), &Z_Registration_Info_UClass_UDialogueBlueprintGeneratedClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueBlueprintGeneratedClass), 3391566190U) },
+		{ Z_Construct_UClass_UDialogueBlueprintGeneratedClass, UDialogueBlueprintGeneratedClass::StaticClass, TEXT("UDialogueBlueprintGeneratedClass"), &Z_Registration_Info_UClass_UDialogueBlueprintGeneratedClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueBlueprintGeneratedClass), 2447082081U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueBlueprintGeneratedClass_h_988257922(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueBlueprintGeneratedClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueBlueprintGeneratedClass_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueBlueprintGeneratedClass_h_753639813(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueBlueprintGeneratedClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_DialogueBlueprintGeneratedClass_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

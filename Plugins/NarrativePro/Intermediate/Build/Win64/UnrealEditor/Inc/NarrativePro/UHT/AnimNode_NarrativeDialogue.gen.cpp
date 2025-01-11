@@ -34,7 +34,9 @@ struct Z_Construct_UEnum_NarrativePro_EInterpolationDialogueBlend_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Various ways to interpolate TAlphaBlend. */" },
+#endif
 		{ "Cubic.Name", "EInterpolationDialogueBlend::Cubic" },
 		{ "EaseInOutExponent2.Name", "EInterpolationDialogueBlend::EaseInOutExponent2" },
 		{ "EaseInOutExponent3.Name", "EInterpolationDialogueBlend::EaseInOutExponent3" },
@@ -44,7 +46,9 @@ struct Z_Construct_UEnum_NarrativePro_EInterpolationDialogueBlend_Statics
 		{ "MAX.Name", "EInterpolationDialogueBlend::MAX" },
 		{ "ModuleRelativePath", "Public/AnimNode_NarrativeDialogue.h" },
 		{ "Sinusoidal.Name", "EInterpolationDialogueBlend::Sinusoidal" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Various ways to interpolate TAlphaBlend." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -102,9 +106,13 @@ struct Z_Construct_UScriptStruct_FAnimNode_NarrativeDialogue_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\x09Simple controller that make a bone to look at the point or another bone\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/AnimNode_NarrativeDialogue.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Simple controller that make a bone to look at the point or another bone" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuatInterpSpeed_MetaData[] = {
 		{ "Category", "SkeletalControl" },
@@ -149,18 +157,18 @@ UScriptStruct* Z_Construct_UScriptStruct_FAnimNode_NarrativeDialogue()
 // End ScriptStruct FAnimNode_NarrativeDialogue
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EInterpolationDialogueBlend_StaticEnum, TEXT("EInterpolationDialogueBlend"), &Z_Registration_Info_UEnum_EInterpolationDialogueBlend, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 316016599U) },
+		{ EInterpolationDialogueBlend_StaticEnum, TEXT("EInterpolationDialogueBlend"), &Z_Registration_Info_UEnum_EInterpolationDialogueBlend, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1629201401U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FAnimNode_NarrativeDialogue::StaticStruct, Z_Construct_UScriptStruct_FAnimNode_NarrativeDialogue_Statics::NewStructOps, TEXT("AnimNode_NarrativeDialogue"), &Z_Registration_Info_UScriptStruct_AnimNode_NarrativeDialogue, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAnimNode_NarrativeDialogue), 1906301433U) },
+		{ FAnimNode_NarrativeDialogue::StaticStruct, Z_Construct_UScriptStruct_FAnimNode_NarrativeDialogue_Statics::NewStructOps, TEXT("AnimNode_NarrativeDialogue"), &Z_Registration_Info_UScriptStruct_AnimNode_NarrativeDialogue, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAnimNode_NarrativeDialogue), 2257205475U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_859989009(TEXT("/Script/NarrativePro"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_550424306(TEXT("/Script/NarrativePro"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativePro_Public_AnimNode_NarrativeDialogue_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

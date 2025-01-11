@@ -32,9 +32,13 @@ struct Z_Construct_UFunction_UMapTileComponent_SetMapLayer_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Map Layers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set the layer of this map tile for the given domains \n" },
+#endif
 		{ "ModuleRelativePath", "Public/MapTileComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the layer of this map tile for the given domains" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewLayer_MetaData[] = {
 		{ "Categories", "Navigator.MapLayer" },
@@ -108,19 +112,27 @@ struct Z_Construct_UClass_UMapTileComponent_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A specialized map marker used for map tiles. Map tiles are nice because we can generate a NxN grid of them depending on our map size \n */" },
+#endif
 		{ "DisplayName", "Map Tile Marker" },
 		{ "IncludePath", "MapTileComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/MapTileComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A specialized map marker used for map tiles. Map tiles are nice because we can generate a NxN grid of them depending on our map size" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapTileLayers_MetaData[] = {
 		{ "Category", "Map Tiles" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The map tile layers. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/MapTileComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The map tile layers." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MapTileLayers_ValueProp;
@@ -129,7 +141,7 @@ struct Z_Construct_UClass_UMapTileComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMapTileComponent_SetMapLayer, "SetMapLayer" }, // 42505391
+		{ &Z_Construct_UFunction_UMapTileComponent_SetMapLayer, "SetMapLayer" }, // 3480155164
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -183,14 +195,14 @@ UMapTileComponent::~UMapTileComponent() {}
 // End Class UMapTileComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMapTileComponent, UMapTileComponent::StaticClass, TEXT("UMapTileComponent"), &Z_Registration_Info_UClass_UMapTileComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMapTileComponent), 910327240U) },
+		{ Z_Construct_UClass_UMapTileComponent, UMapTileComponent::StaticClass, TEXT("UMapTileComponent"), &Z_Registration_Info_UClass_UMapTileComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMapTileComponent), 3775977584U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileComponent_h_3781442993(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileComponent_h_258144729(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_MapTileComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

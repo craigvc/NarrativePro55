@@ -35,9 +35,13 @@ struct Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Add a navigation marker to the given actor! Navigator will automatically destroy the marker when the Navigation marker or its owning actor are destroyed. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigatorStatics.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add a navigation marker to the given actor! Navigator will automatically destroy the marker when the Navigation marker or its owning actor are destroyed." },
+#endif
 		{ "UnsafeDuringActorConstruction", "true" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MarkerSettings_MetaData[] = {
@@ -59,7 +63,7 @@ struct Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor_Static
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor_Statics::NewProp_ActorToMark = { "ActorToMark", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigatorStatics_eventAddNavigationMarkerToActor_Parms, ActorToMark), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor_Statics::NewProp_MarkerSettings = { "MarkerSettings", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigatorStatics_eventAddNavigationMarkerToActor_Parms, MarkerSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MarkerSettings_MetaData), NewProp_MarkerSettings_MetaData) }; // 1503443034
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor_Statics::NewProp_MarkerSettings = { "MarkerSettings", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigatorStatics_eventAddNavigationMarkerToActor_Parms, MarkerSettings), Z_Construct_UScriptStruct_FNavigationMarkerSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MarkerSettings_MetaData), NewProp_MarkerSettings_MetaData) }; // 1355227794
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor_Statics::NewProp_MarkerDomain = { "MarkerDomain", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigatorStatics_eventAddNavigationMarkerToActor_Parms, MarkerDomain), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MarkerDomain_MetaData), NewProp_MarkerDomain_MetaData) }; // 3352185621
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(NavigatorStatics_eventAddNavigationMarkerToActor_Parms, ReturnValue), Z_Construct_UClass_UNavigationMarkerComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor_Statics::PropPointers[] = {
@@ -110,14 +114,16 @@ struct Z_Construct_UClass_UNavigatorStatics_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "NavigatorStatics.h" },
 		{ "ModuleRelativePath", "Public/NavigatorStatics.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor, "AddNavigationMarkerToActor" }, // 3348083645
+		{ &Z_Construct_UFunction_UNavigatorStatics_AddNavigationMarkerToActor, "AddNavigationMarkerToActor" }, // 3253691346
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -163,14 +169,14 @@ UNavigatorStatics::~UNavigatorStatics() {}
 // End Class UNavigatorStatics
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigatorStatics_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigatorStatics_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNavigatorStatics, UNavigatorStatics::StaticClass, TEXT("UNavigatorStatics"), &Z_Registration_Info_UClass_UNavigatorStatics, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigatorStatics), 3647220898U) },
+		{ Z_Construct_UClass_UNavigatorStatics, UNavigatorStatics::StaticClass, TEXT("UNavigatorStatics"), &Z_Registration_Info_UClass_UNavigatorStatics, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigatorStatics), 2427248588U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigatorStatics_h_3795023568(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigatorStatics_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigatorStatics_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigatorStatics_h_2623946932(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigatorStatics_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NavigatorStatics_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

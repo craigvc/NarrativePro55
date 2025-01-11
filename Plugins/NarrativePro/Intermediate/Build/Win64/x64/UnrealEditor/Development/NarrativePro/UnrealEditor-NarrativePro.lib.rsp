@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-NarrativePro.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"J:\NarrativePro55\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativePro\Module.NarrativePro.cpp.obj"
+"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativePro\Default.rc2.res"
+/OUT:"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativePro\UnrealEditor-NarrativePro.lib"

@@ -47,7 +47,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EPartyConditionPolicy_Statics
 		{ "AnyPlayerPasses.DisplayName", "Any Party Member Passes" },
 		{ "AnyPlayerPasses.Name", "EPartyConditionPolicy::AnyPlayerPasses" },
 		{ "AnyPlayerPasses.ToolTip", "The condition is run on all of your party members - if anyone in the party passes the condition, it passes." },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//How do we handle running this condition on a party dialogue?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeCondition.h" },
 		{ "PartyLeaderPasses.Comment", "/**The condition is run on the party leader - if they pass the condition, the condition passes. */" },
 		{ "PartyLeaderPasses.DisplayName", "Party Leader Passes" },
@@ -57,7 +59,9 @@ struct Z_Construct_UEnum_NarrativeArsenal_EPartyConditionPolicy_Statics
 		{ "PartyPasses.DisplayName", "Party Passes" },
 		{ "PartyPasses.Name", "EPartyConditionPolicy::PartyPasses" },
 		{ "PartyPasses.ToolTip", "The condition is run on your party itself - your parties narrative component. If it passes, the condition passes." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How do we handle running this condition on a party dialogue?" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -127,9 +131,13 @@ struct Z_Construct_UFunction_UNarrativeCondition_CheckCondition_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check whether this condition is true or false\n\x09\n\x09@param Pawn The pawn of the player we're running the condition on - will be null if running the condition against a party\n\x09@param Controller The controller of the player we're running the condition on - will be null if running the condition against a party\n\x09@param NarrativeComponent The narrative component we're running the condition on \n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeCondition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether this condition is true or false\n\n      @param Pawn The pawn of the player we're running the condition on - will be null if running the condition against a party\n      @param Controller The controller of the player we're running the condition on - will be null if running the condition against a party\n      @param NarrativeComponent The narrative component we're running the condition on" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NarrativeComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -206,9 +214,13 @@ struct Z_Construct_UFunction_UNarrativeCondition_GetGraphDisplayText_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Define the text that will show up on a node if this condition is added to it */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeCondition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Define the text that will show up on a node if this condition is added to it" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
@@ -261,29 +273,45 @@ struct Z_Construct_UClass_UNarrativeCondition_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "AutoExpandCategories", "Default" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Narrative Conditions allow you to make conditions that dialogues and quests can then use to conditionally include/exclude nodes.\n * \n * For example, you could make a condition \"HasItem\" that checks if the player has a certain amount of an item. Then, you could use that\n * condition on a dialogue node so that the player can only say \"I'll buy it!\" if they actually have 500 coins in their inventory. \n * \n * Currently quests do not support NarrativeConditions, only NarrativeEvents. Dialogues support both. \n */" },
+#endif
 		{ "IncludePath", "Tales/NarrativeCondition.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Tales/NarrativeCondition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Narrative Conditions allow you to make conditions that dialogues and quests can then use to conditionally include/exclude nodes.\n\nFor example, you could make a condition \"HasItem\" that checks if the player has a certain amount of an item. Then, you could use that\ncondition on a dialogue node so that the player can only say \"I'll buy it!\" if they actually have 500 coins in their inventory.\n\nCurrently quests do not support NarrativeConditions, only NarrativeEvents. Dialogues support both." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bNot_MetaData[] = {
 		{ "Category", "Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set this to true to flip the result of this condition\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeCondition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set this to true to flip the result of this condition" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterTargets_MetaData[] = {
 		{ "Category", "Conditions" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Special narrative pro feature - if this is empty, we'll run the condition on the owning player, but if this is contains any targets\n\x09we'll run the condition for each character in character targets, using the character as OwningPawn, and all need to pass for the condition to pass.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeCondition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Special narrative pro feature - if this is empty, we'll run the condition on the owning player, but if this is contains any targets\n       we'll run the condition for each character in character targets, using the character as OwningPawn, and all need to pass for the condition to pass." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PartyConditionPolicy_MetaData[] = {
 		{ "Category", "Parties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09""Defines how the condition should be ran against a party that is doing this dialogue. Ignored by non-party dialogues. \n\n\x09Imagine if you want to check if your party has completed a quest. By default narrative will check if anyone in the party had completed \n\x09the quest on their own narrative component, but if you wanted to check if the party itself had completed the quest before you'd check this box.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Tales/NarrativeCondition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines how the condition should be ran against a party that is doing this dialogue. Ignored by non-party dialogues.\n\nImagine if you want to check if your party has completed a quest. By default narrative will check if anyone in the party had completed\nthe quest on their own narrative component, but if you wanted to check if the party itself had completed the quest before you'd check this box." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bNot_SetBit(void* Obj);
@@ -295,8 +323,8 @@ struct Z_Construct_UClass_UNarrativeCondition_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeCondition_CheckCondition, "CheckCondition" }, // 518890398
-		{ &Z_Construct_UFunction_UNarrativeCondition_GetGraphDisplayText, "GetGraphDisplayText" }, // 3894139230
+		{ &Z_Construct_UFunction_UNarrativeCondition_CheckCondition, "CheckCondition" }, // 2412377916
+		{ &Z_Construct_UFunction_UNarrativeCondition_GetGraphDisplayText, "GetGraphDisplayText" }, // 46590781
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -312,7 +340,7 @@ const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNarrativeCondit
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNarrativeCondition_Statics::NewProp_CharacterTargets_Inner = { "CharacterTargets", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UCharacterDefinition_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UNarrativeCondition_Statics::NewProp_CharacterTargets = { "CharacterTargets", nullptr, (EPropertyFlags)0x0114000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeCondition, CharacterTargets), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterTargets_MetaData), NewProp_CharacterTargets_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UNarrativeCondition_Statics::NewProp_PartyConditionPolicy_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeCondition_Statics::NewProp_PartyConditionPolicy = { "PartyConditionPolicy", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeCondition, PartyConditionPolicy), Z_Construct_UEnum_NarrativeArsenal_EPartyConditionPolicy, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PartyConditionPolicy_MetaData), NewProp_PartyConditionPolicy_MetaData) }; // 3025712406
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UNarrativeCondition_Statics::NewProp_PartyConditionPolicy = { "PartyConditionPolicy", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeCondition, PartyConditionPolicy), Z_Construct_UEnum_NarrativeArsenal_EPartyConditionPolicy, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PartyConditionPolicy_MetaData), NewProp_PartyConditionPolicy_MetaData) }; // 3990705154
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UNarrativeCondition_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNarrativeCondition_Statics::NewProp_bNot,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNarrativeCondition_Statics::NewProp_CharacterTargets_Inner,
@@ -359,18 +387,18 @@ UNarrativeCondition::~UNarrativeCondition() {}
 // End Class UNarrativeCondition
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EPartyConditionPolicy_StaticEnum, TEXT("EPartyConditionPolicy"), &Z_Registration_Info_UEnum_EPartyConditionPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3025712406U) },
+		{ EPartyConditionPolicy_StaticEnum, TEXT("EPartyConditionPolicy"), &Z_Registration_Info_UEnum_EPartyConditionPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3990705154U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeCondition, UNarrativeCondition::StaticClass, TEXT("UNarrativeCondition"), &Z_Registration_Info_UClass_UNarrativeCondition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCondition), 1242675274U) },
+		{ Z_Construct_UClass_UNarrativeCondition, UNarrativeCondition::StaticClass, TEXT("UNarrativeCondition"), &Z_Registration_Info_UClass_UNarrativeCondition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeCondition), 3429352162U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_890620095(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_1765830067(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Tales_NarrativeCondition_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

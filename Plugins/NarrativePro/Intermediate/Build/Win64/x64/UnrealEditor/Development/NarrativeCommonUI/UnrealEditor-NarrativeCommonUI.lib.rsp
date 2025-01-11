@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-NarrativeCommonUI.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"J:\NarrativePro55\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativeCommonUI\Module.NarrativeCommonUI.cpp.obj"
+"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativeCommonUI\Default.rc2.res"
+/OUT:"J:\NarrativePro55\Plugins\NarrativePro\Intermediate\Build\Win64\x64\UnrealEditor\Development\NarrativeCommonUI\UnrealEditor-NarrativeCommonUI.lib"

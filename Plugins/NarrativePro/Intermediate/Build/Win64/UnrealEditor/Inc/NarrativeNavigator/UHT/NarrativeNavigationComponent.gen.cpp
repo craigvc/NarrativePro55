@@ -192,7 +192,7 @@ struct Z_Construct_UDelegateFunction_NarrativeNavigator_OnFastTravelRequested__D
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeNavigator_OnFastTravelRequested__DelegateSignature_Statics::NewProp_POI = { "POI", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeNavigator_eventOnFastTravelRequested_Parms, POI), Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_POI_MetaData), NewProp_POI_MetaData) }; // 3732342648
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_NarrativeNavigator_OnFastTravelRequested__DelegateSignature_Statics::NewProp_POI = { "POI", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_NarrativeNavigator_eventOnFastTravelRequested_Parms, POI), Z_Construct_UScriptStruct_FPointOfInterestLocation, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_POI_MetaData), NewProp_POI_MetaData) }; // 2126533229
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_NarrativeNavigator_OnFastTravelRequested__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_NarrativeNavigator_OnFastTravelRequested__DelegateSignature_Statics::NewProp_POI,
 };
@@ -230,9 +230,13 @@ struct Z_Construct_UFunction_UNarrativeNavigationComponent_DiscoverPOI_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set a POI as having been \"discovered\" by the player\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set a POI as having been \"discovered\" by the player" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POITag_MetaData[] = {
 		{ "NativeConst", "" },
@@ -279,9 +283,13 @@ struct Z_Construct_UFunction_UNarrativeNavigationComponent_HasDiscoveredPOI_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Check if we've found the given POI in the world\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if we've found the given POI in the world" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_POITag_MetaData[] = {
 		{ "NativeConst", "" },
@@ -336,9 +344,13 @@ struct Z_Construct_UFunction_UNarrativeNavigationComponent_PlaceCustomWaypoint_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Place a custom waypoint in the world at the given transform. bAddToSaveFile will ensure the marker is added to our save file \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Place a custom waypoint in the world at the given transform. bAddToSaveFile will ensure the marker is added to our save file" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Transform_MetaData[] = {
 		{ "NativeConst", "" },
@@ -387,9 +399,13 @@ struct Z_Construct_UFunction_UNarrativeNavigationComponent_RemoveCustomWaypoint_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Place a custom waypoint in the world at the given transform. bAddToSaveFile will ensure the marker is added to our save file \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Place a custom waypoint in the world at the given transform. bAddToSaveFile will ensure the marker is added to our save file" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Waypoint;
@@ -533,9 +549,13 @@ struct Z_Construct_UFunction_UNarrativeNavigationComponent_SetMapLayer_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Map Layers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Set the layer of this map tile for the given domains \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the layer of this map tile for the given domains" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewLayer_MetaData[] = {
 		{ "Categories", "Navigator.MapLayer" },
@@ -612,88 +632,140 @@ struct Z_Construct_UClass_UNarrativeNavigationComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Narrative" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\nAdd this to your PlayerController.\n\nTo enable navigation, add this to your controller, and you're away.  */" },
+#endif
 		{ "DisplayName", "Navigation Component" },
 		{ "IncludePath", "NarrativeNavigationComponent.h" },
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add this to your PlayerController.\n\nTo enable navigation, add this to your controller, and you're away." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedCustomMarkerTransforms_MetaData[] = {
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DiscoveredPOIs_MetaData[] = {
 		{ "Category", "Point Of Interest" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**Contains all the POI's we've found */" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Contains all the POI's we've found" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomWaypoints_MetaData[] = {
 		{ "Category", "Map Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Our custom waypoints that we've placed. These are serialized to disk. s\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Our custom waypoints that we've placed. These are serialized to disk. s" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapWidth_MetaData[] = {
 		{ "Category", "Map Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//How many unreal units wide (cm) is your map image? Enter it here. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How many unreal units wide (cm) is your map image? Enter it here." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapOrigin_MetaData[] = {
 		{ "Category", "Map Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//What position in the world is the center of your map? Enter that position here. (ie where was the camera located that you took your map shot from)\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What position in the world is the center of your map? Enter that position here. (ie where was the camera located that you took your map shot from)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxCustomWaypoints_MetaData[] = {
 		{ "Category", "Map Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The max number of custom waypoints we're allowed to place in the world \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The max number of custom waypoints we're allowed to place in the world" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapTileBounds_MetaData[] = {
 		{ "Category", "Map Configuration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The bounds we've found in the world, should one exist \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The bounds we've found in the world, should one exist" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Markers_MetaData[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//All of the markers currently being tracked by this navigation component\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All of the markers currently being tracked by this navigation component" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MapTiles_MetaData[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//We cache map tiles seperately for quick access\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We cache map tiles seperately for quick access" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMarkerAdded_MetaData[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Fires when a marker is added to our navigation\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fires when a marker is added to our navigation" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMarkerRemoved_MetaData[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Fires when a marker is removed from our navigation \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fires when a marker is removed from our navigation" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPOIDiscovered_MetaData[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Fires when a point of interest has been discovered, in case you want to add a message to the UI or something similar \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fires when a point of interest has been discovered, in case you want to add a message to the UI or something similar" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnFastTravelRequested_MetaData[] = {
 		{ "Category", "Navigation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Fires when a fast travel has been requested - each games fast travel implemtation may be game specific. \n" },
+#endif
 		{ "ModuleRelativePath", "Public/NarrativeNavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fires when a fast travel has been requested - each games fast travel implemtation may be game specific." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SavedCustomMarkerTransforms_Inner;
@@ -716,13 +788,13 @@ struct Z_Construct_UClass_UNarrativeNavigationComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_DiscoverPOI, "DiscoverPOI" }, // 3360016449
-		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_HasDiscoveredPOI, "HasDiscoveredPOI" }, // 977070563
-		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_PlaceCustomWaypoint, "PlaceCustomWaypoint" }, // 3286513213
-		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_RemoveCustomWaypoint, "RemoveCustomWaypoint" }, // 2524208725
+		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_DiscoverPOI, "DiscoverPOI" }, // 2947669253
+		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_HasDiscoveredPOI, "HasDiscoveredPOI" }, // 3580281948
+		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_PlaceCustomWaypoint, "PlaceCustomWaypoint" }, // 1890742829
+		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_RemoveCustomWaypoint, "RemoveCustomWaypoint" }, // 1984132447
 		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_SelectMarker, "SelectMarker" }, // 2597658271
 		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_ServerSelectMarker, "ServerSelectMarker" }, // 3399552950
-		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_SetMapLayer, "SetMapLayer" }, // 860135370
+		{ &Z_Construct_UFunction_UNarrativeNavigationComponent_SetMapLayer, "SetMapLayer" }, // 1005068700
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -747,7 +819,7 @@ const UECodeGen_Private::FSetPropertyParams Z_Construct_UClass_UNarrativeNavigat
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeNavigationComponent_Statics::NewProp_OnMarkerAdded = { "OnMarkerAdded", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeNavigationComponent, OnMarkerAdded), Z_Construct_UDelegateFunction_NarrativeNavigator_OnMarkerAdded__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMarkerAdded_MetaData), NewProp_OnMarkerAdded_MetaData) }; // 1427637595
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeNavigationComponent_Statics::NewProp_OnMarkerRemoved = { "OnMarkerRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeNavigationComponent, OnMarkerRemoved), Z_Construct_UDelegateFunction_NarrativeNavigator_OnMarkerRemoved__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMarkerRemoved_MetaData), NewProp_OnMarkerRemoved_MetaData) }; // 753381616
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeNavigationComponent_Statics::NewProp_OnPOIDiscovered = { "OnPOIDiscovered", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeNavigationComponent, OnPOIDiscovered), Z_Construct_UDelegateFunction_NarrativeNavigator_OnDiscoverPointOfInterest__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPOIDiscovered_MetaData), NewProp_OnPOIDiscovered_MetaData) }; // 3173808967
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeNavigationComponent_Statics::NewProp_OnFastTravelRequested = { "OnFastTravelRequested", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeNavigationComponent, OnFastTravelRequested), Z_Construct_UDelegateFunction_NarrativeNavigator_OnFastTravelRequested__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFastTravelRequested_MetaData), NewProp_OnFastTravelRequested_MetaData) }; // 2956471495
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UNarrativeNavigationComponent_Statics::NewProp_OnFastTravelRequested = { "OnFastTravelRequested", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNarrativeNavigationComponent, OnFastTravelRequested), Z_Construct_UDelegateFunction_NarrativeNavigator_OnFastTravelRequested__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFastTravelRequested_MetaData), NewProp_OnFastTravelRequested_MetaData) }; // 1218202267
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UNarrativeNavigationComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNarrativeNavigationComponent_Statics::NewProp_SavedCustomMarkerTransforms_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNarrativeNavigationComponent_Statics::NewProp_SavedCustomMarkerTransforms,
@@ -774,7 +846,7 @@ UObject* (*const Z_Construct_UClass_UNarrativeNavigationComponent_Statics::Depen
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UNarrativeNavigationComponent_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UNarrativeNavigationComponent_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UNarrativeNavigationComponent, INarrativeSavableComponent), false },  // 1573843113
+	{ Z_Construct_UClass_UNarrativeSavableComponent_NoRegister, (int32)VTABLE_OFFSET(UNarrativeNavigationComponent, INarrativeSavableComponent), false },  // 586272322
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UNarrativeNavigationComponent_Statics::ClassParams = {
 	&UNarrativeNavigationComponent::StaticClass,
@@ -815,14 +887,14 @@ UNarrativeNavigationComponent::~UNarrativeNavigationComponent() {}
 // End Class UNarrativeNavigationComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NarrativeNavigationComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NarrativeNavigationComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNarrativeNavigationComponent, UNarrativeNavigationComponent::StaticClass, TEXT("UNarrativeNavigationComponent"), &Z_Registration_Info_UClass_UNarrativeNavigationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeNavigationComponent), 1625979747U) },
+		{ Z_Construct_UClass_UNarrativeNavigationComponent, UNarrativeNavigationComponent::StaticClass, TEXT("UNarrativeNavigationComponent"), &Z_Registration_Info_UClass_UNarrativeNavigationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNarrativeNavigationComponent), 668036699U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NarrativeNavigationComponent_h_3495764483(TEXT("/Script/NarrativeNavigator"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NarrativeNavigationComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NarrativeNavigationComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NarrativeNavigationComponent_h_4286707413(TEXT("/Script/NarrativeNavigator"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NarrativeNavigationComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeNavigator_Public_NarrativeNavigationComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

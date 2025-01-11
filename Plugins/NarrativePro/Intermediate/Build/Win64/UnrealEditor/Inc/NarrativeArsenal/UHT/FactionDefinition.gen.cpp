@@ -32,35 +32,55 @@ struct Z_Construct_UClass_UFactionDefinition_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines a faction, along with friendly factions, neutral, enemies, and so on. \n */" },
+#endif
 		{ "IncludePath", "Teams/FactionDefinition.h" },
 		{ "ModuleRelativePath", "Public/Teams/FactionDefinition.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a faction, along with friendly factions, neutral, enemies, and so on." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FactionID_MetaData[] = {
 		{ "Category", "Faction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The faction this definition applies to - ideally this should use gameplaytags instead as C++ enum is annoying for BP users \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Teams/FactionDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The faction this definition applies to - ideally this should use gameplaytags instead as C++ enum is annoying for BP users" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FactionTag_MetaData[] = {
 		{ "Category", "Faction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//The tag identifying the faction - this needs to be converted to a uint8\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Teams/FactionDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The tag identifying the faction - this needs to be converted to a uint8" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FriendlyFactions_MetaData[] = {
 		{ "Category", "Faction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Factions we're friendly with \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Teams/FactionDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Factions we're friendly with" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyFactions_MetaData[] = {
 		{ "Category", "Faction" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Factions we're enemies of \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Teams/FactionDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Factions we're enemies of" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_FactionID_Underlying;
@@ -80,14 +100,14 @@ struct Z_Construct_UClass_UFactionDefinition_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FactionID_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FactionID = { "FactionID", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UFactionDefinition, FactionID), Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FactionID_MetaData), NewProp_FactionID_MetaData) }; // 696033230
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FactionID = { "FactionID", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UFactionDefinition, FactionID), Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FactionID_MetaData), NewProp_FactionID_MetaData) }; // 57303180
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FactionTag = { "FactionTag", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UFactionDefinition, FactionTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FactionTag_MetaData), NewProp_FactionTag_MetaData) }; // 1298103297
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FriendlyFactions_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FriendlyFactions_Inner = { "FriendlyFactions", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID, METADATA_PARAMS(0, nullptr) }; // 696033230
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FriendlyFactions = { "FriendlyFactions", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UFactionDefinition, FriendlyFactions), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FriendlyFactions_MetaData), NewProp_FriendlyFactions_MetaData) }; // 696033230
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FriendlyFactions_Inner = { "FriendlyFactions", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID, METADATA_PARAMS(0, nullptr) }; // 57303180
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FriendlyFactions = { "FriendlyFactions", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UFactionDefinition, FriendlyFactions), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FriendlyFactions_MetaData), NewProp_FriendlyFactions_MetaData) }; // 57303180
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_EnemyFactions_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_EnemyFactions_Inner = { "EnemyFactions", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID, METADATA_PARAMS(0, nullptr) }; // 696033230
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_EnemyFactions = { "EnemyFactions", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UFactionDefinition, EnemyFactions), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyFactions_MetaData), NewProp_EnemyFactions_MetaData) }; // 696033230
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_EnemyFactions_Inner = { "EnemyFactions", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_NarrativeArsenal_ENarrativeFactionID, METADATA_PARAMS(0, nullptr) }; // 57303180
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFactionDefinition_Statics::NewProp_EnemyFactions = { "EnemyFactions", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UFactionDefinition, EnemyFactions), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyFactions_MetaData), NewProp_EnemyFactions_MetaData) }; // 57303180
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFactionDefinition_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FactionID_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFactionDefinition_Statics::NewProp_FactionID,
@@ -137,14 +157,14 @@ UFactionDefinition::~UFactionDefinition() {}
 // End Class UFactionDefinition
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Teams_FactionDefinition_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Teams_FactionDefinition_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UFactionDefinition, UFactionDefinition::StaticClass, TEXT("UFactionDefinition"), &Z_Registration_Info_UClass_UFactionDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFactionDefinition), 917781094U) },
+		{ Z_Construct_UClass_UFactionDefinition, UFactionDefinition::StaticClass, TEXT("UFactionDefinition"), &Z_Registration_Info_UClass_UFactionDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFactionDefinition), 1095708393U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Teams_FactionDefinition_h_2176820018(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Teams_FactionDefinition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Teams_FactionDefinition_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Teams_FactionDefinition_h_2612607078(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Teams_FactionDefinition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Teams_FactionDefinition_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

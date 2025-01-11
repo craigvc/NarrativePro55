@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UPlayerDefinition_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Defines a player character that will be player controlled \n */" },
+#endif
 		{ "IncludePath", "Character/PlayerDefinition.h" },
 		{ "ModuleRelativePath", "Public/Character/PlayerDefinition.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Defines a player character that will be player controlled" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -78,14 +82,14 @@ UPlayerDefinition::~UPlayerDefinition() {}
 // End Class UPlayerDefinition
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_PlayerDefinition_h_Statics
+struct Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_PlayerDefinition_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerDefinition, UPlayerDefinition::StaticClass, TEXT("UPlayerDefinition"), &Z_Registration_Info_UClass_UPlayerDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerDefinition), 4017561301U) },
+		{ Z_Construct_UClass_UPlayerDefinition, UPlayerDefinition::StaticClass, TEXT("UPlayerDefinition"), &Z_Registration_Info_UClass_UPlayerDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerDefinition), 4187291073U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_PlayerDefinition_h_3633731301(TEXT("/Script/NarrativeArsenal"),
-	Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_PlayerDefinition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_PlayerDefinition_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_PlayerDefinition_h_625129539(TEXT("/Script/NarrativeArsenal"),
+	Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_PlayerDefinition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NarrativePro55_Plugins_NarrativePro_Source_NarrativeArsenal_Public_Character_PlayerDefinition_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
